@@ -123,6 +123,15 @@ python3 build.py --names real            # -> build/Fire Pro Wrestling S - 6Men 
 python3 make_patches.py --version v0.1   # -> release/*.xdelta and a zip (needs xdelta3)
 ```
 
+## Credits
+
+- **Malenko**, whose [English patch v0.91](https://segaxtreme.net/resources/fire-pro-wrestling-6-men-scramble.106/)
+  (SegaXtreme, 2022) was the pioneering effort at bringing this game to English: it translated most
+  of the game, though some of the Victory Road dialogue was left in Japanese. This translation was
+  made from scratch rather than built on it, but that earlier work deserves the credit for going first.
+- **32bits**, whose [Expansion Hack write-up](https://32bits.substack.com/p/expansion-hack-fire-prowrestling)
+  first documented the debug menu and the hidden Edit characters (see [docs/HIDDEN_CONTENT.md](docs/HIDDEN_CONTENT.md)).
+
 ## AI disclosure
 
 AI assisted with the translation.
