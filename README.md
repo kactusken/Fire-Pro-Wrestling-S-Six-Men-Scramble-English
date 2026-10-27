@@ -11,6 +11,13 @@ game draws every letter as its own 16x16 sprite and allows only 46 per line of t
 quickly runs out of; the patch adds 184 two-letter characters (common letter pairs drawn as one
 sprite) so the English fits without shrinking the font.
 
+> ### 📖 [Read the player's guide](https://kactusken.github.io/Fire-Pro-Wrestling-S-Six-Men-Scramble-English/guide/)
+> A complete English guide to the game, written alongside the translation: every mode, the full
+> controls, how matches really work (stamina, criticals, reversals, fighting styles), Wrestler Edit
+> step by step, **all 160 wrestlers with their complete move lists** (searchable, with a switch for
+> real or parody names), the hidden wrestlers and secrets (spoilers folded), and a Japanese
+> glossary for players of the original.
+
 **[See screenshots](docs/SCREENSHOTS.md)** of the patched game.
 
 > **Status: first public beta (v0.1).** All the text is translated and every mode has been
@@ -22,7 +29,7 @@ sprite) so the English fits without shrinking the font.
 
 ## Downloads
 
-Get the latest zip from the [Releases](../../releases) page. It contains five patches. Pick one:
+**[Download v0.1](https://github.com/kactusken/Fire-Pro-Wrestling-S-Six-Men-Scramble-English/releases/download/v0.1/Fire.Pro.Wrestling.S.-.6Men.Scramble.English.Patch.v0.1.zip)** (zip, 0.5 MB), or see all versions on the [Releases](../../releases) page. The zip contains five patches. Pick one:
 
 | Patch | What you get |
 |---|---|
@@ -68,9 +75,8 @@ Then:
 - **Unlocking.** Without an "(Unlocked)" patch, the 24 hidden wrestlers appear once both Victory Road
   singles titles are won, or one by one as you beat them; Title Match mode appears once you hold a
   Victory Road title.
-- **Guide.** A full player's guide (modes, controls, how matches work, Wrestler Edit, every
-  wrestler's move list, secrets) with the patch's names: the [Fire Pro Wrestling S guide](https://kactusken.github.io/Fire-Pro-Wrestling-S-Six-Men-Scramble-English/guide/)
-  ([docs/guide/](docs/guide/index.html)).
+- **Guide.** Stuck, or new to Fire Pro? The [player's guide](https://kactusken.github.io/Fire-Pro-Wrestling-S-Six-Men-Scramble-English/guide/) covers everything from the
+  controls to every wrestler's moves, with the patch's names.
 - **Hidden content.** The developers' debug menu (a build option, not in the patches), unused
   developer tools, cut moves and more: see
   [docs/HIDDEN_CONTENT.md](docs/HIDDEN_CONTENT.md).
