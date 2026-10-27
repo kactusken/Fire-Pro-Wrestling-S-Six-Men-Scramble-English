@@ -68,6 +68,9 @@ Then:
 - **Unlocking.** Without an "(Unlocked)" patch, the 24 hidden wrestlers appear once both Victory Road
   singles titles are won, or one by one as you beat them; Title Match mode appears once you hold a
   Victory Road title.
+- **Guide.** A full player's guide (modes, controls, how matches work, Wrestler Edit, every
+  wrestler's move list, secrets) with the patch's names: the [Fire Pro Wrestling S guide](https://kactusken.github.io/Fire-Pro-Wrestling-S-Six-Men-Scramble-English/guide/)
+  ([docs/guide/](docs/guide/index.html)).
 - **Hidden content.** The developers' debug menu (a build option, not in the patches), unused
   developer tools, cut moves and more: see
   [docs/HIDDEN_CONTENT.md](docs/HIDDEN_CONTENT.md).
@@ -103,6 +106,7 @@ the game's formats.
 | [docs/TECHNICAL.md](docs/TECHNICAL.md) | The game's disc layout, archives, compression, data formats, and memory map |
 | [docs/PLATFORM.md](docs/PLATFORM.md) | SATURN pitfalls for this kind of work |
 | [docs/HIDDEN_CONTENT.md](docs/HIDDEN_CONTENT.md) | Unlockables, debug features, and unused and cut content |
+| [docs/guide/](docs/guide/index.html) | The player's guide (one page; roster data from `tools/guidedata.py`) |
 | [tools/README.md](tools/README.md) | Every tool, what it's for and how to run it |
 
 Quick start:

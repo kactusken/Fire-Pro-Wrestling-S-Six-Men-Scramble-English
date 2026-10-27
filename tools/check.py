@@ -30,7 +30,7 @@ CHECKS = [
     ('text space', [PY, 'tools/textins.py', 'report'], True),   # English fits, both name builds
     # ('layout', [PY, 'tools/storycheck.py'], False),
     # ('vwf hook', [PY, 'tools/test_vwf.py'], False),
-    # ('guide data', [PY, 'tools/guidedata.py', '--check'], False),   # a reference page's data block (pagedata.py)
+    ('guide data', [PY, 'tools/guidedata.py', '--check'], True),   # docs/guide roster data matches the translation
 ]
 
 
