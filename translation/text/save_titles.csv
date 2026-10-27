@@ -1,0 +1,6 @@
+# Backup-memory file comments (1ST.BIN: the 10-byte comment of each save file's descriptor), shown
+# by the Saturn's memory manager, not by the game. Written as plain ASCII: capitals, digits, space;
+# at most 10 characters.
+addr,japanese,english,notes
+0603DB48,ﾌｧｲﾌﾟﾛﾃﾞｰﾀ,FPS6M DATA,FPS_6MEN_01: game data (records); provisional
+0603DB74,ﾌｧｲﾌﾟﾛﾚｽﾗｰ,FPS6M EDIT,FPS_6MEN_02: edit wrestlers; provisional

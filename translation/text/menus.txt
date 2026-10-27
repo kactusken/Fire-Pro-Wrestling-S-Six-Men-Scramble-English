@@ -1,0 +1,5148 @@
+# Menus, options, help lines, match and mode text of 2ND.BIN - one block per string.
+# Each block is one string; {n} is a new line inside it, {t} a tab. Other codes stay exactly as
+# they are: {s3} colour, {p8,32,} position, {x1,}/{y7,} move, {r12,} line height, {b}, {w..}/{c..}
+# boxes, {$hh} a raw byte (see the header of tools/fpstext.py).
+# px= in a block's comment is the original width in pixels - a guide (menus may have more room);
+#   keep labels short where the original is short. Strings are relocated: no byte limit.
+# Half-width katakana (ｼﾝｸﾞﾙ) is the same text as full-width - just compressed.
+
+@ 2ND:060802A0
+# code near 06080418
+# px=120 (original width)
+JP ３人以上出場して下さい
+EN Pick at least 3.
+
+@ 2ND:0608048C
+# code near 06080648
+# px=189 (original width)
+JP 試合開始しますか？ ＹＥＳ／ＮＯ／終了
+EN Start match? YES/NO/EXIT
+
+@ 2ND:060804B4
+# code near 06080808
+# px=24 (original width)
+JP 欠場
+EN Out
+
+@ 2ND:060815F0
+# table 060BC388
+# px=17 (original width)
+JP ６Ｐ
+EN ６Ｐ
+
+@ 2ND:060815F8
+# px=17 (original width)
+JP ５Ｐ
+EN ５Ｐ
+
+@ 2ND:06081600
+# px=17 (original width)
+JP ４Ｐ
+EN ４Ｐ
+
+@ 2ND:06081608
+# px=17 (original width)
+JP ３Ｐ
+EN ３Ｐ
+
+@ 2ND:06081610
+# px=17 (original width)
+JP ２Ｐ
+EN ２Ｐ
+
+@ 2ND:06081618
+# px=17 (original width)
+JP １Ｐ
+EN １Ｐ
+
+@ 2ND:06081620
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# px=19 (original width)
+# stays CP: "COM" runs into the name on the player plate (seen in the emulator 2026-10-27)
+JP ＣＰ
+EN ＣＰ
+
+@ 2ND:06081628
+# px=24 (original width)
+JP 混合
+EN Mixed
+
+@ 2ND:06081630
+# px=44 (original width)
+JP ６人ﾀｯｸﾞ
+EN 6-Man Tag
+
+@ 2ND:0608163C
+# px=24 (original width)
+JP ﾀｯｸﾞ
+EN Tag
+
+@ 2ND:06081644
+# px=32 (original width)
+JP ｼﾝｸﾞﾙ
+EN Single
+
+@ 2ND:0608164C
+# px=72 (original width)
+JP ｵﾝﾘｰｷﾞﾌﾞｱｯﾌﾟ
+EN Sub Only
+
+@ 2ND:0608165C
+# px=64 (original width)
+JP ｵﾝﾘｰﾌｫｰﾙ
+EN Pin Only
+
+@ 2ND:06081668
+# px=40 (original width)
+JP ２ｶｳﾝﾄ
+EN 2 Count
+
+@ 2ND:06081670
+# px=40 (original width)
+JP ３ｶｳﾝﾄ
+EN 3 Count
+
+@ 2ND:06081678
+# px=36 (original width)
+JP 無制限
+EN No Limit
+
+@ 2ND:06081680
+# px=28 (original width)
+JP ６０分
+EN 60 Min
+
+@ 2ND:06081688
+# px=28 (original width)
+JP ４５分
+EN 45 Min
+
+@ 2ND:06081690
+# px=28 (original width)
+JP ３０分
+EN 30 Min
+
+@ 2ND:06081698
+# px=28 (original width)
+JP １５分
+EN 15 Min
+
+@ 2ND:060816A0
+# px=28 (original width)
+JP １０分
+EN 10 Min
+
+@ 2ND:060816A8
+# px=20 (original width)
+JP ５分
+EN 5 Min
+
+@ 2ND:060816B0
+# px=20 (original width)
+JP １分
+EN 1 Min
+
+@ 2ND:060816B8
+# px=48 (original width)
+JP 三本勝負
+EN 2/3 Falls
+
+@ 2ND:060816C4
+# px=48 (original width)
+JP 一本勝負
+EN 1 Fall
+
+@ 2ND:060816D0
+# px=64 (original width)
+JP ｵｸﾀｺﾞﾝﾘﾝｸﾞ
+EN Octagon
+
+@ 2ND:060816DC
+# px=88 (original width)
+JP 特設ﾃﾞｽﾏｯﾁﾘﾝｸﾞ
+EN Death Match
+
+@ 2ND:060816EC
+# px=28 (original width)
+JP ＨＷＡ
+EN <HWA>
+
+@ 2ND:060816F4
+# px=88 (original width)
+JP ﾍﾞｲｻｲﾄﾞ・ｺﾛｼｱﾑ
+EN Bayside Col.
+
+@ 2ND:06081704
+# px=48 (original width)
+JP 川島球場
+EN Kawashima
+
+@ 2ND:06081710
+# px=84 (original width)
+JP 村川町民体育館
+EN Murakawa Gym
+
+@ 2ND:06081720
+# px=60 (original width)
+JP 遊楽園ﾎｰﾙ
+EN Yurakuen Hall
+
+@ 2ND:0608172C
+# px=92 (original width)
+JP ＨＵＭＡＮ ＤＯＭＥ
+EN ＨＵＭＡＮ ＤＯＭＥ
+
+@ 2ND:06081740
+# px=60 (original width)
+JP 日本武闘館
+EN Butokan
+
+@ 2ND:0608174C
+# px=52 (original width)
+JP ＥＸＰＡＲＴ
+EN ＥＸＰＡＲＴ
+
+@ 2ND:0608175C
+# px=36 (original width)
+JP ＨＡＲＤ
+EN Ｈａｒｄ
+
+@ 2ND:06081768
+# px=56 (original width)
+JP ＮＯＲＭＡＬ
+EN Ｎｏｒｍａｌ
+
+@ 2ND:06081778
+# px=35 (original width)
+JP ＥＡＳＹ
+EN Ｅａｓｙ
+
+@ 2ND:06081784
+# px=34 (original width)
+JP ２００％
+EN 200%
+
+@ 2ND:06081790
+# px=34 (original width)
+JP １５０％
+EN 150%
+
+@ 2ND:0608179C
+# px=34 (original width)
+JP １２５％
+EN 125%
+
+@ 2ND:060817A8
+# px=34 (original width)
+JP １００％
+EN 100%
+
+@ 2ND:060817B4
+# px=56 (original width)
+JP ﾊﾞｯﾄ・若部
+EN B. Wakabe
+
+@ 2ND:060817C0
+# px=44 (original width)
+JP Ｍｒ．水中
+EN Mr. Suichu
+
+@ 2ND:060817CC
+# px=36 (original width)
+JP ｼﾞｮｰ弘
+EN Joe Hiro
+
+@ 2ND:060817D4
+# px=56 (original width)
+JP ﾊﾟﾝｻｰ鳥取
+EN <Panther Tottori>
+
+@ 2ND:06081DB8
+# code near 06081FD8
+# px=28 (original width)
+JP  ＆ 
+EN  & 
+
+@ 2ND:06082944
+# table 060BC774
+# px=64 (original width)
+JP 試合中ＢＧＭ{n}
+EN Match BGM{n}
+
+@ 2ND:06082954
+# px=56 (original width)
+JP 場外カウント{n}
+EN Ring-Out{n}
+
+@ 2ND:06082964
+# px=56 (original width)
+JP 反則カウント{n}
+EN Foul Ct.{n}
+
+@ 2ND:06082974
+# px=48 (original width)
+JP カットプレイ{n}
+EN Cut Play{n}
+
+@ 2ND:06082984
+# px=64 (original width)
+JP トルネードバトル{n}
+EN Tornado{n}
+
+@ 2ND:06082998
+# px=64 (original width)
+JP ランバージャック{n}
+EN Lumberjack{n}
+
+@ 2ND:060829AC
+# px=56 (original width)
+JP ロープチェック{n}
+EN Rope Break{n}
+
+@ 2ND:060829BC
+# px=40 (original width)
+JP レフェリー{n}
+EN Referee{n}
+
+@ 2ND:060829C8
+# px=63 (original width)
+JP ＣＯＭスキップ{n}
+EN COM Skip{n}
+
+@ 2ND:060829D8
+# px=56 (original width)
+JP ゲームスピード{n}
+EN Speed{n}
+
+@ 2ND:060829E8
+# px=55 (original width)
+JP ＣＯＭレベル{n}
+EN COM Lv.{n}
+
+@ 2ND:060829F8
+# px=48 (original width)
+JP 試合会場{n}
+EN Venue{n}
+
+@ 2ND:06082A04
+# px=24 (original width)
+JP リング{n}
+EN Ring{n}
+
+@ 2ND:06082A0C
+# px=48 (original width)
+JP 試合本数{n}
+EN Falls{n}
+
+@ 2ND:06082A18
+# code near 06082C70
+# px=80 (original width)
+JP コンフィグレーション
+EN Configuration
+
+@ 2ND:06082A34
+# code near 06082D18
+# px=268 (original width)
+JP コンフィグデータを正しく保存することができませんでした。
+EN Couldn't save the config data.
+
+@ 2ND:06082FF0
+# table 060BCB7C
+# px=24 (original width)
+JP 大将
+EN 5th
+
+@ 2ND:06082FF8
+# px=24 (original width)
+JP 副将
+EN 4th
+
+@ 2ND:06083000
+# px=24 (original width)
+JP 中堅
+EN 3rd
+
+@ 2ND:06083008
+# px=24 (original width)
+JP 次鋒
+EN 2nd
+
+@ 2ND:06083010
+# px=24 (original width)
+JP 先鋒
+EN 1st
+
+@ 2ND:0608312C
+# px=251 (original width)
+JP カートリッジＲＡＭに記録が無い為、使用不可能です。
+EN is missing or lacks them. Unusable.
+
+@ 2ND:06083160
+# px=177 (original width)
+JP カートリッジＲＡＭが差されていないか、
+EN Cartridge RAM, but the RAM
+
+@ 2ND:06083188
+# px=163 (original width)
+JP ＥＤＩＴレスラーを使用していますが、
+EN wrestlers saved on the
+
+@ 2ND:060831B0
+# px=229 (original width)
+JP 以上のチームはカートリッジＲＡＭに記録されている
+EN The teams above use EDIT
+
+@ 2ND:060831E8
+# code near 06083380
+# px=32 (original width)
+JP 警告！！
+EN Warning!!
+
+@ 2ND:0608385C
+# code near 06083A60
+# px=96 (original width)
+JP ＥＤＩＴチーム ＳＡＶＥ
+EN Edit Team Save
+
+@ 2ND:06083874
+# code near 06083A74
+# px=28 (original width)
+JP ＥＸＩＴ
+EN Ｅｘｉｔ
+
+@ 2ND:06083880
+# layout: as wide as the Japanese (+27 px as drawn); YES / NO in the last 66 px, under the cursor boxes, which sit where the Japanese words were
+# code near 06083A78
+# px=203 (original width)
+JP 上書きしてもよろしいですか？ ＹＥＳ／ＮＯ
+EN Overwrite?{x86,}YES/{x3,}NO{x10,}
+
+@ 2ND:06083AA4
+# code near 06083AFC
+# px=53 (original width)
+JP ＥＤＩＴ軍団
+EN Edit Team
+
+@ 2ND:06083B08
+# code near 06083DB8
+# px=58 (original width)
+JP ＲＡＮＤＯＭ
+EN Ｒａｎｄｏｍ
+
+@ 2ND:06085208
+# code near 060BCBB8
+# px=24 (original width)
+JP 終了
+EN Exit
+
+@ 2ND:06085210
+# code near 060BCBB4
+# px=24 (original width)
+JP 試合
+EN Match
+
+@ 2ND:06085218
+# code near 06085624
+# px=24 (original width)
+JP 延長
+EN Overtime
+
+@ 2ND:06085220
+# code near 06085628
+# px=88 (original width)
+JP イリミネーションマッチ
+EN Elimination Match
+
+@ 2ND:06085EBC
+# code near 060860B0
+# px=32 (original width)
+JP ？？？？
+EN ????
+
+@ 2ND:060860C8
+# code near 06086274
+# px=64 (original width)
+JP チームエントリー
+EN Team Entry
+
+@ 2ND:06086520
+# table 060BCCA8
+# px=24 (original width)
+JP 引分
+EN Draw
+
+@ 2ND:06086528
+# px=24 (original width)
+JP 敗北
+EN Loss
+
+@ 2ND:06086530
+# px=24 (original width)
+JP 勝利
+EN Win
+
+@ 2ND:06086538
+# px=36 (original width)
+JP 連敗中
+EN L Streak
+
+@ 2ND:06086540
+# px=36 (original width)
+JP 連勝中
+EN W Streak
+
+@ 2ND:06086548
+# code near 060867FC
+# px=120 (original width)
+JP 闘いの記録 個人ファイル
+EN Records: Personal File
+
+@ 2ND:06086564
+# table 060BCCA8
+# px=12 (original width)
+JP 分
+EN D
+
+@ 2ND:06086568
+# px=20 (original width)
+JP 敗 
+EN L 
+
+@ 2ND:0608656C
+# px=20 (original width)
+JP 勝 
+EN W 
+
+@ 2ND:06086570
+# code near 06086824
+# px=72 (original width)
+JP 試合消化時点
+EN Matches
+
+@ 2ND:06086580
+# code near 06086828
+# px=40 (original width)
+JP ポイント 
+EN Points 
+
+@ 2ND:0608658C
+# code near 06086830
+# px=40 (original width)
+JP  勝率 
+EN  Win% 
+
+@ 2ND:06086594
+# code near 06086834
+# px=24 (original width)
+JP   －
+EN   -
+
+@ 2ND:060865A0
+# code near 06086A64
+# px=11 (original width)
+JP １．
+EN 1.
+
+@ 2ND:060865A8
+# code near 06086A6C
+# px=24 (original width)
+JP ０００
+EN 000
+
+@ 2ND:060865B0
+# code near 06086A70
+# px=3 (original width)
+JP ．
+EN .
+
+@ 2ND:060865B4
+# code near 06086A98
+# px=32 (original width)
+JP 最高 
+EN Best 
+
+@ 2ND:060865BC
+# table 060BCCA8
+# px=24 (original width)
+JP 連敗
+EN Losses
+
+@ 2ND:060865C4
+# px=32 (original width)
+JP 連勝 
+EN Wins 
+
+@ 2ND:060865CC
+# code near 06086AA4
+# px=80 (original width)
+JP 合計試合時間 
+EN Total Time 
+
+@ 2ND:060865DC
+# code near 06086AB4
+# px=80 (original width)
+JP 平均試合時間 
+EN Avg. Time 
+
+@ 2ND:06086C90
+# table 060BCCA8
+# px=12 (original width)
+JP 秒
+EN sec
+
+@ 2ND:06086C94
+# px=20 (original width)
+JP 分 
+EN min 
+
+@ 2ND:06086C98
+# px=32 (original width)
+JP 時間 
+EN hr 
+
+@ 2ND:06087330
+# layout: as wide as the Japanese (+27 px as drawn); YES / NO in the last 66 px, under the cursor boxes, which sit where the Japanese words were
+# table 060BCCE0
+# px=247 (original width)
+JP このデータを消去してもよろしいですか？ ＹＥＳ／ＮＯ
+EN Delete this data?{x82,}YES/{x3,}NO{x10,}
+
+@ 2ND:06087364
+# layout: as wide as the Japanese (+27 px as drawn); YES / NO in the last 66 px, under the cursor boxes, which sit where the Japanese words were
+# px=203 (original width)
+JP 上書きしてもよろしいですか？ ＹＥＳ／ＮＯ
+EN Overwrite?{x86,}YES/{x3,}NO{x10,}
+
+@ 2ND:06087390
+# px=22 (original width)
+JP 消す
+EN Del
+
+@ 2ND:06087398
+# px=22 (original width)
+JP 作る
+EN New
+
+@ 2ND:060873A0
+# px=22 (original width)
+JP 見る
+EN View
+
+@ 2ND:060873A8
+# px=22 (original width)
+JP 戻る
+EN Back
+
+@ 2ND:060873B0
+# code near 06087530
+# px=56 (original width)
+JP 闘いの記録
+EN Records
+
+@ 2ND:06087580
+# table 060BCCE0
+# px=12 (original width)
+JP 敗
+EN L
+
+@ 2ND:06087584
+# px=12 (original width)
+JP 勝
+EN W
+
+@ 2ND:06087588
+# code near 06087730
+# px=57 (original width)
+JP Ｎｏ Ｄａｔａ
+EN Ｎｏ Ｄａｔａ
+
+@ 2ND:06087954
+# code near 06087B3C
+# px=42 (original width)
+JP 使わない
+EN None
+
+@ 2ND:06087B40
+# code near 06087D2C
+# px=128 (original width)
+JP 闘いの記録 ファイルセレクト
+EN Records File Select
+
+@ 2ND:0608ABE4
+# code near 0608ACD0
+# px=64 (original width)
+JP オープン・リーグ
+EN Open League
+
+@ 2ND:0608B1AC
+# layout: as wide as the Japanese (+27 px as drawn); YES / NO in the last 66 px, under the cursor boxes, which sit where the Japanese words were
+# code near 0608B310
+# px=191 (original width)
+JP 決勝リーグを開催しますか？ ＹＥＳ／ＮＯ
+EN Hold finals league?{x18,}YES/{x3,}NO{x10,}
+
+@ 2ND:0608C850
+# table 060BDA40
+# px=24 (original width)
+JP 終了
+EN Exit
+
+@ 2ND:0608C858
+# px=35 (original width)
+JP ＳＡＶＥ
+EN Ｓａｖｅ
+
+@ 2ND:0608C864
+# px=52 (original width)
+JP ﾗﾝｷﾝｸﾞ表
+EN Rankings
+
+@ 2ND:0608C870
+# px=24 (original width)
+JP 試合
+EN Match
+
+@ 2ND:0608CE78
+# code near 0608CF78
+# px=40 (original width)
+JP ランキング
+EN Rankings
+
+@ 2ND:0608CE84
+# code near 0608CF84
+# px=99 (original width)
+JP {y032,}{x014,}順位{x002,}Ｎｏ．{x072,}ﾁｰﾑ{x084,}Ｐｔ．{x012,}差
+EN {y032,}{x014,}Pos{x002,}No.{x072,}Team{x084,}Pts{x012,}+/-
+
+@ 2ND:0608D384
+# code near 0608D5B4
+# px=154 (original width)
+JP ４人以上エントリーされていません
+EN Need at least 4 entries.
+
+@ 2ND:0608D3A8
+# layout: as wide as the Japanese (+27 px as drawn); YES / NO in the last 66 px, under the cursor boxes, which sit where the Japanese words were
+# code near 0608D5DC
+# px=215 (original width)
+JP レスラーエントリーを終了しますか？ ＹＥＳ／ＮＯ
+EN End wrestler entry?{x31,}YES/{x3,}NO{x10,}
+
+@ 2ND:0608D914
+# code near 0608DA64
+# px=72 (original width)
+JP レスラーエントリー
+EN Wrestler Entry
+
+@ 2ND:0608E1E8
+# table 060BDAA8
+# px=32 (original width)
+JP モノラル
+EN Mono
+
+@ 2ND:0608E1F4
+# px=32 (original width)
+JP ステレオ
+EN Stereo
+
+@ 2ND:0608E200
+# px=12 (original width)
+JP 大
+EN Hi
+
+@ 2ND:0608E204
+# px=12 (original width)
+JP 中
+EN Mid
+
+@ 2ND:0608E208
+# px=12 (original width)
+JP 小
+EN Lo
+
+@ 2ND:0608E20C
+# px=27 (original width)
+JP ＯＦＦ
+EN ＯＦＦ
+
+@ 2ND:0608E4CC
+# table 060BDAE8
+# px=56 (original width)
+JP {x105,}{s2}－ 終了 －{s0}{n}
+EN {x105,}{s2}- End -{s0}{n}
+
+@ 2ND:0608E4E4
+# px=112 (original width)
+JP 闘いの記録 管理画面{n}
+EN Fight Records{n}
+
+@ 2ND:0608E4FC
+# px=80 (original width)
+JP ミュージック テスト{n}
+EN Music Test{n}
+
+@ 2ND:0608E514
+# px=116 (original width)
+JP レスラーテーマ曲 ボリューム{n}
+EN Theme Vol.{n}
+
+@ 2ND:0608E534
+# px=112 (original width)
+JP 試合中ＢＧＭ ボリューム{n}
+EN Match BGM Vol.{n}
+
+@ 2ND:0608E550
+# px=124 (original width)
+JP ステレオ／モノラル 切り替え{n}
+EN Stereo/Mono{n}
+
+@ 2ND:0608E570
+# px=80 (original width)
+JP 画面拡大／縮小{n}
+EN Screen Zoom{n}
+
+@ 2ND:0608E580
+# code near 0608E724
+# px=40 (original width)
+JP オプション
+EN Options
+
+@ 2ND:0608E590
+# code near 0608E750
+# px=268 (original width)
+JP オプションデータを正しく保存することができませんでした。
+EN Couldn't save the options.
+
+@ 2ND:0608E7E4
+# code near 0608EA28
+# px=56 (original width)
+JP モードセレクト
+EN Mode Select
+
+@ 2ND:0608EFA0
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# code near 060BDF44
+# px=8 (original width)
+JP ＝
+EN ＝
+
+@ 2ND:0608EFA4
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# code near 060BDF40
+# px=8 (original width)
+JP ・
+EN ・
+
+@ 2ND:0608EFAC
+# table 060BDF54
+# px=24 (original width)
+JP フリー
+EN Free
+
+@ 2ND:0608EFB4
+# px=68 (original width)
+JP ジュニアヘビー級
+EN Jr. Heavy
+
+@ 2ND:0608EFC8
+# px=36 (original width)
+JP ヘビー級
+EN Heavy
+
+@ 2ND:0608EFD4
+# code near 0608F1D4
+# px=72 (original width)
+JP レスラーエディット
+EN Wrestler Edit
+
+@ 2ND:06090058
+# table 060BE048
+# px=40 (original width)
+JP ﾗﾌ攻撃
+EN Rough
+
+@ 2ND:06090060
+# px=64 (original width)
+JP 攻撃ﾃｸﾆｯｸ
+EN Offense
+
+@ 2ND:0609006C
+# px=24 (original width)
+JP 腕力
+EN Arm
+
+@ 2ND:06090074
+# px=36 (original width)
+JP 瞬発力
+EN Speed
+
+@ 2ND:0609007C
+# px=24 (original width)
+JP 馬力
+EN Power
+
+@ 2ND:06090084
+# px=34 (original width)
+JP 絞め技
+EN Choke
+
+@ 2ND:0609008C
+# px=36 (original width)
+JP 関節技
+EN Lock
+
+@ 2ND:06090094
+# px=34 (original width)
+JP 投げ技
+EN Throw
+
+@ 2ND:0609009C
+# px=34 (original width)
+JP 蹴り技
+EN Kick
+
+@ 2ND:060900A4
+# px=34 (original width)
+JP 突き技
+EN Punch
+
+@ 2ND:060900AC
+# px=52 (original width)
+JP 対ﾗﾌ攻撃
+EN vs. Rough
+
+@ 2ND:060900B8
+# px=64 (original width)
+JP 防御ﾃｸﾆｯｸ
+EN Defense
+
+@ 2ND:060900C4
+# px=52 (original width)
+JP 対ﾗﾘｱｯﾄ
+EN vs. Lariat
+
+@ 2ND:060900CC
+# px=78 (original width)
+JP 叩きつけ技防御
+EN Slam Def
+
+@ 2ND:060900DC
+# px=58 (original width)
+JP 飛び技防御
+EN Aerial Def
+
+@ 2ND:060900E8
+# px=58 (original width)
+JP 絞め技防御
+EN Hold Def
+
+@ 2ND:060900F4
+# px=48 (original width)
+JP 関節防御
+EN Lock Def
+
+@ 2ND:06090100
+# px=58 (original width)
+JP 投げ技防御
+EN Throw Def
+
+@ 2ND:0609010C
+# px=46 (original width)
+JP 蹴り防御
+EN Kick Def
+
+@ 2ND:06090118
+# px=48 (original width)
+JP 打撃防御
+EN Strike Def
+
+@ 2ND:06090128
+# code near 06090414
+# px=8 (original width)
+JP ／
+EN /
+
+@ 2ND:06090480
+# table 060BE0C8
+# px=8 (original width)
+JP －
+EN -
+
+@ 2ND:06090484
+# px=20 (original width)
+JP ＯＮ
+EN ＯＮ
+
+@ 2ND:0609048C
+# px=27 (original width)
+JP ＯＦＦ
+EN ＯＦＦ
+
+@ 2ND:06090494
+# px=44 (original width)
+JP 外国人４
+EN Fgn 4
+
+@ 2ND:060904A0
+# px=44 (original width)
+JP 外国人３
+EN Fgn 3
+
+@ 2ND:060904AC
+# px=44 (original width)
+JP 外国人２
+EN Fgn 2
+
+@ 2ND:060904B8
+# px=44 (original width)
+JP 外国人１
+EN Fgn 1
+
+@ 2ND:060904C4
+# px=44 (original width)
+JP 日本人４
+EN Jpn 4
+
+@ 2ND:060904D0
+# px=44 (original width)
+JP 日本人３
+EN Jpn 3
+
+@ 2ND:060904DC
+# px=44 (original width)
+JP 日本人２
+EN Jpn 2
+
+@ 2ND:060904E8
+# px=44 (original width)
+JP 日本人１
+EN Jpn 1
+
+@ 2ND:06090554
+# table 060BE56C
+# px=78 (original width)
+JP Ｎｏｔ Ｍａｋｉｎｇ．
+EN Ｎｏｔ Ｍａｋｉｎｇ．
+
+@ 2ND:0609056C
+# px=81 (original width)
+JP Ｎｏｗ Ｍａｋｉｎｇ．
+EN Ｎｏｗ Ｍａｋｉｎｇ．
+
+@ 2ND:06090584
+# px=92 (original width)
+JP Ｓｈｏｗ Ｖｅｒｓｉｏｎ
+EN Ｓｈｏｗ Ｖｅｒｓｉｏｎ
+
+@ 2ND:0609059C
+# px=97 (original width)
+JP Ｆｉｇｈｔ Ｒｅｃｏｒｄｓ
+EN Ｆｉｇｈｔ Ｒｅｃｏｒｄｓ
+
+@ 2ND:060905B8
+# px=53 (original width)
+JP Ｏｐｅｎｉｎｇ
+EN Ｏｐｅｎｉｎｇ
+
+@ 2ND:060905C8
+# px=44 (original width)
+JP Ｏｐｔｉｏｎ
+EN Ｏｐｔｉｏｎ
+
+@ 2ND:060905D8
+# px=60 (original width)
+JP Ｒｅ－Ｎａｍｅ
+EN Ｒｅ－Ｎａｍｅ
+
+@ 2ND:060905E8
+# px=90 (original width)
+JP Ｗｒｅｓｔｌｅｒ Ｅｄｉｔ
+EN Ｗｒｅｓｔｌｅｒ Ｅｄｉｔ
+
+@ 2ND:06090604
+# px=126 (original width)
+JP Ｇｒｏｕｓｏｍｅ Ｆｉｇｈｔｉｎｇ
+EN Ｇｒｕｅｓｏｍｅ Ｆｉｇｈｔｉｎｇ
+
+@ 2ND:06090628
+# px=89 (original width)
+JP Ｄｅａｔｈ Ｍａｔｃｈ
+EN Ｄｅａｔｈ Ｍａｔｃｈ
+
+@ 2ND:06090640
+# px=83 (original width)
+JP Ｂａｔｔｌｅ Ｒｏｙａｌ
+EN Ｂａｔｔｌｅ Ｒｏｙａｌ
+
+@ 2ND:06090658
+# px=65 (original width)
+JP Ｅｌｉｍｉｎａｔｉｏｎ
+EN Ｅｌｉｍｉｎａｔｉｏｎ
+
+@ 2ND:06090670
+# px=80 (original width)
+JP Ｔｏｕｒｎａｍｅｎｔ
+EN Ｔｏｕｒｎａｍｅｎｔ
+
+@ 2ND:06090688
+# px=90 (original width)
+JP Ｏｐｅｎ Ｌｅａｇｕｅ
+EN Ｏｐｅｎ Ｌｅａｇｕｅ
+
+@ 2ND:060906A0
+# px=89 (original width)
+JP Ｖｉｃｔｏｒｙ Ｒｏａｄ
+EN Ｖｉｃｔｏｒｙ Ｒｏａｄ
+
+@ 2ND:060906B8
+# px=110 (original width)
+JP ＯｎｅＮｉｇｈｔ Ｍａｔｃｈ
+EN ＯｎｅＮｉｇｈｔ Ｍａｔｃｈ
+
+@ 2ND:060906D4
+# px=199 (original width)
+JP 進行画面Ｓｅｌｅｃｔｏｒ Ｖｅｒｓｉｏｎ １．２γ
+EN Screen Selector Version 1.2g
+
+@ 2ND:06090708
+# px=24 (original width)
+JP 混合
+EN Mixed
+
+@ 2ND:06090710
+# px=64 (original width)
+JP ６人タッグのみ
+EN 6-Man Only
+
+@ 2ND:06090720
+# px=44 (original width)
+JP タッグのみ
+EN Tag Only
+
+@ 2ND:0609072C
+# px=52 (original width)
+JP シングルのみ
+EN Singles Only
+
+@ 2ND:0609073C
+# px=17 (original width)
+JP ６Ｐ
+EN ６Ｐ
+
+@ 2ND:06090744
+# px=17 (original width)
+JP ５Ｐ
+EN ５Ｐ
+
+@ 2ND:0609074C
+# px=17 (original width)
+JP ４Ｐ
+EN ４Ｐ
+
+@ 2ND:06090754
+# px=17 (original width)
+JP ３Ｐ
+EN ３Ｐ
+
+@ 2ND:0609075C
+# px=17 (original width)
+JP ２Ｐ
+EN ２Ｐ
+
+@ 2ND:06090764
+# px=17 (original width)
+JP １Ｐ
+EN １Ｐ
+
+@ 2ND:0609076C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# px=19 (original width)
+# stays CP: "COM" runs into the name on the player plate (seen in the emulator 2026-10-27)
+JP ＣＰ
+EN ＣＰ
+
+@ 2ND:060907D8
+# table 060BE618
+# px=40 (original width)
+JP ﾃﾞｽﾏｯﾁ
+EN Death Match
+
+@ 2ND:060907E0
+# px=56 (original width)
+JP ﾊﾞﾄﾙﾛｲﾔﾙ
+EN Battle Royal
+
+@ 2ND:060907EC
+# px=88 (original width)
+JP ｲﾘﾐﾈｰｼｮﾝﾏｯﾁ
+EN Elimination Match
+
+@ 2ND:060907F8
+# table 060BED58
+# px=64 (original width)
+JP ﾜﾝﾅｲﾄﾏｯﾁ
+EN Exhibition
+
+@ 2ND:06090804
+# table 060BE6FC
+# px=11 (original width)
+JP ８．
+EN 8.
+
+@ 2ND:0609080C
+# px=11 (original width)
+JP ７．
+EN 7.
+
+@ 2ND:06090814
+# px=11 (original width)
+JP ６．
+EN 6.
+
+@ 2ND:0609081C
+# px=11 (original width)
+JP ５．
+EN 5.
+
+@ 2ND:06090824
+# px=11 (original width)
+JP ４．
+EN 4.
+
+@ 2ND:0609082C
+# px=11 (original width)
+JP ３．
+EN 3.
+
+@ 2ND:06090834
+# px=11 (original width)
+JP ２．
+EN 2.
+
+@ 2ND:0609083C
+# px=11 (original width)
+JP １．
+EN 1.
+
+@ 2ND:06090DE0
+# code near 060910B8
+# px=68 (original width)
+JP  試合（ダミー）{n}
+EN  Match (Dummy){n}
+
+@ 2ND:06090DF4
+# table 060910C0
+# px=140 (original width)
+JP {t}Ａ ＝ 青コーナー フォール勝ち{n}
+EN {t}A = Blue Pin Win{n}
+
+@ 2ND:06090E14
+# px=146 (original width)
+JP {t}Ｂ ＝ 青コーナー ギブアップ勝ち{n}
+EN {t}B = Blue Sub. Win{n}
+
+@ 2ND:06090E38
+# px=134 (original width)
+JP {t}Ｃ ＝ 青コーナー Ｋ．Ｏ．勝ち{n}
+EN {t}C = Blue K.O. Win{n}
+
+@ 2ND:06090E58
+# px=154 (original width)
+JP {t}Ｘ ＝ 青コーナー リングアウト勝ち{n}
+EN {t}X = Blue Ring Out Win{n}
+
+@ 2ND:06090E7C
+# px=130 (original width)
+JP {t}Ｙ ＝ 青コーナー 反則勝ち{n}
+EN {t}Y = Blue DQ Win{n}
+
+@ 2ND:06090E98
+# px=122 (original width)
+JP {t}Ｚ ＝ 時間切れ引き分け{n}
+EN {t}Z = Time-Up Draw{n}
+
+@ 2ND:06090EB4
+# px=108 (original width)
+JP {t}上 ＝ 両者リングアウト{n}
+EN {t}Up = Dbl. Ring Out{n}
+
+@ 2ND:06090ED0
+# px=142 (original width)
+JP {t}下 ＝ 赤コーナー フォール勝ち{n}
+EN {t}Down = Red Pin Win{n}
+
+@ 2ND:06090EF0
+# px=150 (original width)
+JP {t}左 ＝ 赤コーナー ギブアップ勝ち{n}
+EN {t}Left = Red Sub. Win{n}
+
+@ 2ND:06090F14
+# px=136 (original width)
+JP {t}右 ＝ 赤コーナー Ｋ．Ｏ．勝ち{n}
+EN {t}Right = Red K.O. Win{n}
+
+@ 2ND:06090F34
+# px=155 (original width)
+JP {t}Ｒ ＝ 赤コーナー リングアウト勝ち{n}
+EN {t}R = Red Ring Out Win{n}
+
+@ 2ND:06090F58
+# px=129 (original width)
+JP {t}Ｌ ＝ 赤コーナー 反則勝ち{n}
+EN {t}L = Red DQ Win{n}
+
+@ 2ND:06091388
+# code near 06091414
+# px=284 (original width)
+JP パッドの数が足りない為、試合を開始することができません。
+EN Not enough pads to start the match.
+
+@ 2ND:06091478
+# table 060BE884
+# px=132 (original width)
+JP データのロードが不可能です。{n}
+EN the data can't be loaded.{n}
+
+@ 2ND:06091498
+# px=163 (original width)
+JP カートリッジＲＡＭに記録が無い為、{n}
+EN has no record of them, so{n}
+
+@ 2ND:060914BC
+# px=177 (original width)
+JP カートリッジＲＡＭが差されていないか、{n}
+EN RAM is not inserted or{n}
+
+@ 2ND:060914E4
+# px=118 (original width)
+JP エントリーされていますが、{n}
+EN Cartridge RAM, but the{n}
+
+@ 2ND:06091500
+# px=179 (original width)
+JP ＥＤＩＴレスラーがセーブされているデータに{n}
+EN wrestlers saved on the{n}
+
+@ 2ND:0609152C
+# px=161 (original width)
+JP カートリッジＲＡＭに記録されている{n}
+EN This data uses EDIT{n}
+
+@ 2ND:06091554
+# code near 0609168C
+# px=32 (original width)
+JP 警告！！
+EN Warning!!
+
+@ 2ND:06091854
+# code near 0609193C
+# px=196 (original width)
+JP 記録を削除することができませんでした。
+EN Couldn't delete the record.
+
+@ 2ND:06091964
+# code near 06091CBC
+# px=20 (original width)
+JP Ｎｏ．
+EN Ｎｏ．
+
+@ 2ND:0609196C
+# code near 06091E5C
+# px=28 (original width)
+JP  ＆ 
+EN  & 
+
+@ 2ND:06091974
+# code near 06091E84
+# px=42 (original width)
+JP Ｐｏｉｎｔ 
+EN Ｐｏｉｎｔ 
+
+@ 2ND:06091980
+# code near 06092088
+# px=66 (original width)
+JP Ｅｎｔｒｙ Ｎｏ．
+EN Entry No. 
+
+@ 2ND:060925E4
+# code near 06092740
+# px=56 (original width)
+JP バトルロイヤル
+EN Battle Royal
+
+@ 2ND:060925F4
+# code near 060BEC18
+# px=92 (original width)
+JP リングアウト引き分け
+EN Ring Out Draw
+
+@ 2ND:0609260C
+# table 060BEC60
+# px=90 (original width)
+JP 時間切れ引き分け
+EN Time-Up Draw
+
+@ 2ND:06092620
+# code near 06092988
+# px=49 (original width)
+JP ＷＩＮＮＥＲ
+EN ＷＩＮＮＥＲ
+
+@ 2ND:06092630
+# code near 06092990
+# px=53 (original width)
+JP ＬＯＳＥＲＳ
+EN ＬＯＳＥＲＳ
+
+@ 2ND:06092DE4
+# table 060BEC60
+# px=34 (original width)
+JP Ｐｏｉｎｔ
+EN Ｐｏｉｎｔ
+
+@ 2ND:06092DF0
+# px=61 (original width)
+JP ＮｏｗＰｏｉｎｔ
+EN Ｐｏｉｎｔｓ
+
+@ 2ND:06092E04
+# px=50 (original width)
+JP 両者Ｋ．Ｏ．
+EN Dbl. K.O.
+
+@ 2ND:06092E14
+# px=72 (original width)
+JP 両者リングアウト
+EN Dbl. Ring Out
+
+@ 2ND:06092E28
+# px=46 (original width)
+JP 反則勝ち
+EN DQ Win
+
+@ 2ND:06092E34
+# px=70 (original width)
+JP リングアウト勝ち
+EN Ring Out Win
+
+@ 2ND:06092E48
+# px=48 (original width)
+JP Ｋ．Ｏ．勝ち
+EN K.O. Win
+
+@ 2ND:06092E58
+# code near 06093634
+# px=260 (original width)
+JP 闘いの記録を正しく保存することができませんでした。
+EN Couldn't save the match record.
+
+@ 2ND:06092E8C
+# code near 06093838
+# px=228 (original width)
+JP 記録を正しく保存することができませんでした。
+EN Couldn't save the record.
+
+@ 2ND:06093C24
+# code near 06093CE0
+# px=52 (original width)
+JP ６０分超過
+EN 60+ Min
+
+@ 2ND:06093C30
+# code near 06093CF0
+# px=12 (original width)
+JP 分
+EN min
+
+@ 2ND:06093C34
+# code near 06093CF4
+# px=12 (original width)
+JP 秒
+EN sec
+
+@ 2ND:060946DC
+# table 060BED58
+# px=48 (original width)
+JP ﾄｰﾅﾒﾝﾄ
+EN Tourney
+
+@ 2ND:060946E4
+# px=24 (original width)
+JP 試合
+EN Match
+
+@ 2ND:060946EC
+# px=53 (original width)
+JP ﾁｰﾑＥＤＩＴ
+EN Team Edit
+
+@ 2ND:060946F8
+# px=56 (original width)
+JP 勝ち抜き戦
+EN Elimination
+
+@ 2ND:06094704
+# px=56 (original width)
+JP 総当たり戦
+EN League
+
+@ 2ND:06094710
+# px=102 (original width)
+JP 総当たり戦（綱引き）
+EN League (Tug-of-War)
+
+@ 2ND:06094728
+# px=32 (original width)
+JP ﾉｰﾏﾙ
+EN Normal
+
+@ 2ND:06094730
+# px=40 (original width)
+JP ｴﾝﾄﾞﾚｽ
+EN Endless
+
+@ 2ND:06094738
+# px=80 (original width)
+JP ｵｰﾊﾞｰ・ｻﾞ・ﾛｰﾌﾟ
+EN Over the Top
+
+@ 2ND:06094748
+# px=35 (original width)
+JP ＥＡＳＹ
+EN Ｅａｓｙ
+
+@ 2ND:06094754
+# px=56 (original width)
+JP ＮＯＲＭＡＬ
+EN Ｎｏｒｍａｌ
+
+@ 2ND:06094764
+# px=36 (original width)
+JP ＨＡＲＤ
+EN Ｈａｒｄ
+
+@ 2ND:06094770
+# px=56 (original width)
+JP タイトルマッチ
+EN Title Match
+
+@ 2ND:06094780
+# px=72 (original width)
+JP 歴代王者紹介
+EN Past Champs
+
+@ 2ND:06094790
+# px=56 (original width)
+JP タイトル返上
+EN Vacate Title
+
+@ 2ND:060947A0
+# px=58 (original width)
+JP ２Ｐｌａｙｅｒｓ
+EN ２ Ｐｌａｙｅｒｓ
+
+@ 2ND:060947B4
+# px=58 (original width)
+JP ３Ｐｌａｙｅｒｓ
+EN ３ Ｐｌａｙｅｒｓ
+
+@ 2ND:060947C8
+# px=58 (original width)
+JP ４Ｐｌａｙｅｒｓ
+EN ４ Ｐｌａｙｅｒｓ
+
+@ 2ND:060947DC
+# px=58 (original width)
+JP ５Ｐｌａｙｅｒｓ
+EN ５ Ｐｌａｙｅｒｓ
+
+@ 2ND:060947F0
+# px=58 (original width)
+JP ６Ｐｌａｙｅｒｓ
+EN ６ Ｐｌａｙｅｒｓ
+
+@ 2ND:06094804
+# px=60 (original width)
+JP 日本武闘館
+EN Butokan
+
+@ 2ND:06094810
+# px=92 (original width)
+JP ＨＵＭＡＮ ＤＯＭＥ
+EN ＨＵＭＡＮ ＤＯＭＥ
+
+@ 2ND:06094824
+# px=60 (original width)
+JP 遊楽園ホール
+EN Yurakuen Hall
+
+@ 2ND:06094834
+# px=84 (original width)
+JP 村川町民体育館
+EN Murakawa Gym
+
+@ 2ND:06094B6C
+# table 060BF91C
+# px=24 (original width)
+JP ﾌﾘｰ
+EN Free
+
+@ 2ND:06094B70
+# px=68 (original width)
+JP ｼﾞｭﾆｱﾍﾋﾞｰ級
+EN Jr. Heavy
+
+@ 2ND:06094B7C
+# px=36 (original width)
+JP ﾍﾋﾞｰ級
+EN Heavy
+
+@ 2ND:06094B84
+# table 060BF9B0
+# px=56 (original width)
+JP ｻﾌﾞﾐｯｼｮﾝ
+EN Submission
+
+@ 2ND:06094B90
+# px=24 (original width)
+JP 打撃
+EN Strike
+
+@ 2ND:06094B98
+# px=40 (original width)
+JP ﾃｸﾆｶﾙ
+EN Tech.
+
+@ 2ND:06094BA0
+# px=24 (original width)
+JP ﾊﾟﾜｰ
+EN Power
+
+@ 2ND:06094BA8
+# px=56 (original width)
+JP ｽｰﾌﾟﾚｯｸｽ
+EN Suplex
+
+@ 2ND:06094BB4
+# px=24 (original width)
+JP 必殺
+EN Special
+
+@ 2ND:06094BBC
+# px=22 (original width)
+JP 速い
+EN Fast
+
+@ 2ND:06094BC4
+# px=24 (original width)
+JP 普通
+EN Avg.
+
+@ 2ND:06094BCC
+# px=22 (original width)
+JP 遅い
+EN Slow
+
+@ 2ND:06094BD4
+# px=34 (original width)
+JP 上手い
+EN Good
+
+@ 2ND:06094BDC
+# px=24 (original width)
+JP 下手
+EN Poor
+
+@ 2ND:06094BE4
+# px=22 (original width)
+JP 強い
+EN Strong
+
+@ 2ND:06094BEC
+# px=22 (original width)
+JP 弱い
+EN Weak
+
+@ 2ND:06094BF4
+# px=22 (original width)
+JP 高い
+EN High
+
+@ 2ND:06094BFC
+# px=22 (original width)
+JP 低い
+EN Low
+
+@ 2ND:06094C04
+# px=42 (original width)
+JP やや速い
+EN Fastish
+
+@ 2ND:06094C10
+# px=42 (original width)
+JP やや遅い
+EN Slowish
+
+@ 2ND:06094C1C
+# px=44 (original width)
+JP 駆け登り
+EN Run Up
+
+@ 2ND:06094C28
+# px=32 (original width)
+JP 登れる
+EN Climbs
+
+@ 2ND:06094C30
+# px=42 (original width)
+JP 登れない
+EN No Climb
+
+@ 2ND:06094C40
+# table 060BFB14
+# px=12 (original width)
+JP 日
+EN  
+
+@ 2ND:06094C44
+# px=12 (original width)
+# blank: the profile shows year, month and day on their own labelled rows
+JP 月
+EN  
+
+@ 2ND:06094C48
+# px=12 (original width)
+# blank: the profile shows year, month and day on their own labelled rows
+JP 年
+EN  
+
+@ 2ND:06094C4C
+# px=15 (original width)
+JP ｋｇ
+EN ｋｇ
+
+@ 2ND:06094C54
+# px=18 (original width)
+JP ｃｍ
+EN ｃｍ
+
+@ 2ND:0609560C
+# code near 060958F4
+# px=8 (original width)
+JP ／
+EN /
+
+@ 2ND:06095610
+# code near 06095900
+# px=88 (original width)
+JP 次に必要なﾎﾟｲﾝﾄ
+EN Pts to Next
+
+@ 2ND:06095938
+# code near 06095EEC
+# px=88 (original width)
+JP タイトル 歴代王者
+EN  Title History
+
+@ 2ND:0609594C
+# code near 06095EF8
+# px=72 (original width)
+JP 初代チャンピオン
+EN #1 Champion
+
+@ 2ND:06095960
+# code near 06095F04
+# px=60 (original width)
+JP 代チャンピオン
+EN  Champion
+
+@ 2ND:06095970
+# code near 06095F00
+# px=12 (original width)
+JP 第
+EN #
+
+@ 2ND:06095974
+# code near 06095F0C
+# px=48 (original width)
+JP ？？？？？？
+EN ??????
+
+@ 2ND:06095984
+# code near 0609612C
+# px=52 (original width)
+JP プレイヤー名
+EN Player
+
+@ 2ND:06095994
+# code near 06096138
+# px=124 (original width)
+JP タイトル獲得年月日    
+EN Date Won    
+
+@ 2ND:060959AC
+# code near 0609613C
+# px=3 (original width)
+JP ．
+EN .
+
+@ 2ND:060959B0
+# table 06096148
+# px=48 (original width)
+JP 防衛回数
+EN Defenses
+
+@ 2ND:060959BC
+# px=12 (original width)
+JP 回
+EN x
+
+@ 2ND:060959C0
+# px=8 (original width)
+JP ・{n}・{n}・{n}
+EN .{n}.{n}.{n}
+
+@ 2ND:060964D4
+# code near 060965C0
+# px=270 (original width)
+JP タイトルの記録を正しく保存することができませんでした。
+EN Couldn't save the title record.
+
+@ 2ND:060965F0
+# table 060C00D4
+# px=104 (original width)
+JP グルーサム・ファイティング
+EN Gruesome Fighting
+
+@ 2ND:06096610
+# px=96 (original width)
+JP デスマッチ・トーナメント
+EN Death Match Tourney
+
+@ 2ND:06096630
+# px=96 (original width)
+JP ワンナイト・トーナメント
+EN Tournament
+
+@ 2ND:06097CBC
+# code near 06097EEC
+# px=154 (original width)
+JP ３人以上エントリーされていません
+EN Need at least 3 entries.
+
+@ 2ND:06097CE0
+# layout: as wide as the Japanese (+27 px as drawn); YES / NO in the last 66 px, under the cursor boxes, which sit where the Japanese words were
+# code near 06097F14
+# px=215 (original width)
+JP レスラーエントリーを終了しますか？ ＹＥＳ／ＮＯ
+EN End wrestler entry?{x31,}YES/{x3,}NO{x10,}
+
+@ 2ND:060980B4
+# table 060C0118
+# px=24 (original width)
+JP 終了
+EN Exit
+
+@ 2ND:060980BC
+# px=35 (original width)
+JP ＳＡＶＥ
+EN Ｓａｖｅ
+
+@ 2ND:060980C8
+# px=24 (original width)
+JP 試合
+EN Match
+
+@ 2ND:060980D4
+# code near 060982B4
+# px=72 (original width)
+JP レスラーエントリー
+EN Wrestler Entry
+
+@ 2ND:060988BC
+# table 060C0F30
+# px=10 (original width)
+JP Ｃ
+EN Ｃ
+
+@ 2ND:060988C0
+# px=8 (original width)
+JP Ｂ
+EN Ｂ
+
+@ 2ND:060988C4
+# px=10 (original width)
+JP Ａ
+EN Ａ
+
+@ 2ND:06098E64
+# table 060C1050
+# px=176 (original width)
+JP 既にこのタイトルは獲得されています。{n}
+EN You already hold this title.{n}
+
+@ 2ND:06098E8C
+# px=216 (original width)
+JP 再び挑戦したい場合は「タイトルマッチ」モードで{n}
+EN To challenge again, vacate{n}
+
+@ 2ND:06098EBC
+# px=154 (original width)
+JP このタイトルを返上してください。{n}
+EN it in Title Match mode.{n}
+
+@ 2ND:06098EE4
+# code near 060990C4
+# px=58 (original width)
+JP 現在の記録
+EN Record
+
+@ 2ND:06098EF0
+# code near 060991AC
+# layout: as wide as the Japanese (the box is sized and centred from it), YES / NO under the cursor boxes at the Japanese positions (x 222-251, 260-281)
+# px=227 (original width)
+JP ベルトを返上してもよろしいですか？ ＹＥＳ／ＮＯ
+EN Vacate the belt?{x67,}YES/{x3,}NO{x10,}
+
+@ 2ND:06098F20
+# code near 06099310
+# px=110 (original width)
+JP Ｌｏａｄ  ＮｅｗＧａｍｅ
+EN Ｌｏａｄ  Ｎｅｗ Ｇａｍｅ
+
+@ 2ND:060996FC
+# table 06099A5C
+# px=12 (original width)
+JP ＆
+EN &
+
+@ 2ND:06099700
+# px=48 (original width)
+JP チャンピオン
+EN Champion
+
+@ 2ND:06099710
+# px=12 (original width)
+JP 第
+EN #
+
+@ 2ND:06099714
+# px=24 (original width)
+JP 試合
+EN Match
+
+@ 2ND:0609971C
+# code near 06099A70
+# px=36 (original width)
+JP 未消化
+EN Pending
+
+@ 2ND:06099724
+# table 060C1098
+# px=57 (original width)
+JP Ｎｏ Ｄａｔａ
+EN Ｎｏ Ｄａｔａ
+
+@ 2ND:06099734
+# px=74 (original width)
+JP Ｄｏｎ’ｔ Ｌｏａｄ
+EN Don't Load
+
+@ 2ND:06099748
+# px=24 (original width)
+JP 空位
+EN Vacant
+
+@ 2ND:0609BD70
+# code near 0609C8DC
+# px=17 (original width)
+JP ＶＳ
+EN ＶＳ
+
+@ 2ND:0609D044
+# code near 0609D3A0
+# px=56 (original width)
+JP 団体セレクト
+EN Promotion
+
+@ 2ND:0609D054
+# code near 0609D3E0
+# px=52 (original width)
+JP 難易度  
+EN Difficulty
+
+@ 2ND:060A7924
+# table 060C3A88
+# px=3 (original width)
+JP ．
+EN .
+
+@ 2ND:060A7928
+# px=15 (original width)
+JP ｋｇ
+EN ｋｇ
+
+@ 2ND:060A7930
+# px=18 (original width)
+JP ｃｍ
+EN ｃｍ
+
+@ 2ND:060A8F50
+# code near 060A911C
+# px=64 (original width)
+JP レスラーセレクト
+EN Wrestler Select
+
+@ 2ND:060A94D4
+# code near 060A9880
+# px=118 (original width)
+JP {p0,0,}{s3}{n}　０．ＤａｔａＢａｓｅＴｅｓｔ{n}
+EN {p0,0,}{s3}{n}  ０． Ｄａｔａｂａｓｅ Ｔｅｓｔ{n}
+
+@ 2ND:060A94FC
+# table 060A9888
+# px=127 (original width)
+JP 　１．ＷａｚａＮａｍｅＩｎｐｕｔ{n}
+EN   １． Ｍｏｖｅ Ｎａｍｅ Ｉｎｐｕｔ{n}
+
+@ 2ND:060A9520
+# px=111 (original width)
+JP 　２．ＬｏｇｉｃＤａｔａＴｒｎ{n}
+EN   ２． Ｌｏｇｉｃ Ｄａｔａ Ｔｒｎ{n}
+
+@ 2ND:060A9540
+# px=89 (original width)
+JP 　３．ＣｏｌｏｒＴｅｓｔ{n}
+EN   ３． Ｃｏｌｏｒ Ｔｅｓｔ{n}
+
+@ 2ND:060A955C
+# px=115 (original width)
+JP 　４．Ｍａｔｃｈ Ｒｍｏｄｅ{n}
+EN   ４． Ｍａｔｃｈ Ｒ Ｍｏｄｅ{n}
+
+@ 2ND:060A957C
+# px=114 (original width)
+JP 　５．Ｍａｔｃｈ Ｖｍｏｄｅ{n}
+EN   ５． Ｍａｔｃｈ Ｖ Ｍｏｄｅ{n}
+
+@ 2ND:060A959C
+# px=123 (original width)
+JP 　６．０～６３人まで コピー{n}
+EN   6. Copy Wrestlers 0-63{n}
+
+@ 2ND:060A95BC
+# px=139 (original width)
+JP 　７．６４～１２７人まで コピー{n}
+EN   7. Copy Wrestlers 64-127{n}
+
+@ 2ND:060A95E0
+# px=147 (original width)
+JP 　８．１２８～１５９人まで コピー{n}
+EN   8. Copy Wrestlers 128-159{n}
+
+@ 2ND:060A9604
+# px=151 (original width)
+JP 　９．ＧａｍｅＣｌｒＦｌｇＯＮ／ＯＦＦ{n}
+EN   ９． ＧａｍｅＣｌｒＦｌｇ ＯＮ／ＯＦＦ{n}
+
+@ 2ND:060A962C
+# px=116 (original width)
+JP 　{y8,}ＩｎｐｕｔＮｕｍｂｅｒ ： 
+EN   {y8,}Ｉｎｐｕｔ Ｎｕｍｂｅｒ ： 
+
+@ 2ND:060A964C
+# px=8 (original width)
+JP ０
+EN 0
+
+@ 2ND:060A9A48
+# code near 060A9CA8
+# px=123 (original width)
+JP {p8,8,}{s3}　ＤａｔａＢａｓｅ　ｖ２．８３{s1}
+EN {p8,8,}{s3}  Ｄａｔａｂａｓｅ  ｖ２．８３{s1}
+
+@ 2ND:060A9A70
+# table 060A9CB0
+# px=173 (original width)
+JP {p08,32,}団体数：　　　いま：　　　団体名：{n}所属人数：　　　いま：{n}フルネーム{t}：{n}
+EN {p08,32,}Promos:   Now:    Name:{n}Members:   Now:{n}Full Name{t}:{n}
+
+@ 2ND:060A9AC0
+# px=119 (original width)
+JP ショートネーム：{t}{t}　　　Ｄｏｔ{n}ロングネーム{t}：{t}{t}　　　Ｄｏｔ{n}ニックネーム{t}：{t}{t}　　　Ｄｏｔ{n}
+EN Short Name:{t}{t}      Dot{n}Long Name{t}:{t}{t}      Dot{n}Nickname{t}:{t}{t}      Dot{n}
+
+@ 2ND:060A9B1C
+# px=123 (original width)
+JP 身長：{x27,}ｃｍ　　体重：{x27,}ｋｇ{n}生年月日：{x36,}，{x18,}，{x36,}出身地：{p44,206,}：{x224,}Ｄｏｔ{p52,32,}
+EN Ht.:{x27,}cm    Wt.:{x27,}kg{n}Born:  {x36,},{x18,},{x36,}From:{p44,206,}:{x224,}Dot{p52,32,}
+
+@ 2ND:060A9B80
+# table 060AA104
+# px=24 (original width)
+JP ？？？
+EN ???
+
+@ 2ND:060A9B88
+# px=32 (original width)
+JP ？？？？
+EN ????
+
+@ 2ND:060A9B94
+# px=16 (original width)
+JP ？？
+EN ??
+
+@ 2ND:060AA820
+# code near 060AA92C
+# px=36 (original width)
+JP チーム名
+EN Team
+
+@ 2ND:060AA948
+# code near 060AAA50
+# px=36 (original width)
+JP 大会名
+EN Name
+
+@ 2ND:060AAA6C
+# code near 060AAB74
+# px=36 (original width)
+JP 記録名
+EN Record
+
+@ 2ND:060AAB90
+# code near 060AAD24
+# px=48 (original width)
+JP 必殺技名
+EN Finisher
+
+@ 2ND:060AAD40
+# code near 060AAF50
+# px=42 (original width)
+JP 入替え {x22,}
+EN Swap {x22,}
+
+@ 2ND:060AAD4C
+# table 060AAF5C
+# px=36 (original width)
+JP ＿＿＿
+EN ___
+
+@ 2ND:060AAD54
+# px=40 (original width)
+JP 中間  
+EN Join  
+
+@ 2ND:060AAD5C
+# px=12 (original width)
+JP ＿
+EN _
+
+@ 2ND:060AB588
+# code near 060AB5D8
+# px=16 (original width)
+JP ｏｎ
+EN ｏｎ
+
+@ 2ND:060AB590
+# code near 060AB5E0
+# px=20 (original width)
+JP ｏｆｆ
+EN ｏｆｆ
+
+@ 2ND:060AB5EC
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# table 060C3E5C
+# px=8 (original width)
+JP ＝
+EN ＝
+
+@ 2ND:060AB5F0
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# px=8 (original width)
+JP ・
+EN ・
+
+@ 2ND:060AB5F4
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# px=8 (original width)
+JP □
+EN □
+
+@ 2ND:060AB628
+# code near 060AB814
+# px=56 (original width)
+JP {s3}－ 終了 －{s1}
+EN {s3}- End -{s1}
+
+@ 2ND:060AC360
+# code near 060AC56C
+# px=64 (original width)
+JP 団体フルネーム
+EN Promo Name
+
+@ 2ND:060AC370
+# code near 060AC578
+# px=80 (original width)
+JP 団体ショートネーム
+EN Promo Abbr.
+
+@ 2ND:060ADE88
+# code near 060AE0BC
+# px=36 (original width)
+JP {p246,16,}{x6,}戻る{n}{x6,}かな{n}{x6,}漢字{n}前項目{n}次項目{n}{x6,}終了{n}
+EN {p246,16,}{x6,}Back{n}{x6,}Kana{n}{x6,}Kanji{n}Prev{n}Next{n}{x6,}Done{n}
+
+@ 2ND:060AE96C
+# table 060C42E8
+# px=32 (original width)
+JP デリート
+EN Delete
+
+@ 2ND:060AE978
+# px=24 (original width)
+JP セーブ
+EN Save
+
+@ 2ND:060AE980
+# px=24 (original width)
+JP ロード
+EN Load
+
+@ 2ND:060AE988
+# px=24 (original width)
+JP 終了
+EN Exit
+
+@ 2ND:060AF49C
+# code near 060AF6F8
+# px=113 (original width)
+JP 標準（本体ＲＡＭ）{n}拡張（カートリッジＲＡＭ）
+EN Standard (System Memory){n}Extended (Cartridge RAM)
+
+@ 2ND:060AF4CC
+# code near 060AF704
+# px=113 (original width)
+JP 標準（カートリッジＲＡＭ）{n}拡張（カートリッジＲＡＭ）
+EN Standard (Cartridge RAM){n}Extended (Cartridge RAM)
+
+@ 2ND:060AF504
+# code near 060AF720
+# px=206 (original width)
+JP 拡張エディットレスラーの記録を保存するには{n}{s3}４９８ {s1}の空き容量が必要です。       
+EN Saving extra edit wrestlers{n}needs {s3}498 {s1}free blocks.
+
+@ 2ND:060AF8F0
+# code near 060AF9BC
+# px=49 (original width)
+JP ＮｏＤａｔａ
+EN Ｎｏ Ｄａｔａ
+
+@ 2ND:060AF9C0
+# code near 060AFB64
+# px=82 (original width)
+JP 上書きしますか？{n}{y4,}{x10,}Ｙｅｓ{x4,}／{x4,}Ｎｏ{x16,}
+EN Overwrite?{n}{y4,}{x10,}Yes{x4,}/{x4,}No{x16,}
+
+@ 2ND:060AF9F0
+# code near 060AFC50
+# px=298 (original width)
+JP ビクトリーロード参戦中は、クリアしないとレスラーを変更できません
+EN Can't change wrestlers mid-Victory Road.
+
+@ 2ND:060AFC6C
+# code near 060AFF34
+# px=174 (original width)
+JP 以上の各モードの記録も消えますが、{n}よろしいですか？{x30,}Ｙｅｓ{x4,}／{x4,}Ｎｏ
+EN Their records will go too.{n}Is that OK?{x30,}Yes{x4,}/{x4,}No
+
+@ 2ND:060AFCB8
+# table 060AFF44
+# px=64 (original width)
+JP ビクトリーロード{n}
+EN Victory Road{n}
+
+@ 2ND:060AFCCC
+# px=56 (original width)
+JP オープンリーグ{n}
+EN Open League{n}
+
+@ 2ND:060AFCDC
+# px=48 (original width)
+JP トーナメント{n}
+EN Tournament{n}
+
+@ 2ND:060AFCEC
+# px=125 (original width)
+JP イリミネーション・ＥＤＩＴチーム{n}
+EN Elimination Edit Team{n}
+
+@ 2ND:060AFD10
+# px=96 (original width)
+JP デスマッチ・トーナメント{n}
+EN Death Match Tourney{n}
+
+@ 2ND:060AFD2C
+# px=152 (original width)
+JP グルーサムファイティング・トーナメント{n}
+EN Gruesome Fighting Tourney{n}
+
+@ 2ND:060B0060
+# code near 060B018C
+# px=228 (original width)
+JP {n}記録を正しく保存することができませんでした。{n}もう一度やり直して下さい。
+EN {n}Couldn't save the record.{n}Please try again.
+
+@ 2ND:060B01B8
+# code near 060B0424
+# px=34 (original width)
+JP －－－％
+EN ---%
+
+@ 2ND:060B01C4
+# code near 060B060C
+# px=48 (original width)
+JP 装備技名
+EN Move Set
+
+@ 2ND:060B01D0
+# code near 060B0634
+# px=34 (original width)
+JP １００％
+EN 100%
+
+@ 2ND:060B1594
+# table 060C4310
+# px=36 (original width)
+JP 協調性
+EN Teamwork
+
+@ 2ND:060B159C
+# px=36 (original width)
+JP 柔軟性
+EN Flexibility
+
+@ 2ND:060B15A4
+# px=36 (original width)
+JP 慎重度
+EN Caution
+
+@ 2ND:060B15AC
+# px=52 (original width)
+JP こだわり度
+EN Fixation
+
+@ 2ND:060B15B8
+# px=168 (original width)
+JP パフォーマンス（自分がポスト上にいる）
+EN Taunt (Self on Post)
+
+@ 2ND:060B15E0
+# px=156 (original width)
+JP パフォーマンス（相手が場外にいる）
+EN Taunt (Foe Outside)
+
+@ 2ND:060B1604
+# px=138 (original width)
+JP パフォーマンス（相手がダウン中）
+EN Taunt (Foe Down)
+
+@ 2ND:060B1628
+# px=158 (original width)
+JP パフォーマンス（相手がフラフラ状態）
+EN Taunt (Foe Groggy)
+
+@ 2ND:060B1650
+# px=88 (original width)
+JP 相手が場外にいる
+EN Foe Outside
+
+@ 2ND:060B1664
+# px=110 (original width)
+JP 自分がバックを取られて
+EN Grabbed from Behind
+
+@ 2ND:060B167C
+# px=216 (original width)
+JP 相手がコーナー付近でダウン（相手が瀕死の時）
+EN Foe Down by Corner (Near KO)
+
+@ 2ND:060B16AC
+# px=214 (original width)
+JP 相手がコーナー付近でダウン（相手のダメージ大）
+EN Foe Down by Corner (Big Dmg)
+
+@ 2ND:060B16DC
+# px=190 (original width)
+JP 相手のバックを取って（相手のダメージ大）
+EN Behind Foe (Big Dmg)
+
+@ 2ND:060B1708
+# px=190 (original width)
+JP 相手のバックを取って（相手のダメージ小）
+EN Behind Foe (Small Dmg)
+
+@ 2ND:060B1734
+# px=226 (original width)
+JP 相手がコーナーにもたれている（相手のダメージ大）
+EN Foe in Corner (Big Dmg)
+
+@ 2ND:060B1768
+# px=226 (original width)
+JP 相手がコーナーにもたれている（相手のダメージ小）
+EN Foe in Corner (Small Dmg)
+
+@ 2ND:060B179C
+# px=190 (original width)
+JP 相手をロープに振って（相手のダメージ大）
+EN Foe Whipped (Big Dmg)
+
+@ 2ND:060B17C8
+# px=190 (original width)
+JP 相手をロープに振って（相手のダメージ小）
+EN Foe Whipped (Small Dmg)
+
+@ 2ND:060B17F4
+# px=182 (original width)
+JP 相手がフラフラ状態（相手が瀕死の時）
+EN Foe Groggy (Near KO)
+
+@ 2ND:060B181C
+# px=180 (original width)
+JP 相手がフラフラ状態（相手のダメージ大）
+EN Foe Groggy (Big Dmg)
+
+@ 2ND:060B1844
+# px=180 (original width)
+JP 相手がフラフラ状態（相手のダメージ小）
+EN Foe Groggy (Small Dmg)
+
+@ 2ND:060B186C
+# px=192 (original width)
+JP 相手がうつ伏せダウン（相手が瀕死の時）
+EN Foe Face-Down (Near KO)
+
+@ 2ND:060B1894
+# px=190 (original width)
+JP 相手がうつ伏せダウン（相手のダメージ大）
+EN Foe Face-Down (Big Dmg)
+
+@ 2ND:060B18C0
+# px=190 (original width)
+JP 相手がうつ伏せダウン（相手のダメージ小）
+EN Foe Face-Down (Small Dmg)
+
+@ 2ND:060B18EC
+# px=184 (original width)
+JP 相手が仰向けダウン（相手が瀕死の時）
+EN Foe Face-Up (Near KO)
+
+@ 2ND:060B1914
+# px=182 (original width)
+JP 相手が仰向けダウン（相手のダメージ大）
+EN Foe Face-Up (Big Dmg)
+
+@ 2ND:060B193C
+# px=182 (original width)
+JP 相手が仰向けダウン（相手のダメージ小）
+EN Foe Face-Up (Small Dmg)
+
+@ 2ND:060B1964
+# px=156 (original width)
+JP 相手と組んで（相手のダメージ大）
+EN Grappling (Big Dmg)
+
+@ 2ND:060B1988
+# px=156 (original width)
+JP 相手と組んで（相手のダメージ中）
+EN Grappling (Mid Dmg)
+
+@ 2ND:060B19AC
+# px=156 (original width)
+JP 相手と組んで（相手のダメージ小）
+EN Grappling (Small Dmg)
+
+@ 2ND:060B19D0
+# px=156 (original width)
+JP 相手と離れて（相手のダメージ大）
+EN Apart (Big Dmg)
+
+@ 2ND:060B19F4
+# px=156 (original width)
+JP 相手と離れて（相手のダメージ小）
+EN Apart (Small Dmg)
+
+@ 2ND:060B1A18
+# px=56 (original width)
+JP {s3}－ 終了 －{s1}
+EN {s3}- End -{s1}
+
+@ 2ND:060B1A28
+# px=20 (original width)
+JP ない
+EN No
+
+@ 2ND:060B1A30
+# px=20 (original width)
+JP ある
+EN Yes
+
+@ 2ND:060B1A38
+# px=30 (original width)
+JP しない
+EN Never
+
+@ 2ND:060B1A40
+# px=9 (original width)
+JP Ｒ
+EN Ｒ
+
+@ 2ND:060B1A44
+# px=7 (original width)
+JP Ｌ
+EN Ｌ
+
+@ 2ND:060B1A48
+# px=52 (original width)
+JP 何もしない
+EN Wait
+
+@ 2ND:060B1A54
+# px=56 (original width)
+JP 走って場外
+EN Run Out
+
+@ 2ND:060B1A60
+# px=56 (original width)
+JP エプロン場外
+EN To Apron
+
+@ 2ND:060B1A70
+# px=66 (original width)
+JP 場外に降りる
+EN Step Out
+
+@ 2ND:060B1A80
+# px=56 (original width)
+JP エプロン場内
+EN Apron In
+
+@ 2ND:060B1A90
+# px=58 (original width)
+JP 登ってＡ＋Ｂ
+EN Climb AB
+
+@ 2ND:060B1AA0
+# px=42 (original width)
+JP 登ってＣ
+EN Climb C
+
+@ 2ND:060B1AAC
+# px=40 (original width)
+JP 登ってＢ
+EN Climb B
+
+@ 2ND:060B1AB8
+# px=42 (original width)
+JP 登ってＡ
+EN Climb A
+
+@ 2ND:060B1AC4
+# px=42 (original width)
+JP 登らない
+EN No Climb
+
+@ 2ND:060B1AD0
+# px=32 (original width)
+JP バックＸ
+EN Back X
+
+@ 2ND:060B1ADC
+# px=50 (original width)
+JP バックＡ＋Ｂ
+EN Back A+B
+
+@ 2ND:060B1AEC
+# px=58 (original width)
+JP バックＣ左右
+EN Back C↔
+
+@ 2ND:060B1AFC
+# px=58 (original width)
+JP バックＣ上下
+EN Back C↕
+
+@ 2ND:060B1B0C
+# px=34 (original width)
+JP バックＣ
+EN Back C
+
+@ 2ND:060B1B18
+# px=32 (original width)
+JP バックＢ
+EN Back B
+
+@ 2ND:060B1B24
+# px=34 (original width)
+JP バックＡ
+EN Back A
+
+@ 2ND:060B1B30
+# px=44 (original width)
+JP 組みＣ下
+EN Grab C↓
+
+@ 2ND:060B1B3C
+# px=44 (original width)
+JP 組みＣ横
+EN Grab C↔
+
+@ 2ND:060B1B48
+# px=44 (original width)
+JP 組みＣ上
+EN Grab C↑
+
+@ 2ND:060B1B54
+# px=32 (original width)
+JP 走りＣ
+EN Run C
+
+@ 2ND:060B1B5C
+# px=48 (original width)
+JP カウンターＹ
+EN Ctr Y
+
+@ 2ND:060B1B6C
+# px=48 (original width)
+JP カウンターＢ
+EN Ctr B
+
+@ 2ND:060B1B7C
+# px=50 (original width)
+JP カウンターＡ
+EN Ctr A
+
+@ 2ND:060B1B8C
+# px=30 (original width)
+JP 走りＢ
+EN Run B
+
+@ 2ND:060B1B94
+# px=32 (original width)
+JP 走りＡ
+EN Run A
+
+@ 2ND:060B1B9C
+# px=58 (original width)
+JP 離れてＡ＋Ｂ
+EN Apart AB
+
+@ 2ND:060B1BAC
+# px=42 (original width)
+JP 離れてＣ
+EN Apart C
+
+@ 2ND:060B1BB8
+# px=56 (original width)
+JP バックを取る
+EN Behind
+
+@ 2ND:060B1BC8
+# px=44 (original width)
+JP 仰向けに
+EN Flip Over
+
+@ 2ND:060B1BD4
+# px=22 (original width)
+JP 脚Ｃ
+EN Leg C
+
+@ 2ND:060B1BDC
+# px=22 (original width)
+JP 頭Ｃ
+EN Head C
+
+@ 2ND:060B1BE4
+# px=20 (original width)
+JP 脚Ｂ
+EN Leg B
+
+@ 2ND:060B1BEC
+# px=20 (original width)
+JP 頭Ｂ
+EN Head B
+
+@ 2ND:060B1BF4
+# px=52 (original width)
+JP うつ伏せに
+EN Flip Over
+
+@ 2ND:060B1C00
+# px=32 (original width)
+JP 起こす
+EN Lift Up
+
+@ 2ND:060B1C08
+# px=8 (original width)
+JP Ｚ
+EN Ｚ
+
+@ 2ND:060B1C0C
+# px=8 (original width)
+JP Ｘ
+EN Ｘ
+
+@ 2ND:060B1C10
+# px=22 (original width)
+JP Ｃ下
+EN C↓
+
+@ 2ND:060B1C18
+# px=34 (original width)
+JP Ｃ左右
+EN C↔
+
+@ 2ND:060B1C20
+# px=22 (original width)
+JP Ｃ上
+EN C↑
+
+@ 2ND:060B1C28
+# px=20 (original width)
+JP Ｂ下
+EN B↓
+
+@ 2ND:060B1C30
+# px=32 (original width)
+JP Ｂ左右
+EN B↔
+
+@ 2ND:060B1C38
+# px=20 (original width)
+JP Ｂ上
+EN B↑
+
+@ 2ND:060B1C40
+# px=22 (original width)
+JP Ａ下
+EN A↓
+
+@ 2ND:060B1C48
+# px=34 (original width)
+JP Ａ左右
+EN A↔
+
+@ 2ND:060B1C50
+# px=22 (original width)
+JP Ａ上
+EN A↑
+
+@ 2ND:060B1C58
+# px=26 (original width)
+JP Ａ＋Ｂ
+EN Ａ＋Ｂ
+
+@ 2ND:060B1C60
+# px=10 (original width)
+JP Ｃ
+EN Ｃ
+
+@ 2ND:060B1C64
+# px=8 (original width)
+JP Ｂ
+EN Ｂ
+
+@ 2ND:060B1C68
+# px=10 (original width)
+JP Ａ
+EN Ａ
+
+@ 2ND:060B1C6C
+# px=44 (original width)
+JP 回り込む
+EN Circle
+
+@ 2ND:060B1C78
+# px=66 (original width)
+JP 間合いを取る
+EN Back Off
+
+@ 2ND:060B1C88
+# px=54 (original width)
+JP 組みに行く
+EN Lock Up
+
+@ 2ND:060B1C94
+# table 060C45C4
+# px=56 (original width)
+JP スライディング
+EN Slide
+
+@ 2ND:060B1CA4
+# px=42 (original width)
+JP 使わない
+EN None
+
+@ 2ND:060B1CB0
+# px=56 (original width)
+JP リープフロッグ
+EN Leapfrog
+
+@ 2ND:060B1CC0
+# px=52 (original width)
+JP 伏せかわし
+EN Duck
+
+@ 2ND:060B1CCC
+# px=172 (original width)
+JP フロントヘッドロック ～ ボディニーリフト
+EN Headlock-Knee Lift
+
+@ 2ND:060B1CF8
+# px=172 (original width)
+JP フロントヘッドロック ～ エルボースタンプ
+EN Headlock-Elbow Stamp
+
+@ 2ND:060B1D24
+# px=56 (original width)
+JP ハンマースルー
+EN Irish Whip
+
+@ 2ND:060B1D34
+# table 060C499C
+# px=36 (original width)
+JP 古武道
+EN Kobudo
+
+@ 2ND:060B1D3C
+# px=24 (original width)
+JP 骨法
+EN Koppo
+
+@ 2ND:060B1D44
+# px=48 (original width)
+JP ミステリアス
+EN Mysterious
+
+@ 2ND:060B1D54
+# px=56 (original width)
+JP シューティング
+EN Shooter
+
+@ 2ND:060B1D64
+# px=24 (original width)
+JP ルチャ
+EN Lucha
+
+@ 2ND:060B1D6C
+# px=24 (original width)
+JP パワー
+EN Power
+
+@ 2ND:060B1D74
+# px=32 (original width)
+JP アマレス
+EN Amateur
+
+@ 2ND:060B1D80
+# px=40 (original width)
+JP テクニック
+EN Technical
+
+@ 2ND:060B1D8C
+# px=40 (original width)
+JP ストロング
+EN Strong
+
+@ 2ND:060B1D98
+# px=9 (original width)
+JP Ｄ
+EN Ｄ
+
+@ 2ND:060B1D9C
+# px=10 (original width)
+JP Ｍ
+EN Ｍ
+
+@ 2ND:060B1DA0
+# px=9 (original width)
+JP Ｓ
+EN Ｓ
+
+@ 2ND:060B1DA4
+# layout: label right-aligned to end at x=50, colon, the size code at x=55; no comma (seen in the emulator)
+# px=30 (original width)
+JP 足首：{x12,}，{x-20,}
+EN {x3,}Ankle:{x2,}
+
+@ 2ND:060B1DB8
+# layout: label right-aligned to end at x=50, colon, the size code at x=55; no comma (seen in the emulator)
+# px=26 (original width)
+JP {x2,}すね{x2,}：{x12,}，{x-20,}
+EN {x11,}Shin:{x2,}
+
+@ 2ND:060B1DD0
+# layout: label right-aligned to end at x=50, colon, the size code at x=55; no comma (seen in the emulator)
+# px=30 (original width)
+JP 太腿：{x12,}，{x-20,}
+EN {x4,}Thigh:{x2,}
+
+@ 2ND:060B1DE4
+# layout: label right-aligned to end at x=50, colon, the size code at x=55; no comma (seen in the emulator)
+# px=30 (original width)
+JP 手首：{x12,}，{x-20,}
+EN {x4,}Wrist:{x2,}
+
+@ 2ND:060B1DF8
+# layout: label right-aligned to end at x=50, colon, the size code at x=55; no comma (seen in the emulator)
+# px=30 (original width)
+JP 下腕：{x12,}，{x-20,}
+EN {x0,}F.Arm:{x2,}
+
+@ 2ND:060B1E0C
+# layout: label right-aligned to end at x=50, colon, the size code at x=55; no comma (seen in the emulator)
+# px=30 (original width)
+JP 上腕：{x12,}，{x-20,}
+EN {x-1,}U.Arm:{x2,}
+
+@ 2ND:060B1E20
+# layout: label right-aligned to end at x=50, colon, the size code at x=55; no comma (seen in the emulator)
+# px=18 (original width)
+JP {x6,}腹{x6,}：{x12,}，{x-20,}
+EN {x12,}Abs:{x2,}
+
+@ 2ND:060B1E38
+# layout: label right-aligned to end at x=50, colon, the size code at x=55; no comma (seen in the emulator)
+# px=18 (original width)
+JP {x6,}胸{x6,}：{x12,}，{x-20,}
+EN {x-3,}Chest:{x2,}
+
+@ 2ND:060B1E50
+# layout: label right-aligned to end at x=50, colon, the size code at x=55; no comma (seen in the emulator)
+# px=18 (original width)
+JP {x6,}顔{x6,}：{x12,}，{x-20,}
+EN {x6,}Face:{x2,}
+
+@ 2ND:060B1E68
+# px=27 (original width)
+JP サイズ：
+EN Size:
+
+@ 2ND:060B1E74
+# px=25 (original width)
+JP {x1,}構え{x1,}：
+EN {x1,}Stance{x1,}:
+
+@ 2ND:060B1E84
+# px=32 (original width)
+JP ﾆﾔﾘ２
+EN Grin 2
+
+@ 2ND:060B1E8C
+# px=32 (original width)
+JP ﾆﾔﾘ１
+EN Grin 1
+
+@ 2ND:060B1E94
+# px=20 (original width)
+JP くま
+EN Bear
+
+@ 2ND:060B1E9C
+# px=56 (original width)
+JP ｱｽﾃｶｽｰﾂ
+EN Aztec Suit
+
+@ 2ND:060B1EA4
+# px=64 (original width)
+JP ﾌｧｲﾔｰｽｰﾂ
+EN Fire Suit
+
+@ 2ND:060B1EB0
+# px=24 (original width)
+JP 道着
+EN Gi
+
+@ 2ND:060B1EB8
+# px=36 (original width)
+JP 忍者服
+EN Ninja
+
+@ 2ND:060B1EC0
+# px=56 (original width)
+JP ｶｲザｰｽｰﾂ
+EN <Kaiser> Suit
+
+@ 2ND:060B1ECC
+# px=74 (original width)
+JP えり付きＴｼｬﾂ
+EN Collared Tee
+
+@ 2ND:060B1EDC
+# px=56 (original width)
+JP 無地Ｔｼｬﾂ
+EN Plain Tee
+
+@ 2ND:060B1EE8
+# px=56 (original width)
+JP ﾜﾝｼｮﾙダｰ
+EN 1-Shoulder
+
+@ 2ND:060B1EF4
+# px=40 (original width)
+JP ｱﾏﾚｽ２
+EN Singlet 2
+
+@ 2ND:060B1EFC
+# px=40 (original width)
+JP ｱﾏﾚｽ１
+EN Singlet 1
+
+@ 2ND:060B1F04
+# px=56 (original width)
+JP ボデｨペｲﾝﾄ
+EN Body Paint
+
+@ 2ND:060B1F10
+# px=32 (original width)
+JP ﾉｰﾏﾙ
+EN Normal
+
+@ 2ND:060B1F18
+# px=30 (original width)
+JP まわし
+EN Mawashi
+
+@ 2ND:060B1F20
+# px=40 (original width)
+JP ﾄﾗﾝｸｽ
+EN Trunks
+
+@ 2ND:060B1F28
+# px=80 (original width)
+JP ｼｬﾂ＋無地ﾀｲﾂ
+EN Shirt+Tights
+
+@ 2ND:060B1F38
+# px=76 (original width)
+JP ｼｬﾂ＋しまﾀｲﾂ
+EN Shirt+Stripe
+
+@ 2ND:060B1F48
+# px=46 (original width)
+JP 裸＋Ｇパﾝ
+EN Bare+Jeans
+
+@ 2ND:060B1F54
+# px=66 (original width)
+JP Ｔｼｬﾂ＋Ｇパﾝ
+EN Tee+Jeans
+
+@ 2ND:060B1F64
+# px=78 (original width)
+JP ベﾙﾄ付きｱﾏﾚｽ
+EN Belt Singlet
+
+@ 2ND:060B1F74
+# px=56 (original width)
+JP パﾝｻｰﾀｲﾂ
+EN <Panther*>
+
+@ 2ND:060B1F80
+# px=48 (original width)
+JP ｻｲドﾗｲﾝ
+EN Side Stripe
+
+@ 2ND:060B1F88
+# px=44 (original width)
+JP しま模様
+EN Striped
+
+@ 2ND:060B1F94
+# px=48 (original width)
+JP ﾜﾝポｲﾝﾄ
+EN Emblem
+
+@ 2ND:060B1F9C
+# px=60 (original width)
+JP 国旗風模様
+EN Flag
+
+@ 2ND:060B1FA8
+# px=78 (original width)
+JP ベﾙﾄ付きﾀｲﾂ２
+EN Belted 2
+
+@ 2ND:060B1FB8
+# px=78 (original width)
+JP ベﾙﾄ付きﾀｲﾂ１
+EN Belted 1
+
+@ 2ND:060B1FC8
+# px=56 (original width)
+JP ｼｮｰﾄﾀｲﾂ
+EN Short Tights
+
+@ 2ND:060B1FD0
+# px=36 (original width)
+JP 肩パｯﾄ
+EN Pads
+
+@ 2ND:060B1FD8
+# px=32 (original width)
+JP 長そで
+EN Long Slv.
+
+@ 2ND:060B1FE0
+# px=36 (original width)
+JP ボﾛそで
+EN Torn Slv.
+
+@ 2ND:060B1FE8
+# px=32 (original width)
+JP 半そで
+EN Short Slv.
+
+@ 2ND:060B1FF0
+# px=40 (original width)
+JP ｻポｰﾀｰ
+EN Brace
+
+@ 2ND:060B1FF8
+# px=36 (original width)
+JP 腕バﾝド
+EN Armband
+
+@ 2ND:060B2000
+# px=48 (original width)
+JP ｻポｰﾀｰ２
+EN Brace 2
+
+@ 2ND:060B200C
+# px=48 (original width)
+JP ｻポｰﾀｰ１
+EN Brace 1
+
+@ 2ND:060B2018
+# px=60 (original width)
+JP ﾘｽﾄバﾝド大
+EN Wristband L
+
+@ 2ND:060B2024
+# px=60 (original width)
+JP ﾘｽﾄバﾝド小
+EN Wristband S
+
+@ 2ND:060B2030
+# px=64 (original width)
+JP ﾚｯグｳｫｰﾏｰ
+EN Leg Warmers
+
+@ 2ND:060B203C
+# px=64 (original width)
+JP ｳｪｽﾀﾝブｰﾂ
+EN Western
+
+@ 2ND:060B2048
+# px=88 (original width)
+JP ｱﾏﾚｽｼｭｰズ＋ﾆｰ
+EN Mat+Knee
+
+@ 2ND:060B2058
+# px=64 (original width)
+JP ｱﾏﾚｽｼｭｰズ
+EN Mat Shoes
+
+@ 2ND:060B2064
+# px=32 (original width)
+JP ﾚガｰｽ
+EN Kickpads
+
+@ 2ND:060B206C
+# px=92 (original width)
+JP しま模様＋ﾆｰパｯﾄ
+EN Stripe+Knee
+
+@ 2ND:060B2080
+# px=44 (original width)
+JP 忍者服２
+EN Ninja Suit 2
+
+@ 2ND:060B208C
+# px=44 (original width)
+JP 忍者服１
+EN Ninja Suit 1
+
+@ 2ND:060B2098
+# px=74 (original width)
+JP Ｇパﾝ＋ﾆｰパｯﾄ
+EN Jeans+Knee
+
+@ 2ND:060B20A8
+# px=98 (original width)
+JP Ｇパﾝ＋ｳｴｽﾀﾝブｰﾂ
+EN Jeans+Boots
+
+@ 2ND:060B20BC
+# px=26 (original width)
+JP Ｇパﾝ
+EN Jeans
+
+@ 2ND:060B20C4
+# px=40 (original width)
+JP パﾝﾀﾛﾝ
+EN Slacks
+
+@ 2ND:060B20CC
+# px=72 (original width)
+JP ﾒｷｼｶﾝﾀｲﾂ２
+EN Mexican 2
+
+@ 2ND:060B20D8
+# px=72 (original width)
+JP ﾒｷｼｶﾝﾀｲﾂ１
+EN Mexican 1
+
+@ 2ND:060B20E4
+# px=88 (original width)
+JP ﾛﾝグﾀｲﾂ＋ｼｭｰズ
+EN Tight+Shoes
+
+@ 2ND:060B20F4
+# px=48 (original width)
+JP ﾛﾝグﾀｲﾂ
+EN Long Tights
+
+@ 2ND:060B20FC
+# px=64 (original width)
+JP ﾆｰ＋ｼｭｰズ４
+EN Knee+Shoe 4
+
+@ 2ND:060B2108
+# px=64 (original width)
+JP ﾆｰ＋ｼｭｰズ３
+EN Knee+Shoe 3
+
+@ 2ND:060B2114
+# px=64 (original width)
+JP ﾆｰ＋ｼｭｰズ２
+EN Knee+Shoe 2
+
+@ 2ND:060B2120
+# px=64 (original width)
+JP ﾆｰ＋ｼｭｰズ１
+EN Knee+Shoe 1
+
+@ 2ND:060B212C
+# px=64 (original width)
+JP ｼｮｰﾄｼｭｰズ
+EN Low Shoes
+
+@ 2ND:060B2138
+# px=64 (original width)
+JP ﾉｰﾏﾙｼｭｰズ
+EN Plain Shoes
+
+@ 2ND:060B2144
+# px=72 (original width)
+JP 素足＋ﾆ－パｯﾄ
+EN Bare+Knee
+
+@ 2ND:060B2154
+# px=24 (original width)
+JP 素足
+EN Bare
+
+@ 2ND:060B215C
+# px=72 (original width)
+JP ｼｮｰﾄｽパｯﾂ２
+EN Spats 2
+
+@ 2ND:060B2168
+# px=72 (original width)
+JP ｼｮｰﾄｽパｯﾂ１
+EN Spats 1
+
+@ 2ND:060B2174
+# px=32 (original width)
+JP ｽパｯﾂ
+EN Spats
+
+@ 2ND:060B217C
+# px=48 (original width)
+JP 風魔ﾀｲﾂ
+EN Fuma Tights
+
+@ 2ND:060B2184
+# px=48 (original width)
+JP 氷川ﾀｲﾂ
+EN <Hikawa>
+
+@ 2ND:060B218C
+# px=56 (original width)
+JP ｻﾝダｰﾀｲﾂ
+EN Thunder
+
+@ 2ND:060B2198
+# px=68 (original width)
+JP しま模様ﾀｲﾂ
+EN Stripes
+
+@ 2ND:060B21A4
+# px=48 (original width)
+JP 矢印ﾀｲﾂ
+EN Arrows
+
+@ 2ND:060B21AC
+# px=64 (original width)
+JP ﾌｧｲﾔｰﾀｲﾂ
+EN Fire Tights
+
+@ 2ND:060B21B8
+# px=48 (original width)
+JP ﾗｲﾝﾀｲﾂ
+EN Line Tights
+
+@ 2ND:060B21C0
+# px=56 (original width)
+JP ｶｲザｰﾀｲﾂ
+EN <Kaiser>
+
+@ 2ND:060B21CC
+# px=56 (original width)
+JP ﾛﾝグﾀｲﾂ３
+EN Long 3
+
+@ 2ND:060B21D8
+# px=56 (original width)
+JP ﾛﾝグﾀｲﾂ２
+EN Long 2
+
+@ 2ND:060B21E4
+# px=56 (original width)
+JP ﾛﾝグﾀｲﾂ１
+EN Long 1
+
+@ 2ND:060B21F0
+# px=52 (original width)
+JP 膝ｻポｰﾀｰ
+EN Knee Brace
+
+@ 2ND:060B21FC
+# px=52 (original width)
+JP 指ﾃｰピﾝグ
+EN Finger Tape
+
+@ 2ND:060B2208
+# px=32 (original width)
+JP グﾛｰブ
+EN Gloves
+
+@ 2ND:060B2210
+# px=24 (original width)
+JP 素手
+EN Bare
+
+@ 2ND:060B2218
+# px=24 (original width)
+JP 足袋
+EN Tabi
+
+@ 2ND:060B2220
+# px=64 (original width)
+JP ｱﾗビｱﾝブｰﾂ
+EN Arab Boots
+
+@ 2ND:060B222C
+# px=64 (original width)
+JP ｶﾝﾌｰｼｭｰズ
+EN Kung Fu
+
+@ 2ND:060B2238
+# px=64 (original width)
+JP パﾝｻｰｼｭｰズ
+EN <Panther*>
+
+@ 2ND:060B2244
+# px=40 (original width)
+JP ｼｭｰズ５
+EN Shoes 5
+
+@ 2ND:060B224C
+# px=40 (original width)
+JP ｼｭｰズ４
+EN Shoes 4
+
+@ 2ND:060B2254
+# px=40 (original width)
+JP ｼｭｰズ３
+EN Shoes 3
+
+@ 2ND:060B225C
+# px=40 (original width)
+JP ｼｭｰズ２
+EN Shoes 2
+
+@ 2ND:060B2264
+# px=40 (original width)
+JP ｼｭｰズ１
+EN Shoes 1
+
+@ 2ND:060B226C
+# px=64 (original width)
+JP 足首ﾃｰピﾝグ
+EN Ankle Tape
+
+@ 2ND:060B2278
+# px=24 (original width)
+JP 裸足
+EN Barefoot
+
+@ 2ND:060B2774
+# table 060B29E8
+# px=12 (original width)
+JP Ｒ：
+EN Ｒ：
+
+@ 2ND:060B277C
+# px=16 (original width)
+JP －－
+EN --
+
+@ 2ND:060B2784
+# px=13 (original width)
+JP Ｇ：
+EN Ｇ：
+
+@ 2ND:060B278C
+# px=11 (original width)
+JP Ｂ：
+EN Ｂ：
+
+@ 2ND:060B2794
+# px=24 (original width)
+JP {p278,160,}コピー
+EN {p278,160,}Copy
+
+@ 2ND:060B27AC
+# code near 060B2A10
+# px=8 (original width)
+JP －
+EN -
+
+@ 2ND:060B35EC
+# table 060C61A4
+# px=88 (original width)
+JP ｺｰﾅｰｽﾘｰﾌﾟﾗﾄﾝ
+EN Corner Triple
+
+@ 2ND:060B35FC
+# px=80 (original width)
+JP ｺｰﾅｰﾂｰﾌﾟﾗﾄﾝ
+EN Corner Double
+
+@ 2ND:060B3608
+# px=80 (original width)
+JP ﾊﾞｯｸｽﾘｰﾌﾟﾗﾄﾝ
+EN Back Triple
+
+@ 2ND:060B3618
+# px=72 (original width)
+JP ﾊﾞｯｸﾂｰﾌﾟﾗﾄﾝ
+EN Back Double
+
+@ 2ND:060B3624
+# px=88 (original width)
+JP ﾌﾛﾝﾄｽﾘｰﾌﾟﾗﾄﾝ
+EN Front Triple
+
+@ 2ND:060B3634
+# px=80 (original width)
+JP ﾌﾛﾝﾄﾂｰﾌﾟﾗﾄﾝ
+EN Front Double
+
+@ 2ND:060B3640
+# px=65 (original width)
+JP パフォーマンスＲ
+EN Taunt R
+
+@ 2ND:060B3654
+# px=63 (original width)
+JP パフォーマンスＬ
+EN Taunt L
+
+@ 2ND:060B3668
+# px=76 (original width)
+JP コーナー組みＣ下
+EN Corner C↓
+
+@ 2ND:060B367C
+# px=76 (original width)
+JP コーナー組みＣ横
+EN Corner C↔
+
+@ 2ND:060B3690
+# px=76 (original width)
+JP コーナー組みＣ上
+EN Corner C↑
+
+@ 2ND:060B36A4
+# px=64 (original width)
+JP うつ伏せ足Ｃ
+EN Down Feet C
+
+@ 2ND:060B36B4
+# px=64 (original width)
+JP うつ伏せ頭Ｃ
+EN Down Head C
+
+@ 2ND:060B36C4
+# px=56 (original width)
+JP 仰向け足Ｃ
+EN Up Feet C
+
+@ 2ND:060B36D0
+# px=56 (original width)
+JP 仰向け頭Ｃ
+EN Up Head C
+
+@ 2ND:060B36DC
+# px=62 (original width)
+JP うつ伏せ足Ｂ
+EN Down Feet B
+
+@ 2ND:060B36EC
+# px=62 (original width)
+JP うつ伏せ頭Ｂ
+EN Down Head B
+
+@ 2ND:060B36FC
+# px=54 (original width)
+JP 仰向け足Ｂ
+EN Up Feet B
+
+@ 2ND:060B3708
+# px=54 (original width)
+JP 仰向け頭Ｂ
+EN Up Head B
+
+@ 2ND:060B3714
+# px=54 (original width)
+JP バック返しＢ
+EN Back Rev. B
+
+@ 2ND:060B3724
+# px=56 (original width)
+JP バック返しＡ
+EN Back Rev. A
+
+@ 2ND:060B3734
+# px=48 (original width)
+JP 組みＡ＋Ｂ
+EN Grab A+B
+
+@ 2ND:060B3740
+# px=56 (original width)
+JP 組みＣ左右
+EN Grab C↔
+
+@ 2ND:060B374C
+# px=32 (original width)
+JP 組みＣ
+EN Grab C
+
+@ 2ND:060B3754
+# px=42 (original width)
+JP 組みＢ下
+EN Grab B↓
+
+@ 2ND:060B3760
+# px=54 (original width)
+JP 組みＢ左右
+EN Grab B↔
+
+@ 2ND:060B376C
+# px=42 (original width)
+JP 組みＢ上
+EN Grab B↑
+
+@ 2ND:060B3778
+# px=30 (original width)
+JP 組みＢ
+EN Grab B
+
+@ 2ND:060B3780
+# px=44 (original width)
+JP 組みＡ下
+EN Grab A↓
+
+@ 2ND:060B378C
+# px=56 (original width)
+JP 組みＡ左右
+EN Grab A↔
+
+@ 2ND:060B3798
+# px=44 (original width)
+JP 組みＡ上
+EN Grab A↑
+
+@ 2ND:060B37A4
+# px=32 (original width)
+JP 組みＡ
+EN Grab A
+
+@ 2ND:060B37AC
+# px=50 (original width)
+JP ポストＡ＋Ｂ
+EN Post A+B
+
+@ 2ND:060B37BC
+# px=34 (original width)
+JP ポストＣ
+EN Post C
+
+@ 2ND:060B37C8
+# px=32 (original width)
+JP ポストＢ
+EN Post B
+
+@ 2ND:060B37D4
+# px=34 (original width)
+JP ポストＡ
+EN Post A
+
+@ 2ND:060B37E0
+# px=74 (original width)
+JP ｴﾌﾟﾛﾝから内Ｃ
+EN Apron In C
+
+@ 2ND:060B37F0
+# px=80 (original width)
+JP ﾛｰﾌﾟ越し場外Ｃ
+EN Rope Dive C
+
+@ 2ND:060B3800
+# px=56 (original width)
+JP 走り場外Ｃ
+EN Run Dive C
+
+@ 2ND:060B380C
+# px=68 (original width)
+JP 対角線走りＣ
+EN Diag. Run C
+
+@ 2ND:060B381C
+# px=48 (original width)
+JP 立ちＡ＋Ｂ
+EN Stand A+B
+
+@ 2ND:060B3828
+# px=32 (original width)
+JP 立ちＣ
+EN Stand C
+
+@ 2ND:060B3830
+# px=30 (original width)
+JP 立ちＢ
+EN Stand B
+
+@ 2ND:060B3838
+# px=32 (original width)
+JP 立ちＡ
+EN Stand A
+
+@ 2ND:060B3840
+# code near 060B38B4
+# px=80 (original width)
+JP 読み込み中・・・
+EN Loading...
+
+@ 2ND:060B38C8
+# code near 060B3A00
+# px=20 (original width)
+JP 声１
+EN V1
+
+@ 2ND:060B38D0
+# code near 060B3A08
+# px=20 (original width)
+JP 声２
+EN V2
+
+@ 2ND:060B38D8
+# code near 060B3A18
+# px=12 (original width)
+JP 必
+EN F
+
+@ 2ND:060B38DC
+# code near 060B3A1C
+# px=12 (original width)
+JP 得
+EN S
+
+@ 2ND:060B3A28
+# table 060C7CE0
+# px=40 (original width)
+JP ﾗﾌ攻撃
+EN Rough
+
+@ 2ND:060B3A30
+# px=64 (original width)
+JP 攻撃ﾃｸﾆｯｸ
+EN Offense
+
+@ 2ND:060B3A3C
+# px=24 (original width)
+JP 腕力
+EN Arm
+
+@ 2ND:060B3A44
+# px=36 (original width)
+JP 瞬発力
+EN Speed
+
+@ 2ND:060B3A4C
+# px=24 (original width)
+JP 馬力
+EN Power
+
+@ 2ND:060B3A54
+# px=34 (original width)
+JP 絞め技
+EN Choke
+
+@ 2ND:060B3A5C
+# px=36 (original width)
+JP 関節技
+EN Lock
+
+@ 2ND:060B3A64
+# px=34 (original width)
+JP 投げ技
+EN Throw
+
+@ 2ND:060B3A6C
+# px=34 (original width)
+JP 蹴り技
+EN Kick
+
+@ 2ND:060B3A74
+# px=34 (original width)
+JP 突き技
+EN Punch
+
+@ 2ND:060B3C70
+# code near 060B3EAC
+# px=39 (original width)
+JP 主攻撃：
+EN Main:
+
+@ 2ND:060B3C7C
+# code near 060B3EB4
+# px=39 (original width)
+JP 副攻撃：
+EN Sub:
+
+@ 2ND:060B3C88
+# code near 060B3EB8
+# px=39 (original width)
+JP 相性　：
+EN Affin.:
+
+@ 2ND:060B625C
+# table 060C7DF8
+# px=36 (original width)
+JP Ｓｔａｆｆ
+EN Ｓｔａｆｆ
+
+@ 2ND:060B6268
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=134 (original width)
+JP {s;}Ｆｉｒｅ Ｐｒｏｗｒｅｓｔｌｉｎｇ Ｓ
+EN {s;}Ｆｉｒｅ Ｐｒｏｗｒｅｓｔｌｉｎｇ Ｓ
+
+@ 2ND:060B6290
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=44 (original width)
+JP {s1}愛甲 剛
+EN {s1}愛甲 剛
+
+@ 2ND:060B629C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=124 (original width)
+JP {s;}Ａｓｓｉｓｔａｎｔ Ｐｌａｎｎｅｒ
+EN {s;}Ａｓｓｉｓｔａｎｔ Ｐｌａｎｎｅｒ
+
+@ 2ND:060B62C0
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 露崎 尊幸
+EN 露崎 尊幸
+
+@ 2ND:060B62CC
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}田島 弘喜
+EN {s1}田島 弘喜
+
+@ 2ND:060B62D8
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=86 (original width)
+JP Ｍａｉｎ Ｐｌａｎｎｅｒ
+EN Ｍａｉｎ Ｐｌａｎｎｅｒ
+
+@ 2ND:060B62F0
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=129 (original width)
+JP {s;}－ Ｐｌａｎｎｉｎｇ Ｓｔａｆｆ －
+EN {s;}－ Ｐｌａｎｎｉｎｇ Ｓｔａｆｆ －
+
+@ 2ND:060B6314
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=137 (original width)
+JP Ｇａｍｅ Ｍａｉｎ Ｐｒｏｇｒａｍ
+EN Ｇａｍｅ Ｍａｉｎ Ｐｒｏｇｒａｍ
+
+@ 2ND:060B6338
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=133 (original width)
+JP {s;}－ Ｐｒｏｇｒａｍ Ｓｔａｆｆ －
+EN {s;}－ Ｐｒｏｇｒａｍ Ｓｔａｆｆ －
+
+@ 2ND:060B635C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}米田 晃人
+EN {s1}米田 晃人
+
+@ 2ND:060B6368
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=168 (original width)
+JP ＷｒｅｓｔｌｅｒＯｂｊｅｃｔ Ｐｒｏｇｒａｍ
+EN ＷｒｅｓｔｌｅｒＯｂｊｅｃｔ Ｐｒｏｇｒａｍ
+
+@ 2ND:060B6394
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=12 (original width)
+JP ＆
+EN ＆
+
+@ 2ND:060B6398
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=149 (original width)
+JP {s;}ＳＥＧＡＳＡＴＵＲＮ Ｓｙｓｔｅｍ
+EN {s;}ＳＥＧＡＳＡＴＵＲＮ Ｓｙｓｔｅｍ
+
+@ 2ND:060B63BC
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=44 (original width)
+JP {s1}金子 剛
+EN {s1}金子 剛
+
+@ 2ND:060B63C8
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=120 (original width)
+JP {s;}Ｐｒｏｇｒａｍ Ｓｕｐｐｏｒｔ
+EN {s;}Ｐｒｏｇｒａｍ Ｓｕｐｐｏｒｔ
+
+@ 2ND:060B63E8
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}原木 正志
+EN {s1}原木 正志
+
+@ 2ND:060B63F4
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=141 (original width)
+JP {s;}Ｉｎｆｏｒｍａｔｉｏｎ Ｐｒｏｇｒａｍ
+EN {s;}Ｉｎｆｏｒｍａｔｉｏｎ Ｐｒｏｇｒａｍ
+
+@ 2ND:060B641C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}田村 季章
+EN {s1}田村 季章
+
+@ 2ND:060B6428
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=100 (original width)
+JP Ｖｉｓｕａｌ Ｄｉｒｅｃｔｏｒ
+EN Ｖｉｓｕａｌ Ｄｉｒｅｃｔｏｒ
+
+@ 2ND:060B6448
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=112 (original width)
+JP {s;}－ Ｖｉｓｕａｌ Ｓｔａｆｆ －
+EN {s;}－ Ｖｉｓｕａｌ Ｓｔａｆｆ －
+
+@ 2ND:060B6468
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}大谷 篤志
+EN {s1}大谷 篤志
+
+@ 2ND:060B6474
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP Ｄｉｒｅｃｔｏｒ
+EN Ｄｉｒｅｃｔｏｒ
+
+@ 2ND:060B6488
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=110 (original width)
+JP {s;}Ｖｉｓｕａｌ Ａｓｓｉｓｔａｎｔ
+EN {s;}Ｖｉｓｕａｌ Ａｓｓｉｓｔａｎｔ
+
+@ 2ND:060B64AC
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}吉岡 雅之
+EN {s1}吉岡 雅之
+
+@ 2ND:060B64B8
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=83 (original width)
+JP Ｂａｓｅ Ｄｅｓｉｇｎ
+EN Ｂａｓｅ Ｄｅｓｉｇｎ
+
+@ 2ND:060B64D0
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=139 (original width)
+JP {s;}Ｒｅｆｅｒｅｅ ＆ Ｗｒｅｓｔｌｅｒ
+EN {s;}Ｒｅｆｅｒｅｅ ＆ Ｗｒｅｓｔｌｅｒ
+
+@ 2ND:060B64F8
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 田村 季章
+EN 田村 季章
+
+@ 2ND:060B6504
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 渡川 和久
+EN 渡川 和久
+
+@ 2ND:060B6510
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=129 (original width)
+JP {s;}Ｍａｉｎ Ｓｋｉｌｌ Ａｎｉｍａｔｉｏｎ
+EN {s;}Ｍａｉｎ Ｓｋｉｌｌ Ａｎｉｍａｔｉｏｎ
+
+@ 2ND:060B653C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 金田 浩二
+EN 金田 浩二
+
+@ 2ND:060B6548
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 市川 泰寛
+EN 市川 泰寛
+
+@ 2ND:060B6554
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 林　 靖之
+EN 林　 靖之
+
+@ 2ND:060B6560
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 庭野 文則
+EN 庭野 文則
+
+@ 2ND:060B656C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=44 (original width)
+JP 荒川 健
+EN 荒川 健
+
+@ 2ND:060B6574
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 俵　 弘一
+EN 俵　 弘一
+
+@ 2ND:060B6580
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}大橋 俊之
+EN {s1}大橋 俊之
+
+@ 2ND:060B658C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=93 (original width)
+JP {s;}Ｓｋｉｌｌ Ａｎｉｍａｔｉｏｎ
+EN {s;}Ｓｋｉｌｌ Ａｎｉｍａｔｉｏｎ
+
+@ 2ND:060B65AC
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}米澤 宏之
+EN {s1}米澤 宏之
+
+@ 2ND:060B65B8
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=160 (original width)
+JP Ｆａｃｅ ＆ Ｐａｌｅｔｔｅ Ｄｅｓｉｇｎ
+EN Ｆａｃｅ ＆ Ｐａｌｅｔｔｅ Ｄｅｓｉｇｎ
+
+@ 2ND:060B65E0
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 大谷 篤志
+EN 大谷 篤志
+
+@ 2ND:060B65EC
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=90 (original width)
+JP Ｐａｒｔｓ Ｄｅｓｉｇｎ
+EN Ｐａｒｔｓ Ｄｅｓｉｇｎ
+
+@ 2ND:060B6604
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=57 (original width)
+JP {s;}Ｗｒｅｓｔｌｅｒ
+EN {s;}Ｗｒｅｓｔｌｅｒ
+
+@ 2ND:060B6618
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=44 (original width)
+JP {s1}加藤 亮
+EN {s1}加藤 亮
+
+@ 2ND:060B6624
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=104 (original width)
+JP {s;}Ｒｉｎｇ ＢＧ Ｄｅｓｉｇｎ
+EN {s;}Ｒｉｎｇ ＢＧ Ｄｅｓｉｇｎ
+
+@ 2ND:060B6644
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=44 (original width)
+JP {s1}山浦 聡
+EN {s1}山浦 聡
+
+@ 2ND:060B6650
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=87 (original width)
+JP Ｖｉｓｕａｌ Ｄｅｓｉｇｎ
+EN Ｖｉｓｕａｌ Ｄｅｓｉｇｎ
+
+@ 2ND:060B666C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=115 (original width)
+JP {s;}ＯＰ， ＥＤ ＆ Ｅｖｅｎｔ
+EN {s;}ＯＰ， ＥＤ ＆ Ｅｖｅｎｔ
+
+@ 2ND:060B6688
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 吉岡 雅之
+EN 吉岡 雅之
+
+@ 2ND:060B6694
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=127 (original width)
+JP {s;}Ｉｎｆｏｒｍａｔｉｏｎ Ｄｅｓｉｇｎ
+EN {s;}Ｉｎｆｏｒｍａｔｉｏｎ Ｄｅｓｉｇｎ
+
+@ 2ND:060B66BC
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=82 (original width)
+JP {s;}Ｆｏｎｔ Ｄｅｓｉｇｎ
+EN {s;}Ｆｏｎｔ Ｄｅｓｉｇｎ
+
+@ 2ND:060B66D4
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=117 (original width)
+JP {s;}Ｔｉｔｌｅ Ｌｏｇｏ Ｄｅｓｉｇｎ
+EN {s;}Ｔｉｔｌｅ Ｌｏｇｏ Ｄｅｓｉｇｎ
+
+@ 2ND:060B66F8
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}安部 仁隆
+EN {s1}安部 仁隆
+
+@ 2ND:060B6704
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=32 (original width)
+JP {s;}Ｂａｓｓ
+EN {s;}Ｂａｓｓ
+
+@ 2ND:060B6710
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}匹田 健二
+EN {s1}匹田 健二
+
+@ 2ND:060B671C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=42 (original width)
+JP {s;}Ｇｕｉｔａｒ
+EN {s;}Ｇｕｉｔａｒ
+
+@ 2ND:060B672C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=108 (original width)
+JP じょうちゃ しんたろう
+EN じょうちゃ しんたろう
+
+@ 2ND:060B6744
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}…野 一郎
+EN {s1}…野 一郎
+
+@ 2ND:060B6750
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=75 (original width)
+JP Ｃｏｍｐｏｓｅｒｓ
+EN Ｃｏｍｐｏｓｅｒｓ
+
+@ 2ND:060B6764
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=117 (original width)
+JP {s;}－ Ｓｏｕｎｄ Ｓｔａｆｆ －
+EN {s;}－ Ｓｏｕｎｄ Ｓｔａｆｆ －
+
+@ 2ND:060B6784
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 山本 愛子
+EN 山本 愛子
+
+@ 2ND:060B6790
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}山崎 正通
+EN {s1}山崎 正通
+
+@ 2ND:060B679C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=92 (original width)
+JP {s;}Ｓｏｕｎｄ Ｅｆｆｅｃｔ
+EN {s;}Ｓｏｕｎｄ Ｅｆｆｅｃｔ
+
+@ 2ND:060B67B8
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}藤井 信夫
+EN {s1}藤井 信夫
+
+@ 2ND:060B67C4
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=110 (original width)
+JP {s;}Ａｕｄｉｏ Ｄｅｖｅｌｏｐｅｒ
+EN {s;}Ａｕｄｉｏ Ｄｅｖｅｌｏｐｅｒ
+
+@ 2ND:060B67E4
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=44 (original width)
+JP {s1}戸地 勝
+EN {s1}戸地 勝
+
+@ 2ND:060B67F0
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=127 (original width)
+JP {s;}－ Ｄａｔａ Ｓｕｐｐｏｒｔ －
+EN {s;}－ Ｄａｔａ Ｓｕｐｐｏｒｔ －
+
+@ 2ND:060B6810
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}須田 剛一
+EN {s1}須田 剛一
+
+@ 2ND:060B681C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=144 (original width)
+JP {s;}－ Ｐｌａｎｎｉｎｇ Ａｄｖｉｓｅｒ －
+EN {s;}－ Ｐｌａｎｎｉｎｇ Ａｄｖｉｓｅｒ －
+
+@ 2ND:060B6844
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 彌武 芳郎
+EN 彌武 芳郎
+
+@ 2ND:060B6850
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 小池 志織
+EN 小池 志織
+
+@ 2ND:060B685C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP 藤村 卓也
+EN 藤村 卓也
+
+@ 2ND:060B6868
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=56 (original width)
+JP {s1}杉浦 賢治
+EN {s1}杉浦 賢治
+
+@ 2ND:060B6874
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=73 (original width)
+JP {s;}－ Ｄｅｂｕｇ －
+EN {s;}－ Ｄｅｂｕｇ －
+
+@ 2ND:060B6888
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=169 (original width)
+JP ＤＡＲＲＹＬ ＧＲＡＮＴ ＳＴＯＧＲＥ
+EN ＤＡＲＲＹＬ ＧＲＡＮＴ ＳＴＯＧＲＥ
+
+@ 2ND:060B68B0
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=108 (original width)
+JP ＤＡＶＩＤ ＩＭＡＭＩＣＨＩ
+EN ＤＡＶＩＤ ＩＭＡＭＩＣＨＩ
+
+@ 2ND:060B68CC
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=132 (original width)
+JP ＭＡＸ ＶＯＮ ＳＣＨＵＬＥＲ
+EN ＭＡＸ ＶＯＮ ＳＣＨＵＬＥＲ
+
+@ 2ND:060B68EC
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=44 (original width)
+JP 河口 宏
+EN 河口 宏
+
+@ 2ND:060B68F4
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=44 (original width)
+JP 花田 光
+EN 花田 光
+
+@ 2ND:060B68FC
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=68 (original width)
+JP 青木 建一郎
+EN 青木 建一郎
+
+@ 2ND:060B6908
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=44 (original width)
+JP {s1}辻 親八
+EN {s1}辻 親八
+
+@ 2ND:060B6914
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=149 (original width)
+JP {s;}－ ＷＲＥＳＴＬＥＲ ＶＯＩＣＥ －
+EN {s;}－ ＷＲＥＳＴＬＥＲ ＶＯＩＣＥ －
+
+@ 2ND:060B6938
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=84 (original width)
+JP 稲川素子事務所
+EN 稲川素子事務所
+
+@ 2ND:060B6948
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=68 (original width)
+JP {s1}賢プロダクション
+EN {s1}賢プロダクション
+
+@ 2ND:060B695C
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=132 (original width)
+JP {s;}－ Ｓｐｅｃｉａｌ Ｔｈａｎｋｓ －
+EN {s;}－ Ｓｐｅｃｉａｌ Ｔｈａｎｋｓ －
+
+@ 2ND:060B6980
+# keep: stays as the original (staff credits: owner 2026-10-26; symbols)
+# staff credits: stay as the original (owner, 2026-10-26) - no EN
+# px=81 (original width)
+JP {s;}Ｄｉｒｅｃｔｅｄ Ｂｙ
+EN {s;}Ｄｉｒｅｃｔｅｄ Ｂｙ
+
+@ 2ND:060BC378
+# table 060BC388
+# px=58 (original width)
+JP ＲＡＮＤＯＭ
+EN Ｒａｎｄｏｍ
+
+@ 2ND:060BC588
+# table 060BC620
+# px=54 (original width)
+JP {x106,}{s2}－ 次へ －{s0}{n}
+EN {x106,}{s2}- Next -{s0}{n}
+
+@ 2ND:060BC5A0
+# px=44 (original width)
+JP 青コーナー{n}
+EN Blue{n}
+
+@ 2ND:060BC5AC
+# px=44 (original width)
+JP 赤コーナー{n}
+EN Red{n}
+
+@ 2ND:060BC5B8
+# px=48 (original width)
+JP 対戦形式{n}
+EN Match{n}
+
+@ 2ND:060BC5C4
+# px=48 (original width)
+JP 参戦形式{n}
+EN Entry{n}
+
+@ 2ND:060BC5D0
+# px=48 (original width)
+JP 試合形式{n}
+EN Rules{n}
+
+@ 2ND:060BC5DC
+# px=48 (original width)
+JP 試合時間{n}
+EN Time{n}
+
+@ 2ND:060BC5E8
+# px=48 (original width)
+JP 爆破時間{n}
+EN Bomb{n}
+
+@ 2ND:060BC5F4
+# px=80 (original width)
+JP チャレンジャー（青）{n}
+EN Chall. (Blue){n}
+
+@ 2ND:060BC60C
+# px=72 (original width)
+JP チャンピオン（赤）{n}
+EN Champ (Red){n}
+
+@ 2ND:060BCBBC
+# table 060BCCE0
+# px=228 (original width)
+JP 闘いの記録を作成することができませんでした。
+EN Couldn't create the records.
+
+@ 2ND:060BCBEC
+# px=228 (original width)
+JP 闘いの記録を削除することができませんでした。
+EN Couldn't delete the records.
+
+@ 2ND:060BCC50
+# code near 06086C70
+# px=72 (original width)
+JP フォール{n}ギブアップ{n}Ｋ．Ｏ．{n}リングアウト{n}反則{n}時間切れ{n}両者リングアウト{n}両者Ｋ．Ｏ．{n}
+EN Pin{n}Submit{n}KO{n}Ring Out{n}DQ{n}Time Up{n}Dbl Out{n}Dbl KO{n}
+
+@ 2ND:060BD8D0
+# table 060BD918
+# px=12 (original width)
+JP {x163,}＆
+EN {x163,}&
+
+@ 2ND:060BD8D8
+# px=12 (original width)
+JP {x123,}＆
+EN {x123,}&
+
+@ 2ND:060BD8E0
+# px=12 (original width)
+JP {x146,}＆
+EN {x146,}&
+
+@ 2ND:060BD8E8
+# px=24 (original width)
+JP {x131,}＆{x052,}＆
+EN {x131,}&{x052,}&
+
+@ 2ND:060BD8F8
+# px=24 (original width)
+JP {x091,}＆{x052,}＆
+EN {x091,}&{x052,}&
+
+@ 2ND:060BD908
+# px=24 (original width)
+JP {x114,}＆{x052,}＆
+EN {x114,}&{x052,}&
+
+@ 2ND:060BDB04
+# spacing: +1 (Mode Select title, bold style; owner 2026-10-27)
+# table 060BDBE0
+# px=64 (original width)
+JP ビクトリーロード
+EN Victory Road
+
+@ 2ND:060BDB18
+# spacing: +1 (Mode Select title, bold style; owner 2026-10-27)
+# px=64 (original width)
+JP ワンナイトマッチ
+EN Exhibition
+
+@ 2ND:060BDB2C
+# spacing: +1 (Mode Select title, bold style; owner 2026-10-27)
+# px=56 (original width)
+JP オープンリーグ
+EN Open League
+
+@ 2ND:060BDB3C
+# spacing: +1 (Mode Select title, bold style; owner 2026-10-27)
+# px=88 (original width)
+JP ワンナイトトーナメント
+EN Tournament
+
+@ 2ND:060BDB54
+# spacing: +1 (Mode Select title, bold style; owner 2026-10-27)
+# px=88 (original width)
+JP イリミネーションマッチ
+EN Elimination
+
+@ 2ND:060BDB6C
+# spacing: +1 (Mode Select title, bold style; owner 2026-10-27)
+# px=56 (original width)
+JP バトルロイヤル
+EN Battle Royal
+
+@ 2ND:060BDB7C
+# spacing: +1 (Mode Select title, bold style; owner 2026-10-27)
+# px=40 (original width)
+JP デスマッチ
+EN Death Match
+
+@ 2ND:060BDB88
+# spacing: +1 (Mode Select title, bold style; owner 2026-10-27)
+# px=96 (original width)
+JP グルーサムファイティング
+EN Gruesome Fight
+
+@ 2ND:060BDBA4
+# spacing: +1 (Mode Select title, bold style; owner 2026-10-27)
+# px=72 (original width)
+JP レスラーエディット
+EN Wrestler Edit
+
+@ 2ND:060BDBB8
+# spacing: +1 (Mode Select title, bold style; owner 2026-10-27)
+# px=32 (original width)
+JP リネーム
+EN Rename
+
+@ 2ND:060BDBC4
+# spacing: +1 (Mode Select title, bold style; owner 2026-10-27)
+# px=40 (original width)
+JP オプション
+EN Options
+
+@ 2ND:060BDBD0
+# spacing: +1 (Mode Select title, bold style; owner 2026-10-27)
+# px=56 (original width)
+JP タイトルマッチ
+EN Title Match
+
+@ 2ND:060BDC10
+# table 060BDDF4
+# px=202 (original width)
+JP 対コンピュータ勝ち抜きのタイトル統一戦です
+EN Story mode: unify all the titles
+
+@ 2ND:060BDC3C
+# px=170 (original width)
+JP 対人・対コンピュータのフリー対戦です
+EN Free match vs. human or CPU
+
+@ 2ND:060BDC64
+# px=230 (original width)
+JP 最高３２人まで参加可能な総当たりリーグ戦です
+EN Round-robin league, up to 32
+
+@ 2ND:060BDC94
+# px=254 (original width)
+JP 最高１６人まで参加可能な勝ち抜きトーナメント戦です
+EN Knockout tournament, up to 16
+
+@ 2ND:060BDCC8
+# px=158 (original width)
+JP ５対５による勝ち抜き団体戦です
+EN 5-on-5 team elimination
+
+@ 2ND:060BDCE8
+# px=190 (original width)
+JP 最高６人まで参加可能な大乱闘戦です
+EN Brawl for up to 6 wrestlers
+
+@ 2ND:060BDD0C
+# px=182 (original width)
+JP 凶器がリングを囲む壮絶大流血戦です
+EN Barbed Wire Explosive Cage Match
+
+@ 2ND:060BDD30
+# px=244 (original width)
+JP オクタゴン（８角形）リングでの遺恨痛恨喧嘩試合です
+EN Grudge fight in an octagon ring
+
+@ 2ND:060BDD64
+# px=146 (original width)
+JP オリジナルレスラーを作成できます
+EN Create original wrestlers
+
+@ 2ND:060BDD88
+# px=196 (original width)
+JP 既存団体・レスラーの名前を変更できます
+EN Rename promotions and wrestlers
+
+@ 2ND:060BDDB0
+# px=132 (original width)
+JP 様々な環境設定ができます
+EN Change settings
+
+@ 2ND:060BDDCC
+# px=184 (original width)
+JP 獲得したベルトを賭けてのタイトル戦です
+EN Defend your Victory Road belts
+
+@ 2ND:060BDEA0
+# table 060BDF1C
+# px=64 (original width)
+JP ネームエントリー
+EN Name Entry
+
+@ 2ND:060BDEB4
+# px=56 (original width)
+JP レスラーメイク
+EN Appearance
+
+@ 2ND:060BDEC4
+# px=64 (original width)
+JP スキルエディット
+EN Skill Edit
+
+@ 2ND:060BDED8
+# px=80 (original width)
+JP パラメータエディット
+EN Parameters
+
+@ 2ND:060BDEF0
+# px=36 (original width)
+JP 技装備
+EN Moves
+
+@ 2ND:060BDEF8
+# px=60 (original width)
+JP ＣＰＵロジック
+EN CPU Logic
+
+@ 2ND:060BDF08
+# px=48 (original width)
+JP 保存画面
+EN Save
+
+@ 2ND:060BDF14
+# px=24 (original width)
+JP 終了
+EN Exit
+
+@ 2ND:060BDF60
+# table 060BDFE4
+# px=136 (original width)
+JP 作成されたエディットレスラーが
+EN Your edit wrestlers
+
+@ 2ND:060BDF80
+# px=170 (original width)
+JP セーブされていない可能性があります
+EN May not have been saved.
+
+@ 2ND:060BDFA4
+# px=214 (original width)
+JP レスラーエディットを終了してもよろしいですか？
+EN Quit Wrestler Edit?
+
+@ 2ND:060BDFD4
+# px=53 (original width)
+JP ＹＥＳ／ＮＯ
+EN ＹＥＳ／ＮＯ
+
+@ 2ND:060BE038
+# table 060BE048
+# px=56 (original width)
+JP {s2}－ 終了 －{s0}
+EN {s2}- End -{s0}
+
+@ 2ND:060BE0F8
+# table 060BE444
+# px=92 (original width)
+JP ｏｐｅｎｉｎｇ ｄｅｍｏ
+EN Ｏｐｅｎｉｎｇ Ｄｅｍｏ
+
+@ 2ND:060BE110
+# px=101 (original width)
+JP ６ｍｅｎ ｓｃｒａｍｂｌｅ
+EN ６Ｍｅｎ Ｓｃｒａｍｂｌｅ
+
+@ 2ND:060BE12C
+# px=142 (original width)
+JP ｓｕｃｃｅｓｓｉｖｅ ｃｈａｍｐｉｏｎ
+EN Ｐａｓｔ Ｃｈａｍｐｉｏｎｓ
+
+@ 2ND:060BE154
+# px=88 (original width)
+JP ｃａｐｔｕｒｅ ｔｉｔｌｅ
+EN Ｔｉｔｌｅ Ｗｏｎ
+
+@ 2ND:060BE170
+# px=133 (original width)
+JP ｅｎｄｉｎｇ ｓｔａｆｆ ｃｒｅｄｉｔ
+EN Ｅｎｄｉｎｇ Ｓｔａｆｆ Ｃｒｅｄｉｔｓ
+
+@ 2ND:060BE198
+# table 060BC388
+# px=62 (original width)
+JP Ｒｉｎｇ－Ｓｉｄｅ
+EN Ｒｉｎｇ－Ｓｉｄｅ
+
+@ 2ND:060BE1AC
+# px=66 (original width)
+JP Ｂｉｏｒｈｙｔｈｍ
+EN Ｂｉｏｒｈｙｔｈｍ
+
+@ 2ND:060BE1C0
+# px=56 (original width)
+JP Ｆｕｊｉｙａｍａ
+EN Ｆｕｊｉｙａｍａ
+
+@ 2ND:060BE1D4
+# px=89 (original width)
+JP Ｂｌｕｅ－Ｔｈｕｎｄｅｒ
+EN Ｂｌｕｅ－Ｔｈｕｎｄｅｒ
+
+@ 2ND:060BE1F0
+# table 060BE444
+# px=84 (original width)
+JP Ｈｅｙ！Ｈｅｙ！Ｈｅｙ！
+EN Ｈｅｙ！Ｈｅｙ！Ｈｅｙ！
+
+@ 2ND:060BE20C
+# px=66 (original width)
+JP Ｔｏｍｏｒｒｏｗ
+EN Ｔｏｍｏｒｒｏｗ
+
+@ 2ND:060BE220
+# px=51 (original width)
+JP Ａｓｓａｕｌｔ
+EN Ａｓｓａｕｌｔ
+
+@ 2ND:060BE230
+# px=83 (original width)
+JP Ｂｅｆｏｒｅ－ｄａｒｋ
+EN Ｂｅｆｏｒｅ－Ｄａｒｋ
+
+@ 2ND:060BE248
+# px=84 (original width)
+JP Ｃｈａｓｅ－ａｗａｙ
+EN Ｃｈａｓｅ－Ａｗａｙ
+
+@ 2ND:060BE260
+# px=83 (original width)
+JP Ｃｏｎｆｉｎｅｍｅｎｔ
+EN Ｃｏｎｆｉｎｅｍｅｎｔ
+
+@ 2ND:060BE278
+# px=65 (original width)
+JP Ｃｏｎｑｕｅｓｔ
+EN Ｃｏｎｑｕｅｓｔ
+
+@ 2ND:060BE28C
+# px=83 (original width)
+JP Ｃｏｕｎｔ－ｄｏｗｎ
+EN Ｃｏｕｎｔ－Ｄｏｗｎ
+
+@ 2ND:060BE2A4
+# px=46 (original width)
+JP Ｃｒｉｔｉｃａｌ
+EN Ｃｒｉｔｉｃａｌ
+
+@ 2ND:060BE2B8
+# px=48 (original width)
+JP Ｅｓｃａｐｅ
+EN Ｅｓｃａｐｅ
+
+@ 2ND:060BE2C8
+# px=44 (original width)
+JP Ｇｅｉｓｈａ
+EN Ｇｅｉｓｈａ
+
+@ 2ND:060BE2D8
+# px=83 (original width)
+JP Ｈａｚａｒｄ－ｌａｍｐ
+EN Ｈａｚａｒｄ－Ｌａｍｐ
+
+@ 2ND:060BE2F0
+# px=51 (original width)
+JP Ｈｅｒｏｉｓｍ
+EN Ｈｅｒｏｉｓｍ
+
+@ 2ND:060BE300
+# px=47 (original width)
+JP Ｋｉｌｌ－Ｙｏｕ
+EN Ｋｉｌｌ－Ｙｏｕ
+
+@ 2ND:060BE314
+# px=74 (original width)
+JP Ｍｙｓｔｅｒｉｏｕｓ
+EN Ｍｙｓｔｅｒｉｏｕｓ
+
+@ 2ND:060BE32C
+# px=67 (original width)
+JP Ｎｉｃｅ－Ｂｏｄｙ
+EN Ｎｉｃｅ－Ｂｏｄｙ
+
+@ 2ND:060BE340
+# px=42 (original width)
+JP Ｏｎｕｔａ
+EN Ｏｎｕｔａ
+
+@ 2ND:060BE34C
+# px=91 (original width)
+JP Ｏｖｅｒｃｒｏｗｄｅｄ
+EN Ｏｖｅｒｃｒｏｗｄｅｄ
+
+@ 2ND:060BE364
+# px=48 (original width)
+JP Ｐａｔｈｏｓ
+EN Ｐａｔｈｏｓ
+
+@ 2ND:060BE374
+# px=66 (original width)
+JP Ｒｅｆｌｅｃｔｉｏｎ
+EN Ｒｅｆｌｅｃｔｉｏｎ
+
+@ 2ND:060BE38C
+# px=89 (original width)
+JP Ｓｈａｂｕ－ｓｈａｂｕ
+EN Ｓｈａｂｕ－Ｓｈａｂｕ
+
+@ 2ND:060BE3A4
+# px=78 (original width)
+JP Ｓｋｙｓｃｒａｐｅｒ
+EN Ｓｋｙｓｃｒａｐｅｒ
+
+@ 2ND:060BE3BC
+# px=66 (original width)
+JP Ｓｙｎｄｒｏｍｅ
+EN Ｓｙｎｄｒｏｍｅ
+
+@ 2ND:060BE3D0
+# px=55 (original width)
+JP Ｔｏｒｎａｄｏ
+EN Ｔｏｒｎａｄｏ
+
+@ 2ND:060BE3E0
+# px=58 (original width)
+JP Ｖｉｂｒａｔｉｏｎ
+EN Ｖｉｂｒａｔｉｏｎ
+
+@ 2ND:060BE3F4
+# px=32 (original width)
+JP Ｖｉｌｌａｉｎ
+EN Ｖｉｌｌａｉｎ
+
+@ 2ND:060BE404
+# px=82 (original width)
+JP Ｈｅａｖｙ ｃｌａｓｓ
+EN Ｈｅａｖｙｗｅｉｇｈｔ
+
+@ 2ND:060BE41C
+# px=131 (original width)
+JP Ｊｕｎｉｏｒ ｈｅａｖｙ ｃｌａｓｓ
+EN Ｊｒ． Ｈｅａｖｙｗｅｉｇｈｔ
+
+@ 2ND:060BE634
+# table 060BED58
+# px=88 (original width)
+JP ﾓｰﾄﾞｾﾚｸﾄに戻る
+EN To Mode Select
+
+@ 2ND:060BE644
+# table 060C1050
+# px=200 (original width)
+JP ＨＷＡ ﾍﾋﾞｰ級統一ｼﾝｸﾞﾙﾁｬﾝﾋﾟｵﾝｼｯﾌﾟ
+EN <HWA> Unified Heavy Title
+
+@ 2ND:060BE668
+# px=192 (original width)
+JP ＨＷＡ ﾍﾋﾞｰ級統一ﾀｯｸﾞﾁｬﾝﾋﾟｵﾝｼｯﾌﾟ
+EN <HWA> Unified Heavy Tag Title
+
+@ 2ND:060BE68C
+# px=218 (original width)
+JP ＨＷＡ Ｊｒ．ﾍﾋﾞｰ級統一ｼﾝｸﾞﾙﾁｬﾝﾋﾟｵﾝｼｯﾌﾟ
+EN <HWA> Unified Jr. Heavy Title
+
+@ 2ND:060BE6B4
+# px=210 (original width)
+JP ＨＷＡ Ｊｒ．ﾍﾋﾞｰ級統一ﾀｯｸﾞﾁｬﾝﾋﾟｵﾝｼｯﾌﾟ
+EN <HWA> Unified Jr. Heavy Tag Title
+
+@ 2ND:060BE6DC
+# px=176 (original width)
+JP ＨＷＡ 統一６人ﾀｯｸﾞﾁｬﾝﾋﾟｵﾝｼｯﾌﾟ
+EN <HWA> Unified 6-Man Tag Title
+
+@ 2ND:060BE71C
+# code near 06083A88
+# px=228 (original width)
+JP 記録を正しく保存することができませんでした。{n}もう一度やり直して下さい。
+EN Couldn't save the record.{n}Please try again.
+
+@ 2ND:060BEA34
+# table 060BEA5C
+# px=42 (original width)
+JP Ｐｏｉｎｔ 
+EN Ｐｏｉｎｔ 
+
+@ 2ND:060BEA40
+# px=108 (original width)
+JP 全団体制覇まで あと
+EN To conquer all: 
+
+@ 2ND:060BEA54
+# px=12 (original width)
+JP 第
+EN #
+
+@ 2ND:060BEA70
+# table 060BEA98
+# px=24 (original width)
+JP 団体
+EN  to go
+
+@ 2ND:060BEA78
+# px=60 (original width)
+JP 代チャンピオン
+EN  Champion
+
+@ 2ND:060BEA88
+# px=58 (original width)
+JP 回目の防衛
+EN Defense #
+
+@ 2ND:060BEC80
+# table 060BECB8
+# px=33 (original width)
+JP ＮＥＸＴ
+EN Ｎｅｘｔ
+
+@ 2ND:060BEC8C
+# px=68 (original width)
+JP ＣＯＮＴＩＮＵＥ
+EN Ｃｏｎｔｉｎｕｅ
+
+@ 2ND:060BECA0
+# px=35 (original width)
+JP ＳＡＶＥ
+EN Ｓａｖｅ
+
+@ 2ND:060BECAC
+# px=28 (original width)
+JP ＥＸＩＴ
+EN Ｅｘｉｔ
+
+@ 2ND:060BED3C
+# table 060BED58
+# px=73 (original width)
+JP ＮＥＷ ＧＡＭＥ
+EN Ｎｅｗ Ｇａｍｅ
+
+@ 2ND:060BED4C
+# px=37 (original width)
+JP ＬＯＡＤ
+EN Ｌｏａｄ
+
+@ 2ND:060BF928
+# table 060BF9B0
+# px=56 (original width)
+JP ｵｰｿﾄﾞｯｸｽ
+EN Orthodox
+
+@ 2ND:060BF934
+# px=48 (original width)
+JP ﾃｸﾆｼｬﾝ
+EN Technician
+
+@ 2ND:060BF93C
+# px=40 (original width)
+JP ﾚｽﾘﾝｸﾞ
+EN Wrestling
+
+@ 2ND:060BF944
+# px=40 (original width)
+JP ｸﾞﾗｳﾝﾄﾞ
+EN Ground
+
+@ 2ND:060BF94C
+# px=24 (original width)
+JP ﾊﾟﾜｰ
+EN Power
+
+@ 2ND:060BF954
+# px=32 (original width)
+JP ｼﾞｭﾆｱ
+EN Junior
+
+@ 2ND:060BF95C
+# px=48 (original width)
+JP ﾙﾁｬﾄﾞｰﾙ
+EN Luchador
+
+@ 2ND:060BF964
+# px=24 (original width)
+JP ﾋｰﾙ
+EN Heel
+
+@ 2ND:060BF968
+# px=48 (original width)
+JP ﾐｽﾃﾘｱｽ
+EN Mysterious
+
+@ 2ND:060BF970
+# px=40 (original width)
+JP ｼｭｰﾀｰ
+EN Shooter
+
+@ 2ND:060BF978
+# px=40 (original width)
+JP ﾌｧｲﾀｰ
+EN Fighter
+
+@ 2ND:060BF980
+# px=48 (original width)
+JP ｸﾞﾗｯﾌﾟﾗｰ
+EN Grappler
+
+@ 2ND:060BF98C
+# px=32 (original width)
+JP ﾊﾟﾝｻｰ
+EN <Panther*>
+
+@ 2ND:060BF994
+# px=48 (original width)
+JP ｼﾞｬｲｱﾝﾄ
+EN Giant
+
+@ 2ND:060BF99C
+# px=24 (original width)
+JP 魔性
+EN Devil
+
+@ 2ND:060BF9A4
+# px=56 (original width)
+JP ｵｰﾙﾗｳﾝﾄﾞ
+EN All-Round
+
+@ 2ND:060BFB88
+# table 060BFCE4
+# px=64 (original width)
+JP 所属団体{n}階級{n}身長{n}体重{n}生年{n}生月{n}生日{n}出身地{n}ファイトスタイル{n}返し技{n}クリティカル{n}回復力{n}
+EN Promotion{n}Class{n}Height{n}Weight{n}Year{n}Month{n}Day{n}From{n}Style{n}Reversal{n}Critical{n}Recovery{n}
+
+@ 2ND:060BFBE4
+# px=84 (original width)
+JP 回復力（流血時）{n}呼吸法{n}呼吸法（流血時）{n}精神力{n}精神力（流血時）{n}首耐久度{n}腕耐久度{n}
+EN Recovery (Bleed){n}Breathing{n}Breath (Bleed){n}Spirit{n}Spirit (Bleed){n}Neck{n}Arms{n}
+
+@ 2ND:060BFC38
+# px=74 (original width)
+JP 腰耐久度{n}脚耐久度{n}移動速度{n}昇降速度{n}登り／駆け登り{n}
+EN Waist{n}Legs{n}Move Speed{n}In/Out Speed{n}Climb/Run Up{n}
+
+@ 2ND:060BFC6C
+# px=80 (original width)
+JP 場外復帰カウント{n}タッチワーク{n}テーマ曲{n}かけ声１ 声色{n}かけ声１ 種類{n}かけ声２ 声色{n}かけ声２ 種類{n}
+EN Return Count{n}Tag Work{n}Theme{n}Shout 1 Tone{n}Shout 1 Type{n}Shout 2 Tone{n}Shout 2 Type{n}
+
+@ 2ND:060BFCCC
+# px=56 (original width)
+JP {x106,}{s2}－ 終了 －{s0}{n}
+EN {x106,}{s2}- End -{s0}{n}
+
+@ 2ND:060BFD1C
+# table 060BFD90
+# px=72 (original width)
+JP ＨＷＡ ヘビー級
+EN <HWA> Heavy
+
+@ 2ND:060BFD2C
+# px=96 (original width)
+JP ＨＷＡ ヘビー級タッグ
+EN <HWA> Heavy Tag
+
+@ 2ND:060BFD44
+# px=104 (original width)
+JP ＨＷＡ ジュニアヘビー級
+EN <HWA> Jr. Heavy
+
+@ 2ND:060BFD5C
+# px=128 (original width)
+JP ＨＷＡ ジュニアヘビー級タッグ
+EN <HWA> Jr. Heavy Tag
+
+@ 2ND:060BFD7C
+# px=80 (original width)
+JP ＨＷＡ ６人タッグ
+EN <HWA> 6-Man Tag
+
+@ 2ND:060BFEC4
+# table 060BFEF4
+# px=12 (original width)
+JP {x115,}＆
+EN {x115,}&
+
+@ 2ND:060BFECC
+# px=24 (original width)
+JP {x083,}＆{x052,}＆
+EN {x083,}&{x052,}&
+
+@ 2ND:060BFEDC
+# px=12 (original width)
+JP {x467,}＆
+EN {x467,}&
+
+@ 2ND:060BFEE4
+# px=24 (original width)
+JP {x435,}＆{x052,}＆
+EN {x435,}&{x052,}&
+
+@ 2ND:060BFEF0
+# code near 0609868C
+# px=12 (original width)
+JP ＆
+EN &
+
+@ 2ND:060C0F84
+# table 060C1008
+# px=136 (original width)
+JP Ｙｏｕｒ ｎｅｗ ｏｐｐｏｎｅｎｔ
+EN Ｙｏｕｒ ｎｅｗ ｏｐｐｏｎｅｎｔ
+
+@ 2ND:060C0FA8
+# px=94 (original width)
+JP ｉｓ ｔｕｒｎｉｎｇ ｕｐ！
+EN ｉｓ ｈｅｒｅ！
+
+@ 2ND:060C0FC4
+# px=144 (original width)
+JP Ｙｏｕｒ ｎｅｗ ｏｐｐｏｎｅｎｔｓ
+EN Ｙｏｕｒ ｎｅｗ ｏｐｐｏｎｅｎｔｓ
+
+@ 2ND:060C0FE8
+# px=107 (original width)
+JP ａｒｅ ｔｕｒｎｉｎｇ ｕｐ！
+EN ａｒｅ ｈｅｒｅ！
+
+@ 2ND:060C1834
+# code near 0609C410
+# px=20 (original width)
+JP ３人
+EN 3 Men
+
+@ 2ND:060C3BEC
+# code near 060A9418
+# px=72 (original width)
+JP フェニックスアロー
+EN Phoenix Arrow
+
+@ 2ND:060C3E70
+# code near 060AE0A4
+# px=240 (original width)
+JP ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿{p0,0,}
+EN ____________________{p0,0,}

@@ -1,0 +1,507 @@
+# Messages of 1ST.BIN (the resident program): backup memory / save warnings and others.
+# Same notation as text/menus.txt. Strings are relocated: no byte limit.
+
+@ 1ST:0601AB54
+# table 0601AD04
+# px=170 (original width)
+JP どちらのバックアップを使用しますか？{y32,}
+EN Use which backup?{y32,}
+
+@ 1ST:0601AB80
+# px=53 (original width)
+JP {s5}本体ＲＡＭ{y24,}
+EN {s5}System Memory{y24,}
+
+@ 1ST:0601AB94
+# px=77 (original width)
+JP {s1}カートリッジＲＡＭ
+EN {s1}Cartridge RAM
+
+@ 1ST:0601ABAC
+# code near 0601AD24
+# px=53 (original width)
+JP {s1}本体ＲＡＭ{y24,}
+EN {s1}System Memory{y24,}
+
+@ 1ST:0601ABC0
+# code near 0601AD28
+# px=77 (original width)
+JP {s5}カートリッジＲＡＭ
+EN {s5}Cartridge RAM
+
+@ 1ST:0601B31C
+# table 0603DF14
+# px=46 (original width)
+JP 反則負け
+EN DQ Loss
+
+@ 1ST:0601B328
+# px=46 (original width)
+JP 反則勝ち
+EN DQ Win
+
+@ 1ST:0601B334
+# px=70 (original width)
+JP リングアウト負け
+EN Ring Out Loss
+
+@ 1ST:0601B348
+# px=70 (original width)
+JP リングアウト勝ち
+EN Ring Out Win
+
+@ 1ST:0601B35C
+# px=48 (original width)
+JP Ｋ．Ｏ．負け
+EN K.O. Loss
+
+@ 1ST:0601B36C
+# px=48 (original width)
+JP Ｋ．Ｏ．勝ち
+EN K.O. Win
+
+@ 1ST:0601B37C
+# code near 0601B43C
+# px=74 (original width)
+JP ランダム返しです
+EN Random result
+
+@ 1ST:0601B4B0
+# code near 0601B584
+# px=228 (original width)
+JP 記録を正しく読み込むことができませんでした。
+EN Couldn't load the record.
+
+@ 1ST:0601C270
+# table 0603DFB8
+# px=56 (original width)
+JP ネオ・ジャパン
+EN Neo Japan
+
+@ 1ST:0601C280
+# px=24 (original width)
+JP トンガ
+EN Tonga
+
+@ 1ST:0601C288
+# px=80 (original width)
+JP 南アフリカ共和国
+EN South Africa
+
+@ 1ST:0601C29C
+# px=68 (original width)
+JP ボツワナ共和国
+EN Botswana
+
+@ 1ST:0601C2AC
+# px=76 (original width)
+JP ブルガリア共和国
+EN Bulgaria
+
+@ 1ST:0601C2C0
+# px=64 (original width)
+JP ニュージーランド
+EN New Zealand
+
+@ 1ST:0601C2D4
+# px=56 (original width)
+JP オーストラリア
+EN Australia
+
+@ 1ST:0601C2E4
+# px=16 (original width)
+JP タイ
+EN Thai
+
+@ 1ST:0601C2EC
+# px=32 (original width)
+JP モンゴル
+EN Mongolia
+
+@ 1ST:0601C2F8
+# px=24 (original width)
+JP 朝鮮
+EN Korea
+
+@ 1ST:0601C300
+# px=24 (original width)
+JP 韓国
+EN S. Korea
+
+@ 1ST:0601C308
+# px=24 (original width)
+JP 中国
+EN China
+
+@ 1ST:0601C310
+# px=24 (original width)
+JP スイス
+EN Swiss
+
+@ 1ST:0601C318
+# px=32 (original width)
+JP スペイン
+EN Spain
+
+@ 1ST:0601C324
+# px=32 (original width)
+JP イタリア
+EN Italy
+
+@ 1ST:0601C330
+# px=32 (original width)
+JP オランダ
+EN Holland
+
+@ 1ST:0601C33C
+# px=68 (original width)
+JP グルジア共和国
+EN Georgia
+
+@ 1ST:0601C34C
+# px=48 (original width)
+JP フィンランド
+EN Finland
+
+@ 1ST:0601C35C
+# px=32 (original width)
+JP キューバ
+EN Cuba
+
+@ 1ST:0601C368
+# px=32 (original width)
+JP ヨルダン
+EN Jordan
+
+@ 1ST:0601C374
+# px=32 (original width)
+JP スーダン
+EN Sudan
+
+@ 1ST:0601C380
+# px=24 (original width)
+JP インド
+EN India
+
+@ 1ST:0601C388
+# px=48 (original width)
+JP プエルトリコ
+EN Puerto Rico
+
+@ 1ST:0601C398
+# px=24 (original width)
+JP ロシア
+EN Russia
+
+@ 1ST:0601C3A0
+# px=32 (original width)
+JP ブラジル
+EN Brazil
+
+@ 1ST:0601C3AC
+# px=32 (original width)
+JP フランス
+EN France
+
+@ 1ST:0601C3B8
+# px=32 (original width)
+JP イギリス
+EN UK
+
+@ 1ST:0601C3C4
+# px=32 (original width)
+JP メキシコ
+EN Mexico
+
+@ 1ST:0601C3D0
+# px=24 (original width)
+JP ドイツ
+EN Germany
+
+@ 1ST:0601C3D8
+# px=24 (original width)
+JP カナダ
+EN Canada
+
+@ 1ST:0601C3E0
+# px=32 (original width)
+JP アメリカ
+EN USA
+
+@ 1ST:0601C3EC
+# px=24 (original width)
+JP 日本
+EN Japan
+
+@ 1ST:0601C3F4
+# px=24 (original width)
+JP 不明
+EN Unknown
+
+@ 1ST:0601C3FC
+# table 0603E294
+# px=58 (original width)
+JP レジェンドＪｒ．
+EN Legend Jr.
+
+@ 1ST:0601C410
+# px=44 (original width)
+JP パンサー隊
+EN <Panther*> Squad
+
+@ 1ST:0601C41C
+# px=72 (original width)
+JP テクニシャンルード
+EN Tech Rudos
+
+@ 1ST:0601C430
+# px=80 (original width)
+JP カルガリータイフーン
+EN Calgary Typhoon
+
+@ 1ST:0601C448
+# px=64 (original width)
+JP ブラッディヒール
+EN Bloody Heels
+
+@ 1ST:0601C45C
+# px=72 (original width)
+JP 訪日最強外人
+EN Top Gaijin
+
+@ 1ST:0601C46C
+# px=86 (original width)
+JP ＭＷＡチャンピオンズ
+EN MWA Champions
+
+@ 1ST:0601C484
+# px=84 (original width)
+JP 真エンターテイナーズ
+EN True Showmen
+
+@ 1ST:0601C49C
+# px=45 (original width)
+JP Ｋ・Ｍ・Ｗ
+EN K.M.W
+
+@ 1ST:0601C4A8
+# px=38 (original width)
+JP 真ＩＷ軍
+EN True IW
+
+@ 1ST:0601C4B4
+# px=59 (original width)
+JP 旧ＵＷＨ軍２
+EN Ex-<UWH> 2
+
+@ 1ST:0601C4C4
+# px=54 (original width)
+JP 旧ＶＩＥＷ軍
+EN Ex-<VJP>
+
+@ 1ST:0601C4D4
+# px=43 (original width)
+JP Ｊ．フォース
+EN J. Force
+
+@ 1ST:0601C4E4
+# px=63 (original width)
+JP 新生ＵＷＨ軍
+EN New <UWH>
+
+@ 1ST:0601C4F4
+# px=59 (original width)
+JP 旧ＵＷＨ軍１
+EN Ex-<UWH> 1
+
+@ 1ST:0601C504
+# px=36 (original width)
+JP 力丸隊
+EN Team <Rikimaru>
+
+@ 1ST:0601C50C
+# px=72 (original width)
+JP シュートファイター
+EN Shoot Fighters
+
+@ 1ST:0601C520
+# px=96 (original width)
+JP アルティメットファイター
+EN Ultimate Fighters
+
+@ 1ST:0601C53C
+# px=40 (original width)
+JP スパークＪ
+EN Spark J
+
+@ 1ST:0601C548
+# px=56 (original width)
+JP ビバ！メヒコ軍
+EN Viva! Mexico
+
+@ 1ST:0601C558
+# px=52 (original width)
+JP ハイクラス軍
+EN Team <High Class>
+
+@ 1ST:0601C568
+# px=44 (original width)
+JP ゴングス軍
+EN Team <GONGS>
+
+@ 1ST:0601C574
+# px=71 (original width)
+JP ＵＷＨインテル軍
+EN Team <UWH>
+
+@ 1ST:0601C588
+# px=64 (original width)
+JP ジ・オリエンタル
+EN The Orientals
+
+@ 1ST:0601C59C
+# px=64 (original width)
+JP マッチョバディズ
+EN Macho Buddies
+
+@ 1ST:0601C5B0
+# px=72 (original width)
+JP エンターテイナーズ
+EN Entertainers
+
+@ 1ST:0601C5C4
+# px=60 (original width)
+JP 平成雪猿隊
+EN <Snow Monkeys>
+
+@ 1ST:0601C5D0
+# px=72 (original width)
+JP ゆきプロ正規軍
+EN <YukiPro> Army
+
+@ 1ST:0601C5E0
+# px=36 (original width)
+JP 春樹軍
+EN <Haruki> Army
+
+@ 1ST:0601C5E8
+# px=78 (original width)
+JP Ｒ・Ｙ・Ｕ正規軍
+EN <R.Y.U> Army
+
+@ 1ST:0601C5FC
+# px=28 (original width)
+JP ＴＣＷ
+EN ＴＣＷ
+
+@ 1ST:0601C604
+# px=80 (original width)
+JP ファイナル・ウェポン
+EN Final Weapon
+
+@ 1ST:0601C61C
+# px=24 (original width)
+JP ＩＭＡ
+EN ＩＭＡ
+
+@ 1ST:0601C624
+# px=86 (original width)
+JP ＯＬＩＶＥ最強外人
+EN <OJP> Gaijin
+
+@ 1ST:0601C638
+# px=48 (original width)
+JP 超時代軍
+EN Super Era Army
+
+@ 1ST:0601C644
+# px=36 (original width)
+JP 誠鬼軍
+EN Seiki Army
+
+@ 1ST:0601C64C
+# px=60 (original width)
+JP 真誠倒幕軍
+EN <Tobakugun>
+
+@ 1ST:0601C658
+# px=36 (original width)
+JP 山本隊
+EN <Yamamoto> Gun
+
+@ 1ST:0601C660
+# px=36 (original width)
+JP 五銃士
+EN Five Musketeers
+
+@ 1ST:0603DB90
+# table 0603DDA4
+# px=316 (original width)
+JP {n}{y-2,}このままゲームを開始した場合、記録を保存することはできません。{n}{y7,}
+EN {n}{y-2,}If you start now, records can't be saved.{n}{y7,}
+
+@ 1ST:0603DBD8
+# px=276 (original width)
+JP 記録を保存するためには {s3}３１８{s1} の空き容量が必要です。{n}
+EN Saving needs {s3}318{s1} free blocks.{n}
+
+@ 1ST:0603DC14
+# px=318 (original width)
+JP セガサターン本体の保存データ管理画面で、他のゲームの記録を消すか
+EN In Memory Manager, erase other saves
+
+@ 1ST:0603DC58
+# px=315 (original width)
+JP またはカートリッジＲＡＭにコピーして、ゲームを再スタートしてください。{n}{y7,}
+EN or copy to Cartridge RAM and restart.{n}{y7,}
+
+@ 1ST:0603DCA4
+# px=202 (original width)
+JP スタートボタンでこのままゲームを開始します。{n}
+EN Press Start to play now.{n}
+
+@ 1ST:0603DCD4
+# px=300 (original width)
+JP ＬかＲボタンを押したままリセットボタンを押すと、セガサターン本体の
+EN Hold L or R and press Reset to go to
+
+@ 1ST:0603DD18
+# px=156 (original width)
+JP 保存データ管理画面へ進みます。
+EN Memory Manager.
+
+@ 1ST:0603DD38
+# px=326 (original width)
+JP セガサターン本体の保存データ管理画面で、他のゲームの記録を消して、
+EN In Memory Manager, erase other saves,
+
+@ 1ST:0603DD7C
+# px=146 (original width)
+JP ゲームを再スタートしてください。{n}{n}{y7,}
+EN then restart.{n}{n}{y7,}
+
+@ 1ST:0603DDDC
+# table 0603DF14
+# px=253 (original width)
+JP {n}{y40,}本体ＲＡＭのバックアップの準備がまだできていません。{n}{y10,}
+EN {n}{y40,}System Memory isn't ready yet.{n}{y10,}
+
+@ 1ST:0603DE1C
+# px=342 (original width)
+JP セガサターン本体の保存データ管理画面で、全ての記録を消してください。{n}{y10,}
+EN In Memory Manager, erase all saves.{n}{y10,}
+
+@ 1ST:0603DE68
+# px=300 (original width)
+JP ＬかＲボタンを押したままリセットボタンを押すと、セガサターン本体の
+EN Hold L or R and press Reset to go to
+
+@ 1ST:0603DEAC
+# px=156 (original width)
+JP 保存データ管理画面へ進みます。
+EN Memory Manager.
+
+@ 1ST:0603DECC
+# px=277 (original width)
+JP {n}{y40,}カートリッジＲＡＭのバックアップの準備がまだできていません。{n}{y10,}
+EN {n}{y40,}Cartridge RAM isn't ready yet.{n}{y10,}

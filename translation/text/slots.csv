@@ -1,0 +1,20 @@
+# Glyph room of strings the game redraws into reserved text slots (tools/slots.py measures it in
+# the emulator). One glyph per character drawn; spaces and codes take none. Checked by lint for
+# both name builds. `id` is a block id (file|address), a range of them (file|2ND:A-B) or
+# wrestlers.csv:<column>; px, when given, is the widest the text may draw.
+id,glyphs,px,screen,measured
+text/menus.txt|2ND:060BDB54,15,,Mode Select title,2026-10-27 slots 1/3 (0x4000/0x42D0)
+text/menus.txt|2ND:060BDB88,15,,Mode Select title,2026-10-27 slots 1/3 (0x4000/0x42D0)
+wrestlers.csv:name1,7,52,Wrestler Select name grid (real and parody short names),2026-10-26 setup 0x06085304 (add #112)
+text/menus.txt|2ND:060B1E84-060B2300,16,90,Edit appearance part names (centred between the size code and the frame),2026-10-27 value slots room 16
+moves.csv:japanese,20,150,Wrestler Select finisher (and other move-name areas),2026-10-27 sweep (room 20)
+text/menus.txt|2ND:06081704,12,,Exhibition config venue value,2026-10-27 sweep (room 12)
+text/menus.txt|2ND:060817B4,12,76,Exhibition config referee value (portrait at the right),2026-10-27 sweep
+text/menus.txt|2ND:060817D4,12,76,Exhibition config referee value (portrait at the right),2026-10-27 sweep
+text/menus.txt|2ND:060B38C8,2,,Edit moves voice marker,2026-10-27 sweep (room 2)
+text/menus.txt|2ND:060B38D0,2,,Edit moves voice marker,2026-10-27 sweep (room 2)
+text/menus.txt|2ND:06094B6C-06094C30,7,,Wrestler Edit profile values (class, ratings, climbing; rows of 7-8 glyphs),2026-10-27 room table 0x060BFCFC
+text/menus.txt|2ND:060BF928-060BF9A4,8,,Wrestler Edit profile fighting styles (row room 8),2026-10-27 room table 0x060BFCFC
+text/menus.txt|2ND:060B3634-060B3838,16,96,Edit Moves categories (left box; the V1/S marks sit at its left),2026-10-27 emulator
+text/menus.txt|2ND:060B1A28-060B1CC0,6,66,CPU Logic action labels (before the percentages; some also Moves categories),2026-10-27 emulator slot room 6
+text/messages.txt|1ST:0601C3FC-0601C660,9,,Elimination Team Entry: team name (slots 5/6 alternate; a 10th glyph runs into the 1st member name),2026-10-27 te6

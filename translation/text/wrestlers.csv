@@ -1,0 +1,174 @@
+# Roster (1ST.BIN 0x0603E680: 160 records of 0x1AC bytes). Two English versions of every name:
+#   en_* - the real wrestler (default build); parody_* - the game's own stand-in name, romanized
+#   (build.py --names parody). en_nick is used by both.
+# name1 is the short name the game shows alone (lists). The full name (0x0601B114) is name1 +
+#   name2 in order 1-2, name2 + name1 in order 2-1 (record byte +1, bit 0x80), with the separator
+#   from the low 4 bits of that byte (0 space, 1 ・, 2 ＝, 3 none). The English sets both per build:
+#   en_order / parody_order, a space when both parts are there; so the names hold no spaces at
+#   their ends. Order `1+2` joins them with no separator: a short name too long for the Wrestler
+#   Select grid (7 glyphs, 52 px) is split - name1 "Fujinam" + name2 "i" = "Fujinami" (owner,
+#   2026-10-27; the full name is then the family name alone). en_full / parody_full keep the
+#   whole name for the text (<Fighter Yamato> tokens); they are not written to the game. English reads given name first: 2-1 name2 "Keiji", name1 "Mutoh" -> "Keiji Mutoh",
+#   short "Mutoh"; 1-2 for western names written that way in the Japanese (Big Schteiner).
+# Room (single-byte letters; digits and other symbols count 2): name1 13, name2 19, nick 23.
+idx,jp_order,name1,name2,nick,en_order,en_name1,en_name2,parody_order,parody_name1,parody_name2,en_full,parody_full,en_nick,notes
+0,2-1,大和,ファイター,不屈の飛龍,1+2,Fujinam,i,2-1,Yamato,Fighter,Tatsumi Fujinami,,Unyielding Dragon,[from FPG] real: Tatsumi Fujinami; parody: Fighter Yamato
+1,2-1,力丸,ハリケーン,最後の志士,2-1,Choshu,Riki,1+2,Rikimar,u,,Hurricane Rikimaru,Last Patriot,[from FPG] real: Riki Choshu; parody: Hurricane Rikimaru
+2,1-2,俊藤,剣,風雲剣士,2-1,Mutoh,Keiji,2-1,Shundo,Ken,,,Stormy Swordsman,[from FPG] real: Keiji Mutoh; parody: Ken Shundo
+3,2-1,旗本,クラッシャー,爆殺クラッシャー,1+2,Hashim,oto,1+2,Hatamo,to,Shinya Hashimoto,Crusher Hatamoto,Explosive Crusher,[from FPG] real: Shinya Hashimoto; parody: Crusher Hatamoto
+4,2-1,河野,バイオレンス,狂乱の獅子王,2-1,Chono,Masahiro,2-1,Kono,Violence,,,Mad Lion King,[from FPG] real: Masahiro Chono; parody: Violence Kono
+5,1-2,伊達,弘,華麗な流星,2-1,Hase,Hiroshi,2-1,Date,Hiroshi,,,Graceful Meteor,[from FPG] real: Hiroshi Hase; parody: Hiroshi Date
+6,2-1,慶介,ストーム,爆走重戦車,2-1,Sasaki,Kensuke,2-1,Keisuke,Storm,,,Rampaging Tank,[from FPG] real: Kensuke Sasaki; parody: Storm Keisuke
+7,1-2,杵塚,貴幸,北海のジャッカル,2-1,Iizuka,Takayuki,1+2,Kinezuk,a,,Takayuki Kinezuka,Jackal of the North,[from FPG] real: Takayuki Iizuka; parody: Takayuki Kinezuka
+8,2-1,ヒロ,レイジング,ロンリーレジスタンス,2-1,Saito,Hiro,2-1,Hiro,Raging,,,Lonely Resistance,[from FPG] real: Hiro Saito; parody: Raging Hiro
+9,1-2,宏田,純一,キラーマシーン,2-1,Hirata,Junji,2-1,Hirota,Junichi,,,Killer Machine,[from FPG] real: Junji Hirata; parody: Junichi Hirota
+10,1-2,水戸,勇,技巧の仕事師,2-1,Kido,Osamu,2-1,Mito,Isamu,,,Master Craftsman,[from FPG] real: Osamu Kido; parody: Isamu Mito
+11,2-1,天本,バッファロー,突撃暴れ牛,2-1,Tenzan,Hiroyoshi,1+2,Amamo,to,,Buffalo Amamoto,Charging Bull,[from FPG] real: Hiroyoshi Tenzan; parody: Buffalo Amamoto
+12,1-2,梯村,徹,紅顔の美少年,1+2,Nishimu,ra,1+2,Hashigo,mura,Osamu Nishimura,Tetsu Hashigomura,Rosy-Cheeked Beauty,owner list 2026-10-26: real Osamu Nishimura; parody Tetsu Hashigomura
+13,1-2,木嶋,悟,放たれた猛獣,2-1,Kojima,Satoshi,2-1,Kijima,Satoru,,,Unleashed Beast,[from FPG] real: Satoshi Kojima; parody: Satoru Kijima
+14,1-2,阪田,祐次郎,マスキュリンシューター,2-1,Nagata,Yuji,2-1,Sakata,Yujiro,,,Masculine Shooter,[from FPG] real: Yuji Nagata; parody: Yujiro Sakata
+15,1-2,滝沢,義光,五輪の星,1+2,Ishizaw,a,1+2,Takiza,wa,Tokimitsu Ishizawa,Yoshimitsu Takizawa,Olympic Star,owner list 2026-10-26: real Tokimitsu Ishizawa; parody Yoshimitsu Takizawa
+16,1-2,山本,和輝,熱き蹴撃手,1+2,Yamaza,ki,1+2,Yamamo,to,Kazuo Yamazaki,Kazuki Yamamoto,Fiery Kicker,[from FPG] real: Kazuo Yamazaki; parody: Kazuki Yamamoto
+17,2-1,カイザー,超帝スーパー,時の皇帝,2-1,Liger,Jushin Thunder,2-1,Kaiser,Chotei Super,,,Emperor of the Age,[from FPG] real: Jushin Thunder Liger; parody: Chotei Super Kaiser
+18,2-1,カミカゼ,Ｅ,士魂の隼,1+2,Samura,i,1+2,Kamika,ze,El Samurai,E. Kamikaze,Samurai Falcon,[from FPG] real: El Samurai; parody: E. Kamikaze
+19,2-1,野中,レイジング,いぶし銀,2-1,Honaga,Norio,2-1,Nonaka,Raging,,,Seasoned Veteran,[from FPG] real: Norio Honaga; parody: Raging Nonaka
+20,1-2,鎌本,鋭司,猛き若虎,1+2,Kanemo,to,1+2,Kamam,oto,Koji Kanemoto,Eiji Kamamoto,Fierce Young Tiger,[from FPG] real: Koji Kanemoto; parody: Eiji Kamamoto
+21,1-2,大刈,真一郎,次代の新鋭,2-1,Otani,Shinjiro,2-1,Ogari,Shinichiro,,,Next-Gen Up-and-Comer,[from FPG] real: Shinjiro Otani; parody: Shinichiro Ogari
+22,2-1,ファントム,ワイルド,天駆ける天馬,1+2,Pegasu,s,1+2,Phanto,m,Wild Pegasus,Wild Phantom,Pegasus in the Sky,owner list 2026-10-26: real Wild Pegasus; parody Wild Phantom
+23,1-2,ブラック,カイザー,漆黒の皇帝,1-2,Black,Tiger II,1-2,Black,Kaiser,,,Jet-Black Emperor,owner list 2026-10-26: real Black Tiger II; parody Black Kaiser
+24,2-1,ジロー,サムライ,維新の頭目,1+2,Koshin,aka,2-1,Jiroh,Samurai,Shiro Koshinaka,,Ishin Ringleader,[from FPG] real: Shiro Koshinaka; parody: Samurai Jiroh
+25,2-1,拳悟,イナズマ,甦る鉄拳,2-1,Kimura,Kengo,1-2,Kengo,Inazuma,,,Revived Iron Fist,owner list 2026-10-26: real Kengo Kimura; parody Kengo Inazuma
+26,2-1,護東,トシ,地獄坊主,2-1,Goto,Tatsutoshi,2-1,Goto,Toshi,,,Hell Monk,[from FPG] real: Tatsutoshi Goto; parody: Toshi Goto
+27,1-2,野原,道憲,アニマルＪｒ．,2-1,Ohara,Michiyoshi,2-1,Nohara,Michinori,,,Animal Jr.,[from FPG] real: Michiyoshi Ohara; parody: Michinori Nohara
+28,1-2,五十嵐,利明,闇狩人,1+2,Kobaya,shi,1+2,Igaras,hi,Kuniaki Kobayashi,Toshiaki Igarashi,Dark Hunter,[from FPG] real: Kuniaki Kobayashi; parody: Toshiaki Igarashi
+29,1-2,内藤,秋吉,突撃喧嘩拳,2-1,Saito,Akitoshi,2-1,Naito,Akiyoshi,,,Charging Brawler,[from FPG] real: Akitoshi Saito; parody: Akiyoshi Naito
+30,1-2,最上,飛鳥,リングのムササビ,2-1,Nogami,Akira,2-1,Mogami,Asuka,,,Flying Squirrel,owner list 2026-10-26: real Akira Nogami; parody Asuka Mogami
+31,1-2,氷川,光秀,ハイパーエルボー,2-1,Misawa,Mitsuharu,2-1,Hikawa,Mitsuhide,,,Hyper Elbow,[from FPG] real: Mitsuharu Misawa; parody: Mitsuhide Hikawa
+32,1-2,風間,利家,燃える闘志,2-1,Kawada,Toshiaki,2-1,Kazama,Toshiie,,,Burning Spirit,[from FPG] real: Toshiaki Kawada; parody: Toshiie Kazama
+33,1-2,相模,朗,未完のプリンス,2-1,Taue,Akira,2-1,Sagami,Akira,,,Unfinished Prince,[from FPG] real: Akira Taue; parody: Akira Sagami
+34,1-2,富樫,慶次,スパークフレッシュ,1+2,Kobash,i,2-1,Togashi,Kenji,Kenta Kobashi,,Spark Fresh,owner list 2026-10-26: real Kenta Kobashi; parody Kenji Togashi
+35,1-2,秋沢,瞬,次代の新星,1+2,Akiyam,a,1+2,Akisaw,a,Jun Akiyama,Shun Akisawa,Supernova,[from FPG] real: Jun Akiyama; parody: Shun Akisawa
+36,1-2,泉谷,牛角,平成頭突き王,2-1,Izumida,Jun,1+2,Izumita,ni,,Ushisumi Izumitani,Headbutt King,[from FPG] real: Jun Izumida; parody: Ushisumi Izumitani
+37,1-2,大林,剛雄,密林王子,2-1,Omori,Takao,1+2,Obayas,hi,,Takao Obayashi,Jungle Prince,owner list 2026-10-26: real Takao Omori; parody Takao Obayashi
+38,1-2,本間,羅魂,吠える原人,2-1,Honda,Tamon,2-1,Honma,Rakon,,,Howling Caveman,[from FPG] real: Tamon Honda; parody: Rakon Honma
+39,1-2,トミー,ボンバー,パワフル爆弾,1-2,Jumbo,Tsuruta,1-2,Tommy,Bomber,,,Powerful Bomb,[from FPG] real: Jumbo Tsuruta; parody: Tommy Bomber
+40,2-1,バイソン,スター,リングの猛牛,2-1,Hansen,Stan,2-1,Bison,Star,,,Ring Bull,[from FPG] real: Stan Hansen; parody: Star Bison
+41,2-1,ジェイムス,スティル,冷酷医師,1+2,William,s,2-1,James,Steel,Steve Williams,,Cold Doctor,owner list 2026-10-26: real Steve Williams; parody Steel James
+42,2-1,ピース,ジョン,金髪の餓狼,2-1,Ace,Johnny,2-1,Peace,John,,,Blond Wolf,[from FPG] real: Johnny Ace; parody: John Peace
+43,1-2,ペンタゴン,,仮面愛国者,2-1,Patriot,The,1+2,Pentag,on,,Pentagon,Masked Patriot,owner list 2026-10-26: real The Patriot; parody Pentagon
+44,2-1,ブライト,Ｇ・Ｏ,スープレックスモンスター,1+2,Albrigh,t,2-1,Bright,G.O.,Gary Albright,,Suplex Monster,[from FPG] real: Gary Albright; parody: G.O. Bright
+45,2-1,ファームス,ダリル,アイアンマッスル,2-1,Furnas,Doug,2-1,Farms,Daryl,,,Iron Muscle,[from FPG] real: Doug Furnas; parody: Daryl Farms
+46,1-2,野河,芳直,静寂の昇竜,2-1,Ogawa,Yoshinari,2-1,Nogawa,Yoshinao,,,Silent Dragon,[from FPG] real: Yoshinari Ogawa; parody: Yoshinao Nogawa
+47,1-2,小淵沢,昌紀,ジュニアの猛者,2-1,Fuchi,Masanobu,1+2,Kobuch,izawa,,Masaki Kobuchizawa,Junior Veteran,owner list 2026-10-26: real Masanobu Fuchi; parody Masaki Kobuchizawa
+48,1-2,明智,清志,特攻魂,2-1,Kikuchi,Tsuyoshi,2-1,Akechi,Kiyoshi,,,Kamikaze Spirit,[from FPG] real: Tsuyoshi Kikuchi; parody: Kiyoshi Akechi
+49,2-1,グローバル,ボニー,鎖国の核弾頭,2-1,Kroffat,Danny,2-1,Global,Bonny,,,Lone Warhead,owner list 2026-10-26: real Danny Kroffat; parody Bonny Global
+50,2-1,ランダム,ログ,ハリウッドスター,1+2,Van Da,m,2-1,Random,Log,Rob Van Dam,,Hollywood Star,owner list 2026-10-26: real Rob Van Dam; parody Log Random
+51,1-2,ランマル,,羽く不死鳥,1+2,Hayabu,sa,1+2,Ranmar,u,Hayabusa,Ranmaru,Soaring Phoenix,[from FPG] real: Hayabusa; parody: Ranmaru
+52,1-2,棟矢,久勝,血に飢えた狼,2-1,Oya,Hisakatsu,2-1,Toya,Hisakatsu,,,Bloodthirsty Wolf,owner list 2026-10-26: real Hisakatsu Oya; parody Hisakatsu Toya
+53,2-1,松原,デンジャー,鮮血の牙,1+2,Matsun,aga,1+2,Matsub,ara,Mitsuhiro Matsunaga,Danger Matsubara,Bloody Fangs,owner list 2026-10-26: real Mitsuhiro Matsunaga; parody Danger Matsubara
+54,2-1,坂巻,ドリーマー,夢見る中年,1+2,Nakama,ki,1+2,Sakama,ki,Shoji Nakamaki,Dreamer Sakamaki,Aging Dreamer,[from FPG] real: Shoji Nakamaki; parody: Dreamer Sakamaki
+55,2-1,五条,ハンター,怒れる鬼神,2-1,Goto,Tarzan,2-1,Gojo,Hunter,,,Raging Demon God,[from FPG] real: Tarzan Goto; parody: Hunter Gojo
+56,2-1,芦屋,Ｍｒ．,デスマッチの猛者,1+2,Gannos,uke,2-1,Ashiya,Mr.,Mister Gannosuke,,Death Match Veteran,owner list 2026-10-26: real Mister Gannosuke; parody Mr. Ashiya
+57,2-1,カグラ,ザ・ミステリアス,東洋の怪奇,2-1,Kabuki,The Great,2-1,Kagura,The Mysterious,,,Oriental Mystery,[from FPG] real: The Great Kabuki; parody: The Mysterious Kagura
+58,2-1,豪,パイオニア,馬鹿まっしぐら,2-1,Go,Ryuma,2-1,Go,Pioneer,,,Reckless Fool,[from FPG] real: Ryuma Go; parody: Pioneer Go
+59,2-1,犬磁,ボヘミアン,フリーマン,2-1,Takano,Shunji,2-1,Kenji,Bohemian,,,Free Man,[from FPG] real: Shunji Takano; parody: Bohemian Kenji
+60,2-1,トーゴー,マスター,暗黒大王,2-1,Pogo,Mister,2-1,Togo,Master,,,King of Darkness,owner list 2026-10-26: real Mister Pogo; parody Master Togo
+61,2-1,ボギー,ケリー,人間核弾頭,2-1,Gordy,Terry,2-1,Bogey,Kerry,,,Human Warhead,[from FPG] real: Terry Gordy; parody: Kerry Bogey
+62,2-1,ジェノサイド,ザ,リーサルウェポン,1+2,Gladiat,or,1+2,Genoci,de,The Gladiator,The Genocide,Lethal Weapon,[from FPG] real: The Gladiator; parody: The Genocide
+63,1-2,カスタム,マックス,哀愁のガンマン,1-2,Cactus,Jack,1-2,Custom,Max,,,Sorrowful Gunman,owner list 2026-10-26: real Cactus Jack; parody Custom Max
+64,2-1,ハザーズＡ,デス,ブラッド・バンク,2-1,A,Headhunter,2-1,A,Death Hazards,,,Blood Bank,[from FPG] real: Headhunter A; parody: Death Hazards A
+65,2-1,ハザーズＢ,デス,ブラッド・バンク,2-1,B,Headhunter,2-1,B,Death Hazards,,,Blood Bank,[from FPG] real: Headhunter B; parody: Death Hazards B
+66,2-1,ツジ,ロッキー,ハードロックエクスプレス,2-1,Fuji,Ricky,2-1,Tsuji,Rocky,,,Hard Rock Express,[from FPG] real: Ricky Fuji; parody: Rocky Tsuji
+67,1-2,タトゥー,,クレイジーアラビアン,1-2,Sabu,,1-2,Tattoo,,,,Crazy Arabian,[from FPG] real: Sabu; parody: Tattoo
+68,1-2,烈光,,リングの道化師,1-2,Gekko,,1-2,Rekko,,,,Clown of the Ring,owner list 2026-10-26: real Gekko; parody Rekko
+69,2-1,龍,サンダー,雷鳴戦士,2-1,Tenryu,Genichiro,2-1,Ryu,Thunder,,,Thunder Warrior,[from FPG] real: Genichiro Tenryu; parody: Thunder Ryu
+70,2-1,春樹,サクソン,ビッグバディ,2-1,Fuyuki,Hiromichi,2-1,Haruki,Saxon,,,Big Buddy,owner list 2026-10-26: real Hiromichi Fuyuki; parody Saxon Haruki
+71,2-1,溝口,シャウト,アニマルパワー,1+2,Hamagu,chi,1+2,Mizogu,chi,Animal Hamaguchi,Shout Mizoguchi,Animal Power,[from FPG] real: Animal Hamaguchi; parody: Shout Mizoguchi
+72,1-2,淡谷,伸久,ブランニューサンダー,2-1,Araya,Nobutaka,2-1,Awaya,Nobuhisa,,,New Thunder,[from FPG] real: Nobutaka Araya; parody: Nobuhisa Awaya
+73,1-2,ミスターＫ,,一匹狼,2-1,Kitao,Koji,1+2,Mister ,K,,Mister K,Lone Wolf,owner list 2026-10-26: real Koji Kitao; parody Mister K
+74,2-1,ダイナモ,ビッグ,破壊の使徒,2-1,Titan,Big,2-1,Dynamo,Big,,,Destroyer,[from FPG] real: Big Titan; parody: Big Dynamo
+75,1-2,アステカ,ドラゴン,太陽の真竜,1-2,Ultimo,Dragon,1-2,Azteca,Dragon,,,Sun Dragon,[from FPG] real: Ultimo Dragon; parody: Azteca Dragon
+76,1-2,魔童,,狂える猛犬,1-2,Jado,,1-2,Mado,,,,Mad Dog,[from FPG] real: Jado; parody: Mado
+77,1-2,鬼童,,空飛ぶ悪鬼,1-2,Gedo,,1-2,Kido,,,,Flying Demon,[from FPG] real: Gedo; parody: Kido
+78,1-2,オライオン,ビート,ゴールドイリュージョン,1-2,Lion,Heart,1-2,Orion,Beat,,,Gold Illusion,owner list 2026-10-26: real Lion Heart; parody Orion Beat
+79,2-1,カオス,ネグレクト,メヒコの魔豹,2-1,Casas,Negro,2-1,Chaos,Neglect,,,Panther of Mexico,[from FPG] real: Negro Casas; parody: Neglect Chaos
+80,2-1,ハヤテ,ブレード,東北の疾風,2-1,Sasuke,The Great,2-1,Hayate,Blade,,,Gale of Tohoku,[from FPG] real: The Great Sasuke; parody: Blade Hayate
+81,2-1,ドルフィン,Ｓ,浪速の彗星,2-1,Delfin,Super,2-1,Dolphin,S.,,,Comet of Naniwa,[from FPG] real: Super Delfin; parody: S. Dolphin
+82,1-2,ＮＡＴＯ,,平成の竜馬,1-2,SATO,,1-2,NATO,,,,Ryoma of Heisei,owner list 2026-10-26: real SATO; parody NATO
+83,1-2,ＷＡＫＡ,ゆきぐに,荒くれ一番星,1-2,TAKA,Michinoku,1-2,WAKA,Yukiguni,,,Wild First Star,owner list 2026-10-26: real TAKA Michinoku; parody WAKA Yukiguni
+84,2-1,音羽,怒乱,浪速のエトワール,2-1,Naniwa,Gran,2-1,Otowa,Doran,,,Star of Naniwa,[from FPG] real: Gran Naniwa; parody: Doran Otowa
+85,1-2,鬼龍,,飛龍戦士,1-2,Shiryu,,1-2,Kiryu,,,,Dragon Warrior,owner list 2026-10-26: real Shiryu; parody Kiryu
+86,2-1,ボーイ,ケリー,東北の荒馬,2-1,Boy,Terry,2-1,Boy,Kerry,,,Tohoku Stallion,owner list 2026-10-26: real Terry Boy; parody Kerry Boy
+87,1-2,船越,栄一,孤高の夢追い人,2-1,Funaki,Shoichi,1+2,Funako,shi,,Eiichi Funakoshi,Lone Dream Chaser,[from FPG] real: Shoichi Funaki; parody: Eiichi Funakoshi
+88,2-1,パンサーΔ,マスク・ド,夢幻の原石,2-1,IV,Tiger Mask,2-1,IV,Mask de Panther,,,Dream Diamond,[from FPG] real: Tiger Mask IV; parody: Mask de Panther IV
+89,2-1,ドゥガン,アックス,無敵の超人,2-1,Hogan,Hulk,2-1,Doogan,Axe,,,Invincible,owner list 2026-10-26: real Hulk Hogan; parody Axe Doogan
+90,2-1,サーベル,マッチョ,スーパーマッスル,2-1,Savage,Randy,2-1,Sabre,Macho,,,Super Muscle,[from FPG] real: Randy Savage; parody: Macho Sabre
+91,2-1,グラウンド,ジ・アンダー,地下の火葬人,1+2,Undert,aker,1+2,Underg,round,The Undertaker,The Underground,Dark Cremator,[from FPG] real: The Undertaker; parody: The Underground
+92,2-1,セイバー,スター,魔王の刺客,1-2,Vader,,2-1,Saber,Star,,,Hired Assassin,[from FPG] real: Vader; parody: Star Saber
+93,2-1,ギガス,スマッシャー・ＧＧ,フライングビースト,2-1,Bigelow,Bam Bam,2-1,Gigas,Smasher GG,,,Flying Beast,[from FPG] real: Bam Bam Bigelow; parody: Smasher GG Gigas
+94,2-1,スパイク,ザ,シルバースコーピオン,1-2,Sting,,2-1,Spike,The,,,Silver Scorpion,[from FPG] real: Sting; parody: The Spike
+95,2-1,武道,ザ・グレイテスト,妖忍者,2-1,Muta,The Great,2-1,Budo,The Greatest,,,Ninja Sorcerer,[from FPG] real: The Great Muta; parody: The Greatest Budo
+96,1-2,ビッグ,シュタイナー,豪腕ブルドッグ,1-2,Rick,Steiner,1-2,Big,Schteiner,,,Mighty Bulldog,[from FPG] real: Rick Steiner; parody: Big Schteiner
+97,1-2,スモール,シュタイナー,マッチョハンサム,1-2,Scott,Steiner,1-2,Small,Schteiner,,,Macho Handsome,[from FPG] real: Scott Steiner; parody: Small Schteiner
+98,1-2,ナイト,ブラスター,殺刃超特急,1-2,Hawk,Warrior,1-2,Night,Blaster,,,Killer Express,owner list 2026-10-26: real Hawk Warrior; parody Night Blaster
+99,1-2,アイアン,ブラスター,暴走機関車,1-2,Animal,Warrior,1-2,Iron,Blaster,,,Runaway Train,owner list 2026-10-26: real Animal Warrior; parody Iron Blaster
+100,2-1,バートン,フラッシュ,吼える閃光,2-1,Norton,Scott,2-1,Burton,Flash,,,Roaring Flash,[from FPG] real: Scott Norton; parody: Flash Burton
+101,1-2,ブラッド,ビート,ブラッドスコーピオン,1-2,Bret,Hart,1-2,Brad,Beat,,,Blood Scorpion,[from FPG] real: Bret Hart; parody: Brad Beat
+102,1-2,ローレル,,秒の殺し屋,1-2,Diesel,,1-2,Laurel,,,,Killer in Seconds,owner list 2026-10-26: real Diesel; parody Laurel
+103,2-1,仁水,神崎,さすらいの荒法師,1+2,Shinzak,i,2-1,Kanzaki,Jinsui,Jinsei Shinzaki,,Wandering Monk,[from FPG] real: Jinsei Shinzaki; parody: Jinsui Kanzaki
+104,1-2,ミフネ,,世界のミフネ,1+2,Kurosa,wa,1-2,Mifune,,Kurosawa,,Mifune of the World,owner list 2026-10-26: real Kurosawa; parody Mifune
+105,1-2,シュール,マイルズ,ハートブレイク・キッド,1-2,Shawn,Michaels,1-2,Surreal,Miles,,,Heartbreak Kid,[from FPG] real: Shawn Michaels; parody: Surreal Miles
+106,1-2,シルバー,ガスト,エロトマニア,1+2,Goldus,t,1-2,Silver,Gust,Goldust,,Erotomaniac,[from FPG] real: Goldust; parody: Silver Gust
+107,2-1,スレンダー,ディック,疑惑の貴公子,2-1,Flair,Ric,2-1,Slender,Dick,,,Suspicious Noble,[from FPG] real: Ric Flair; parody: Dick Slender
+108,1-2,真田,伸久,戦乱の荒武者,2-1,Takada,Nobuhiko,2-1,Sanada,Nobuhisa,,,Wild Warrior,[from FPG] real: Nobuhiko Takada; parody: Nobuhisa Sanada
+109,1-2,峰村,崇,Ｕの落とし子,2-1,Tamura,Kiyoshi,1+2,Minemu,ra,,Takashi Minemura,Child of the U,[from FPG] real: Kiyoshi Tamura; parody: Takashi Minemura
+110,1-2,安藤,障二,ビッグマウス,2-1,Anjo,Yoji,2-1,Ando,Shoji,,,Big Mouth,owner list 2026-10-26: real Yoji Anjo; parody Shoji Ando
+111,1-2,牧原,武彦,熱風児,1+2,Kakihar,a,1+2,Makihar,a,Masahito Kakihara,Takehiko Makihara,Hot Wind Kid,[from FPG] real: Masahito Kakihara; parody: Takehiko Makihara
+112,1-2,矢野,尚樹,フライングパンサー,2-1,Sano,Naoki,2-1,Yano,Naoki,,,Flying <Panther*>,[from FPG] real: Naoki Sano; parody: Naoki Yano
+113,1-2,甲山,良宏,密林ファイター,1+2,Takaya,ma,2-1,Koyama,Yoshihiro,Yoshihiro Takayama,,Jungle Fighter,[from FPG] real: Yoshihiro Takayama; parody: Yoshihiro Koyama
+114,1-2,山杜,慶一,ゴールデンボーイ,1+2,Yamamo,to,1+2,Yamamo,ri,Kenichi Yamamoto,Keiichi Yamamori,Golden Boy,[from FPG] real: Kenichi Yamamoto; parody: Keiichi Yamamori
+115,1-2,冴刃,明,世界の格闘王,2-1,Maeda,Akira,2-1,Saeba,Akira,,,World Fighting King,[from FPG] real: Akira Maeda; parody: Akira Saeba
+116,1-2,河本,信宏,ゴングスの彗星,1+2,Yamamo,to,1+2,Kawam,oto,Yoshihisa Yamamoto,Nobuhiro Kawamoto,Comet of <GONGS>,[from FPG] real: Yoshihisa Yamamoto; parody: Nobuhiro Kawamoto
+117,1-2,朱井,勝也,再起の剛勇,2-1,Nagai,Mitsuya,2-1,Akai,Katsuya,,,Comeback Hero,[from FPG] real: Mitsuya Nagai; parody: Katsuya Akai
+118,1-2,宝坂,大志,バイオニクスソルジャー,2-1,Kosaka,Tsuyoshi,2-1,Hosaka,Taishi,,,Bionics Soldier,owner list 2026-10-26: real Tsuyoshi Kosaka; parody Taishi Hosaka
+119,2-1,グレイ,リック,ファイティングサイボーグ,2-1,Vrij,Dick,2-1,Grey,Rick,,,Fighting Cyborg,[from FPG] real: Dick Vrij; parody: Rick Grey
+120,2-1,バーン,ウォルフ,コマンドウルフ,2-1,Han,Volk,2-1,Burn,Wolf,,,Commando Wolf,[from FPG] real: Volk Han; parody: Wolf Burn
+121,1-2,ジミー,ホーク,ダイナマイトパンク,1-2,Tony,Halme,1-2,Jimmy,Hawk,,,Dynamite Punk,owner list 2026-10-26: real Tony Halme; parody Jimmy Hawk
+122,2-1,ガブリエル,リカード,魔獣の剛拳,1+2,Bitsadz,e,2-1,Gabriel,Ricardo,Tariel Bitsadze,,Beast's Iron Fist,owner list 2026-10-26: real Tariel Bitsadze; parody Ricardo Gabriel
+123,2-1,ハイマン,ランス,ブルドッグファイター,2-1,Nijman,Hans,2-1,Hyman,Lance,,,Bulldog Fighter,owner list 2026-10-26: real Hans Nijman; parody Lance Hyman
+124,1-2,梶原,丈,サブミッションマスター,1+2,Fujiwar,a,1+2,Kajiwar,a,Yoshiaki Fujiwara,Jo Kajiwara,Submission Master,[from FPG] real: Yoshiaki Fujiwara; parody: Jo Kajiwara
+125,1-2,桧垣,誠,ハイブリッドレスラー,2-1,Funaki,Masakatsu,2-1,Higaki,Makoto,,,Hybrid Wrestler,[from FPG] real: Masakatsu Funaki; parody: Makoto Higaki
+126,2-1,みつる,観月,カミソリファイター,2-1,Suzuki,Minoru,2-1,Mizuki,Mitsuru,,,Razor Fighter,[from FPG] real: Minoru Suzuki; parody: Mitsuru Mizuki
+127,1-2,八薙,護,親分,2-1,Yamada,Manabu,2-1,Yanagi,Mamoru,,,The Boss,[from FPG] real: Manabu Yamada; parody: Mamoru Yanagi
+128,2-1,ハーロック,ウィン,シューティングヘラクレス,1+2,Shamro,ck,2-1,Harlock,Win,Wayne Shamrock,,Shooting Hercules,owner list 2026-10-26: real Wayne Shamrock; parody Win Harlock
+129,2-1,ドッケン,ボス,秒殺ソルジャー,2-1,Rutten,Bas,2-1,Dokken,Boss,,,Instant-KO Soldier,[from FPG] real: Bas Rutten; parody: Boss Dokken
+130,2-1,サントス,Ｅ,仮面の聖者,2-1,Santo,Hijo del,2-1,Santos,E.,,,Masked Saint,[from FPG] real: Hijo del Santo; parody: E. Santos
+131,1-2,シスコス,,狂った超帝,1+2,Psicosi,s,1-2,Siscos,,Psicosis,,Crazed Emperor,owner list 2026-10-26: real Psicosis; parody Siscos
+132,1-2,レイ,ミステリアスＪｒ．,天才飛行少年,1-2,Rey,Mysterio Jr.,1-2,Rey,Mysterious Jr.,,,Flying Prodigy,[from FPG] real: Rey Mysterio Jr.; parody: Rey Mysterious Jr.
+133,1-2,コナン,ザ・ブルータル,メヒコの野獣,1-2,Konnan,,1-2,Conan,the Brutal,,,Beast of Mexico,[from FPG] real: Konnan; parody: Conan the Brutal
+134,1-2,ニクソン,ステイシー,バーリトゥードの血統,1-2,Rickson,Gracie,1-2,Nixon,Stacie,,,Vale Tudo Bloodline,owner list 2026-10-26: real Rickson Gracie; parody Nixon Stacie
+135,2-1,ボルドー,ジェネラル,喧嘩屋,1+2,Gordea,u,1+2,Bordea,ux,Gerard Gordeau,General Bordeaux,Street Fighter,[from FPG] real: Gerard Gordeau; parody: General Bordeaux
+136,2-1,スミット,トーマス,黒い電光,2-1,Smith,Maurice,1+2,Schmid,t,,Thomas Schmidt,Black Lightning,[from FPG] real: Maurice Smith; parody: Thomas Schmidt
+137,2-1,ダダーン,ダン,アルティメットファイター,2-1,Severn,Dan,2-1,Dadarn,Dan,,,Ultimate Fighter,[from FPG] real: Dan Severn; parody: Dan Dadarn
+138,1-2,沖田,勝志,炎のカリスマ,2-1,Onita,Atsushi,2-1,Okita,Katsushi,,,Charisma of Flame,[from FPG] real: Atsushi Onita; parody: Katsushi Okita
+139,2-1,武蔵,ビクトリー,闘いの伝説,2-1,Inoki,Antonio,1+2,Musash,i,,Victory Musashi,Legend of Fighting,[from FPG] real: Antonio Inoki; parody: Victory Musashi
+140,2-1,司馬,グレート,世界を征する巨人,2-1,Baba,Giant,2-1,Shiba,Great,,,World Conqueror,[from FPG] real: Giant Baba; parody: Great Shiba
+141,1-2,力皇斬,,マットの創世主,1+2,Rikidoz,an,1+2,Rikioza,n,Rikidozan,Rikiozan,Creator of the Mat,[from FPG] real: Rikidozan; parody: Rikiozan
+142,2-1,コンドル,マスカラ,仮面大帝,1+2,Mascar,as,2-1,Condor,Mascara,Mil Mascaras,,Masked Emperor,[from FPG] real: Mil Mascaras; parody: Mascara Condor
+143,2-1,イーグル,マスカラ,荒鷲仮面,2-1,Caras,Dos,2-1,Eagle,Mascara,,,Masked Eagle,[from FPG] real: Dos Caras; parody: Mascara Eagle
+144,2-1,ロッシュ,ネバーランド,地下プロレスの覇者,2-1,Bock,Roland,2-1,Roche,Neverland,,,Underground King,[from FPG] real: Roland Bock; parody: Neverland Roche
+145,1-2,ケリー,テキサン,ワイルドブロンコ,1-2,Terry,Funk,1-2,Kerry,Texan,,,Wild Bronco,[from FPG] real: Terry Funk; parody: Kerry Texan
+146,1-2,ハリー,テキサンＪｒ．,グレートアメリカ,1-2,Dory,Funk Jr.,1-2,Harry,Texan Jr.,,,Great America,[from FPG] real: Dory Funk Jr.; parody: Harry Texan Jr.
+147,2-1,ブル,ビッグ・ザ・Ｇ,哲学獣,2-1,Brody,Bruiser,2-1,Bull,Big the G.,,,Philosopher Beast,[from FPG] real: Bruiser Brody; parody: Big the G. Bull
+148,2-1,デンジャー,アブドル・ザ,褐色の悪魔,1+2,Butche,r,2-1,Danger,Abdul the,Abdullah the Butcher,,Brown Devil,[from FPG] real: Abdullah the Butcher; parody: Abdul the Danger
+149,2-1,タイガー,マッド,血に飢えた虎,2-1,Singh,Tiger Jeet,2-1,Tiger,Mad,,,Bloodthirsty Tiger,[from FPG] real: Tiger Jeet Singh; parody: Mad Tiger
+150,2-1,ロシュモフ,ジャイアント,人間山脈,2-1,Giant,Andre the,1+2,Roussi,moff,,Giant Roussimoff,Human Mountain,[from FPG] real: Andre the Giant; parody: Giant Roussimoff
+151,1-2,カルロス,クラウザー,孤高の神様,1-2,Karl,Gotch,1-2,Karlos,Krauser,,,Lone God,[from FPG] real: Karl Gotch; parody: Karlos Krauser
+152,2-1,フェイズ,Ｒ・Ｊ,不敗の鉄人,2-1,Thesz,Lou,2-1,Phase,R.J.,,,Iron Man,[from FPG] real: Lou Thesz; parody: R.J. Phase
+153,1-2,グレート,パンサー,夢幻のシューター,1-2,Super,Tiger,1-2,Great,Panther,,,Dream Shooter,[from FPG] real: Super Tiger; parody: Great Panther
+154,2-1,マリポーサ,グラン,ルチャの小さな偉人,2-1,Hamada,Gran,1+2,Maripo,sa,,Gran Mariposa,Little Giant,[from FPG] real: Gran Hamada; parody: Gran Mariposa
+155,2-1,パンサーΒ,マスク・ド,夢幻の請負人,2-1,II,Tiger Mask,2-1,II,Mask de Panther,,,Dream Contractor,[from FPG] real: Tiger Mask II; parody: Mask de Panther II
+156,2-1,スミス,マイティボウイ,肉弾小僧,2-1,Smith,Davey Boy,2-1,Smith,Mighty Boy,,,Human Cannonball,owner list 2026-10-26: real Davey Boy Smith; parody Mighty Boy Smith
+157,1-2,ブラック,パンサー,夢幻ハンター,1-2,Black,Tiger,1-2,Black,Panther,,,Dream Hunter,[from FPG] real: Black Tiger; parody: Black Panther
+158,2-1,キッド,ダイナミック,猛爆野郎,2-1,Kid,Dynamite,2-1,Kid,Dynamic,,,Mad Bomber,[from FPG] real: Dynamite Kid; parody: Dynamic Kid
+159,2-1,パンサー,マスク・ド,夢幻のヒーロー,2-1,Mask,Tiger,1+2,Panthe,r,,Mask de Panther,Dream Hero,[from FPG] real: Tiger Mask; parody: Mask de Panther

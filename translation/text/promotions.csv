@@ -1,0 +1,19 @@
+# Promotions (1ST.BIN): long names in 26-byte slots (0x0603E03C), short names in 14-byte slots
+# (0x0603E1C2). en_* is the real promotion (default build), parody_* the game's stand-in name.
+# Room: long 25, short 13 (single-byte letters; digits and other symbols count 2).
+idx,long,short,en_long,en_short,parody_long,parody_short,notes
+0,ＶＩＥＷ　ＪＡＰＡＮ,ＶＪＰ,New Japan,NJPW,View Japan,VJP,[from FPG] 
+1,真誠倒幕軍,倒幕軍,Heisei Ishingun,Ishingun,Shinsei Tobakugun,Tobakugun,[from FPG] real per Fire Pro G (Koshinaka's faction)
+2,ＯＬＩＶＥ　ＪＡＰＡＮ,ＯＪＰ,All Japan,AJPW,Olive Japan,OJP,[from FPG] 
+3,新生ＩＷ,新生ＩＷ,FMW,FMW,New IW,New IW,[from FPG] 
+4,Ｒ・Ｙ・Ｕ,Ｒ・Ｙ・Ｕ,WAR,WAR,R.Y.U,R.Y.U,[from FPG] 
+5,ゆきぐにプロレス,ゆきプロ,Michinoku Pro,M-Pro,Yukiguni Pro,YukiPro,[from FPG] 
+6,ＷＷＣプロレス,ＷＷＣ,WCW,WCW,WWC Pro,WWC,[from FPG] 
+7,ＵＷＨインテル,ＵＷＨ,UWF International,UWF-i,UWH Inter,UWH,[from FPG] 
+8,ゴングス,ゴングス,RINGS,RINGS,GONGS,GONGS,[from FPG] 
+9,梶原組,梶原組,Fujiwara Gumi,Fujiwara,Kajiwara Gumi,Kajiwara,[from FPG] 
+10,ハイクラス,ハイクラス,Pancrase,Panc.,High Class,H.Class,[from FPG] 
+11,ＴＨＲＥＥ－Ａ,Ｔ－Ａ,AAA,AAA,THREE-A,T-A,[from FPG] 
+12,格闘家,格闘家,Shoot Fighters,Shoot,Fighters,Fighter,[from FPG] 
+13,ＨＩＤＥ,ＨＩＤＥ,Legends,Legends,HIDE,HIDE,owner 2026-10-26: the legends (older stars); parody keeps HIDE
+14,ＨＷＡ,ＨＷＡ,HWA,HWA,HWA,HWA,owner 2026-10-26: stays HWA in both

@@ -1,0 +1,13 @@
+image,source,x,y,w,h,width,height,bpp,category,japanese,english,notes,font,align,boxes,dup_of,status,review
+r10_00000,FPS.SBL#10,00000,,40,16,40,16,4,label,ニックネーム,Nick,"Wrestler Select info panel (VDP1 sprite, VRAM 0x48000+x); drawn by tools/labels.py (game glyphs, bold, shadow); hand-made",hand,,,,done,
+r10_00140,FPS.SBL#10,00140,,40,16,40,16,4,label,出身地,From,"Wrestler Select info panel (VDP1 sprite, VRAM 0x48000+x); drawn by tools/labels.py (game glyphs, bold, shadow); hand-made",hand,,,,done,
+r10_00280,FPS.SBL#10,00280,,40,16,40,16,4,label,必殺技,Move,"Wrestler Select info panel (VDP1 sprite, VRAM 0x48000+x); drawn by tools/labels.py (game glyphs, bold, shadow); hand-made",hand,,,,done,
+r10_003c0,FPS.SBL#10,003c0,,40,16,40,16,4,label,身長,Ht.,"Wrestler Select info panel (VDP1 sprite, VRAM 0x48000+x); drawn by tools/labels.py (game glyphs, bold, shadow); hand-made",hand,,,,done,
+r10_00500,FPS.SBL#10,00500,,40,16,40,16,4,label,生年月日,Born,"Wrestler Select info panel (VDP1 sprite, VRAM 0x48000+x); drawn by tools/labels.py (game glyphs, bold, shadow); hand-made",hand,,,,done,
+r10_00640,FPS.SBL#10,00640,,40,16,40,16,4,label,体重,Wt.,"Wrestler Select info panel (VDP1 sprite, VRAM 0x48000+x); drawn by tools/labels.py (game glyphs, bold, shadow); hand-made",hand,,,,done,
+r10_069a0,FPS.SBL#10,069a0,,128,16,128,16,4,plate,,,Wrestler Select promotion plate (no text: background for the label edits),,,,,keep,
+r64_00000,FPS.SBL#64,00000,,312,64,312,64,8,banner,タイトル奪取,TITLE WON!,"Title match result banner when the challenger takes the belt (FPS.SBL resource 64, palette 65; VDP1 0x40000); hand-made",hand,,,,done,
+r66_00000,FPS.SBL#66,00000,,312,64,312,64,8,banner,タイトル防衛,TITLE DEFENDED!,"Title match result banner when the champion keeps the belt (FPS.SBL resource 66, palette 67; VDP1 0x40000); hand-made",hand,,,,done,
+r32_00000,FPS.SBL#32,00000,,256,48,256,48,8,banner,制覇,CONQUERED!,"Gold 3D banner (FPS.SBL resource 32, palette 33) - conquest screen; hand-made",hand,,,,done,
+r49_00000,FPS.SBL#49,00000,,256,48,256,48,8,banner,優勝,CHAMPION!,"Gold 3D banner (FPS.SBL resource 49, palette 50) - tournament/league winner; hand-made",hand,,,,done,
+r51_00000,FPS.SBL#51,00000,,256,48,256,48,8,banner,勝利,VICTORY!,"Gold 3D banner (FPS.SBL resource 51, palette 52) - victory; hand-made",hand,,,,done,

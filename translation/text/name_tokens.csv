@@ -1,0 +1,11 @@
+# Name tokens that are not a wrestler or promotion (tools/names.py): written <token> in the English,
+# the build puts in `real` (default) or `parody` (--names parody; empty = the token itself).
+token,real,parody,japanese,notes
+Blasters,Road Warriors,,ブラスターズ,faction (Night/Iron Blaster): owner 2026-10-26
+Brilliant Bulls,British Bulldogs,,ブリリアン・ブルズ,faction - Dynamite Kid's team in Victory Road (060A598C): owner 2026-10-27 (was Steiner Brothers)
+Mascara Brothers,Mascaras Brothers,,マスカラ・ブラザーズ,faction (Mascara Condor/Eagle): owner 2026-10-26
+Snow Monkey Unit,Kaientai,,雪猿隊,YukiPro faction (平成雪猿隊): parody per owner 2026-10-26; real provisional (Heisei Kaientai of Michinoku Pro)
+Panther*,Tiger,Panther,パンサー,the word in item/style/team names: Tiger in the real build (owner 2026-10-26)
+Panther Tottori,T. Hattori,P. Tottori,パンサー鳥取,referee (Tiger Hattori): initial form - the config value has 12 glyphs and ~76 px
+Yukiguni,Michinoku,,ゆきぐに,the Yukiguni (Michinoku) Driver: provisional
+Snow Monkeys,Kaientai,,雪猿隊,short form of <Snow Monkey Unit> for the Elimination team list (9 glyphs)

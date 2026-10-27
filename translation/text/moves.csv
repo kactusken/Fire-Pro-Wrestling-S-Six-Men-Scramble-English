@@ -1,0 +1,622 @@
+# Move names (1ST.BIN: table of 2130 u16 offsets at 0x06050898 -> packed pool). One row per
+# distinct Japanese name; ids lists the table entries that use it. Half-width katakana is the
+# same text as full-width. The pool holds 10,859 bytes: English, deduplicated, must fit (the build
+# checks; aim for the length of the Japanese, single-byte letters).
+id,ids,japanese,english,notes
+0,0,使わない,Unused,[from FPG]
+1,1 2 3 460 461,パﾝﾁ,Punch,[from FPG]
+4,4 5 6 338 339 462 463 922,胸張り手,Chest Slap,[from FPG]
+7,7 8 9 676 677 919,掌打,Palm Strike,
+10,10 11 12 678 679,ｽﾄﾚｰﾄ掌打,Straight Palm Strike,
+13,13 14 15 480 481 923,ﾛｰｷｯｸ,Low Kick,[from FPG]
+16,16 17 18 478 479 925,下段蹴り,Low Kick (Karate),[from FPG]
+19,19 20 21 482 483,ﾑｴﾀｲﾛｰｷｯｸ,Muay Thai Low Kick,[from FPG]
+22,22 23 24 486 487 997 1268,ﾐドﾙｷｯｸ,Middle Kick,[from FPG]
+25,25 26 27 484 485 999,中段蹴り,Middle Kick (Karate),[from FPG]
+28,28 29 30 488 489 998,ﾑｴﾀｲﾐドﾙｷｯｸ,Muay Thai Mid Kick,[from FPG]
+31,31 32 33 682 683 1573,ｻｲｷｯｸ,Side Kick,[from FPG]
+34,34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 73 74 90 91 92 129 130 131 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 174 175 176 177 178 179 180 181 182 186 187 188 189 190 191 192 193 194 195 196 197 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 324 325 340 341 342 343 348 349 386 387 388 389 390 391 392 393 394 395 396 397 398 399 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 420 421 422 423 424 425 426 427 430 431 432 433 436 437 438 439 440 441 442 443 444 445 446 447 448 449 450 451 452 453 454 455 456 457 458 459 490 491 492 493 494 495 522 523 554 555 556 557 558 559 560 561 564 565 568 569 570 571 572 573 574 575 576 577 580 581 582 583 584 585 586 587 588 589 590 591 592 593 594 595 596 597 598 599 602 603 604 605 606 607 608 609 610 611 612 613 614 615 616 617 618 619 622 623 624 625 626 627 628 629 630 631 632 633 634 635 636 637 638 639 642 643 644 645 646 647 648 649 650 651 652 653 654 655 656 657 658 659 660 661 662 663 666 667 668 669 670 671 672 673 674 675 686 687 688 689 690 691 692 693 706 712 713 717 718 719 722 723 724 725 726 727 728 729 730 731 732 753 754 755 756 757 758 759 760 761 762 763 764 771 772 773 774 775 776 777 778 779 780 785 786 787 788 789 790 791 792 793 794 809 810 829 830 843 844 849 850 863 864 867 868 869 870 871 872 873 874 875 876 877 878 879 880 883 884 885 886 887 888 893 894 895 896 897 898 899 900 903 904 905 906 907 908 909 910 924 949 950 951 952 953 954 955 956 958 959 960 962 964 965 966 967 968 969 970 983 993 994 1008 1021 1033 1048 1050 1064 1073 1074 1102 1107 1111 1137 1138 1144 1145 1146 1147 1148 1149 1150 1151 1152 1153 1154 1155 1156 1157 1158 1159 1160 1162 1163 1164 1165 1166 1167 1168 1169 1170 1171 1172 1173 1174 1175 1176 1180 1181 1182 1183 1184 1185 1186 1187 1188 1189 1190 1192 1193 1194 1197 1198 1199 1200 1201 1202 1204 1205 1206 1207 1208 1209 1210 1212 1213 1215 1216 1218 1219 1220 1221 1223 1224 1225 1227 1228 1229 1230 1231 1232 1233 1235 1236 1238 1239 1240 1242 1243 1244 1245 1257 1260 1263 1269 1284 1300 1302 1322 1323 1332 1336 1337 1338 1340 1341 1344 1345 1346 1347 1348 1349 1350 1351 1353 1354 1358 1359 1360 1361 1362 1363 1364 1365 1367 1368 1369 1370 1371 1372 1373 1379 1380 1381 1384 1385 1386 1387 1388 1403 1404 1405 1406 1407 1408 1409 1410 1411 1412 1413 1414 1415 1416 1417 1418 1419 1421 1422 1423 1424 1425 1426 1427 1428 1429 1430 1431 1432 1433 1444 1456 1457 1458 1461 1464 1467 1469 1472 1473 1474 1475 1476 1477 1478 1479 1480 1481 1482 1484 1485 1486 1487 1488 1489 1490 1491 1492 1494 1495 1496 1497 1498 1500 1501 1502 1503 1504 1505 1506 1507 1509 1510 1512 1513 1515 1516 1518 1520 1525 1527 1529 1531 1533 1535 1537 1539 1541 1542 1543 1552 1558 1559 1560 1561 1562 1563 1564 1567 1569 1570 1571 1572 1574 1575 1576 1578 1580 1581 1582 1583 1584 1586 1587 1588 1589 1590 1591 1592 1593 1594 1595 1599 1600 1602 1603 1604 1605 1606 1607 1609 1610 1612 1614 1616 1618 1619 1620 1621 1622 1623 1624 1625 1626 1627 1628 1629 1630 1631 1632 1633 1643 1649 1650 1651 1654 1655 1656 1657 1660 1663 1664 1665 1669 1670 1671 1672 1673 1674 1676 1677 1678 1679 1680 1681 1682 1683 1685 1686 1687 1688 1689 1690 1691 1692 1693 1694 1695 1702 1703 1704 1705 1706 1708 1730 1731 1733 1735 1736 1738 1739 1741 1742 1743 1744 1745 1746 1747 1749 1750 1752 1753 1754 1755 1756 1757 1758 1760 1762 1764 1769 1770 1771 1772 1773 1782 1783 1784 1785 1786 1787 1788 1789 1791 1792 1793 1794 1795 1796 1797 1798 1799 1800 1801 1804 1816 1817 1818 1819 1820 1821 1822 1823 1824 1825 1826 1827 1828 1829 1830 1831 1832 1833 1834 1835 1836 1837 1838 1839 1840 1841 1842 1843 1844 1845 1846 1847 1848 1849 1854 1857 1858 1859 1860 1861 1862 1863 1865 1869 1870 1871 1872 1873 1874 1875 1876 1877 1878 1879 1880 1881 1882 1883 1884 1885 1886 1887 1888 1889 1890 1893 1894 1895 1896 1899 1900 1901 1902 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1929 1930 1931 1932 1933 1934 1935 1936 1987 1988 1989 1991 1992 1997 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2031 2032 2033 2034 2036 2037 2038 2039 2041 2042 2044 2045 2046 2047 2048 2049 2050 2051 2052 2053 2054 2063 2066 2067 2068 2069 2070 2071 2072 2073 2074 2075 2076 2079 2080 2081 2082 2083 2084 2085 2091 2092 2093 2094 2095 2096 2097 2099 2100 2101 2102 2103 2104 2105 2106 2108 2109 2110 2111 2112 2113 2114 2115 2119 2120 2121 2122 2123 2124 2125 2126 2127 2128,未定義名称,Undefined,
+67,67 68 69 476 477 926,前蹴り,Front Kick,[from FPG]
+70,70 71 72 680 681,ｷｯｸ,Kick,[from FPG]
+75,75 76 77,ﾊｲｷｯｸ,High Kick,[from FPG]
+78,78 79 80,ﾑｴﾀｲﾊｲｷｯｸ,Muay Thai High Kick,[from FPG]
+81,81 82 83,上段蹴り,High Kick (Karate),[from FPG]
+84,84 85 86,ジｬﾝピﾝグﾊｲｷｯｸ,Jumping High Kick,[from FPG]
+87,87 88 89 498 499,逆回し蹴り,Spinning Back Kick,[from FPG]
+93,93 94 95 326 327 714,ﾆｰﾙｷｯｸ,Kneel Kick,[from FPG]
+96,96 97 98 328 329 703,ﾌﾗｲﾝグﾆｰﾙｷｯｸ,Flying Kneel Kick,[from FPG]
+99,99 100 101 708,骨法流浴びせ蹴り,Koppo Abise-geri,
+102,102 103 104 518 519,ﾛｰﾘﾝグｿバｯﾄ,Rolling Sobat,[from FPG]
+105,105 106 107 516 517 978,ボデｨｿバｯﾄ,Body Sobat,
+108,108 109 110,延髄斬り,Enzuigiri,[from FPG]
+111,111 112 113 330 331 500 501 700,ドﾛｯプｷｯｸ,Dropkick,[from FPG]
+114,114 115 116 332 333 506 507 720,一回転ドﾛｯプｷｯｸ,Spinning Dropkick,[from FPG]
+117,117 118 119 334 335 502 503 701,正面飛びドﾛｯプｷｯｸ,Front Dropkick,[from FPG]
+120,120 121 122 336 337 504 505 702 1118,低空ドﾛｯプｷｯｸ,Low Dropkick,[from FPG]
+123,123 124 125,大車輪ｷｯｸ,Big Wheel Kick,[from FPG]
+126,126 127 128 514 515,ﾄﾗｰｽｷｯｸ,Thrust Kick,[from FPG]
+132,132 133 134 318 319,ﾌｯﾄボｰﾙﾀｯｸﾙ,Football Tackle,[from FPG]
+135,135 136 137 468 469,裏拳,Backfist,[from FPG]
+138,138 139 140 512 513 716,ジｬｲｱﾝﾄｷｯｸ,Giant Kick,[from FPG]
+141,141 142 143,ビｯグﾌｧｲﾔｰ,Big Fire,
+144,144 145 146,毒霧,Poison Mist,[from FPG]
+171,171 172 173,ﾊｲﾏﾝ蹴り,<Hyman> Kick,[from FPG]
+183,183 184 185 566 567 1179,ﾛｰﾘﾝグｴﾙボｰ,Rolling Elbow,[from FPG]
+198,198 199 200,飛びつき前方回転ｴビ固め,Flying Ebi Roll-Up,[from FPG]
+201,201 202 203 314 315,両足ﾀｯｸﾙ,Double-Leg Tackle,[from FPG]
+204,204 205 206 562 563,袈裟斬りﾁｮｯプ,Kesagiri Chop,[from FPG]
+256,256 257 258,振り子ｱｯパｰ,Pendulum Uppercut,
+259,259,昇龍裂破,Shoryu Reppa,
+260,260 261,ゴｰゴｰ,Go-Go,
+312,312 313,ｼｮﾙダｰﾀｯｸﾙ,Shoulder Tackle,[from FPG]
+316,316 317 464 465 695 915 1389,ｴﾙボｰバｯﾄ,Elbow Butt,[from FPG]
+320,320 321 472 473,ｷﾁﾝｼﾝｸ,Kitchen Sink,[from FPG]
+322,322 323,喧嘩ｷｯｸ,Kenka Kick,[from FPG]
+344,344 345 528 529 1069 1780,ﾌﾗﾝｹﾝｼｭﾀｲﾅｰ,Frankensteiner,[from FPG]
+346,346 347,ﾌﾗｲﾝグｸﾛｽﾁｮｯプ,Flying Cross Chop,[from FPG]
+350,350 351,ﾌﾗｲﾝグﾗﾘｱｰﾄ,Flying Lariat,
+352,352 353,ﾗﾝﾆﾝグﾈｯｸブﾘｰｶｰ,Running Neckbreaker,
+354,354 355,ジｬﾝピﾝグﾈｯｸブﾘｰｶｰ,Jumping Neckbreaker,[from FPG]
+356,356 357 697,ﾗﾘｱｰﾄ,Lariat,
+358,358 359,叩き付けﾗﾘｱｰﾄ,Driving Lariat,
+360,360 361,ｸﾛｰズﾗｲﾝ,Clothesline,[from FPG]
+362,362 363,ｳｪｽﾀﾝ・ﾗﾘｱｰﾄ,Western Lariat,
+364,364 365,ドｩガﾝﾊﾝﾏｰ,<Doogan> Hammer,[from FPG]
+366,366 367 696,ジｬﾝピﾝグｴﾙボｰ,Jumping Elbow,[from FPG]
+368,368 369 721,ゼﾛ戦ｷｯｸ,Zero-Sen Kick,[from FPG]
+370,370 371 474 475 934,ﾄｰｷｯｸ,Toe Kick,[from FPG]
+372,372 373 1925 1926,ﾌﾗｲﾝグボデｨｱﾀｯｸ,Flying Body Attack,[from FPG]
+374,374 375,ボデｨｼザｰｽ,Body Scissors,
+376,376 377 699,ジｬﾝピﾝグﾆｰパｯﾄ,Jumping Knee Pat,[from FPG]
+378,378 379 709,ｾｲバｰｱﾀｯｸ,<Saber> Attack,[from FPG]
+380,380 381 705,ボデｨｽプﾗｯｼｭ,Body Splash,[from FPG]
+382,382 383,稲妻ﾚｯグﾗﾘｱｰﾄ,Inazuma Leg Lariat,[from FPG]
+384,384 385 536 537 710,ジｬﾝピﾝグﾋｯプｱﾀｯｸ,Jumping Hip Attack,[from FPG]
+400,400 401 578 579,人工衛星ﾍｯドｼザｰｽﾎｲｯプ,Satellite Scissors,[from FPG]
+418,418 419,ﾌﾗｲﾝグｼｮﾙダｰｱﾀｯｸ,Flying Shoulder,[from FPG]
+428,428 429,飛びつきＤＤＴ,Flying DDT,[from FPG]
+434,434 435 620 621 1101 1395,バｯｸに廻る,Go Behind,[from FPG]
+466,466 467 694,背面ｴﾙボｰ,Back Elbow,[from FPG]
+470,470 471,ﾅｯｸﾙパｰﾄ,Knuckle Part,[from FPG]
+496,496 497 1015,ｽピﾝｷｯｸ,Spin Kick,[from FPG]
+508,508 509 935,ｶﾆ挟み,Kani-basami,[from FPG]
+510,510 511,ﾌﾛﾝﾄﾊｲｷｯｸ,Front High Kick,[from FPG]
+520,520 521,ｼｮﾙダｰｽﾙｰ,Shoulder Throw,[from FPG]
+524,524 525 946,ｻｲｸﾛﾝﾎｲｯプ,Cyclone Whip,[from FPG]
+526,526 527 1068,ｳﾗｶﾝ・ﾗﾅ,Huracanrana,[from FPG]
+530,530 531,捻り式パﾜｰｽﾗﾑ,Twisting Powerslam,
+532,532 533,喉輪落とし,Chokeslam,[from FPG]
+534,534 535 1062 1334,裏投げ,Ura-nage,[from FPG]
+538,538 539,ｹブﾗドｰﾗ・ｺﾝ・ﾋｰﾛ,Quebradora con Giro,
+540,540 541,ドﾙﾌｨﾝバｯｸブﾘｰｶｰ,<Dolphin> Backbreaker,[from FPG]
+542,542 543 1007 1283,ｻｲドバｽﾀｰ,Side Buster,[from FPG]
+544,544 545 1040 1499,ｺブﾗｸﾛｰ,Cobra Claw,[from FPG]
+546,546 547,ﾃｨﾙﾄｽﾗﾑ,Tilt Slam,[from FPG]
+548,548 549,飛びつきジｬﾝピﾝグＤＤＴ,Jumping DDT,[from FPG]
+550,550 551,逆一本背負い,Reverse Ippon-seoi,[from FPG]
+552,552 553,ﾏｳﾝﾃﾝボﾑ,Mountain Bomb,[from FPG]
+600,600 601 1047 1401 1684,脇固め,Fujiwara Armbar,[from FPG]
+640,640 641,ｽパｲﾝボﾑ,Spine Bomb,[from FPG]
+664,664 665 996,叩き付けﾘﾌﾄｱｯプｽﾗﾑ,Driving Lift-Up Slam,
+684,684 685,元祖ﾌﾗﾝｹﾝｼｭﾀｲﾅｰ,Orig Frankensteiner,[from FPG]
+698,698,ｻﾏｰｿﾙﾄｷｯｸ,Somersault Kick,[from FPG]
+704,704,ボデｨプﾚｽ,Body Press,[from FPG]
+707,707,側転ｴﾙボｰ,Cartwheel Elbow,[from FPG]
+711,711,ﾓﾝｷｰﾌﾘｯプ,Monkey Flip,[from FPG]
+715,715,低空ﾆｰﾙｷｯｸ,Low Kneel Kick,
+733,733 734 837 838,ｴﾙボｰｽｲｼｰダ,Elbow Suicida,[from FPG]
+735,735 736,ﾄペ・ｽｲｼｰダ,Tope Suicida,[from FPG]
+737,737 738,ﾄペ・ｺﾝ・ﾋｰﾛ,Tope con Hilo,[from FPG]
+739,739 740 765 766,プﾗﾝﾁｬ・ｽｲｼｰダ,Plancha Suicida,[from FPG]
+741,741 742 767 768,ｽﾜﾝダｲブプﾗﾝﾁｬ,Swan Dive Plancha,[from FPG]
+743,743 744,宇宙人プﾗﾝﾁｬ,Space Plancha,[from FPG]
+745,745 746,ｽペｰｽﾌﾗｲﾝグﾀｲガｰｱﾀｯｸ,Space Flying Tiger,[from FPG]
+747,747 748,ﾊﾔﾃｽペｼｬﾙ２号,<Hayate> Special 2,[from FPG]
+749,749 750,ﾊﾔﾃｽペｼｬﾙ１号,<Hayate> Special 1,[from FPG]
+751,751 752 781 782 1891 1892,ｽﾜﾝダｲブﾐｻｲﾙｷｯｸ,Swan Dive Missile,[from FPG]
+769,769 770,ﾗ・ｹブﾗｰダ,La Quebrada,[from FPG]
+783,783 784 835 836 1266,ｽﾚｯジﾊﾝﾏｰ,Sledgehammer,[from FPG]
+795,795 796,ダｲビﾝグﾍｯドバｯﾄ,Diving Headbutt,[from FPG]
+797,797 798,ダｲビﾝグｴﾙボｰドﾛｯプ,Diving Elbow Drop,[from FPG]
+799,799 800,背面ｴﾙボｰドﾛｯプ,Back Elbow Drop,
+801,801 802,ﾌﾗｲﾝグﾆｰドﾛｯプ,Flying Knee Drop,
+803,803 804,ダブﾙﾌｯﾄｽﾀﾝプ,Double Foot Stamp,
+805,805 806,ダｲビﾝグギﾛﾁﾝドﾛｯプ,Diving Guillotine,[from FPG]
+807,807 808,ダｲビﾝグｾﾝﾄｰﾝ,Diving Senton,[from FPG]
+811,811 812,ｻﾏｰｿﾙﾄドﾛｯプ,Somersault Drop,[from FPG]
+813,813 814,ﾌﾗｲﾝグボデｨプﾚｽ,Flying Body Press,
+815,815 816,ﾌｧｲﾔｰバｰドｽプﾗｯｼｭ,Firebird Splash,[from FPG]
+817,817 818,拝みダｲビﾝグﾍｯドバｯﾄ,Praying Headbutt,[from FPG]
+819,819 820,ｽｰパｰダｲビﾝグﾍｯドバｯﾄ,Super Dive Headbutt,[from FPG]
+821,821 822,ドﾙﾌｨﾝｴﾙボｰドﾛｯプ,<Dolphin> Elbow Drop,
+823,823 824,ﾑｰﾝｻﾙﾄプﾚｽ,Moonsault Press,[from FPG]
+825,825 826,旋回式ボデｨプﾚｽ,Corkscrew Press,[from FPG]
+827,827 828,ﾗｳﾝデｨﾝグボデｨプﾚｽ,Rounding Body Press,[from FPG]
+831,831 832,ｶﾝｸｰﾝﾄﾙﾈｰド,Cancun Tornado,[from FPG]
+833,833 834,ｽﾀｰダｽﾄプﾚｽ,Stardust Press,
+839,839 840,ダｲビﾝグﾗﾘｱｰﾄ,Diving Lariat,
+841,841 842,ﾐｻｲﾙｷｯｸ,Missile Kick,[from FPG]
+845,845 846,ダｲビﾝグｼｮﾙダｰｱﾀｯｸ,Diving Shoulder,[from FPG]
+847,847 848,ダｲビﾝグﾆｰﾙｷｯｸ,Diving Kneel Kick,[from FPG]
+851,851 852,ダｲビﾝグ延髄斬り,Diving Enzuigiri,[from FPG]
+853,853 854,ダｲビﾝグﾋｯプｱﾀｯｸ,Diving Hip Attack,[from FPG]
+855,855 856,ダｲビﾝグボデｨｱﾀｯｸ,Diving Body Attack,[from FPG]
+857,857 858,ﾑｰﾝｻﾙﾄｱﾀｯｸ,Moonsault Attack,[from FPG]
+859,859 860,ｽｲﾝグﾌﾗﾝｹﾝｼｭﾀｲﾅｰ,Swinging Rana,[from FPG]
+861,861 862,飛びつきｽｲﾝグＤＤＴ,Flying Swing DDT,[from FPG]
+865,865 866,ダｲビﾝグﾌｨｽﾄドﾛｯプ,Diving Fist Drop,[from FPG]
+881,881 882,ｼｭｰﾃｨﾝグｽﾀｰプﾚｽ,Shooting Star Press,[from FPG]
+889,889 890,ｽｰパｰｳﾗｶﾝ・ﾗﾅ,Super Huracanrana,[from FPG]
+891,891 892,高速ｳﾗｶﾝ・ﾗﾅ,Fast Huracanrana,[from FPG]
+901,901 902,ダｲビﾝグダブﾙﾆｰプﾚｽ,Diving Double Knee,
+911,911,逆水平ﾁｮｯプ,Knife-Edge Chop,[from FPG]
+912,912,喉笛ﾁｮｯプ,Throat Chop,[from FPG]
+913,913,地獄突き,Hell Thrust,[from FPG]
+914,914,ｴﾙボｰｽﾏｯｼｭ,Elbow Smash,[from FPG]
+916,916,脳天ｴﾙボｰ,Brain Elbow,[from FPG]
+917,917,顔面ｽﾄﾚｰﾄ,Straight to Face,[from FPG]
+918,918,ﾅｯｸﾙｱﾛｰ,Knuckle Arrow,[from FPG]
+920,920,正拳突き,Seiken-zuki,[from FPG]
+921,921,ﾊﾝﾏｰパﾝﾁ,Hammer Punch,[from FPG]
+927,927,ｴﾙボｰｽﾀﾝプ,Elbow Stamp,[from FPG]
+928,928,ﾊﾝﾏｰブﾛｰ,Hammer Blow,[from FPG]
+929,929,腿ｷｯｸ,Thigh Kick,[from FPG]
+930,930,顔面ﾆｰﾘﾌﾄ,Face Knee Lift,[from FPG]
+931,931,ボデｨﾆｰﾘﾌﾄ,Body Knee Lift,[from FPG]
+932,932,延髄踵落とし,Enzui Axe Kick,[from FPG]
+933,933,膝突き蹴り,Knee Thrust,[from FPG]
+936,936,ドﾗゴﾝｽｸﾘｭｰ,Dragon Screw,[from FPG]
+937,937 1400,ﾚｯグｽピﾝ,Leg Spin,[from FPG]
+938,938,ボデｨｽﾗﾑ,Body Slam,[from FPG]
+939,939,ﾊｲｱﾝグﾙボデｨｽﾗﾑ,Hi-Angle Slam,[from FPG]
+940,940,ゴﾘﾗｽﾗﾑ,Gorilla Slam,[from FPG]
+941,941,大外刈り,O-soto-gari,[from FPG]
+942,942,片足ﾀｯｸﾙ,Single-Leg Tackle,[from FPG]
+943,943 1393,ﾌﾗｲﾝグﾒｲﾔｰ,Flying Mare,[from FPG]
+944,944,ﾌｧｲﾔｰﾏﾝズｷｬﾘｰ,Fireman's Carry,[from FPG]
+945,945,ｱｰﾑﾎｲｯプ,Arm Whip,[from FPG]
+947,947,払い腰,Harai-goshi,[from FPG]
+948,948,ｱｯパｰブﾛｰ,Uppercut,[from FPG]
+957,957,顔面掻きむしり,Face Rake,
+961,961,ボデｨパﾝﾁ,Body Punch,[from FPG]
+963,963,首投げ,Neck Throw,[from FPG]
+971,971,ﾍｯドバｯﾄ,Headbutt,[from FPG]
+972,972,一本足頭突き,One-Leg Headbutt,[from FPG]
+973,973,ﾏｼﾝガﾝ逆水平ﾁｮｯプ,Machine Gun Chops,[from FPG]
+974,974,踏み込み地獄突き,Stepping Hell Thrust,[from FPG]
+975,975,ｼｮｰﾄｴﾙボｰ,Short Elbow,[from FPG]
+976,976,ｼｮｰﾄパﾝﾁ,Short Punch,
+977,977,ｼｮｰﾄﾚﾝジﾗﾘｱｰﾄ,Short-Range Lariat,
+979,979,ｽﾃｯプｷｯｸ,Step Kick,[from FPG]
+980,980,ﾍｯドﾛｯｸ,Headlock,[from FPG]
+981,981,ﾀｲガｰｽピﾝ,Tiger Spin,[from FPG]
+982,982,ﾈｯｸﾊﾝギﾝグﾂﾘｰ,Neck Hanging Tree,[from FPG]
+984,984,脳天唐竹割り,Karatake-wari,[from FPG]
+985,985 1776,ﾌﾛﾝﾄｽｰプﾚｯｸｽ,Front Suplex,[from FPG]
+986,986,ﾌﾛﾝﾄｽｰプﾚｯｸｽﾎｲｯプ,Front Suplex Whip,[from FPG]
+987,987,ブﾚｰﾝバｽﾀｰ,Brainbuster,[from FPG]
+988,988,長滞空ブﾚｰﾝバｽﾀｰ,Delayed Brainbuster,[from FPG]
+989,989,ぶっこ抜きブﾚｰﾝバｽﾀｰ,Lift Brainbuster,[from FPG]
+990,990,高速ブﾚｰﾝバｽﾀｰ,Fast Brainbuster,[from FPG]
+991,991,剃刀ブﾚｰﾝバｽﾀｰ,Razor Brainbuster,[from FPG]
+992,992,ブﾚｰﾝバｽﾀｰｽﾗﾑ,Brainbuster Slam,[from FPG]
+995,995,前方落としﾘﾌﾄｱｯプｽﾗﾑ,Front Lift-Up Slam,[from FPG]
+1000,1000 1279,バｯｸドﾛｯプ,Backdrop,[from FPG]
+1001,1001 1280,抱え式バｯｸドﾛｯプ,Cradle Backdrop,[from FPG]
+1002,1002 1778,ｻｲドｽｰプﾚｯｸｽ,Side Suplex,[from FPG]
+1003,1003,水車落とし,Waterwheel Drop,[from FPG]
+1004,1004,ｼｭﾐｯﾄ式バｯｸブﾘｰｶｰ,Schmidt Backbreaker,[from FPG]
+1005,1005,バｯｸブﾘｰｶｰｽﾗﾑ,Backbreaker Slam,[from FPG]
+1006,1006 1282,ペﾝデｭﾗﾑバｯｸブﾘｰｶｰ,Pendulum Breaker,[from FPG]
+1009,1009 1779,ＤＤＴ,DDT,[from FPG]
+1010,1010,ジｬｲｱﾝﾄＤＤＴ,Giant DDT,[from FPG]
+1011,1011 1396,ｺｺﾅｯﾂｸﾗｯｼｭ,Coconut Crush,[from FPG]
+1012,1012,ﾓﾝゴﾘｱﾝﾁｮｯプ,Mongolian Chop,[from FPG]
+1013,1013,ボデｨパﾝﾁ連打,Body Punch Rush,[from FPG]
+1014,1014,正拳突き連打,Seiken Rush,[from FPG]
+1016,1016,水面蹴り,Leg Sweep,[from FPG]
+1017,1017,パｲﾙドﾗｲバｰ,Piledriver,[from FPG]
+1018,1018 1790,ﾂｰﾑｽﾄﾝパｲﾙドﾗｲバｰ,Tombstone,[from FPG]
+1019,1019,ダブﾙｱｰﾑｽｰプﾚｯｸｽ,Double Arm Suplex,[from FPG]
+1020,1020,ﾃｷｻｽｽｰプﾚｯｸｽ,Texas Suplex,[from FPG]
+1022,1022,ダブﾙﾘｽﾄｱｰﾑｿﾙﾄ,Double Wrist Sault,[from FPG]
+1023,1023,ﾏﾝﾊｯﾀﾝドﾛｯプ,Manhattan Drop,[from FPG]
+1024,1024,ｼｮﾙダｰバｽﾀｰ,Shoulder Buster,[from FPG]
+1025,1025,ﾈｯｸブﾘｰｶｰドﾛｯプ,Neckbreaker Drop,[from FPG]
+1026,1026,ｼｮﾙダｰﾈｯｸブﾘｰｶｰドﾛｯプ,Shoulder Neck Drop,[from FPG]
+1027,1027,ｽｲﾝグﾈｯｸブﾘｰｶｰドﾛｯプ,Swing Neckbreaker,[from FPG]
+1028,1028,起き上がり小法師ﾁｮｯプ,Okiagari Chops,[from FPG]
+1029,1029,ﾏｼﾝガﾝ顔面ﾆｰﾘﾌﾄ,Machine Gun Knees,[from FPG]
+1030,1030,ﾏｼﾝガﾝｽﾄﾏｯｸﾆｰﾘﾌﾄ,MG Stomach Knees,[from FPG]
+1031,1031,ｽﾃｯプ延髄ﾆｰﾙｷｯｸ,Step Enzui Kick,[from FPG]
+1032,1032,噛みつき,Bite,[from FPG]
+1034,1034 1319,ﾛｰﾘﾝグバｯｸドﾛｯプ,Rolling Backdrop,[from FPG]
+1035,1035,頭突き連打,Headbutt Rush,[from FPG]
+1036,1036,一本足頭突き連打,1-Leg Headbutt Rush,[from FPG]
+1037,1037,ﾌﾛﾝﾄﾈｯｸﾁｬﾝｽﾘｰ,Front Chancery,[from FPG]
+1038,1038,骨法流掌打,Koppo Palm Strike,[from FPG]
+1039,1039,ｼｮﾙダｰｱｰﾑブﾘｰｶｰ,Shoulder Armbreaker,[from FPG]
+1041,1041,ベｱﾊｯグ,Bear Hug,[from FPG]
+1042,1042 1294,ｺブﾗﾂｲｽﾄ,Cobra Twist,[from FPG]
+1043,1043 1295,拷問ｺブﾗﾂｲｽﾄ,Torture Cobra Twist,[from FPG]
+1044,1044 1303,卍固め,Octopus Hold,[from FPG]
+1045,1045,首極め腕卍,Neck-Lock Armbar,[from FPG]
+1046,1046,飛びつきｸﾛｽﾋｰﾙﾎｰﾙド,Flying Cross Heel,[from FPG]
+1049,1049 1291,高角度前方回転ｴビ固め,High Ebi Roll-Up,[from FPG]
+1051,1051,ｻｲバｰﾏｼﾝガﾝｷｯｸ,Cyber Machine Gun,[from FPG]
+1052,1052,ﾊｲｷｯｸｺﾝビﾈｰｼｮﾝ,High Kick Combo,[from FPG]
+1053,1053,Ｗﾊｲｷｯｸｺﾝビﾈｰｼｮﾝ,Dbl High Kick Combo,[from FPG]
+1054,1054,肩掴み延髄斬り,Shoulder Grab Enzui,[from FPG]
+1055,1055,ﾀｲガｰﾈｯｸﾁｬﾝｽﾘｰ,Tiger Neck Chancery,[from FPG]
+1056,1056,垂直落下式ブﾚｰﾝバｽﾀｰ,Vertical Brainbuster,[from FPG]
+1057,1057,叩き付けブﾚｰﾝバｽﾀｰ,Driving Brainbuster,
+1058,1058,デﾝジｬﾗｽＤＤＴ,Dangerous DDT,[from FPG]
+1059,1059,ｵﾚﾝジｸﾗｯｼｭ,Orange Crush,[from FPG]
+1060,1060,ｼｭﾀｲﾅｰｽｸﾘｭｰドﾗｲバｰ,Steiner Screwdriver,[from FPG]
+1061,1061 1398,ピｰｽｸﾗｯｼｬｰ,<Peace> Crusher,[from FPG]
+1063,1063,ｴｸｽプﾛｲダｰ,Exploder,[from FPG]
+1065,1065,ﾁｮｰｸｽﾗﾑ,Choke Slam,[from FPG]
+1066,1066,高角度喉輪落とし,Hi-Angle Chokeslam,[from FPG]
+1067,1067,バｯｸﾌﾘｯプ,Back Flip,[from FPG]
+1070,1070,ｱﾙゼﾝﾁﾝバｯｸブﾘｰｶｰ,Argentine Rack,[from FPG]
+1071,1071,ｱﾙゼﾝﾁﾝバｯｸブﾘｰｶｰドﾛｯプ,Argentine Drop,[from FPG]
+1072,1072,ｶﾅデｨｱﾝバｯｸブﾘｰｶｰ,Torture Rack,[from FPG]
+1075,1075,ﾏｼﾝガﾝﾐドﾙｷｯｸ,Machine Gun Kicks,
+1076,1076,掌打ｺﾝビﾈｰｼｮﾝ,Palm Strike Combo,
+1077,1077 1324,元祖バｯｸドﾛｯプ,Original Backdrop,[from FPG]
+1078,1078 1313,高角度ジｬｰﾏﾝｽｰプﾚｯｸｽ,Hi-Angle German,[from FPG]
+1079,1079,ﾌｨｯｼｬｰﾏﾝズｽｰプﾚｯｸｽ,Fisherman Suplex,[from FPG]
+1080,1080 1777,ﾌｨｯｼｬｰﾏﾝバｽﾀｰ,Fisherman Buster,[from FPG]
+1081,1081,ﾌｨｯｼｬｰﾏﾝＤＤＴ,Fisherman DDT,[from FPG]
+1082,1082,ｷｬプﾁｭｰド,Capture Suplex,[from FPG]
+1083,1083,ﾉｰザﾝﾗｲﾄｽｰプﾚｯｸｽ,Northern Lights,[from FPG]
+1084,1084,串刺しＤＤＴ,Corner DDT,[from FPG]
+1085,1085 1397,ブﾙドｯｷﾝグﾍｯドﾛｯｸ,Bulldogging Headlock,[from FPG]
+1086,1086,ギﾛﾁﾝピｰｽｸﾗｯｼｬｰ,Guillotine Crusher,[from FPG]
+1087,1087,ジｬﾝピﾝグﾈｯｸブﾘｰｶｰドﾛｯプ,Jumping Neckbreaker,[from FPG]
+1088,1088,河津掛け落とし,Kawazu Otoshi,
+1089,1089,ｵｸﾗﾎﾏｽﾀﾝピｰﾄ,Oklahoma Stampede,[from FPG]
+1090,1090,ｱバﾗﾝｼｭﾎｰﾙド,Avalanche Hold,[from FPG]
+1091,1091,ｱバﾗﾝｼｭプﾚｽ,Avalanche Press,[from FPG]
+1092,1092,ｽﾄﾚｯﾁバｽﾀｰ,Stretch Buster,[from FPG]
+1093,1093,ｽﾓｰﾙパｯｹｰジﾎｰﾙド,Small Package,[from FPG]
+1094,1094,グﾗﾝドｺブﾗﾂｲｽﾄ,Ground Cobra Twist,
+1095,1095 1296,ｽﾄﾚｯﾁプﾗﾑ,Stretch Plum,[from FPG]
+1096,1096,グﾗﾝド卍固め,Ground Octopus,
+1097,1097 1383,凶器攻撃,Weapon Attack,[from FPG]
+1098,1098,ﾏｼｰﾝ・ｽｰプﾚｯｸｽ,Machine Suplex,
+1099,1099 1298 1440,ｽﾘｰパｰﾎｰﾙド,Sleeper Hold,[from FPG]
+1100,1100 1299 1645,胴絞めｽﾘｰパｰﾎｰﾙド,Scissor Sleeper,[from FPG]
+1103,1103 1402,ﾐﾄｸﾗｯﾁ,<Mito> Clutch,[from FPG]
+1104,1104,バｯｸｽピﾝｷｯｸﾗｯｼｭ,Back Spin Kick Rush,[from FPG]
+1105,1105,ﾊｲｷｯｸﾗｯｼｭ,High Kick Rush,[from FPG]
+1106,1106,ジｬﾝピﾝグパｲﾙドﾗｲバｰ,Jumping Piledriver,[from FPG]
+1108,1108,ﾘバｰｽﾂｰﾑｽﾄﾝパｲﾙドﾗｲバｰ,Reverse Tombstone,[from FPG]
+1109,1109,ﾌｪｲｽバｽﾀｰ,Face Buster,[from FPG]
+1110,1110,ジｬﾝピﾝグﾂｰﾑｽﾄﾝパｲﾙドﾗｲバｰ,Jumping Tombstone,[from FPG]
+1112,1112,ゴｯﾁ式パｲﾙドﾗｲバｰ,Gotch Piledriver,[from FPG]
+1113,1113,Ｋドﾘﾗｰ,K Driller,
+1114,1114,パﾜｰボﾑ,Powerbomb,[from FPG]
+1115,1115,パﾜｰボﾑﾎｲｯプ,Powerbomb Whip,[from FPG]
+1116,1116,ﾜｲﾙドボﾑ,Wild Bomb,[from FPG]
+1117,1117,ジｬﾝピﾝグパﾜｰボﾑ,Jumping Powerbomb,[from FPG]
+1119,1119,侍パﾜｰボﾑ,Samurai Powerbomb,[from FPG]
+1120,1120,念仏パﾜｰボﾑ,Nenbutsu Powerbomb,[from FPG]
+1121,1121,ジｬｯｸﾅｲﾌパﾜｰボﾑ,Jackknife Powerbomb,[from FPG]
+1122,1122,ビｯグバデｨボﾑ,Big Body Bomb,
+1123,1123,ｶﾐｶゼボﾑ,Kamikaze Bomb,[from FPG]
+1124,1124,ｻﾝダｰﾌｧｲﾔｰパﾜｰボﾑ,Thunder Fire Bomb,[from FPG]
+1125,1125,ｸﾛｽｱｰﾑｻﾝダｰﾌｧｲﾔｰパﾜｰボﾑ,X-Arm Thunder Fire,[from FPG]
+1126,1126,ﾗﾝﾆﾝグパﾜｰボﾑ,Running Powerbomb,[from FPG]
+1127,1127,ドｸﾀｰボﾑ,Doctor Bomb,[from FPG]
+1128,1128,火の玉ボﾑ,Fireball Bomb,[from FPG]
+1129,1129,ジｬﾝピﾝグボﾑ,Jumping Bomb,[from FPG]
+1130,1130,ｶｲザｰボﾑ,<Kaiser> Bomb,[from FPG]
+1131,1131 1866,ブﾗｯｸｶｲザｰボﾑ,Black <Kaiser> Bomb,[from FPG]
+1132,1132,ピﾗﾐｯドドﾗｲバｰ,Pyramid Driver,[from FPG]
+1133,1133,ﾀｲガｰドﾗｲバｰ,Tiger Driver,[from FPG]
+1134,1134,ﾀｲガｰドﾗｲバｰ’９１,Tiger Driver '91,[from FPG]
+1135,1135,高速ダブﾙｱｰﾑｽｰプﾚｯｸｽ,Fast Double Arm,[from FPG]
+1136,1136,ジｬﾝピﾝグＤＤＴ,Jumping DDT,[from FPG]
+1139,1139,ｽｸﾘｭｰボﾑ,Screw Bomb,[from FPG]
+1140,1140,ｿバｯﾄｺﾝビﾈｰｼｮﾝ,Sobat Combination,[from FPG]
+1141,1141,Ｋ流踵落としｺﾝビﾈｰｼｮﾝ,K-Style Axe Combo,
+1142,1142 1310,ジｬｰﾏﾝｽｰプﾚｯｸｽ,German Suplex,[from FPG]
+1143,1143,ｻｲバｰﾆｰﾘﾌﾄ,Cyber Knee Lift,[from FPG]
+1161,1161 1342,抱え直下式バｯｸドﾛｯプ,Vert. Cradle Drop,
+1177,1177 1343,ジｬﾝピﾝグバｯｸドﾛｯプ,Jumping Backdrop,[from FPG]
+1178,1178,ﾁﾝｸﾗｯｼｬｰ,Chin Crusher,[from FPG]
+1191,1191,後転ﾈｯｸﾛｯｸ,Rolling Necklock,[from FPG]
+1195,1195,超長滞空ブﾚｰﾝバｽﾀｰ,Delayed Brainbuster,[from FPG]
+1196,1196,ブﾘザｰドｽｰプﾚｯｸｽ,Blizzard Suplex,[from FPG]
+1203,1203,ﾉｰザﾝﾗｲﾄボﾑ,N. Lights Bomb,[from FPG]
+1211,1211,ﾜﾝﾊﾝドﾁｮｰｸｽﾗﾑ,One-Hand Chokeslam,[from FPG]
+1214,1214,ビｸﾄﾙ膝十字固め,Victor Kneebar,[from FPG]
+1217,1217,高角度パﾜｰボﾑﾎｲｯプ,Hi Powerbomb Whip,
+1222,1222 1355,大回転ジｬｰﾏﾝｽｰプﾚｯｸｽ,Spinning German,[from FPG]
+1226,1226,ゆきぐにドﾗｲバｰ２,<Yukiguni> Driver 2,[from FPG]
+1234,1234,喧嘩屋ﾗｯｼｭ,Brawler Rush,[from FPG]
+1237,1237,飛びつき腕ひしぎ逆十字固め,Flying Armbar,[from FPG]
+1241,1241 1297 1445,春樹ｽペｼｬﾙ,<Haruki> Special,[from FPG]
+1246,1246,ﾌﾛﾝﾄﾈｯｸﾛｯｸ,Front Necklock,[from FPG]
+1247,1247,ダブﾙｱｰﾑﾎｲｯプ,Double Arm Whip,[from FPG]
+1248,1248,ﾃｷｻｽジｬブ,Texas Jab,[from FPG]
+1249,1249,脳天ﾁｮｯプ,Brain Chop,[from FPG]
+1250,1250 1399,一本背負い,Ippon-seoi,[from FPG]
+1251,1251,ジｬﾝピﾝグブﾚｰﾝバｽﾀｰ,Jumping Brainbuster,[from FPG]
+1252,1252,喉笛ﾁｮｯプ連打,Throat Chop Rush,[from FPG]
+1253,1253,ｻｲバｰブﾛｰ,Cyber Blow,[from FPG]
+1254,1254,回転地獄蹴り,Spinning Hell Kick,[from FPG]
+1255,1255,正拳突きﾗｯｼｭ,Seiken-zuki Rush,[from FPG]
+1256,1256,ｽｸﾘｭｰﾊｲｷｯｸ,Screw High Kick,[from FPG]
+1258,1258 1376,元祖ジｬｰﾏﾝｽｰプﾚｯｸｽ,Original German,[from FPG]
+1259,1259,ﾛｰﾘﾝグｿバｯﾄﾗｯｼｭ,Rolling Sobat Rush,[from FPG]
+1261,1261,バｯｸｽピﾝｺﾝビﾈｰｼｮﾝ,Back Spin Combo,[from FPG]
+1262,1262 1374,捻り式バｯｸドﾛｯプ,Twisting Backdrop,[from FPG]
+1264,1264,元祖パﾜｰボﾑ,Original Powerbomb,[from FPG]
+1265,1265,ﾈｯｸｽﾏｯｼｭ,Neck Smash,[from FPG]
+1267,1267,バｯｸﾚバｰブﾛｰ,Back Lever Blow,[from FPG]
+1270,1270,延髄ﾗﾘｱｰﾄ,Enzui Lariat,
+1271,1271,バｯｸｿバｯﾄ,Back Sobat,[from FPG]
+1272,1272,延髄ﾆｰﾙｷｯｸ,Enzui Kneel Kick,[from FPG]
+1273,1273,ﾚｯグﾄﾘｯプ,Leg Trip,[from FPG]
+1274,1274,ｺﾏﾝドｴﾙボｰ,Commando Elbow,[from FPG]
+1275,1275,延髄ﾊｲｷｯｸ,Enzui High Kick,[from FPG]
+1276,1276,ｱﾄﾐｯｸドﾛｯプ,Atomic Drop,[from FPG]
+1277,1277,ﾊｲｱﾝグﾙｱﾄﾐｯｸドﾛｯプ,High Atomic Drop,[from FPG]
+1278,1278,ｱﾄﾐｯｸﾎｲｯプ,Atomic Whip,[from FPG]
+1281,1281,ﾜﾝﾊﾝドバｯｸブﾘｰｶｰ,1-Hand Backbreaker,[from FPG]
+1285,1285,ﾆｰｸﾗｯｼｬｰ,Knee Crusher,[from FPG]
+1286,1286,ﾘバｰｽブﾚｰﾝバｽﾀｰ,Reverse Brainbuster,[from FPG]
+1287,1287,ﾘバｰｽＤＤＴ,Reverse DDT,[from FPG]
+1288,1288,ﾌｪｲｽｸﾗｯｼｬｰ,Face Crusher,[from FPG]
+1289,1289,ﾏｼﾝガﾝﾆｰﾘﾌﾄ,Machine Gun Knees,[from FPG]
+1290,1290,逆さ押さえ込み,Reverse Pin,[from FPG]
+1292,1292 1867,飛びつき後方回転ｴビ固め,Flying Back Ebi Roll,[from FPG]
+1293,1293,ﾐｽﾃﾘｵ・ﾗﾅ,Mysterio Rana,[from FPG]
+1301,1301 1450,ﾁｷﾝｳｨﾝグﾌｪｲｽﾛｯｸ,Chickenwing Facelock,[from FPG]
+1304,1304,バｯｸドﾛｯプﾎｰﾙド,Backdrop Hold,[from FPG]
+1305,1305,抱え式バｯｸドﾛｯプﾎｰﾙド,Cradle Drop Hold,[from FPG]
+1306,1306,垂直落下式バｯｸドﾛｯプ,Vertical Backdrop,[from FPG]
+1307,1307,低空バｯｸドﾛｯプ,Low Backdrop,
+1308,1308,ぶっこ抜きバｯｸドﾛｯプ,Lift-Up Backdrop,[from FPG]
+1309,1309,殺人バｯｸドﾛｯプ,Killer Backdrop,[from FPG]
+1311,1311,ジｬｰﾏﾝｽｰプﾚｯｸｽﾎｲｯプ,German Suplex Whip,[from FPG]
+1312,1312,投げっ放しジｬｰﾏﾝｽｰプﾚｯｸｽ,German Release,[from FPG]
+1314,1314,ﾏﾔ式ジｬｰﾏﾝｽｰプﾚｯｸｽ,Maya German,
+1315,1315,低空ジｬｰﾏﾝｽｰプﾚｯｸｽ,Low-Angle German,
+1316,1316,連続ジｬｰﾏﾝｽｰプﾚｯｸｽ,Repeat German,
+1317,1317,ﾛｰﾘﾝグジｬｰﾏﾝｽｰプﾚｯｸｽ,Rolling German,[from FPG]
+1318,1318,ベﾘｰﾄｩバｯｸ,Belly to Back,[from FPG]
+1320,1320,ﾘバｰｽパﾜｰボﾑ,Reverse Powerbomb,[from FPG]
+1321,1321,ﾘバｰｽﾌﾗﾝｹﾝｼｭﾀｲﾅｰ,Rev Frankensteiner,[from FPG]
+1325,1325,地獄バｯｸドﾛｯプ,Hell Backdrop,[from FPG]
+1326,1326,ｱｽﾃｶｽｰプﾚｯｸｽ,Azteca Suplex,
+1327,1327,ﾀｲガｰｽｰプﾚｯｸｽ,Tiger Suplex,[from FPG]
+1328,1328,ﾀｲガｰｽｰプﾚｯｸｽ’８５,Tiger Suplex '85,[from FPG]
+1329,1329,ﾀｲガｰｽｰプﾚｯｸｽﾎｲｯプ,Tiger Suplex Whip,[from FPG]
+1330,1330,ドﾗゴﾝｽｰプﾚｯｸｽ,Dragon Suplex,[from FPG]
+1331,1331,ドﾗゴﾝｽｰプﾚｯｸｽﾎｲｯプ,Dragon Suplex Whip,[from FPG]
+1333,1333,高速ﾌﾙﾈﾙｿﾝｽｰプﾚｯｸｽ,Fast Full Nelson,[from FPG]
+1335,1335,ドﾙﾌｨﾝｽペｼｬﾙ１号,<Dolphin> Special 1,[from FPG]
+1339,1339,延髄ﾍｯドバｯﾄ,Enzui Headbutt,[from FPG]
+1352,1352 1696,ﾁｮｰｸｽﾘｰパｰ,Choke Sleeper,[from FPG]
+1356,1356,ﾄﾘプﾙジｬｰﾏﾝｽｰプﾚｯｸｽ,Triple German,[from FPG]
+1357,1357,ﾌﾙﾈﾙｿﾝバｽﾀｰ,Full Nelson Buster,[from FPG]
+1366,1366,ビｸﾄﾙ腕十字固め,Victor Armbar,[from FPG]
+1375,1375,高角度抱え式バｯｸドﾛｯプ,Hi Cradle Backdrop,[from FPG]
+1377,1377,連続ベﾘｰﾄｩバｯｸ,Repeat Belly to Back,[from FPG]
+1378,1378,高角度ﾀｲガｰｽｰプﾚｯｸｽ,Hi-Angle Tiger,[from FPG]
+1382,1382,ｼｮﾙダｰｸﾛｰ,Shoulder Claw,[from FPG]
+1390,1390,暴れる,Struggle,[from FPG]
+1391,1391,ｶﾝガﾙｰｷｯｸ,Kangaroo Kick,[from FPG]
+1392,1392,急所蹴り,Groin Kick,
+1394,1394,バｯｸプﾚｽ,Back Press,[from FPG]
+1420,1420,前転裏膝十字固め,Rolling Kneebar,[from FPG]
+1434,1434 1636,ﾌﾗｯｼﾝグｴﾙボｰ,Flashing Elbow,[from FPG]
+1435,1435 1712,ジｬﾝピﾝグﾌｨｽﾄドﾛｯプ,Jumping Fist Drop,[from FPG]
+1436,1436 1637,ギﾛﾁﾝドﾛｯプ,Guillotine Drop,[from FPG]
+1437,1437,ｻｯｶｰボｰﾙｷｯｸ,Soccer Kick,[from FPG]
+1438,1438 1639,ｾﾝﾄｰﾝ,Senton,[from FPG]
+1439,1439 1640,ｻﾝｾｯﾄﾌﾘｯプ,Sunset Flip,[from FPG]
+1441,1441,馬乗りパﾝﾁ,Mount Punch,[from FPG]
+1442,1442,ｽﾃｯプｵｰバｰﾌｪｲｽﾛｯｸ,Step-Over Facelock,[from FPG]
+1443,1443,ドﾗゴﾝｽﾘｰパｰ,Dragon Sleeper,[from FPG]
+1446,1446,ｽﾄﾗﾝグﾙﾎｰﾙドγ,Strangle Hold Gamma,[from FPG]
+1447,1447,三角絞め,Triangle Choke,[from FPG]
+1448,1448 1644,腕ひしぎ逆十字固め,Cross Armbar,[from FPG]
+1449,1449,ｸﾙｯｸﾍｯドｼザｰｽ,Crook Headscissors,[from FPG]
+1451,1451,ダブﾙﾘｽﾄﾛｯｸ,Double Wrist Lock,[from FPG]
+1452,1452 1709,ｷﾝグｺﾝグﾆｰドﾛｯプ,King Kong Knee,[from FPG]
+1453,1453,ﾊｰドｽﾄﾝピﾝグ（顔面）,Stomping (Face),
+1454,1454 1556,ﾊｰドｽﾄﾝピﾝグ（腹）,Hard Stomping (Gut),
+1455,1455 1648,ﾊｰドｽﾄﾝピﾝグ（腕）,Hard Stomping (Arm),
+1459,1459,ﾆｰドﾛｯプ（顔面）,Knee Drop (Face),[from FPG]
+1460,1460 1566,ﾆｰドﾛｯプ（腹）,Knee Drop (Gut),[from FPG]
+1462,1462,ジｬﾝピﾝグﾆｰドﾛｯプ（顔面）,Jump Knee (Face),[from FPG]
+1463,1463,ジｬﾝピﾝグﾆｰドﾛｯプ（腹）,Jump Knee (Gut),[from FPG]
+1465,1465,ダブﾙﾆｰプﾚｽ（顔面）,Double Knee (Face),
+1466,1466,ダブﾙﾆｰプﾚｽ（腹）,Double Knee (Gut),
+1468,1468 1666,ﾆｰｽﾀﾝプ（腕）,Knee Stamp (Arm),[from FPG]
+1470,1470,ﾍｯドドﾛｯプ（顔面）,Head Drop (Face),[from FPG]
+1471,1471 1568,ﾍｯドドﾛｯプ（腹）,Head Drop (Gut),[from FPG]
+1483,1483,馬乗り掌打,Mount Palm Strike,
+1493,1493,Ｒ・Ｙ・Ｕｽペｼｬﾙ,<R.Y.U> Special,[from FPG]
+1508,1508,後頭部に低空ドﾛｯプｷｯｸ,Low Head Dropkick,[from FPG]
+1511,1511,大鎌攻撃,Sickle Attack,[from FPG]
+1514,1514,ﾌｪｲｽｶｯﾄ,Face Cut,[from FPG]
+1517,1517 1634 1713,ｴﾙボｰドﾛｯプ,Elbow Drop,[from FPG]
+1519,1519 1635 1714,ジｬﾝピﾝグｴﾙボｰドﾛｯプ,Jumping Elbow Drop,[from FPG]
+1521,1521,ｱｲｱﾝｸﾛｰ,Iron Claw,[from FPG]
+1522,1522 1700,体固め,Body Pin,[from FPG]
+1523,1523 1710,ﾌｯﾄｽﾀﾝプ,Foot Stamp,[from FPG]
+1524,1524 1701,両手押さえﾌｫｰﾙ,Two-Hand Pin,[from FPG]
+1526,1526 1707,超肉弾プﾚｽ,Super Body Press,[from FPG]
+1528,1528,ドﾙﾌｨﾝｸﾗｯﾁ,<Dolphin> Clutch,[from FPG]
+1530,1530 1615 1768,ジｬｯｸﾅｲﾌ固め,Jackknife Pin,[from FPG]
+1532,1532 1617,ﾑｰﾝｻﾙﾄﾌｫｰﾙ,Moonsault Fall,[from FPG]
+1534,1534 1611 1766,片ｴビ固め,Half Ebi Pin,[from FPG]
+1536,1536 1613 1767,ｴビ固め,Ebi Pin,[from FPG]
+1538,1538 1697 1761,魔童ｸﾗｯﾁ,<Mado> Clutch,
+1540,1540,ｴﾙボｰドﾛｯプﾎｰﾙド,Elbow Drop Hold,[from FPG]
+1544,1544,ｽピﾆﾝグﾚｯグﾛｯｸ,Spinning Leg Lock,[from FPG]
+1545,1545,ジｬｲｱﾝﾄｽｲﾝグ,Giant Swing,
+1546,1546,足四の字固め,Figure-Four,[from FPG]
+1547,1547,ｽピﾆﾝグﾄｰﾎｰﾙド,Spinning Toe Hold,[from FPG]
+1548,1548,逆ｴビ固め,Boston Crab,[from FPG]
+1549,1549 1751,逆片ｴビ固め,Half Crab,[from FPG]
+1550,1550,ｻｿﾘ固め,Scorpion Lock,[from FPG]
+1551,1551,ｽｺｰピｵﾝデｽﾛｯｸ,Scorpion Deathlock,[from FPG]
+1553,1553,ｱｷﾚｽ腱固め,Achilles Hold,[from FPG]
+1554,1554,ﾋｰﾙﾎｰﾙド,Heel Hold,[from FPG]
+1555,1555,膝十字固め,Kneebar,[from FPG]
+1557,1557 1729,ﾊｰドｽﾄﾝピﾝグ（脚）,Hard Stomping (Leg),
+1565,1565 1737,ﾆｰｽﾀﾝプ（脚）,Knee Stamp (Leg),[from FPG]
+1577,1577,変形足四の字固め,Modified Figure-Four,
+1579,1579 1724,ＳＴＦ,STF,[from FPG]
+1585,1585,ﾃｷｻｽｸﾛｰバｰﾎｰﾙド,Texas Cloverleaf,[from FPG]
+1596,1596,釣り鐘ｽﾄﾝピﾝグ,Hanging Stomping,[from FPG]
+1597,1597,釣り鐘ﾍｯドドﾛｯプ,Hanging Head Drop,[from FPG]
+1598,1598,釣り鐘ﾆｰｽﾀﾝプ,Hanging Knee Stamp,[from FPG]
+1601,1601,ｱﾝｸﾙﾎｰﾙド,Ankle Hold,[from FPG]
+1608,1608 1717,ボｰｱﾝドｱﾛｰバｯｸブﾘｰｶｰ,Bow & Arrow Lock,
+1638,1638,ﾁｮﾝ蹴り,Chon Kick,[from FPG]
+1641,1641,ｷｬﾒﾙｸﾗｯﾁ,Camel Clutch,[from FPG]
+1642,1642,拷問ｷｬﾒﾙｸﾗｯﾁ,Torture Camel,[from FPG]
+1646,1646,ﾊｰドｽﾄﾝピﾝグ（首）,Stomping (Neck),
+1647,1647 1728,ﾊｰドｽﾄﾝピﾝグ（腰）,Stomping (Back),
+1652,1652,ﾍｯドドﾛｯプ（首）,Head Drop (Neck),[from FPG]
+1653,1653 1740,ﾍｯドドﾛｯプ（腰）,Head Drop (Back),[from FPG]
+1658,1658,ﾆｰドﾛｯプ（首）,Knee Drop (Neck),[from FPG]
+1659,1659 1732,ﾆｰドﾛｯプ（腰）,Knee Drop (Back),[from FPG]
+1661,1661,ダブﾙﾆｰプﾚｽ（首）,Double Knee (Neck),
+1662,1662 1734,ダブﾙﾆｰプﾚｽ（腰）,Double Knee (Back),
+1667,1667,ジｬﾝピﾝグﾆｰドﾛｯプ（首）,Jump Knee (Neck),[from FPG]
+1668,1668,ジｬﾝピﾝグﾆｰドﾛｯプ（腰）,Jump Knee (Back),[from FPG]
+1675,1675,片羽絞め,Single Wing Choke,
+1698,1698 1763,ﾗ・ﾏﾋｽﾄﾗﾙ,La Majistral,[from FPG]
+1699,1699 1765,ジｬパﾆｰズﾚｯグﾛｰﾙｸﾗｯﾁ,Japanese Leg Clutch,[from FPG]
+1711,1711,ｽﾄﾗﾝグﾙﾎｰﾙドα,Strangle Hold Alpha,[from FPG]
+1715,1715,ﾘバｰｽｲﾝデｨｱﾝデｽﾛｯｸ,Reverse Deathlock,[from FPG]
+1716,1716,鎌固め,Sickle Lock,[from FPG]
+1718,1718,前転ｷｬﾒﾙｸﾗｯﾁ,Rolling Camel Clutch,[from FPG]
+1719,1719,ﾛﾒﾛｽペｼｬﾙ,Romero Special,[from FPG]
+1720,1720,ﾛﾒﾛﾁﾝﾛｯｸ,Romero Chinlock,[from FPG]
+1721,1721,拷問ﾛﾒﾛｽペｼｬﾙ,Torture Romero,[from FPG]
+1722,1722,ｶベﾙﾅﾘｱ,La Cavernaria,[from FPG]
+1723,1723,変形ｶベﾙﾅﾘｱ,Modified Cavernaria,[from FPG]
+1725,1725,裏ＳＴＦ,Reverse STF,[from FPG]
+1726,1726,ﾌｨｯｼｭｽﾄﾚｯﾁｽﾘｰパｰ,Fish Stretch Sleeper,[from FPG]
+1727,1727,裏ｱｷﾚｽ腱固め,Reverse Achilles,[from FPG]
+1748,1748,足掛け膝砕き,Leg Hook Crush,[from FPG]
+1759,1759,裏膝十字固め,Reverse Kneebar,[from FPG]
+1774,1774,ｾｶﾝドﾛｰプブﾚｰﾝバｽﾀｰ,2nd Rope Buster,
+1775,1775,ﾄｯプﾛｰプブﾚｰﾝバｽﾀｰ,Top Rope Buster,
+1781,1781,大車輪喉輪落とし,Big Wheel Chokeslam,[from FPG]
+1802,1802,串刺し頭突き連打,Corner Headbutts,[from FPG]
+1803,1803,串刺しﾏｼﾝガﾝ逆水平ﾁｮｯプ,Corner MG Chops,[from FPG]
+1805,1805,串刺しボデｨブﾛｰ,Corner Body Blow,[from FPG]
+1806,1806,串刺しﾊﾝﾏｰブﾛｰ,Corner Hammer Blow,[from FPG]
+1807,1807,串刺しｽﾄﾝピﾝグ,Corner Stomping,[from FPG]
+1808,1808,串刺しﾆｰﾘﾌﾄ,Corner Knee Lift,[from FPG]
+1809,1809,串刺し低空ドﾛｯプｷｯｸ,Corner Low Dropkick,[from FPG]
+1810,1810,串刺し浴びせ蹴り,Corner Abise-geri,[from FPG]
+1811,1811,串刺しｼｮﾙダｰ,Corner Shoulder,[from FPG]
+1812,1812,ｽｲﾝグＤＤＴ,Swing DDT,[from FPG]
+1813,1813,元祖ｽｲﾝグＤＤＴ,Original Swing DDT,[from FPG]
+1814,1814,拝みﾛｰプ渡り,Praying Rope Walk,[from FPG]
+1815,1815,ﾛｰプ渡り,Rope Walk,[from FPG]
+1850,1850,奈落喉輪落とし,Naraku Chokeslam,[from FPG]
+1851,1851,ギﾛﾁﾝﾎｲｯプ,Guillotine Whip,[from FPG]
+1852,1852,ﾊﾘｳｯドｽﾀｰプﾚｽ,Hollywood Press,[from FPG]
+1853,1853,串刺し喉笛ﾁｮｯプ,Corner Throat Chop,[from FPG]
+1855,1855,ﾀｰﾝバｯｸｵｸﾗﾎﾏｽﾀﾝピｰﾄ,Turnback Stampede,[from FPG]
+1856,1856,串刺しｶﾅデｨｱﾝバｯｸブﾘｰｶｰ,Corner Canadian,[from FPG]
+1864,1864,ﾄｯプﾛｰプバｯｸドﾛｯプ,Top Rope Backdrop,
+1868,1868,ｽｰパｰパﾜｰボﾑ,Super Powerbomb,
+1897,1897 1898,ｳﾙﾄﾗ・ｳﾗｶﾝ・ﾗﾅ,Ultra Huracanrana,[from FPG]
+1903,1903 1904,ｽﾜﾝダｲブ高速ｳﾗｶﾝ・ﾗﾅ,Swan Dive Rana,[from FPG]
+1927,1927 1928,ｽﾜﾝダｲブボデｨｱﾀｯｸ,Swan Body Attack,[from FPG]
+1937,1937,○　両手あげ,○ Both Hands Up,
+1938,1938,○　片手あげ１,○ One Hand Up 1,
+1939,1939,○　片手あげ２,○ One Hand Up 2,
+1940,1940,○　片手半あげ,○ One Hand Half Up,
+1941,1941,○　片腕あげ,○ One Arm Up,
+1942,1942,×　闘魂ｱピｰﾙ,× Fighting Spirit,
+1943,1943,○　片腕回し,○ Arm Swing,
+1944,1944,○　手首ﾁｪｯｸ,○ Wrist Check,
+1945,1945,×　雄叫びガｯﾂポｰズ,× Roaring Fist Pump,
+1946,1946,○　両手拡げ挑発,○ Arms Wide Taunt,
+1947,1947,○　指差し眺め,○ Point and Stare,
+1948,1948,○　両手拡げ叫び,○ Arms Wide Shout,
+1949,1949,×　握り拳,× Clenched Fist,
+1950,1950,○　両手ガｯﾂポｰズ,○ Double Fist Pump,
+1951,1951,○　両手突き上げ,○ Arms Thrust Up,
+1952,1952,○　両手叩き,○ Hand Clap,
+1953,1953,×　気合い入れ押忍,× Psych-Up Osu!,
+1954,1954,×　両手十字切り,× Two-Hand Cross,
+1955,1955,×　指差し,× Point,
+1956,1956,×　腰ｸﾈ,× Hip Wiggle,
+1957,1957,×　両腕ｸﾛｽ,× Arms Cross,
+1958,1958,○　首斬りポｰズ,○ Throat Slash,
+1959,1959,○　指回し１,○ Finger Twirl 1,
+1960,1960,×　両腕交差,× Crossed Arms,
+1961,1961,×　両膝つき上空指差し,"× Kneel, Point Up",
+1962,1962,×　開脚ジｬﾝプ,× Split Jump,
+1963,1963,○　両手振り,○ Wave Both Hands,
+1964,1964,×　指鳴らし,× Crack Knuckles,
+1965,1965,×　側転,× Cartwheel,
+1966,1966,×　神への祈り,× Pray to God,
+1967,1967,×　ドｲﾂ式敬礼,× German Salute,
+1968,1968,×　礼,× Bow,
+1969,1969,○　パﾝｻｰポｰズ,○ <Panther*> Pose,
+1970,1970,×　ﾌｧｲﾔｰポｰズ,× Fire Pose,
+1971,1971,×　ｶｲザｰポｰズ,× <Kaiser> Pose,
+1972,1972,×　ﾏｯｽﾙポｰジﾝグ,× Muscle Posing,
+1973,1973,×　ブﾙドｯｸポｰズ,× Bulldog Pose,
+1974,1974,×　ブﾙドｯｸ跨ぎポｰズ,× Bulldog Straddle,
+1975,1975,×　降参ポｰズ,× Surrender Pose,
+1976,1976,×　ＯＨ！,× OH!,
+1977,1977,×　ｻポｰﾀｰ直し,× Adjust Kneepad,
+1978,1978,○　ﾃｷｻｽﾛﾝグﾎｰﾝ,○ Texas Longhorn,
+1979,1979,×　ピｰｽｻｲﾝ,× Peace Sign,
+1980,1980,×　ＢＡＮＧ！ＢＡＮＧ！,× BANG! BANG!,
+1981,1981,×　ＷＯＷ！ＷＯＷ！,× WOW! WOW!,
+1982,1982,×　首振り,× Head Shake,
+1983,1983,○　ドﾙﾌｨﾝポｰズ,○ <Dolphin> Pose,
+1984,1984,×　忍者ポｰズ,× Ninja Pose,
+1985,1985,×　念仏拝み,× Buddhist Prayer,
+1986,1986,×　胸張り,× Puff Chest,
+1990,1990,×　腹太鼓,× Belly Drum,
+1993,1993,○　両腕交差片手あげ,○ Crossed Arms Up,
+1994,1994,×　地団駄踏み雄叫び,× Stomp and Roar,
+1995,1995,×　振り向きｱピｰﾙ,× Turnaround Appeal,
+1996,1996,○　上空毒霧吹き,○ Poison Mist Up,
+1998,1998,○　筋肉ｱピｰﾙ,○ Muscle Appeal,
+2017,2017,×　ｽパｲｸ雄叫び,× <Spike> Roar,
+2029,2029,×　ｱﾆﾏﾙポｰズ,× Animal Pose,
+2030,2030,×　原人の雄叫び,× Caveman Roar,
+2035,2035,○　ｶﾆ歩き,○ Crab Walk,
+2040,2040,×　拳溜め片腕突きあげ,× Wind-Up Fist Pump,
+2043,2043,○　手首ﾁｪｯｸ片腕あげ,○ Wrist Check Pose,
+2055,2055,×　Ｇ・Ｃｱピｰﾙ,× G.C. Appeal,
+2056,2056,○　両手招き,○ Two-Hand Beckon,
+2057,2057,○　指回し２,○ Finger Twirl 2,
+2058,2058,○　弓引きガｯﾂポｰズ,○ Bow-Draw Pose,
+2059,2059,○　バｸ転筋肉ｱピｰﾙ,○ Backflip + Flex,
+2060,2060,○　バｸ転,○ Backflip,
+2061,2061,○　拳突き上げ,○ Fist Thrust,
+2062,2062,Ｗ．ブﾚｰﾝバｽﾀｰ,Double Brainbuster,[from FPG]
+2064,2064,Ｗ．ドﾛｯプｷｯｸ,Double Dropkick,[from FPG]
+2065,2065,合体パﾜｰボﾑ,Double Powerbomb,[from FPG]
+2077,2077,Ｗ．バｯｸドﾛｯプ,Double Backdrop,[from FPG]
+2078,2078,岩石喉輪落とし,Rock Chokeslam,[from FPG]
+2086,2086,合体Ｄ．Ｄ．Ｔ．,Double DDT,
+2087,2087,ﾊｲジｬｯｸパｲﾙドﾗｲバｰ,Hijack Piledriver,[from FPG]
+2088,2088,合体ブﾙドｯｷﾝグﾍｯドﾛｯｸ,Double Bulldog,[from FPG]
+2089,2089,Ｂ．ドﾛｯプ＋Ｄ．ﾈｯｸブﾘｰｶｰ,Backdrop+Neck Drop,[from FPG]
+2090,2090,合体ｱバﾗﾝｼｭﾎｰﾙド,Double Avalanche,[from FPG]
+2098,2098 2107 2118,太鼓乱れ打ち,Taiko Drum Barrage,[from FPG]
+2116,2116,ﾄﾘプﾙパﾜｰボﾑ,Triple Powerbomb,[from FPG]
+2117,2117,ﾄﾘプﾙｲﾝパｸﾄ,Triple Impact,[from FPG]
+2129,2129,,,

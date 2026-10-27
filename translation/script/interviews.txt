@@ -1,0 +1,3878 @@
+# Victory Road: the interviews before each match and the narration.
+# One block per speech; each EN line is one line on screen (one string in the game).
+# limit lines: as many EN lines as JP lines (fewer is fine - the rest stay empty), never more.
+# limit px=204: each line at most 204 pixels wide - the in-ring interview box shows lines from
+#   x=89 to its edge at x=293, the speaker's name in the margin (seen in the emulator 2026-10-27;
+#   python3 tools/fpstext.py width "text" measures). lint.py checks both.
+# Speakers are wrestlers: keep each one's voice. Names in the text: see translation/glossary.csv.
+# Control codes: none here. Quotes 「」 become "" (open on the first line, close on the last).
+
+@ 2ND:060C10AC lines=060C10AC,060C10C4,060C10D8,060C10F4,060C1110,060C1124,060C113C,060C1154,060C1174
+# table 060C1190
+JP 多くの団体が乱立する、
+JP この混沌とした時代
+JP レスラーたちは何を求め、
+JP 何故にさまようのか・・・
+JP その答えを探すべく
+JP 戦い続けねばならない
+JP そして戦い終えた後、
+JP あなたはこの時代を救う救世主、
+JP メシアとなるであろう・・・
+EN Countless promotions clash
+EN in this age of chaos.
+EN What do wrestlers seek?
+EN Why do they wander...?
+EN To find the answer,
+EN you must keep fighting.
+EN And when the fight is over,
+EN you will save this age,
+EN as its Messiah...
+
+@ 2ND:0609A6E4 lines=0609A6E4,0609A6B4,0609A68C,0609A668,0609A648,0609A62C
+# table 060C128C
+JP 「俺はプロレスしかやらねーよ
+JP 格好ばっか気にする奴は、ダ～イキライだからさ
+JP その代わり、きっちりいい試合してやるよ
+JP それよりお前等プロレスできるの？
+JP ま～、どんなカスが相手でも、
+JP お客喜ばす試合してやるよ」
+EN "All I do is wrestle, man.
+EN Guys who only care
+EN about looks? I haaate 'em.
+EN But you get a solid match.
+EN Can you even wrestle, huh?
+EN Scum or not, the fans win."
+
+@ 2ND:0609A60C lines=0609A60C,0609A5F4
+JP 「親分がやるまでもないですよ
+JP 俺と兄弟で十分ですよ」
+EN "No need for you, Boss.
+EN Me and my bro got this."
+
+@ 2ND:0609A5D0 lines=0609A5D0
+JP 「俺達でプロレス教えてやりますよ」
+EN "We'll teach 'em wrestling."
+
+@ 2ND:0609A5B8 lines=0609A5B8,0609A588,0609A558,0609A540,0609A51C
+JP 「ウヒャヒャヒャ～！
+JP だ～めだよ、俺の美味しいところ持ってくなって
+JP お客はさ、高い金払って俺を見にきてるんだから
+JP そんだけの試合してさ、
+JP 気持ち良く家に帰してあげなきゃ」
+EN "Uhyahyahya!
+EN Nope! Don't steal my spot!
+EN Fans pay big to see me.
+EN I gotta give 'em that match
+EN and send 'em home happy."
+
+@ 2ND:0609A4EC lines=0609A4EC,0609A4CC
+JP 「ま、こんな奴等でも俺等がボコボコにブっ潰して
+JP やればお客も満足するでしょう」
+EN "If we flatten these punks,
+EN the fans'll be happy."
+
+@ 2ND:0609A4AC lines=0609A4AC,0609A494
+JP 「プロの洗礼って奴をみっちり
+JP 叩き込んでやりますよ」
+EN "We'll give 'em the full pro
+EN welcome, the hard way."
+
+@ 2ND:0609A47C lines=0609A47C,0609A45C,0609A444,0609A410,0609A3FC
+JP 「今日はそうだな・・・
+JP ２０分はやるぞ、２０分過ぎたら
+JP ２人共乱入してこいよ！
+JP トリプルでピンして、たっぷりパフォーマンスして、
+JP 飲みにいくぞ！」
+EN "Today, let's see...
+EN I'll go 20 minutes. At 20,
+EN you two both run in!
+EN Triple pin, a big show,
+EN then we go drinking!"
+
+@ 2ND:0609A3D0 lines=0609A3D0
+JP 「いいっすね、焼き肉食いにいきましょう！」
+EN "Sweet! Let's go eat BBQ!"
+
+@ 2ND:0609A39C lines=0609A39C
+JP 「こいつら相手にいい汗かければいいけどな・・・」
+EN "Hope I work up a sweat..."
+
+@ 2ND:0609A374 lines=0609A374,0609A34C,0609A324,0609A2FC,0609A2E4,0609A2C0,0609A298,0609A268,0609A248,0609A22C,0609A204,0609A1F0,0609A1C8
+JP 「いいか、こいつらも体ちっちゃいけど
+JP ガンガン試合して、でかい奴とぶち当って
+JP 試合の後に、ビール胃にぶちこむんだよ
+JP それが一番レスラーらしい体になるんだよ
+JP レスラーは体だからな、
+JP 体でっかくしなきゃ客は呼べないよ
+JP 俺の腹見てみろよ！これがレスラーだろ？
+JP 飯食ってさ、アルコール入れてさ、腹ださなきゃ
+JP 旗本っていまチャンピオンだろ？
+JP あいつもいい腹してるだろ？
+JP この腹だったらあいつのキック受けたって
+JP ダメージ受けないよ
+JP まっ、見てろよ、格好良く決めてやるよ」
+EN "Look, these guys are small,
+EN but fight hard, hit big guys,
+EN then pour beer in your gut.
+EN That's a wrestler's body.
+EN Wrestling's all about body.
+EN No big body, no crowd.
+EN My gut! That's a wrestler!
+EN Eat, drink, grow a belly!
+EN <Hatamoto>'s the champ, huh?
+EN He's got a nice gut too!
+EN With this gut, I could eat
+EN his kicks and feel nothing.
+EN Watch me do it in style!"
+
+@ 2ND:0609ADBC lines=0609ADBC,0609AD9C,0609AD78,0609AD64,0609AD44,0609AD24,0609AD18,0609ACEC,0609ACC4,0609ACAC
+JP 「ＯＨ ＹＥＥＥＡＨ！
+JP 俺はいま物凄く興奮しているんだ
+JP 俺の中の獰猛な血が騒ぎたてている！
+JP ＯＨ ＹＥＥＥＡＨ！
+JP いい獲物が見つかったとな・・・
+JP 獲物は目の前にいる、すぐ近くに
+JP ＯＨ ＮＯ！
+JP よく見えないな、小さすぎて見えない・・・
+JP 恐怖におののくお前達の姿しかわからない
+JP ＯＨ ＹＥＥＥＡＨ！」
+EN "OH YEEEAH!
+EN I'm SO fired up right now!
+EN My savage blood is boiling!
+EN OH YEEEAH!
+EN I've found me some prey...
+EN It's right in front of me...
+EN OH NO!
+EN Can't see 'em, they're tiny...
+EN All I see is you trembling!
+EN OH YEEEAH!"
+
+@ 2ND:0609AC98 lines=0609AC98,0609AC78,0609AC60,0609AC3C,0609AC24,0609AC04,0609ABF0,0609ABC8,0609AB98,0609AB8C,0609AB7C,0609AB5C,0609AB3C,0609AB20,0609AB00,0609AAD8,0609AAB4,0609AAA0
+JP 「ＦＹＵＵＵＵ！
+JP 誰が来ようと、俺達のマットに
+JP 上がる奴等は許さない
+JP このスパイクに宿るジャスティスが
+JP 許すことができないんだ
+JP 別にキミたちに恨みはないんだが
+JP 許してくれ・・・
+JP このマットに棲む神が俺にこう言っている
+JP 『スパイクよ、時には悪魔となって己を守るのだ』
+JP と・・・
+JP とても残念だよ
+JP キミたちとはグッド・フレンドに
+JP なれるような気がしていた・・・
+JP だけど、アメリカの全民衆が
+JP 俺達の勝利を確信しているんだ
+JP そして、キミたちがマットの上でぶざまに
+JP 横たわるのを楽しみにしているんだ
+JP ＦＹＵＵＵＵ！」
+EN "FYUUUU!
+EN Whoever comes, nobody
+EN steps in our ring and lives.
+EN The justice in <Spike>
+EN can't let it slide.
+EN I've no grudge against you,
+EN but forgive me...
+EN The god of this ring says,
+EN '<Spike>, at times be a devil
+EN to protect yourself'...
+EN It's a real shame.
+EN I felt like we could be
+EN good friends...
+EN But all of America is
+EN sure we'll win.
+EN They can't wait to see you
+EN in a heap on the mat.
+EN FYUUUU!"
+
+@ 2ND:0609AA80 lines=0609AA80,0609AA64,0609AA44,0609AA18,0609AA04,0609A9F0,0609A9DC,0609A9BC,0609A99C,0609A984,0609A974,0609A95C,0609A93C,0609A920,0609A8FC,0609A8C8,0609A890,0609A860,0609A844,0609A830,0609A808,0609A7E4,0609A7B0,0609A788,0609A770,0609A754,0609A724,0609A704
+JP 「アメリカは待っているんだ、
+JP スーパーヒーローの登場を
+JP そしていよいよ、現れる・・・
+JP ・・・そうだ、いまキミたちの目の前にいる
+JP アメリカの象徴！
+JP アメリカの希望！
+JP アメリカの尊厳！
+JP すべてのカリスマを備えた人物が
+JP もうすぐこのアリーナに登場だ
+JP ・・・ん、聞こえないぞ
+JP ・・・そうそう
+JP ・・・この大観衆は？
+JP ・・・“アックス”のコールで
+JP アリーナを壊さないでくれよ
+JP 唯一、アメリカが一つになる瞬間だ！
+JP ダウン・キッズもバッド・ボーイもスラッカーも・・・
+JP ヤンキーもイタリアンもスパニッシュもプエルトリカンも
+JP 今日という日を支えに、ハードワークに耐えている
+JP 頼むからチビらないでくれよ
+JP 警備員が困っちまう
+JP 深呼吸をして、そう、心を落ち着けるんだ
+JP 世界最強の男が必死に冷静を装って、
+JP もうすぐ始まるショータイムにウズウズしているんだ
+JP みんなも彼と同じようにクールに・・・
+JP ん、待ってくれ・・・
+JP どうやら時間が来たようだ
+JP いよいよだ、イ・チ・バ・ンの入場が始まる・・・
+JP 爆発の準備はできているかい？」
+EN "America is waiting
+EN for a superhero.
+EN And at last, he comes...
+EN ...Yes, he's right here!
+EN The symbol of America!
+EN The hope of America!
+EN The pride of America!
+EN A man of total charisma
+EN will soon enter this arena!
+EN ...Huh? Can't hear you!
+EN ...That's right!
+EN ...What a crowd!
+EN ...Just don't wreck the
+EN place chanting '<Doogan>'!
+EN The moment America unites!
+EN Street kids, bad boys,
+EN slackers, Yankees, Italians,
+EN Spanish, Puerto Ricans: all
+EN grind away for this day.
+EN Don't wet yourselves now.
+EN Security would have a fit.
+EN Breathe deep. Calm down.
+EN The world's strongest man
+EN plays it cool, itching
+EN for the showtime to begin.
+EN Be cool like him, people...
+EN Wait... it's time.
+EN I-CHI-BAN comes! Ready?"
+
+@ 2ND:0609B24C lines=0609B24C,0609B22C,0609B20C,0609B1F4,0609B1D8,0609B1A4
+JP 「エー、オラッ！
+JP ふざけんじゃねーぞ、オラッ！
+JP てめーら、よく見てろ！エーッ！
+JP 俺等がチャンピオンだ！
+JP わかってんのか！オラッ！
+JP オイッ、天本！このバカどもに教えてやれっ！エー！」
+EN "Eh, ora!
+EN Don't screw with me, ora!
+EN Watch close, punks! Eh!
+EN WE are the champions!
+EN Got it?! Ora!
+EN Hey, <Amamoto>! Teach 'em!"
+
+@ 2ND:0609B18C lines=0609B18C,0609B174,0609B158
+JP 「オラッ！よく見ろよ！
+JP これがチャンピオンだ！
+JP 全部、潰すぞっ！オラッ！」
+EN "Ora! Look close!
+EN THIS is a champion!
+EN We crush it all! Ora!"
+
+@ 2ND:0609B134 lines=0609B134,0609B10C,0609B0FC,0609B0D8,0609B0BC,0609B09C,0609B084,0609B06C,0609B040,0609B028,0609B004,0609AFDC
+JP 「おいっ、いいかよく聞け！オラッ！
+JP チャンピオンがどうゆうもんか教えてやる
+JP どうだ、エ！
+JP バカじゃつとまんねーだろ？エー！
+JP デブにつとまるか？オラッ！
+JP エーッ！オラッ！わかるだろ？
+JP だれがチャンピオンか！
+JP 俺等見てみろ！エーッ！
+JP かっこよくなきゃチャンピオンじゃねーだろ！
+JP ベルトも巻けないブタに
+JP チャンピオンがつとまるか？エーッ！
+JP ベルトが泣くんじゃねーのか？オラッ！」
+EN "Hey, listen up! Ora!
+EN I'll show you a real champ!
+EN Well? Eh!
+EN No idiot can do it! Eh!
+EN Can a fatass do it? Ora!
+EN Eh! Ora! You get it?
+EN Who's the champion!
+EN Look at us! Eh!
+EN Ain't cool, ain't champ!
+EN Can a pig who can't wear
+EN the belt be champ? Eh!
+EN The belt would cry! Ora!"
+
+@ 2ND:0609AFB8 lines=0609AFB8,0609AF94
+JP 「俺が全部やってやるぞ、オラッ！
+JP 逃げだすんじゃねーぞ！オラッ！」
+EN "I'll take 'em all, ora!
+EN Don't you run! Ora!"
+
+@ 2ND:0609AF80 lines=0609AF80,0609AF5C,0609AF30,0609AF14
+JP 「エー！オラッ！
+JP 誰が相手か、わかってんのか？エー！
+JP 俺等とやるなんて勘違いしてねーか？エー！
+JP ヒロさん、言ってやれよ！」
+EN "Eh! Ora!
+EN Know who you face? Eh!
+EN Think you're our level? Eh!
+EN <Hiro>, tell 'em!"
+
+@ 2ND:0609AEEC lines=0609AEEC
+JP 「そうだ！チャンピオンだぞ！オラッ！」
+EN "Right! We're champs! Ora!"
+
+@ 2ND:0609AED0 lines=0609AED0
+JP 「いいのか、ヒロさん？」
+EN "You sure, <Hiro>?"
+
+@ 2ND:0609AEC0 lines=0609AEC0
+JP 「オラッ！」
+EN "Ora!"
+
+@ 2ND:0609AEB4 lines=0609AEB4,0609AE84,0609AE58,0609AE34,0609AE10,0609ADE8,0609ADD4
+JP 「オラッ！
+JP タッグマッチってもんをたっぷり味合わせてやるぞ
+JP チャンピオンがどんなもんかわかるか？エー！
+JP ファールカップつけんじゃねーぞ！
+JP 二度と立たなくしてやるぞ！オラッ！
+JP 離婚届用意して待ってろ！エー！オラッ！
+JP いくぞ！オラッ！」
+EN "Ora!
+EN Taste real tag wrestling!
+EN Know what a champ is? Eh!
+EN Don't you wear a cup!
+EN It'll never get up! Ora!
+EN Get divorce papers! Ora!
+EN Let's go! Ora!"
+
+@ 2ND:0609B878 lines=0609B878,0609B84C,0609B834,0609B810
+JP 「え？何、なんかコメントするの？
+JP 別にコメントするほどの相手じゃないでしょ？
+JP ４００％っていっても、
+JP もうファンも喜ばないしね・・・」
+EN "Huh? I gotta comment?
+EN They ain't worth one, right?
+EN Even if I say 400%,
+EN the fans won't care..."
+
+@ 2ND:0609B7F0 lines=0609B7F0,0609B7CC,0609B7AC
+JP 「いいじゃないですか、安藤さん
+JP 俺等の実力はみんなわかってるんだし
+JP 試合でカタつけてやれば・・・」
+EN "Who cares, <Ando>?
+EN Everyone knows our skill.
+EN Just settle it in the ring..."
+
+@ 2ND:0609B78C lines=0609B78C,0609B774,0609B758,0609B738,0609B720,0609B6FC
+JP 「強過ぎるのも問題かもな・・・
+JP リップスもこの業界じゃ
+JP 頂点までいっちゃったからね
+JP よそのトップクラスじゃないと
+JP 試合する価値ないもんな
+JP こいつら相手で、メリットあるの？」
+EN "Maybe we're too strong...
+EN Royal Lips already hit
+EN the top of this business.
+EN Only other feds' top guys
+EN are worth a match now.
+EN What's in it for us here?"
+
+@ 2ND:0609B6D4 lines=0609B6D4,0609B6AC
+JP 「メリットある奴なんてもういないですよ
+JP ほとんど、やっちゃいましたから・・・」
+EN "Nobody's worth it now.
+EN We beat almost everyone..."
+
+@ 2ND:0609B684 lines=0609B684,0609B66C
+JP 「そろそろ目標を変えたほうがいいかもな
+JP 世界制覇とかな・・・」
+EN "Maybe we need a new goal.
+EN Like conquering the world..."
+
+@ 2ND:0609B63C lines=0609B63C
+JP 「安藤さん、これ世界のベルトじゃないですか？」
+EN "Isn't this a world belt?"
+
+@ 2ND:0609B628 lines=0609B628,0609B618,0609B5F8,0609B5D4
+JP 「ギャハハハハ！
+JP じゃあ、何？
+JP 世界も制覇してるんじゃないの？
+JP どうすんだよ 目標、なくなったよ」
+EN "Gyahahahaha!
+EN So what, then?
+EN We already rule the world?
+EN Now what? No goals left!"
+
+@ 2ND:0609B5B8 lines=0609B5B8
+JP 「宇宙一、ですかね・・・」
+EN "No. 1 in the universe?"
+
+@ 2ND:0609B5A4 lines=0609B5A4,0609B584,0609B558
+JP 「！！ そうそれっ、
+JP 山杜もたまにはいいこと言うね
+JP ということはなんだよ、宇宙人と闘うの？」
+EN "!! Yeah, that's it!
+EN <Yamamori>, smart for once!
+EN So, what, we fight aliens?"
+
+@ 2ND:0609B534 lines=0609B534,0609B518
+JP 「いいじゃないですか、夢があるし
+JP お客いっぱい入りますよ」
+EN "Why not? It's a dream!
+EN We'd pack the house."
+
+@ 2ND:0609B4FC lines=0609B4FC,0609B4D8
+JP 「ドームいっぱいになるな！
+JP 国立でもいけるかもしれな・・・」
+EN "We'd sell out the Dome!
+EN Maybe even the Stadi..."
+
+@ 2ND:0609B4B4 lines=0609B4B4,0609B498
+JP 「しっかりしてるな、この人・・・
+JP 収益、計算してるでしょ？」
+EN "This guy's sharp...
+EN You're counting the gate?"
+
+@ 2ND:0609B46C lines=0609B46C,0609B450,0609B434,0609B40C
+JP 「当り前だって！俺はもともとエリートだから
+JP 金勘定は得意なんだって、
+JP 知能指数１２０あるんだぞ
+JP お前等のギャラだって上げてやるからさ」
+EN "Duh! I was always elite.
+EN I'm great with money!
+EN I've got a 120 IQ!
+EN I'll even raise your pay."
+
+@ 2ND:0609B3FC lines=0609B3FC,0609B3E4
+JP 「マジですか？
+JP 銀座行きましょう！」
+EN "Seriously?
+EN Let's hit Ginza!"
+
+@ 2ND:0609B3C4 lines=0609B3C4,0609B3A4
+JP 「お前はそればっかりだな・・・
+JP もう少し本気でプロレス・・・」
+EN "That's all you think of...
+EN Take wrestling seriously..."
+
+@ 2ND:0609B390 lines=0609B390,0609B368
+JP 「ねえ、安藤さん
+JP 対戦相手待っているみたいですよ・・・」
+EN "Hey, <Ando>, looks like
+EN the other team's waiting..."
+
+@ 2ND:0609B348 lines=0609B348,0609B334
+JP 「え？そうか、試合するんだよな
+JP 面倒臭いな・・・」
+EN "Huh? Oh right, a match.
+EN What a pain..."
+
+@ 2ND:0609B304 lines=0609B304
+JP 「トバしちゃいますか、そんで銀座にでも・・・」
+EN "Blitz 'em, then Ginza...?"
+
+@ 2ND:0609B2F4 lines=0609B2F4,0609B2D0,0609B2B0,0609B29C,0609B288
+JP 「でもな、ほら
+JP この業界、信用問題が一番だからな
+JP 頭の古い連中が仕切ってるから
+JP 仕事はしないとな
+JP じゃあ、いくか」
+EN "But y'know,
+EN trust is all in this game.
+EN The old fogeys run it,
+EN so we gotta do our work.
+EN Well, let's go."
+
+@ 2ND:0609B260 lines=0609B260
+JP 「ＷＥ ＡＲＥ ロイヤルリップス！！」
+EN "WE ARE Royal Lips!!"
+
+@ 2ND:0609BD50 lines=0609BD50,0609BD34,0609BD08,0609BCEC,0609BCD4,0609BC9C,0609BC88,0609BC5C,0609BC48,0609BCEC,0609BC28,0609BC08,0609BBD8,0609BBB4,0609BB94,0609BB6C,0609BB50
+JP 「ハーーーーーーーーーー！
+JP チキン野郎が何しにきた！
+JP 俺達がブラスターだと知ってて来ているのか？
+JP ハーーーーーーーーーー！
+JP 俺達はブラスターだ！
+JP アイアンとケイスキーとナイト、３人揃ってブラスターだ！
+JP ＨＥＹ！ＢＯＹ？
+JP 何も知らないで、迷子になっちまったらしいな
+JP ここは格闘場だ！
+JP ハーーーーーーーーーー！
+JP 男達が力と力でぶつかりあう、
+JP クレイジーでナーバスな場所だ
+JP いいか、今日はベースボールのゲームはないんだ
+JP 今すぐ、お前のポケットに入っている
+JP ベースボールチケットを確認して
+JP 場違いな場所にいることを理解するんだ
+JP ハーーーーーーーーーー！」
+EN "HAAAAAAAAAA!
+EN Why's a chicken here?!
+EN Ya know the <Blasters>?
+EN HAAAAAAAAAA!
+EN We are the <Blasters>!
+EN <Iron>, <Keisuke>, <Night>!
+EN HEY! BOY?
+EN You know nothing. Lost?
+EN This is a fighting arena!
+EN HAAAAAAAAAA!
+EN Men clash power on power!
+EN A crazy, nervous place!
+EN No baseball game today.
+EN Check the baseball ticket
+EN in your pocket right now:
+EN you're in the wrong place!
+EN HAAAAAAAAAA!"
+
+@ 2ND:0609BB40 lines=0609BB40,0609BB24,0609BB14,0609BB24,0609BB08,0609BB24,0609BAF4,0609BAC0,0609BA94,0609BA78
+JP 「パワーだ！
+JP ＷＯＯ！ＷＯＯ！ＷＯＯ！
+JP クラッシュだ！
+JP ＷＯＯ！ＷＯＯ！ＷＯＯ！
+JP ＷＡＲだ！
+JP ＷＯＯ！ＷＯＯ！ＷＯＯ！
+JP 俺達はＮＯ．１だ！
+JP ナイトとケイスキーがいれば、誰も俺達に勝てない！
+JP タフでクレイジーでパーフェクトなトリオ、
+JP それがブラスターズだ！」
+EN "Power!
+EN WOO! WOO! WOO!
+EN Crush!
+EN WOO! WOO! WOO!
+EN WAR!
+EN WOO! WOO! WOO!
+EN We are No. 1!
+EN <Night>, <Keisuke>: unbeatable!
+EN Tough, crazy, perfect trio:
+EN that's the <Blasters>!"
+
+@ 2ND:0609BA60 lines=0609BA60,0609BA4C,0609BA38,0609BA1C,0609B9EC,0609B9D4
+JP 「俺達には通用しないぞ
+JP 全部受けてやる！
+JP 全員やってやるぞ！
+JP ブラスターをなめるなよ！
+JP ナイトとアイアンと俺が組めば誰にも負けないぞ！
+JP ぶちかましてやるっ！」
+EN "Nothing works on us!
+EN I'll take it all!
+EN I'll take you all on!
+EN Respect the <Blasters>!
+EN <Night>, <Iron>, me: can't lose!
+EN I'm gonna blast you!"
+
+@ 2ND:0609B9B8 lines=0609B9B8,0609B98C,0609B970,0609B958,0609B94C,0609B92C,0609B904,0609B8E0,0609B8B8,0609B89C
+# (also here, translated in an earlier block: 「ハーーーーーーーーーー！)
+# (also here, translated in an earlier block: ハーーーーーーーーーー！)
+# (also here, translated in an earlier block: ハーーーーーーーーーー！)
+# (also here, translated in an earlier block: ハーーーーーーーーーー！)
+# (also here, translated in an earlier block: ハーーーーーーーーーー！)
+JP 頼むから後悔しないでくれ！
+JP 俺達に壊されたとしても保険はきかない・・・
+JP そうだ、犠牲者が多すぎて
+JP 保険屋が逃げちまった！
+JP 殺戮・・・
+JP 人は俺達のファイトをそう呼ぶ
+JP お前達の知らない未知の世界へいくんだ
+JP もうだめだ、もう止められない・・・
+JP アイアンとケイスキーはイッちまってる
+JP ＴＩＭＥ ＵＰ！ だっ！」
+EN Just don't regret it!
+EN Insurance won't cover you...
+EN Yeah, too many victims:
+EN the insurers ran off!
+EN Slaughter...
+EN That's what they call us.
+EN You go to a world unknown.
+EN It's over, no stopping it...
+EN <Iron> and <Keisuke> snapped!
+EN TIME UP!"
+
+@ 2ND:0609DA44 lines=0609DA44,0609DA18,0609D9FC,0609D9D4,0609D9B8,0609D99C,0609D97C,0609D954,0609D940
+# table 060C188C
+JP 「負けられないよ
+JP ここで負けたらあと無いからな、オレ・・・
+JP これからバク進する為にも
+JP ここで止まるわけにはいかないし・・・
+JP ＤＤＴも俺には通用しないよ
+JP 防いで防いで防ぎまくって
+JP 最後はムーンサルトで締めてやる
+JP きつい闘いになるかもしれないけど・・・
+JP やるしかないな」
+EN "I can't lose.
+EN Lose here, and I'm done...
+EN To charge ahead from here,
+EN I can't stop now...
+EN The DDT won't work on me.
+EN I'll block, block, block,
+EN then the Moonsault ends it.
+EN It may be a tough fight...
+EN I've just got to do it."
+
+@ 2ND:0609DB64 lines=0609DB64,0609DB44,0609DB30,0609DB18,0609DAF0,0609DAC4,0609DAA4,0609DA94,0609DA80,0609DA58
+JP 「うちの壁はさ、
+JP 思っている以上にでかいからな
+JP 誰が来ても一緒！
+JP そんなに甘くはない！
+JP このベルトの重みはよそのとは全く違うぞ
+JP ましてやチャンピオンの重みなんていうのは
+JP それは比べられるもんじゃない
+JP 俺をね・・・
+JP 俺を体感しろっ！
+JP 俺というレスラーを、肌で体感しろっ！」
+EN "Our wall is way bigger
+EN than you think.
+EN Whoever comes, same deal!
+EN It ain't that easy!
+EN No belt's as heavy as this!
+EN And a champion's weight...
+EN there's no comparing it.
+EN Me...
+EN Feel me!
+EN Feel the wrestler I am!"
+
+@ 2ND:0609DDCC lines=0609DDCC,0609DDBC,0609DD9C,0609DD7C,0609DD64,0609DD4C,0609DD24,0609DD00,0609DCE8,0609DCCC,0609DCB4,0609DC98,0609DC70,0609DC5C,0609DC40,0609DC20,0609DBFC,0609DBE0,0609DBCC,0609DBB4,0609DB94,0609DB78
+JP 「この何年間、リングという格闘舞台から
+JP 離れていても、
+JP ここの空気にふれると同時に、
+JP 記憶があふれ出てくるというのが
+JP なんとも格闘者冥利に
+JP 尽きるというね・・・
+JP そのようなプロレスラーの奥の部分・・・
+JP 本能が自然に自分の身体に甦ってくる
+JP プロレスでなければ、
+JP こんなことは体験できない
+JP まったくもって自分は
+JP どんな立場にいようとも、
+JP プロレスラーであるということを自覚し、
+JP それを誇りに思う
+JP この気持ちというものがね
+JP 今の人達にあるのかという・・・
+JP 『ふざけんじゃねぇ、コノヤロー！』
+JP という、私がたきつけてきた
+JP 一種の麻薬みたいな
+JP 激烈な感情の火花を、
+JP この私が見せなければいけない
+JP 時代の激動の中でね・・・」
+EN "For years I was away
+EN from the ring, our stage,
+EN yet the moment I breathe
+EN here, memories flood back.
+EN For a fighter, there is
+EN no greater joy...
+EN A wrestler's deep core...
+EN instinct revives in me.
+EN Only pro wrestling
+EN lets you feel this.
+EN Truly, I know that,
+EN whatever my position,
+EN I am a pro wrestler,
+EN and I am proud of it.
+EN Do the people of today
+EN have that feeling...?
+EN 'Screw you, you bastard!'
+EN That fierce spark of feeling
+EN I always stirred up,
+EN like a kind of drug...
+EN I must show it myself,
+EN in these turbulent times..."
+
+@ 2ND:0609DEC8 lines=0609DEC8,0609DEB0,0609DE88,0609DE6C,0609DE50,0609DE28,0609DE08,0609DDF4
+JP 「底が見えないからな
+JP ヌベーっとしてて・・・
+JP どっから力だしてくるのかわかんねーし
+JP やりづらい相手だな・・・
+JP でも俺、いま欲がないから
+JP 精神が研ぎ澄まされてる、っていうの？
+JP やってみなきゃわかんねーけど
+JP がんばるよ・・・」
+EN "Can't see his limits.
+EN So blank, hard to read...
+EN Where's his power from?
+EN A tough guy to face...
+EN But I'm not greedy now,
+EN so my mind's sharp, y'know?
+EN Can't say till we fight,
+EN but I'll do my best..."
+
+@ 2ND:0609E01C lines=0609E01C,0609DFFC,0609DFE8,0609DFCC,0609DFB0,0609DF98,0609DF6C,0609DF48,0609DF30,0609DF04,0609DEE0
+JP 「・・・はっきり言って、
+JP この戦いに特別な感情はないな
+JP 相手が誰であろうと
+JP いつも通りの試合をするだけ
+JP 試合はいつも自分との闘いに
+JP なることがほとんどでね
+JP チャンピオンらしさを気にすることもないな
+JP ただ、現にオリーブっていう団体の
+JP トップにいるわけだから
+JP オリーブを応援してくれるお客さんの為にも
+JP ここで負けるわけにはいかないよ」
+EN "...Honestly, I've no
+EN special feeling about this.
+EN Whoever my opponent,
+EN I'll wrestle as always.
+EN Most of the time a match
+EN is a fight with myself.
+EN I don't care about acting
+EN like a champ. But I'm at
+EN the top of <Olive Japan>,
+EN so for our fans,
+EN I can't lose here."
+
+@ 2ND:0609E120 lines=0609E120,0609E104,0609E0E8,0609E0DC,0609E0C4,0609E0A8,0609E080,0609E060,0609E050,0609E038
+JP 「僕の体調はすこぶるいいからね
+JP もう誰が来ても勝てない！
+JP そんな状態まで来てるから
+JP ん～・・・
+JP ブランクっていうのは、
+JP 僕にはふさわしくない言葉だ
+JP いつでも全盛期のつもりでやってるから
+JP 司馬さんにも胸を借りるつもりは
+JP ありませんよ
+JP さあ、いきますよ！」
+EN "I'm in fantastic shape.
+EN Nobody can beat me now!
+EN I've come that far.
+EN Hmmm...
+EN 'Ring rust'? That word
+EN doesn't fit me.
+EN I'm always in my prime.
+EN So I won't face <Shiba>
+EN as his pupil, either.
+EN Okay, here I come!"
+
+@ 2ND:0609E2E8 lines=0609E2E8,0609E2CC,0609E2A8,0609E290,0609E26C,0609E244,0609E21C,0609E1FC,0609E1D4,0609E1B4,0609E198,0609E174,0609E154,0609E140
+JP 「この戦いもファンが
+JP 後押しするのであればね、
+JP 別に頑固にこばむ必要もない・・・
+JP ポゥ・・私はね、筋道が
+JP しっかりしているんならいいんだよ
+JP ゴタゴタを持ってこられるのは迷惑だしね
+JP ポゥ・・信用できない人間っていうのは
+JP どこの世界にも必ずいるんだよ
+JP それはできない、っていうだけの話しでね
+JP ポゥ・・試合ではなにが起きても
+JP いい世界がプロレスなんだよ
+JP 誰とでもやれる世界じゃない・・・
+JP 今回みたいにね、できる可能性も
+JP 無限にあるんだよ」
+EN "If the fans want
+EN this match, well,
+EN no need to refuse it...
+EN Poh... For me, if things
+EN are done properly, fine.
+EN Trouble is a nuisance.
+EN Poh... In any world,
+EN some can't be trusted.
+EN I just can't do that.
+EN Poh... In wrestling,
+EN anything can happen.
+EN Can't just face anybody...
+EN But like now, the chances
+EN are endless."
+
+@ 2ND:0609E3E4 lines=0609E3E4,0609E3C0,0609E3A8,0609E388,0609E368,0609E350,0609E33C,0609E318,0609E300
+JP 「お前みたいな小僧になにができるんだ？
+JP 俺の前に現れるタマじゃないだろう！
+JP どうなっても知らんぞ
+JP お前には特別な恨みがあるからな
+JP いつかはこういう時がくるとは
+JP 思ってたけどな・・・
+JP 徹底的に潰すぞ！
+JP 沖田への憎しみもお前にぶつけるよ
+JP 楽しみにしてな・・・」
+EN "What can you do, punk?
+EN You're not fit to face me!
+EN Whatever happens, too bad.
+EN I've got a special grudge.
+EN I always figured a day
+EN like this would come...
+EN I'll crush you utterly!
+EN My <Okita> hate's yours, too!
+EN Look forward to it..."
+
+@ 2ND:0609E540 lines=0609E540,0609E51C,0609E4FC,0609E4D8,0609E4B0,0609E49C,0609E480,0609E474,0609E44C,0609E428,0609E40C
+JP 「まだ全然、自信が持てない・・・
+JP どこをどうしていけばいいのか・・・
+JP 何をやっていけばいいのか・・・
+JP ここを潰さない覚悟はあるけど・・・
+JP だけど、わからないことがあったとしても
+JP 自分の体で少しずつ
+JP 証明していくしかないんだ！
+JP 体が・・・
+JP 体がいうことをきくまではやっていくよ！
+JP 誰が来たって、俺が守っていくよ！
+JP 俺が全部殺ってやるよ！」
+EN "I've got no confidence...
+EN What to fix, and how...
+EN What I should be doing...
+EN I'll keep this place alive,
+EN but if there's stuff I don't
+EN get, I can only prove it
+EN with my body, bit by bit!
+EN My body...
+EN I'll go till my body quits!
+EN Whoever comes, I guard it!
+EN I'll kill 'em all!"
+
+@ 2ND:0609E71C lines=0609E71C,0609E6F8,0609E6D8,0609E6AC,0609E698,0609E674,0609E650,0609E628,0609E608,0609E5E0,0609E5B8,0609E590,0609E580,0609E564
+JP 「どいつもこいつもチキン野郎ばっかりだ！
+JP 馬の骨にもならないイエロー共が！
+JP これからこのケリー・テキサンが
+JP このチンケなマットでショー・タイムを開く
+JP アメリカの魂を、
+JP グレートテキサンのスピリチュアルを
+JP リトル・ジャパニーズに叩き込む！
+JP なんでも有りの時代のプロレスを知らない
+JP ヤング・ボーイは幸せだぜ・・・
+JP アメリカン・プロレスには歴史があるんだ
+JP 暗くしめった時代に生きたプロレスラーを
+JP お前達はまだ何にも知らないだけだ・・・
+JP 恐ろしい・・・
+JP 震えが止まらないぜ・・・」
+EN "Chickens, all of you!
+EN Worthless yellow nobodies!
+EN Now I, <Kerry Texan>, start
+EN Showtime on this dump!
+EN I'll pound America's soul,
+EN the Great Texan spirit,
+EN into the little Japanese!
+EN Young boys who don't know
+EN the no-rules era are lucky.
+EN U.S. wrestling has history!
+EN Men of dark, damp days...
+EN you know nothing of 'em!
+EN Terrifying...
+EN I can't stop shaking..."
+
+@ 2ND:0609E9DC lines=0609E9DC,0609E9B0,0609E998,0609E96C,0609E940,0609E930,0609E918,0609E8F4,0609E8D8,0609E8C4,0609E8A4,0609E87C,0609E85C,0609E844,0609E828,0609E810,0609E7F8,0609E7CC,0609E7B0,0609E794,0609E778,0609E764,0609E748
+JP 「なんでじゃー！！！
+JP なんでわしをまたリングに戻すんじゃー！！！
+JP ・・・いいじゃないか
+JP ・・・プロレスを引退して違う道に進んでも
+JP ・・・そんなにゲイノー界がいけないのか？
+JP ・・・・・・
+JP わしは、わしは・・・
+JP わしはプロレスを愛してるっう！！
+JP 誰よりも愛してるっう！！！
+JP だからなんだよ、
+JP だからプロレスに戻らない！！
+JP なんでそれがわかってくれないんだ・・・
+JP もういいだろうよ・・・・・・
+JP 許してくれ・・・・・・
+JP デスマッチが呼んでいる？
+JP ・・・毎日だよ、毎日
+JP 毎日、夢を見るんだよ
+JP 二度とやりたくないデスマッチをだよ・・・
+JP それでも充実した顔してさ、
+JP デスマッチをしてるんだよ
+JP だから、許してくれ・・・
+JP もう一回だけ・・・
+JP 夢を見させてくれ・・・」
+EN "WHYYYY!!!
+EN Why bring me back?!!!
+EN ...What's so wrong with
+EN ...retiring for a new path?
+EN ...Is showbiz so bad?
+EN ......
+EN I... I...
+EN I LOVE pro wrestling!!
+EN More than anyone!!!
+EN That's why,
+EN that's why I won't return!!
+EN Why can't you see that...
+EN Isn't that enough......
+EN Forgive me......
+EN Death Matches call me?
+EN ...Every day, every day,
+EN every day, I dream of
+EN Death Matches I hate...
+EN And I look so fulfilled,
+EN fighting a Death Match...
+EN So forgive me...
+EN Just one more time...
+EN let me dream..."
+
+@ 2ND:0609EB9C lines=0609EB9C,0609EB7C,0609EB5C,0609EB40,0609EB24,0609EAFC,0609EADC,0609EAB8,0609EA98,0609EA74,0609EA5C,0609EA3C,0609EA14,0609E9F4
+JP 「なーんか、やだね
+JP なんで俺があんたとやるわけ？
+JP 俺がＲＹＵを引っ張ってきたの
+JP あんたも知ってるでしょ？
+JP それでノコノコ挑戦ってさ
+JP サンダー龍だったらなんでも許されるの？
+JP 俺はちゃんと試合してやんないよ
+JP 試合壊すよ、鬼魔乱入させてさ・・・
+JP この会社さ、いつもこうなんだよ
+JP 龍で客入るなんてさ、時代が違うだろ
+JP 勝手に試合組むならさ
+JP どんな試合になるか知らないよ
+JP そんな優しい気持ち持てる関係じゃないよ
+JP あんたの好きにはさせないよ」
+EN "Man, I hate this.
+EN Why am I facing you?
+EN I carried <R.Y.U>,
+EN you know that, right?
+EN And now you challenge me?
+EN <Ryu> gets a free pass?
+EN No real match from me.
+EN <Kido> and <Mado> run in...
+EN This company, always this.
+EN <Ryu> sells? No more.
+EN Book matches on your own,
+EN who knows what you'll get.
+EN We're not that friendly.
+EN You won't get your way."
+
+@ 2ND:0609EDA8 lines=0609EDA8,0609ED90,0609ED68,0609ED50,0609ED2C,0609ED14,0609ECEC,0609ECD4,0609ECB0,0609EC8C,0609EC64,0609EC3C,0609EC10,0609EBF4,0609EBE0,0609EBC8,0609EBB0
+JP 「こうね、ドンと来る相手があれば
+JP 俺もまだまだってなるよ
+JP 痛みの伝わるっていう部分ていうのはさ
+JP こっちも覚悟を決めてね
+JP それでサンダー龍の度胸みたいのがさ
+JP どこかに残ればいいね
+JP 『何を考えているんだ』みたいなことをさ
+JP 周りからも反対されてね
+JP それでも『こんちくしょう』ってね
+JP 子供みたいなわがままなんだろうけど
+JP 誰もできないような闘いをやってきてさ
+JP やっぱり”サンダー龍、ここにあり”って
+JP 思うことができれば、最高にスカッとするね
+JP 俺を信じてついてきてくれた
+JP ファンの為にもね
+JP この闘いっていうのも、
+JP 大事な歴史にしたいね」
+EN "See, someone comes hard,
+EN and I feel I've still got it.
+EN When the pain gets across,
+EN I'm ready for it too,
+EN and I hope some of
+EN my guts stay with 'em.
+EN 'What are you thinking?'
+EN Everyone's against me.
+EN Still, I go 'Damn it all!'
+EN Selfish like a kid, maybe,
+EN but I fought like no one.
+EN If I feel '<Ryu> lives!'
+EN it'll feel great.
+EN For the fans who believed
+EN in me and followed me, too.
+EN I want this fight to be
+EN a big part of our history."
+
+@ 2ND:0609EF1C lines=0609EF1C,0609EF08,0609EEE4,0609EEC0,0609EEA4,0609EE98,0609EE84,0609EE64,0609EE44,0609EE20,0609EE08,0609EDF0,0609EDCC
+JP 「あんたはタフネスだ
+JP ビッグガイだ・・・
+JP だが、それは俺の知らない価値なんだ
+JP 俺に向かってあんたがビッグガイだと
+JP 誰も教えてくれない・・・
+JP 何故か？
+JP 簡単なことだ・・・
+JP 俺と比べることのできる男なぞ
+JP この地球上にはどこにもいない
+JP 俺はすべてのプロレスラーを尊敬する
+JP 敬意を払うべきだろう
+JP すべてのプロレスラーは
+JP 俺と闘う可能性があるからな・・・」
+EN "You're tough.
+EN A big guy...
+EN But that's no value I know.
+EN Nobody tells me you're
+EN a big guy next to me...
+EN Why?
+EN It's simple...
+EN There's no man anywhere
+EN on Earth to compare to me.
+EN I respect all wrestlers.
+EN They deserve respect,
+EN because every wrestler
+EN may have to fight me..."
+
+@ 2ND:0609F118 lines=0609F118,0609F100,0609F0E4,0609F0C0,0609F0A4,0609F088,0609F078,0609F068,0609F04C,0609F038,0609F014,0609EFFC,0609EFE0,0609EFC8,0609EFA0,0609EF74,0609EF54,0609EF34
+JP 「テレビの前で泣きじゃくっている
+JP ベビーがいるとしよう
+JP いまこのテレビを見ている
+JP 狂暴な男たちに恐怖しているからか？
+JP ・・・残念だがそれは違う
+JP ママがミルクを忘れたから？
+JP ・・・全く違う
+JP 真実は一つだ
+JP 人というのは知恵がつくと
+JP ウソをついてしまう
+JP だが、生まれて間もないベビーは違う
+JP ベビーにウソはつけない
+JP 最強の男を称えてベビーは
+JP 祝福の声を上げるんだ
+JP 本能という真実がベビーを泣かしている
+JP アックス・ドゥガンというアメリカ合衆国史上
+JP 最高にヒップでクールな英雄に
+JP ・・・ベビーは興奮を隠せない」
+EN "Say there's a baby
+EN crying in front of the TV.
+EN Is it scared of the fierce
+EN men it sees on TV?
+EN ...Sorry, that's not it.
+EN Mommy forgot the milk?
+EN ...Not even close.
+EN There's just one truth.
+EN As people get smarter,
+EN they start to lie.
+EN But a newborn is different.
+EN A baby can't lie.
+EN The baby is cheering
+EN for the strongest man.
+EN Instinct makes it cry.
+EN For <Axe Doogan>, U.S.
+EN history's hippest, coolest
+EN hero, the baby's thrilled."
+
+@ 2ND:0609F1A0 lines=0609F1A0,0609F184,0609F170,0609F150,0609F13C
+JP 「グフフフ・・・
+JP 誰が相手だろうと関係ない
+JP いつもと同じように
+JP この手で捻り潰してやるだけさ
+JP グフフフ・・・」
+EN "Guhuhuhu...
+EN Don't care who it is.
+EN Same as always,
+EN I'll crush 'em by hand.
+EN Guhuhuhu..."
+
+@ 2ND:0609F438 lines=0609F438,0609F420,0609F420,0609F420,0609F408,0609F3F4,0609F3C8,0609F39C,0609F384,0609F358,0609F330,0609F318,0609F2FC,0609F2D4,0609F2B4,0609F288,0609F26C,0609F258,0609F238,0609F224,0609F208,0609F1E0,0609F1B4
+JP 「ワッハッハッハッハッ！
+JP ワッハッハッハッハッ！
+JP ワッハッハッハッハッ！
+JP ワッハッハッハッハッ！
+JP ＷＯＯＯＯＯＯＯＯＯ！
+JP 哀しいことだ・・・
+JP 日本にはプロレスの心がなくなってしまった
+JP 日本のヤングボーイたちはパワーに頼っている
+JP コンプレックスなのか？
+JP シュートではアメリカ人には勝てない・・・
+JP そんなコンプレックスが日本のプロレスを
+JP アメリカのプロレスと
+JP 同じ崩壊の道へ進ませている
+JP 私に勝ちたいのなら、いくらでも負けるさ
+JP 大事なのは勝ち負けではないのだ
+JP なぜ、チャンプになった私は負けないのか？
+JP 真剣に考えてみてくれ・・・
+JP トミーや大和や龍と
+JP 素晴しいレスリングの闘いをした
+JP だが、もうここには
+JP 私の闘う相手が少なくなった
+JP 目の前の相手が誰であるか私は知らない
+JP 素敵なレスラーであることを祈るしかない」
+EN "Wahahahaha!
+EN Wahahahaha!
+EN Wahahahaha!
+EN Wahahahaha!
+EN WOOOOOOOOO!
+EN It's sad...
+EN Japan lost wrestling's soul.
+EN Young boys rely on power.
+EN A complex? In a shoot,
+EN they can't beat us...
+EN That's sending Japan down
+EN the same road to ruin
+EN as U.S. wrestling.
+EN Want a win? Fine, I'll lose.
+EN Win or lose doesn't count.
+EN Why does this champ never
+EN lose? Think about it...
+EN Great bouts with <Tommy>,
+EN <Yamato> and <Ryu>...
+EN But now few are left
+EN here for me to fight.
+EN I don't know who you are.
+EN I just pray you're good."
+
+@ 2ND:0609F584 lines=0609F584,0609F56C,0609F554,0609F53C,0609F520,0609F508,0609F4E4,0609F4C8,0609F4A0,0609F484,0609F46C,0609F454
+JP 「真田さん、あんたに今さら
+JP 負けられないでしょ？
+JP もう影が薄いんだから
+JP 引退させてあげますよ
+JP その役目は俺しかいないしさ
+JP 長い付き合いだけどね
+JP 真田さん、リップスの時代だってこと
+JP まだわかってないからな～
+JP うーん、堅物で頭の回転も悪いし・・・
+JP まあ、今日はこのリング上で
+JP キレがあってコクのある
+JP 安藤をお見せしますよ」
+EN "<Sanada>, I can't lose
+EN to you now, right?
+EN You're fading anyway,
+EN so I'll retire you.
+EN Nobody else can do it.
+EN We go way back, but
+EN <Sanada>, you still don't
+EN get it's the Lips era!
+EN Stiff and slow-witted...
+EN Well, today, in this ring,
+EN I'll show you a crisp,
+EN full-bodied <Ando>!"
+
+@ 2ND:0609F6AC lines=0609F6AC,0609F690,0609F674,0609F658,0609F634,0609F618,0609F5EC,0609F5C8,0609F5A0
+JP 「調整が上手く出来て、
+JP ここには万全の体調で望めた
+JP 体調さえベストであれば、
+JP 私に負ける要素は１つもない
+JP あとはファンのみんなが望むような
+JP 好試合をあなたとするだけだ
+JP 自分のスタイルを変えるつもりはないけど、
+JP あなたとは上手くスイングしそうだ
+JP お互いベストを尽くして戦いましょう！」
+EN "My prep went well,
+EN I'm in top shape.
+EN When I'm at my best,
+EN there's no way I lose.
+EN All that's left is to give
+EN the fans a great match.
+EN I won't change my style,
+EN but I think we'll mesh.
+EN Let's give it our all!"
+
+@ 2ND:0609F8B4 lines=0609F8B4,0609F88C,0609F86C,0609F844,0609F824,0609F804,0609F7E0,0609F7CC,0609F7AC,0609F784,0609F768,0609F748,0609F728,0609F714,0609F6EC,0609F6C4
+JP 「冴刃さんだからって、
+JP 特別な闘いをしようとは思っていません
+JP 今までのプロセスで出来てきた
+JP 自分のスタイルっていったら変だけど、
+JP それを大事にしていきたいし、
+JP ジャパンのみんなもこの試合は
+JP 河本が勝って当り前だと思ってるし、
+JP 逆に勝たなければ
+JP 下からの勢いにのまれるし・・・
+JP あなたの歴史を見てそれに惹かれている
+JP 冴刃明のファンっていうのを
+JP こっちに引きずりこむような、
+JP いやそれを超えた部分の闘いで
+JP あなたを倒しますよ
+JP いつまでもあなたに支えてもらっててもね
+JP ゴングスの未来なんてありませんからね」
+EN "You're <Saeba>, but I don't
+EN plan a special fight.
+EN The style I've built
+EN up, so to speak,
+EN is what I'll stay true to.
+EN Everyone on our side
+EN expects <Kawamoto> to win,
+EN and if I don't, the
+EN guys below will take over...
+EN <Akira Saeba>'s fans,
+EN drawn in by your history...
+EN I'll win them over, no,
+EN I'll beat you in a fight
+EN beyond that.
+EN If you carry us forever,
+EN <GONGS> has no future."
+
+@ 2ND:0609FA68 lines=0609FA68,0609FA4C,0609FA34,0609FA14,0609F9EC,0609F9C0,0609F994,0609F970,0609F948,0609F920,0609F8FC,0609F8E0,0609F8CC
+JP 「うちは、小細工は通用しないし
+JP 相手の出方しだいでね・・・
+JP 例えば、こっちの技術に
+JP どれだけ対応できるかっていう
+JP 個人対個人っていう理論は昔からあって
+JP 相手がどういうつもりかは知らんけど・・・
+JP ゴングスっていう世界での闘いっていうのは
+JP ド突き合いみたいなもんやし・・・
+JP どこまで踏み込んでこれるのかね・・・
+JP そういった戦いを常にしているわけだから
+JP 誰が乗り込んで来ようが関係あらへん
+JP この戦いでそれを実証して
+JP みせようやないか」
+EN "Cheap tricks don't work,
+EN it depends how they come...
+EN Like, can they handle
+EN our technique?
+EN 1-on-1 is an old theory.
+EN Dunno their plan, but...
+EN Fightin' in <GONGS>
+EN is a slugfest...
+EN How far will they step in...
+EN We always fight like that,
+EN so who comes don't matter.
+EN I'll prove it
+EN in this fight, ya hear."
+
+@ 2ND:0609FCBC lines=0609FCBC,0609FCA4,0609FC88,0609FC6C,0609FC44,0609FC38,0609FC20,0609FC0C,0609FBF0,0609FBD4,0609FBB4,0609FB98,0609FB80,0609FB5C,0609FB38,0609FB18,0609FAF0,0609FACC,0609FAA8,0609FA88
+JP 「難しいことはわかんねぇよ
+JP ガタガタいう前によ、
+JP リングで見せるもんだろう
+JP こっちはプロなんだから、
+JP ちゃんとお客さんに喜んでもらわないと
+JP 違うか？
+JP 若いもんが好き勝手する
+JP 世界じゃないんだよ
+JP これだけ渡り歩いていりゃ
+JP 人なんて見透かせるんだよ
+JP 凄い時代っていうのがあってさ
+JP その時の殺気ったらないよ
+JP 今なんて優しい時代だよ
+JP だからこそ、そこで見てきた人間は
+JP どれだけ練習してたか知ってるしさ
+JP どんなに強烈だったか知ってる
+JP きれいな言葉で近づいてくる人間なんて
+JP いま、俺の周りには一人もいないよ
+JP それでもいい仕事はしていかないとな
+JP 母ちゃんに叱られちゃうからよ」
+EN "I don't get the hard stuff.
+EN Before you run your mouth,
+EN show it in the ring.
+EN We're pros, so we've
+EN gotta please the fans.
+EN Right?
+EN Young guys can't just
+EN do as they like here.
+EN Drift around this long,
+EN you see right through folks.
+EN There was a wild era once.
+EN The killer vibe? Unreal.
+EN Now it's a soft era.
+EN So the guys who saw it
+EN know how hard we trained,
+EN how brutal it was.
+EN Sweet talkers?
+EN Got none around me now.
+EN Still, I gotta do good work,
+EN or the missus'll yell."
+
+@ 2ND:0609FDD8 lines=0609FDD8,0609FDC4,0609FDB4,0609FD88,0609FD64,0609FD3C,0609FD20,0609FCFC,0609FCD8
+JP 「ヒガキ！
+JP ユーには借りがある
+JP それを返すだけ
+JP ニホンのファンの人達が応援してくれている
+JP ヒガキの勝利を信じている人もいるが
+JP ワタシの勝利を確信してくれるファンの
+JP 為に勝つことができるだろう
+JP ワタシは常に激しい闘いを求めている
+JP きっと、激しい試合になるだろう」
+EN "<Higaki>!
+EN I owe you.
+EN I only pay it back.
+EN Japan fans cheer me.
+EN Some believe <Higaki> win,
+EN but for fans sure of me,
+EN I can win.
+EN I always want hard fight.
+EN It will be hard match."
+
+@ 2ND:0609FFF8 lines=0609FFF8,0609FFD8,0609FFC0,0609FF98,0609FF78,0609FF5C,0609FF44,0609FF28,0609FF14,0609FEF0,0609FEE0,0609FED4,0609FEBC,0609FEA4,0609FE84,0609FE5C,0609FE3C,0609FE1C,0609FE00,0609FDE4
+JP 「理想ってあるじゃないですか・・・
+JP ハイクラスってまだ旗揚げから
+JP 何年も経ってないけど
+JP すごい勢いで進化している団体なんですよ
+JP いつまでも俺なんかもトップで
+JP 出来ないかもしれないぐらい
+JP 強い奴がいっぱいいる
+JP 理想に近づいている・・・
+JP でも俺は負けない
+JP こんなところで負けてらんないだろ！
+JP 俺はさ・・・
+JP 俺は・・・
+JP 闘っていきたいんだよ！
+JP 弱いかもしれないけど、
+JP 人間は精神でなんとかなるって
+JP どんなにボロボロでも精神が生きてりゃ
+JP 立って、歩いていけるんだよ！
+JP 俺はハイクラスで生きていく！
+JP まだまだ生きていくんだ！！
+JP 負けられないんだ！！！」
+EN "We all have ideals, right...?
+EN <High Class> hasn't been
+EN around long, but
+EN it's evolving like crazy.
+EN So many strong guys,
+EN even I might not stay
+EN on top forever...
+EN It's nearing the ideal...
+EN But I won't lose.
+EN Can't lose here, can I!
+EN Me...
+EN I...
+EN I wanna keep fighting!
+EN Maybe I'm weak, but
+EN spirit pulls you through.
+EN Beat to pieces, if your
+EN spirit lives, you stand!
+EN I'll live in <High Class>!
+EN I'll keep on living!!
+EN I can't lose!!!"
+
+@ 2ND:060A01F4 lines=060A01F4,060A01CC,060A01B0,060A0194,060A0180,060A0168,060A0148,060A0130,060A0110,060A00F4,060A00D8,060A00C0,060A00A8,060A0084,060A0060,060A003C,060A001C
+JP 「私はレスラーの誇りを持って闘いに挑む
+JP ベーシックなフォーマットがあってこそ
+JP 闘いが成立すると考えている
+JP テクニックのないもの同士が
+JP 闘うことは悲劇だ
+JP 恐怖を克服するのも、
+JP レスリングのベースがあるからで
+JP いかなる脅威さえも、
+JP 私の誇りを打ち砕くことできない
+JP 時にはクレイジーな攻撃を
+JP 必要とする場合もあるだろう
+JP それでも最後の選択に
+JP その行為は必要とされる
+JP レスリングにはどのような場合でも
+JP 対処できるサブジェクトがあるんだ
+JP レスラーが最強という当り前の事実を
+JP 私が実証しているに過ぎない」
+EN "I fight with a wrestler's
+EN pride. I believe a fight
+EN needs a basic format.
+EN Two men with no technique
+EN fighting is a tragedy.
+EN Beating fear, too,
+EN needs a wrestling base.
+EN No threat at all
+EN can shatter my pride.
+EN At times a crazy attack
+EN may be needed.
+EN Even so, only as
+EN a last resort.
+EN Wrestling has an answer
+EN for any situation.
+EN I only prove the obvious:
+EN wrestlers are strongest."
+
+@ 2ND:060A0478 lines=060A0478,060A0454,060A0434,060A0414,060A03EC,060A03C8,060A03AC,060A0398,060A0380,060A036C,060A0350,060A0330,060A030C,060A02E4,060A02BC,060A02A4,060A0298,060A0270,060A0248,060A021C
+JP 「私が最強だって？
+JP その質問にはイエスと答えるしかない
+JP これまで私をタップさせる者と
+JP めぐり会えることはできなかった
+JP もし最強に異論をとなえるものがいれば
+JP いつでも闘う準備ができている・・・
+JP こう言い続けて何年もたった
+JP 最強というのは時が
+JP 証明しているに違いない
+JP 私は自分が最強とは
+JP 一度も思ったことはないが
+JP 試合で勝つことだけを考えてきた
+JP 幼い頃から、同じ思考で生きてきた
+JP 一族にきざみこまれた宿命であると考える
+JP ブラジルが最強の国であることを考えても
+JP 私に負ける要素はない
+JP どうだい？
+JP ブラジルがサッカーで最強ということを
+JP この地球上のほとんどの人が認めている
+JP 私に勝つことなんて考えてはいけないのだ」
+EN "Am I the strongest?
+EN I can only answer yes.
+EN I've never met anyone
+EN who could make me tap.
+EN If anyone disagrees,
+EN I'm ready to fight anytime.
+EN I've said so for years.
+EN Time itself must
+EN prove who's strongest.
+EN I've never once thought
+EN I'm the strongest.
+EN I only think of winning.
+EN I've lived so since boyhood.
+EN It's my family's destiny.
+EN Brazil is strongest,
+EN so I can't lose.
+EN How's that?
+EN Brazil's best at soccer.
+EN Most of Earth agrees.
+EN Don't think of beating me."
+
+@ 2ND:060A05C8 lines=060A05C8,060A05A0,060A0580,060A0570,060A0558,060A0544,060A0520,060A0508,060A04EC,060A04C8,060A04A4,060A048C
+JP 「多くは語れない・・・
+JP なぜ、再びこの私がリングに戻ったのか
+JP それは私にも理解することなど
+JP できないのだ
+JP 伝説のスープレックス？
+JP ・・・フッフッフッ
+JP キミの言う通りかもしれない・・・
+JP 伝説といわれることに
+JP あきあきしていたのだろうか
+JP 虚像になりつつある伝説という奴に
+JP ゲルマンの血が怒り震えたのだろう
+JP 伝説は今一度・・・」
+EN "I cannot say much...
+EN Why I returned to the ring,
+EN even I cannot
+EN understand.
+EN The legendary suplex?
+EN ...Heh heh heh.
+EN Perhaps you're right...
+EN Perhaps I tired
+EN of being a legend.
+EN A legend fading to myth...
+EN my German blood raged.
+EN The legend, once more..."
+
+@ 2ND:060A0710 lines=060A0710,060A06EC,060A06C0,060A0698,060A0678,060A065C,060A0640,060A061C,060A060C,060A05E0
+JP 「明るい時代になった・・・
+JP 人は平和にこの時代を生きているのか
+JP このロートルが必要なのか、定かではないが
+JP 再びマットに戻って来ようとはな・・・
+JP やけにまぶしい興行みたいだが
+JP こんな場所でお客は試合を
+JP 観ることができるのか・・・
+JP まあいい、年寄りがブツブツ言うのは
+JP みっともないな
+JP なつかしい・・・プロレスができるなんて」
+EN "A bright era now...
+EN Do people live in peace?
+EN Is this old-timer needed?
+EN Yet I'm back on the mat...
+EN It's a dazzling show,
+EN but can the fans even
+EN see a match in here...?
+EN Well, an old man's
+EN grumbling is unseemly.
+EN How nostalgic. To wrestle!"
+
+@ 2ND:060A09C8 lines=060A09C8,060A09A8,060A0998,060A0970,060A0944,060A092C,060A0904,060A08E8,060A08CC,060A08B4,060A0890,060A0870,060A0854,060A083C,060A081C,060A07F8,060A07DC,060A07BC,060A079C,060A0784,060A075C,060A0744,060A072C
+JP 「・・・これは驚いた
+JP ここまでたどり着けるボーイが
+JP まだいたとはな
+JP プロレスもまだまだ捨てたものじゃないな
+JP よし、ボーイの実力がどれほどのモノなのか、
+JP 試してみようではないか
+JP ん？試合する前から萎縮しておるようでは
+JP トレーニングの成果は出んぞ
+JP ここまで来れたからといって
+JP まだ安心してはいけない
+JP スパーリングはこれからだよ、ボーイ
+JP トレーニングは長くて辛いもの
+JP だが、それはボーイにとって
+JP 骨となって肉となるんだ
+JP 何故チキンを食べるかわかるか？
+JP やわらかい柔軟な筋肉をつくるのだ
+JP ストレッチもランニングも
+JP スパーリングもチキンも一緒だ
+JP プロレスラーに最も必要な要素を
+JP すべて満たしてくれる
+JP ボーイが私から２本取ることが出来れば
+JP 認めてやろうじゃないか
+JP さあ、始めよう・・・」
+EN "...Well, how surprising.
+EN To think there's still a
+EN boy who could get this far.
+EN Wrestling's not done yet.
+EN Very well, let's test
+EN how good you are, boy.
+EN Hm? Shrink back now, and
+EN your training won't show.
+EN Making it here doesn't
+EN mean you can relax.
+EN Sparring starts now, boy.
+EN Training is long and hard.
+EN But for you, boy,
+EN it becomes bone and flesh.
+EN Know why we eat chicken?
+EN For soft, supple muscle.
+EN Stretching, running,
+EN sparring, chicken: all one.
+EN They give a wrestler
+EN everything he needs.
+EN Take 2 falls from me, boy,
+EN and I'll accept you.
+EN Now, let's begin..."
+
+@ 2ND:060A0BAC lines=060A0BAC,060A0B9C,060A0B74
+JP 「こんな奴等に負けませんよ
+JP パワーが違うよ
+JP どっちがチャンピオンかわかるでしょう」
+EN "We won't lose to them.
+EN We're way more powerful.
+EN You can see who's champ."
+
+@ 2ND:060A0B58 lines=060A0B58,060A0B48,060A0B28,060A0B0C
+JP 「宏田さんがいてくれれば
+JP 俺も頼もしいし
+JP 後ろでどっしり構えてくれるから
+JP 安心して試合できるしね」
+EN "With <Hirota> on my side,
+EN I feel confident.
+EN He's solid behind me,
+EN so I can wrestle easy."
+
+@ 2ND:060A0AEC lines=060A0AEC,060A0AC8,060A0AB4,060A0A8C,060A0A78,060A0A50
+JP 「河野の野郎だけは許さねえよ
+JP ちゃんとした試合できない奴だから
+JP 俺が見せてやるよ
+JP 天本の野郎も牛みたいな格好しやがって
+JP ふざけやがって！
+JP あんな若僧、ガツンッとやってやるよ」
+EN "I won't forgive <Kono>!
+EN Can't wrestle a real match,
+EN so I'll show him how.
+EN And <Amamoto>, dressed
+EN like a bull, screw him!
+EN I'll smack that punk good."
+
+@ 2ND:060A0A30 lines=060A0A30,060A0A0C,060A09EC,060A09E0
+JP 「体重もこっちのほうがあるしね
+JP 曲者だけど、それさえ注意すればね
+JP あとは、俺と宏田さんのパワーで
+JP 潰すよ！」
+EN "We're heavier, too.
+EN They're tricky, but watch
+EN for that, and <Hirota> and I
+EN will crush 'em with power!"
+
+@ 2ND:060A0E8C lines=060A0E8C,060A0E68,060A0E48,060A0E24,060A0DF8
+JP 「エー！ どういうことだ
+JP クズに挑戦の権利があるのか、オラ！
+JP こんなもんじゃねーだろ、エー！
+JP ベルトの権威はこの程度か、エー！
+JP 会社はなに考えてるんだ、なあ、オイッ！」
+EN "Eh! What's this?
+EN Trash gets a shot? Ora!
+EN This ain't right! Eh!
+EN The belt's worth this? Eh!
+EN What's the brass thinking?!"
+
+@ 2ND:060A0DE4 lines=060A0DE4,060A0DC0,060A0DA4,060A0D8C
+JP 「エー、コラッ！
+JP しょっぱい野郎になにができるんだ
+JP ここはインディーか、オラ！
+JP ふざけんな！ コラッ！」
+EN "Eh, kora!
+EN What can a salty bum do?
+EN Is this an indie, ora?
+EN Screw you! Kora!"
+
+@ 2ND:060A0D6C lines=060A0D6C,060A0D48,060A0D34,060A0D10,060A0CF4,060A0CD0,060A0CB8,060A0C94,060A0C80,060A0C6C,060A0C4C
+JP 「どうなってんだ、この会社は！
+JP 誰だ、マッチメイクしたのは、エー！
+JP 力丸か、オラッ！
+JP てめえの団体じゃねーぞ、オラッ！
+JP 俺等、ナメてんのか！ エー！
+JP こんな奴等とベルト賭けられねーぞ！
+JP 誰がチャンピオンだ！
+JP こいつらに資格あるのか、オラッ！
+JP 全員、ブッ潰すぞ！
+JP テロだ！ オラッ！
+JP エー！ テロやるぞ！ コラッ！」
+EN "What's with this company!
+EN Who booked this? Eh!
+EN <Rikimaru>? Ora!
+EN Not your promotion! Ora!
+EN You mocking us?! Eh!
+EN No belt for these punks!
+EN Who's the champion!
+EN Are they worthy? Ora!
+EN We'll crush 'em all!
+EN It's terror! Ora!
+EN Eh! Terror time! Kora!"
+
+@ 2ND:060A0C30 lines=060A0C30,060A0C24
+JP 「容赦しねーぞ、オラッ！
+JP 潰すぞ！」
+EN "No mercy! Ora!
+EN We'll crush you!"
+
+@ 2ND:060A0C08 lines=060A0C08,060A0BEC,060A0BDC,060A0BC8
+JP 「ふざけんなよ、オイッ！
+JP 俺は認めねーぞ、オラッ！
+JP エー！ オラッ！
+JP いくぞ！ オラッ！」
+EN "Screw that, hey!
+EN I won't accept it! Ora!
+EN Eh! Ora!
+EN Let's go! Ora!"
+
+@ 2ND:060A125C lines=060A125C,060A1244,060A1234,060A1218,060A11F4,060A11DC,060A11C0,060A1198
+JP 「武蔵さんと組ませていただいて
+JP 梶原は幸せでございます
+JP 思い起こせば、
+JP 武蔵さんの付き人の時代から
+JP この人の背中を見させていただいて
+JP プロレスリングという
+JP 魅惑の地に迷い込みました
+JP ほんとに、底無しのような人で・・・」
+EN "To team with Mr. <Musashi>,
+EN <Kajiwara> is truly blessed.
+EN Looking back, ever
+EN since I was his valet,
+EN I watched his back
+EN and strayed into the
+EN alluring land of wrestling.
+EN He's truly bottomless..."
+
+@ 2ND:060A1174 lines=060A1174,060A1150,060A1130,060A1110,060A10EC,060A10D0,060A10B8,060A1094,060A1070,060A1050
+JP 「梶原という男は本当に努力の男でね
+JP 誰もいない時間に誰知ることなく、
+JP こっそりとトレーニングしている
+JP なかなか光を浴びることがなくて
+JP それでもこのＶＩＥＷ ＪＡＰＡＮの
+JP 骨格という基礎の部分ですね
+JP それを支えてくれていた
+JP 梶原がＶＩＥＷの道場にいてくれた
+JP おかげで若い人間がプロレスの幅を
+JP 大きくしていったわけで・・・」
+EN "<Kajiwara>'s a hard worker.
+EN When no one's around,
+EN he trains in secret.
+EN He rarely got the spotlight,
+EN but even so, he held up
+EN <View Japan>'s skeleton,
+EN its foundation, you see.
+EN With <Kajiwara> in the dojo,
+EN the young ones could
+EN broaden their wrestling..."
+
+@ 2ND:060A102C lines=060A102C,060A1018,060A0FF4
+JP 「それもね、武蔵さんという人の力の
+JP 影響だからこそで
+JP それだから俺も練習が出来た・・・」
+EN "That too is all thanks
+EN to Mr. <Musashi>'s power.
+EN That's why I could train..."
+
+@ 2ND:060A0FCC lines=060A0FCC,060A0FB4,060A0F8C,060A0F70
+JP 「うん・・・感謝するしかないわけでね
+JP 暗い時代があってもね
+JP 決してレスラーというのは暗くならずに
+JP 明るく生きていた・・・」
+EN "Yes... I'm only grateful.
+EN Even in dark times,
+EN wrestlers never went dark.
+EN They lived brightly..."
+
+@ 2ND:060A0F5C lines=060A0F5C
+JP 「今のね・・・」
+EN "Nowadays..."
+
+@ 2ND:060A0F3C lines=060A0F3C,060A0F14,060A0EF8,060A0ED4
+JP 「・・・こういうとあれだけど
+JP 今の人達にそこまでの気持ちというのが
+JP 果たしてあるのかっていう
+JP それをリングで感じるという・・・」
+EN "...It's awkward to say, but
+EN do people today really
+EN have that much heart...?
+EN I'll feel it in the ring..."
+
+@ 2ND:060A0EC8 lines=060A0EC8,060A0EA4
+JP 「武蔵さん
+JP 梶原、いかせていただきますっ！」
+EN "Mr. <Musashi>!
+EN <Kajiwara> is going, sir!"
+
+@ 2ND:060A1448 lines=060A1448,060A1430,060A1410,060A13F0,060A13D4,060A13C0,060A13A8
+JP 「特にないよ・・・
+JP 今は興味ないしね・・・
+JP なんで今なの？っていうのはある
+JP シリーズの目標が持てない・・・
+JP ベルトってそんなに軽いもの
+JP じゃないでしょ？
+JP なにもないよ・・・」
+EN "Nothing in particular...
+EN Not interested now...
+EN I do wonder, why now?
+EN No goal for the series...
+EN A belt isn't something
+EN that light, is it?
+EN I've got nothing..."
+
+@ 2ND:060A1388 lines=060A1388,060A1378,060A1350,060A1334
+JP 「まあ、風間がそういうんだから
+JP そうなんだよ
+JP 俺はあんまり、難しいこと考えねーからさ
+JP 風のように生きるだけだよ」
+EN "Well, if <Kazama> says so,
+EN then it's so.
+EN I don't do hard thinking,
+EN I just live like the wind."
+
+@ 2ND:060A1318 lines=060A1318,060A12F0
+JP 「・・・なにも出てこないよ
+JP あれこれ言っても、試合はするんだから」
+EN "...Nothing comes to mind.
+EN Talk or not, we wrestle."
+
+@ 2ND:060A12CC lines=060A12CC,060A12A4,060A1290,060A127C
+JP 「そうだね、勝つことしか考えないよ
+JP 負けること考えて試合する奴いないって
+JP みんな言うでしょ？
+JP それと一緒・・・」
+EN "Yeah, I only think 'win'.
+EN 'Nobody fights to lose,'
+EN everybody says so, right?
+EN Same thing..."
+
+@ 2ND:060A1640 lines=060A1640
+JP 「俺達がナンバー１だ！」
+EN "We're No. 1!"
+
+@ 2ND:060A1624 lines=060A1624,060A1610
+JP 「俺達に勝てるチームなんて
+JP どこにもいない！」
+EN "There's no team anywhere
+EN that can beat us!"
+
+@ 2ND:060A15F4 lines=060A15F4,060A15DC,060A15C0
+JP 「この俺と、ピースが組んで
+JP 負けることなんてない！
+JP 俺達が最強のタッグだ！」
+EN "Me and <Peace> as a team,
+EN there's no way we lose!
+EN We're the best tag team!"
+
+@ 2ND:060A15A8 lines=060A15A8,060A158C,060A156C,060A1548
+JP 「ジェイムスの強さは
+JP ユーも知っている通りだ！
+JP この俺の強さもユーは知っている
+JP つまり、・・・どういうことだ？」
+EN "You know how strong
+EN <James> is!
+EN And you know I'm strong.
+EN So... what does it mean?"
+
+@ 2ND:060A1530 lines=060A1530
+JP 「ナンバー１だ・・・」
+EN "No. 1..."
+
+@ 2ND:060A1508 lines=060A1508
+JP 「そう、ナンバー１タッグチームだ！」
+EN "Yeah, the No. 1 tag team!"
+
+@ 2ND:060A14E8 lines=060A14E8,060A14C4,060A14AC
+JP 「誰にも止めることはできない
+JP 本物の強さを持つタッグチームだ！
+JP ハアアアアアアア！」
+EN "None can stop this team,
+EN a team with real strength!
+EN Haaaaaaaaah!"
+
+@ 2ND:060A1494 lines=060A1494,060A1474
+JP 「誰がナンバー１か、
+JP それはもう聞くんじゃないぞ！」
+EN "Who's No. 1?
+EN Don't even ask anymore!"
+
+@ 2ND:060A145C lines=060A145C
+JP 「・・・ケガにご用心」
+EN "...Watch out for injuries."
+
+@ 2ND:060A175C lines=060A175C
+JP 「シャラ～～プ！！」
+EN "Shaddaaap!!"
+
+@ 2ND:060A1734 lines=060A1734,060A170C,060A16FC
+JP 「奴はね、非常にデリケートな男なんだ
+JP あんたたちのようにモラルのない人間には
+JP こうなんだよ」
+EN "He's a delicate man, see.
+EN With immoral folks like you,
+EN this is how he gets."
+
+@ 2ND:060A16D4 lines=060A16D4
+JP 「司馬、こいつらをつまみだしてくれ！」
+EN "<Shiba>, throw 'em out!"
+
+@ 2ND:060A16BC lines=060A16BC,060A1694,060A1688,060A165C
+JP 「こういってるんでね
+JP 少し静かにしてやってくれないかね・・・
+JP いいね！
+JP 興奮したらわしでも止められないよ・・・」
+EN "You heard him.
+EN Keep it down a little...
+EN Got that?! Once he snaps,
+EN even I can't stop him..."
+
+@ 2ND:060A1AFC lines=060A1AFC
+JP 「ウォッ！ ウォッ！ ウォッ！ ウォッ！」
+EN "Hoh! Hoh! Hoh! Hoh!"
+
+@ 2ND:060A1AD8 lines=060A1AD8
+JP 「ウィイイイイイイイイイイッ！」
+EN "Wheeeeeeeeeeeeee!"
+
+@ 2ND:060A1AB8 lines=060A1AB8,060A1A90,060A1A7C,060A1A68
+JP 「このリングには神がいる・・・
+JP リングの上に立つことが許された者だけが
+JP 見ることのできる
+JP 闘いの神・・・」
+EN "A god dwells in this ring...
+EN Only those allowed onto
+EN the ring may see him...
+EN The god of battle..."
+
+@ 2ND:060A1A44 lines=060A1A44,060A1A30,060A1A18,060A1A00,060A19D4
+JP 「ブルを起こしてしまったのか・・・
+JP 友人として・・・
+JP とても、嬉しい・・・
+JP しかし、恐ろしい・・・
+JP 安らかにそっとしておけばいいものを・・・」
+EN "So you've woken <Bull>...
+EN As his friend...
+EN I'm so very glad...
+EN But it frightens me...
+EN Should've let him rest..."
+
+@ 2ND:060A19BC lines=060A19BC,060A199C,060A1984,060A1960
+JP 「神が呼んでいる・・・
+JP 神のおかげで、再びバイソンと
+JP チームを組める・・・
+JP こんなに嬉しいことはない・・・」
+EN "God is calling me...
+EN By God's grace, I can team
+EN with <Bison> once again...
+EN I couldn't be happier..."
+
+@ 2ND:060A1948 lines=060A1948,060A1924,060A1900
+JP 「・・・そうだよ、ブル
+JP ・・・・・・・こんなに嬉しいことは
+JP ・・・なかなかあるもんじゃないさ」
+EN "...That's right, <Bull>.
+EN .......A joy like this
+EN ...is a rare thing indeed."
+
+@ 2ND:060A18E0 lines=060A18E0,060A18B4,060A188C,060A1874
+JP 「・・・バイソン、すまなかった
+JP 寂しい想いをさせてしまったのかもしれない
+JP キミ一人で、ニュー・ジェネレーションと
+JP 闘っていたのか・・・」
+EN "...<Bison>, forgive me.
+EN I may have left you lonely.
+EN You fought the new breed
+EN all by yourself...?"
+
+@ 2ND:060A1848 lines=060A1848,060A182C,060A1808
+JP 「なに・・・レスラーの運命みたいなものさ
+JP 老いぼれて、同情されるのは
+JP プライドが許さないんだよ・・・」
+EN "Nah... a wrestler's lot.
+EN Pitied as an old has-been...
+EN My pride won't allow it..."
+
+@ 2ND:060A17F4 lines=060A17F4,060A17E0,060A17CC
+JP 「バイソン・・・
+JP キミらしいよ・・・
+JP いこうか・・・」
+EN "<Bison>...
+EN That's just like you...
+EN Shall we go...?"
+
+@ 2ND:060A17BC lines=060A17BC,060A1794,060A1774
+JP 「ああ・・・
+JP この感動を邪魔する奴等をブッ倒してから
+JP ・・・ゆっくり酒でも飲もうや」
+EN "Yeah...
+EN Let's crush these spoilers,
+EN ...then we'll have a drink."
+
+@ 2ND:060A1BF0 lines=060A1BF0,060A1BD8
+JP 「ここは豚小屋じゃないぞ
+JP さっさとでていけ！」
+EN "This ain't a pigsty.
+EN Get the hell out!"
+
+@ 2ND:060A1BC8 lines=060A1BC8,060A1BB0
+JP 「棟矢・・・
+JP こいつらは誰なんだ」
+EN "<Toya>...
+EN Who are these guys?"
+
+@ 2ND:060A1B9C lines=060A1B9C
+JP 「俺も知らないよ」
+EN "Beats me."
+
+@ 2ND:060A1B8C lines=060A1B8C,060A1B70,060A1B4C
+JP 「そうか・・・
+JP しかしすごいデブだな・・・
+JP 破裂させて、いいってことだな？」
+EN "I see...
+EN Man, what a fatso...
+EN So I can pop him, right?"
+
+@ 2ND:060A1B30 lines=060A1B30
+JP 「そういうことだな・・・」
+EN "Guess so..."
+
+@ 2ND:060A1B24 lines=060A1B24
+JP 「ＯＫ！」
+EN "OK!"
+
+@ 2ND:060A1DE8 lines=060A1DE8
+JP 「ブラザーよ、調子はどうだい？」
+EN "How you doin', brother?"
+
+@ 2ND:060A1DCC lines=060A1DCC
+JP 「そうだな、ぼちぼちだよ」
+EN "Well, so-so."
+
+@ 2ND:060A1DB8 lines=060A1DB8,060A1D98
+JP 「そうかい・・・
+JP じゃあ、ジョイントは大丈夫？」
+EN "I see...
+EN So, how are the joints?"
+
+@ 2ND:060A1D70 lines=060A1D70
+JP 「ああ、酒もすっかり抜けたしな・・・」
+EN "Yeah, I dried out, too..."
+
+@ 2ND:060A1D50 lines=060A1D50
+JP 「ブラザー、フライングは？」
+EN "Brother, how's the flying?"
+
+@ 2ND:060A1D28 lines=060A1D28,060A1D10
+JP 「ブラザー、やけにクエスチョンが多いな
+JP どういうことだい？」
+EN "Brother, that's a lot of
+EN questions. What's going on?"
+
+@ 2ND:060A1CEC lines=060A1CEC,060A1CD4,060A1CA8
+JP 「なにをいっているんだいブラザー
+JP 僕達はいつもこうやって
+JP コミュニケーションをとっていたじゃないか」
+EN "What's that, brother?
+EN We've always talked to each
+EN other like this, right?"
+
+@ 2ND:060A1C90 lines=060A1C90,060A1C7C,060A1C58
+JP 「そうだったか・・・
+JP ところでブラザー、
+JP 僕らはどっちが兄で弟なんだい？」
+EN "Have we...?
+EN By the way, brother,
+EN which of us is older?"
+
+@ 2ND:060A1C34 lines=060A1C34
+JP 「それはママに聞いたほうが早いよ」
+EN "Ask Mama, it's quicker."
+
+@ 2ND:060A1C0C lines=060A1C0C
+JP 「そうだな、後でママに聞いてみよう」
+EN "Right, ask Mama later."
+
+@ 2ND:060A1F14 lines=060A1F14,060A1EF0
+JP 「オキータ！！
+JP ハタリハタマタ ハタリハタマタ！」
+EN "<Okita>!!
+EN Hatari hatamata hatamata!"
+
+@ 2ND:060A1ED0 lines=060A1ED0,060A1EB0,060A1E94
+JP 「プップップップップップップッ
+JP シュシュシュシュシュシュー！
+JP アーーーーーーーー！！！」
+EN "Pu-pu-pu-pu-pu-pu-pu
+EN Shu-shu-shu-shu-shuuu!
+EN Aaaaaaaaaaah!!!"
+
+@ 2ND:060A1E84 lines=060A1E84,060A1E64
+# (also here, translated in an earlier block: 「オキータ！！)
+# (also here, translated in an earlier block: ハタリハタマタ ハタリハタマタ！」)
+JP オキータ！！
+JP ハタリハタマタ ハタリハタマタ！
+EN <Okita>!!
+EN Hatari hatamata hatamata!
+
+@ 2ND:060A1E4C lines=060A1E4C,060A1E1C
+JP 「シュシュシュー！！
+JP シュシュ、シュシュ、シュ、シュ、シュー！！」
+EN "Shu-shu-shuuu!!
+EN Shu-shu, shu, shu-shuuu!!"
+
+@ 2ND:060A1E0C lines=060A1E0C
+# (also here, translated in an earlier block: 「オキータ！！)
+# (also here, translated in an earlier block: オキータ！！)
+JP オキータ！！」
+EN <Okita>!!"
+
+@ 2ND:060A2278 lines=060A2278,060A2260,060A224C
+JP 「・・・・・・聞いているか
+JP ・・・わしは、わしは
+JP ・・・・・・・」
+EN "......Are you listening?
+EN ...I... I...
+EN ......."
+
+@ 2ND:060A223C lines=060A223C,060A2228,060A2214,060A21F8
+JP 「沖田さん！！
+JP ・・・俺が、俺が
+JP 俺が、やります！！
+JP 俺にやらせてください！！」
+EN "Mr. <Okita>!!
+EN ...I... I...
+EN I'll do it!!
+EN Please, let me do it!!"
+
+@ 2ND:060A21DC lines=060A21DC,060A21B4,060A2198,060A217C,060A2160
+JP 「・・・わしはプロレスが
+JP わしはプロレスが好きなんじゃーー！！！
+JP わしがインディーを守る！！
+JP わしがいる限り、絶対ィィに
+JP インディーは潰さん！！」
+EN "...Pro wrestling...
+EN I LOVE pro wrestling!!!
+EN I'll protect the indies!!
+EN As long as I'm here, the
+EN indies will NEVERRR die!!"
+
+@ 2ND:060A2144 lines=060A2144,060A2124,060A2108
+JP 「・・・お願いします！！
+JP 俺達に、俺にやらせて下さい！！
+JP 俺達で守ってみせる！！！」
+EN "...I'm begging you!!
+EN Let us, let ME do it!!
+EN We'll protect it!!!"
+
+@ 2ND:060A20EC lines=060A20EC,060A20D4,060A20C0,060A20A8,060A208C,060A2074,060A2054,060A203C,060A2020
+JP 「わしがやるんじゃ・・・
+JP わしがやるんじゃ・・・
+JP 愛してるんだ・・・
+JP 愛してるんだよ・・・
+JP いいじゃないですか・・・
+JP 俺は好きなんだよ・・・
+JP プロレスが好きなんだよ・・・
+JP 俺が守るんだよ・・・
+JP この小さな団体を・・・」
+EN "I'll do it...
+EN I'll do it...
+EN I love it...
+EN I love it, I tell you...
+EN So what if I do...
+EN I love it...
+EN I love pro wrestling...
+EN I'll protect it...
+EN This little promotion..."
+
+@ 2ND:060A2000 lines=060A2000,060A1FE8,060A1FC8
+JP 「沖田さん、聞いてください！！
+JP 俺がここを守ります！！
+JP 俺にチャンスをください！！」
+EN "Mr. <Okita>, please listen!!
+EN I'll protect this place!!
+EN Give me a chance!!"
+
+@ 2ND:060A1FB0 lines=060A1FB0,060A1F98,060A1F88,060A1F64,060A1F50,060A1F24
+JP 「絶対に潰さん・・・
+JP 絶対に潰さないよ・・・
+JP 絶対に・・・
+JP 絶対ィィィに、潰ゥゥゥさん！！！！
+JP いいかァァァ！！！
+JP 負け犬の生き様、よく見とけェェェェ！！！」
+EN "They'll never crush it...
+EN I won't let 'em crush it...
+EN Never...
+EN NEVERRR, I tell you!!!!
+EN You hearrr me!!!
+EN See how a loser lives!!!"
+
+@ 2ND:060A24C8 lines=060A24C8,060A24B0
+JP 「大将！！
+JP 自分がいきます！！」
+EN "Boss!!
+EN Let me go out there!!"
+
+@ 2ND:060A2498 lines=060A2498,060A2480,060A2468,060A2444,060A241C,060A23F8,060A23D4
+JP 「そうだな、若い人間の
+JP グッと来る感情ってのは
+JP 俺には止められないよな
+JP あいつらに正面からバンッていっても
+JP 弾かれるのを淡谷もわかってるんだけどさ
+JP それでもこういう成長している時期に
+JP グンッといくのは淡谷次第だからね」
+EN "Well, when a young guy
+EN gets all fired up like that,
+EN I can't hold him back, huh?
+EN Hit 'em head-on, bam, and
+EN he'll bounce. He knows that,
+EN but when he's growing up,
+EN going in is <Awaya>'s call."
+
+@ 2ND:060A23C4 lines=060A23C4
+JP 「大将！！」
+EN "Boss!!"
+
+@ 2ND:060A23A0 lines=060A23A0,060A238C,060A2370,060A2358,060A233C,060A2318,060A22EC,060A22D0,060A22B8
+JP 「春樹もさ、ちゃんとやれるだけの
+JP 器になってんだから
+JP ごちゃごちゃとやらないで
+JP ドンッとやればいいのに
+JP なんでああなるのか・・・
+JP もしあれだったら、バシンッといくよ
+JP サンダー龍、これでもかっていうところをさ
+JP 淡谷みたいな有望な若手に
+JP 見せていかないとさ」
+EN "<Haruki>'s grown big enough,
+EN he's got what it takes, so
+EN he oughta quit fussing
+EN and just go for it, boom.
+EN Why's he acting like that...
+EN If need be, I'll go in, wham.
+EN <Thunder Ryu> must show
+EN all he's got to young guys
+EN like <Awaya>, y'know."
+
+@ 2ND:060A22A8 lines=060A22A8,060A2294
+JP 「よっしゃ！！
+JP いってこい！！！」
+EN "All right!!
+EN Get out there!!!"
+
+@ 2ND:060A26D4 lines=060A26D4,060A26B0
+JP 「なにこいつら・・・
+JP また変な奴だったらやだよ、オレ」
+EN "Who are these guys...
+EN Not more weirdos, I hope."
+
+@ 2ND:060A2698 lines=060A2698,060A267C,060A265C
+JP 「春樹さん、こんな連中
+JP クソにもならん連中ですよ
+JP サッと、やっちゃいましょうよ」
+EN "Mr. <Haruki>, these guys
+EN ain't worth crap.
+EN Let's finish 'em off quick."
+
+@ 2ND:060A2638 lines=060A2638,060A2618,060A2604,060A25E4,060A25C8,060A259C
+JP 「アマチュア臭いのは嫌いだからな
+JP バカみたいに一生けんめいやれば
+JP プロだと思ってる奴
+JP あんな奴等とは試合にならないよ
+JP 魔童、お前だけで十分だよ
+JP やばくなったら、すぐに助けてやるからさ」
+EN "I hate that amateur stink.
+EN Guys who think busting ass
+EN like idiots makes 'em pros...
+EN That's no match at all.
+EN <Mado>, you can handle 'em.
+EN If it gets ugly, I'll jump in."
+
+@ 2ND:060A2588 lines=060A2588,060A2564
+JP 「任してください！
+JP 親分は後ろで控えてくれれば・・・」
+EN "Leave it to me!
+EN Boss, you just stay back..."
+
+@ 2ND:060A2548 lines=060A2548
+JP 「鬼童もすぐに乱入しろよ」
+EN "<Kido>, run in quick too."
+
+@ 2ND:060A2534 lines=060A2534,060A2518,060A2504,060A24F0,060A24D4
+JP 「頼むぜ、兄弟！
+JP 俺達はプロレスやるからな
+JP ウヒャヒャヒャ～！
+JP アーーーーー！！
+JP なんにもさせてやんないよ」
+EN "I'm countin' on you, bro!
+EN We're doin' pro wrestling!
+EN Uhyahyahya!
+EN Aaaaaaah!!
+EN We won't let 'em do squat!"
+
+@ 2ND:060A291C lines=060A291C,060A28FC,060A28E0
+JP 「とても静かだ・・・
+JP 不安なんてどこにもない・・・
+JP エナジーに包まれる・・・」
+EN "So quiet...
+EN Not a worry anywhere...
+EN Wrapped in energy..."
+
+@ 2ND:060A28B8 lines=060A28B8,060A28A4,060A2884
+JP 「静かな夜に俺達は何をしているんだ？
+JP ＨＥＹ、ＹＯＵ！
+JP そろそろ始まるぜ、セイバー」
+EN "What're we up to tonight?
+EN HEY, YOU!
+EN It's about to start, <Saber>."
+
+@ 2ND:060A286C lines=060A286C,060A2858,060A283C
+JP 「もう始まるのか・・・
+JP せっかくいい気分で
+JP ヨガをしていたのを・・・」
+EN "Starting already...
+EN Just when I was enjoying
+EN my yoga..."
+
+@ 2ND:060A2820 lines=060A2820,060A2804,060A27E0,060A27CC
+JP 「・・・ハッハッハッ！！
+JP おい、見てくれよセイバー
+JP あいつらもうチビッちまいやがった
+JP 闘う前からだ！」
+EN "...Hah hah hah!!
+EN Hey, look at 'em, <Saber>.
+EN They've wet their pants
+EN already, before the fight!"
+
+@ 2ND:060A27B4 lines=060A27B4,060A2790,060A2768,060A2750
+JP 「責めるのはよすんだ
+JP 誰も彼等を責められないじゃないか
+JP 久々にこのタッグチームが登場したんだ
+JP 当然の結果だ・・・」
+EN "Don't make fun of them.
+EN Who could blame them?
+EN This tag team's finally back.
+EN It's only natural..."
+
+@ 2ND:060A2738 lines=060A2738
+JP 「ワクワクするぜ！！」
+EN "This is gonna be a blast!!"
+
+@ 2ND:060A2718 lines=060A2718,060A2704,060A26EC
+JP 「ハッピーな夜にしよう・・・
+JP ガ・ン・バ・レ！！
+JP ガ・ン・バ・レ！！」
+EN "Let's have a happy night...
+EN Do-your-best!!
+EN Do-your-best!!"
+
+@ 2ND:060A2B88 lines=060A2B88,060A2B70,060A2B60,060A2B40
+JP 「ウォッ、ウォッ、ウォッ、ウォッ！
+JP ウシッシッシッシッ！！
+JP スモール！！
+JP あんちゃんは、興奮する！！」
+EN "Woh, woh, woh, woh!
+EN Ushishishishi!!
+EN <Small>!!
+EN Big bro's all excited!!"
+
+@ 2ND:060A2B2C lines=060A2B2C,060A2B14,060A2AF8
+JP 「おい、落ち着けよ
+JP こんなヘナチョコ野郎に
+JP いきまいてどうするんだ？」
+EN "Hey, calm down.
+EN Why get so worked up
+EN over these wimps?"
+
+@ 2ND:060A2ADC lines=060A2ADC,060A2AC8,060A2AAC
+# (also here, translated in an earlier block: ウシッシッシッシッ！！)
+JP 「ウシッシッシッシッ！！
+JP 体が勝手に動く！！
+JP スープレックスゥゥゥ！！」
+EN "Ushishishishi!!
+EN My body moves by itself!!
+EN Suplexxxxx!!"
+
+@ 2ND:060A2A90 lines=060A2A90,060A2A7C,060A2A58,060A2A30,060A2A10
+JP 「キレちゃってるよ・・・
+JP おい、お前等っ！！
+JP こっちは好きにやらせてもらうぜ！
+JP いい試合しようなんて思ってないからよ
+JP ガンガン、放り投げてやるわ」
+EN "He's lost it...
+EN Hey, you guys!!
+EN We'll do as we please!
+EN Forget a good match.
+EN We'll toss you all over!"
+
+@ 2ND:060A2A00 lines=060A2A00,060A29E8
+# (also here, translated in an earlier block: 「ウシッシッシッシッ！！)
+# (also here, translated in an earlier block: ウシッシッシッシッ！！)
+JP 投げるぜ！！
+JP 首から落として！！」
+EN Gonna throw 'em!!
+EN Drop 'em on their necks!!"
+
+@ 2ND:060A29CC lines=060A29CC,060A29B0,060A2998,060A2984,060A296C,060A2954,060A2934
+JP 「セメントって知ってるか？
+JP こっちはアメリカでいろいろ
+JP フラストレーションが
+JP 溜まってるんだ！
+JP 最初に言っておくぞ！
+JP 歯止めはかけない・・・
+JP つまり、セ・メ・ン・ト・だ！」
+EN "You know what a shoot is?
+EN We got a lotta frustration
+EN built up over in America!
+EN I'm tellin' you right now!
+EN There'll be no holding back...
+EN That means S-H-O-O-T!"
+
+@ 2ND:060A2EA0 lines=060A2EA0,060A2E78,060A2E58
+# (also here, translated in an earlier block: 「ハーーーーーーーーーー！)
+JP おやっ？ 子供が迷い込んだようだ！
+JP なんてこったい、子供がリングにいるぜ！
+JP アイアン、どうすればいい？」
+EN Huh? A kid wandered in!
+EN Man, a kid in the ring!
+EN <Iron>, what should we do?"
+
+@ 2ND:060A2E38 lines=060A2E38,060A2E20
+JP 「ＷＯＯ！ ＷＯＯ！ ＷＯＯ！
+JP 力のない者は去れ！！」
+EN "WOO! WOO! WOO!
+EN Weaklings, get out!!""
+
+@ 2ND:060A2E0C lines=060A2E0C,060A2DF0,060A2DD8,060A2DC0,060A2DA4
+JP 「・・・まいったな
+JP アイアンがああ言ってるぜ
+JP あきらめてくれ・・・
+JP おっと、サインは試合が
+JP 終わってからにしてくれ」
+EN "...Too bad.
+EN You heard what <Iron> said.
+EN Give it up...
+EN Oops, autographs after
+EN the match, please."
+
+@ 2ND:060A2D84 lines=060A2D84
+# (also here, translated in an earlier block: 「ＷＯＯ！ ＷＯＯ！ ＷＯＯ！)
+JP 急がないとミンチにするぞ！」
+EN Hurry or you're mincemeat!"
+
+@ 2ND:060A2D58 lines=060A2D58,060A2D40,060A2D24,060A2D00,060A2CE8,060A2CD0,060A2CB4,060A2CA0,060A2C74,060A2C58,060A2C3C,060A2C28
+JP 「すぐにＵターンしてここから出たほうがいい
+JP ・・・アリーナを出たら
+JP すぐにタクシーを拾うんだ
+JP いいかい、闇タクシーには気をつけろ
+JP とんでもないマネーが
+JP 必要になっちまうからな
+JP 家についたらすぐに洗面所に
+JP いって手を洗うんだ
+JP ママのつくったおいしいシチューのいい匂いが
+JP 部屋中に広がっているはずだ
+JP ママはニコニコ笑っている
+JP ハッピーエンドさ」
+EN "U-turn and get outta here.
+EN ...Once you leave the arena,
+EN grab a taxi right away.
+EN But beware of gypsy cabs.
+EN They'll cost you
+EN a ton of money.
+EN Get home, hit the bathroom
+EN and wash your hands.
+EN The smell of Mama's stew
+EN will fill the whole house.
+EN Mama's all smiles.
+EN Happy ending."
+
+@ 2ND:060A2C10 lines=060A2C10
+# (also here, translated in an earlier block: 「ＷＯＯ！ ＷＯＯ！ ＷＯＯ！)
+JP ガアアアアアアア！！」
+EN GAAAAAAAAAH!!"
+
+@ 2ND:060A2BF0 lines=060A2BF0,060A2BD8,060A2BC0,060A2BAC
+JP 「・・・時間切れになっちまった
+JP すまないが、お前達は
+JP 今日の獲物に選ばれた
+JP バッドエンドだ」
+EN "...Time's up.
+EN Sorry, but you've been
+EN picked as today's prey.
+EN Bad ending."
+
+@ 2ND:060A3150 lines=060A3150,060A3138
+JP 「どうします、安藤さん
+JP 真田さんですよ、相手」
+EN "What do we do, <Ando>?
+EN We're facing Mr. <Sanada>."
+
+@ 2ND:060A3124 lines=060A3124,060A3104,060A30E8
+JP 「いいんじゃないの
+JP まだ、最強だと思ってるんだから
+JP あの人、ナルシストだから」
+EN "Who cares.
+EN He still thinks he's No. 1.
+EN The guy's a narcissist."
+
+@ 2ND:060A30C0 lines=060A30C0
+JP 「俺等の攻撃に耐えられるんですかね？」
+EN "Can he take our offense?"
+
+@ 2ND:060A30B0 lines=060A30B0,060A3094,060A307C,060A3064,060A3040,060A3028,060A3014
+JP 「ギャハハハ！
+JP それは無理な相談でしょ？
+JP もうレベルが違うって
+JP 俺等、チャンピオンだよ
+JP どこでも上がってやってるんだから
+JP 今さらＵっていわれても
+JP 通用しないでしょ」
+EN "Gyahahaha!
+EN Not a chance, right?
+EN We're on another level now.
+EN We're champions, y'know.
+EN We'll wrestle anywhere.
+EN Playing the 'U' card now
+EN ain't gonna work."
+
+@ 2ND:060A2FF8 lines=060A2FF8,060A2FE4
+JP 「なんか勘違いしてますよ
+JP 気合い入れてるし」
+EN "He's got the wrong idea.
+EN He's all psyched up, too."
+
+@ 2ND:060A2FBC lines=060A2FBC,060A2F94,060A2F7C
+JP 「過去の栄光にしがみつきたいだけでしょ
+JP 自分のファン、全部俺等に獲られてるの
+JP まだ気付いてないもん」
+EN "He's clinging to past glory.
+EN We took all his fans, and
+EN he still hasn't noticed."
+
+@ 2ND:060A2F68 lines=060A2F68
+JP 「マジっすか～？」
+EN "Seriouslyyy?"
+
+@ 2ND:060A2F40 lines=060A2F40,060A2F28,060A2F10
+JP 「あの人は昔からそういう人なんだって
+JP さっさと終わらせよう
+JP 矢野、狙っていくぞ」
+EN "He's always been like that.
+EN Let's wrap this up quick.
+EN <Yano>, let's go get him."
+
+@ 2ND:060A2EF8 lines=060A2EF8,060A2EE4
+JP 「・・・あの、安藤さん
+JP 決めセリフは？」
+EN "...Um, <Ando>,
+EN what's the catchphrase?"
+
+@ 2ND:060A2ED4 lines=060A2ED4,060A2EC4
+JP 「もうあきたよ
+JP 面倒臭い！」
+EN "I'm sick of it.
+EN Too much trouble!"
+
+@ 2ND:060A332C lines=060A332C
+JP 「体調、どうですか？」
+EN "How are you feeling?"
+
+@ 2ND:060A3310 lines=060A3310,060A32F8,060A32E8
+JP 「ああ、この間のサイパンで
+JP ウェイトが安定したから
+JP 調子はいいよ」
+EN "Yeah, my weight settled
+EN in Saipan the other day,
+EN so I'm in good shape."
+
+@ 2ND:060A32D0 lines=060A32D0,060A32A4
+JP 「・・・サイパンですか
+JP サイパンって、そんなにいいんですかね？」
+EN "...Saipan, huh?
+EN Is Saipan that great?"
+
+@ 2ND:060A3290 lines=060A3290,060A327C,060A325C,060A3248
+JP 「そりゃそうだよ
+JP 矢野も行っただろ？
+JP あったかくて、空気もいいしね
+JP 最高のところだよ」
+EN "Sure it is.
+EN You went too, right, <Yano>?
+EN It's warm, the air is nice...
+EN It's the best place ever."
+
+@ 2ND:060A3230 lines=060A3230,060A3208
+JP 「まあ、そうですよね
+JP ジェットスキーは楽しかったな・・・」
+EN "Well, yeah, I guess.
+EN The jet skiing was fun..."
+
+@ 2ND:060A31F0 lines=060A31F0
+# (also here, translated in an earlier block: 「ああ・・・)
+JP よかったなぁ・・・」
+EN That was great..."
+
+@ 2ND:060A31D4 lines=060A31D4
+JP 「また行きたいですよね」
+EN "I'd love to go again."
+
+@ 2ND:060A31BC lines=060A31BC
+JP 「行きたいね・・・」
+EN "Me too..."
+
+@ 2ND:060A31AC lines=060A31AC,060A3194
+JP 「さ、真田さん
+JP 顔がにやけてますよ」
+EN "M-Mr. <Sanada>,
+EN you're grinning."
+
+@ 2ND:060A317C lines=060A317C,060A3168
+JP 「おっと、まずい・・
+JP よし、いくぞ！」
+EN "Whoops, can't have that...
+EN All right, let's go!"
+
+@ 2ND:060A36FC lines=060A36FC
+JP 「またあんたと組むとはな・・・」
+EN "Teaming with you again..."
+
+@ 2ND:060A36E0 lines=060A36E0,060A36B4
+JP 「なんじゃ、不服そうだな
+JP 夢のタッグなんていわれていたじゃないか」
+EN "What, you don't look happy.
+EN We're the 'dream team', no?"
+
+@ 2ND:060A3690 lines=060A3690,060A367C,060A3660,060A3644,060A3618
+JP 「どうも、あんたの考えというのは
+JP 好きになれん・・・
+JP あっちにいってはいい顔して
+JP 向こうにいってはいい顔して
+JP あんた、いったい何個同じベルト作った？」
+EN "I just can't stand
+EN the way you operate...
+EN All smiles for this one,
+EN all smiles for that one...
+EN How many copy belts now?"
+
+@ 2ND:060A35F8 lines=060A35F8,060A35D8,060A35B4
+JP 「・・・まあ、いいじゃないか
+JP 私はスーパースターなんだから
+JP どこからでもお呼びがかかるんだよ」
+EN "...Now, now, what of it?
+EN I'm a superstar, after all.
+EN Everyone wants me."
+
+@ 2ND:060A35A4 lines=060A35A4,060A357C
+JP 「無精者が！！
+JP 練習もしないから、肉がだぼついとる」
+EN "You lazy slob!!
+EN No training, just flab!"
+
+@ 2ND:060A355C lines=060A355C,060A3540,060A3518
+JP 「クラウザー、あんたもやけに
+JP 年寄り臭くなったもんだな
+JP 人気者の私にジェラシーしとるのかね」
+EN "<Karlos Krauser>, you've
+EN gotten so crotchety lately.
+EN Jealous of a star like me?"
+
+@ 2ND:060A3504 lines=060A3504,060A34E0,060A34B4
+JP 「けしからんっ！！
+JP そのような俗物な考えしかできんから
+JP ろくでもない老後を送ることになるんだ！」
+EN "Disgraceful!!
+EN Vulgar thinking like that
+EN means a wretched old age!"
+
+@ 2ND:060A3494 lines=060A3494,060A3470,060A3458,060A3448,060A342C
+JP 「・・・あんたは昔からそうだ
+JP そうやって、どこのテリトリーからも
+JP 追放されてばっかりで、
+JP 面倒みるのは
+JP 私の役目みたいなもんでの」
+EN "...You were always like this.
+EN Thrown out of every
+EN territory you worked,
+EN and cleaning up after you
+EN always fell to me."
+
+@ 2ND:060A340C lines=060A340C,060A3400,060A33EC,060A33D4,060A33B0
+JP 「・・・そんなこともあったか
+JP まあ、いい
+JP 久しぶりの再会だ
+JP ヤング・ボーイたちに
+JP レスリングの基本を教えてやらんと」
+EN "...Ah, so that happened.
+EN Well, never mind.
+EN It's been a long time.
+EN Let's teach the young boys
+EN the basics of wrestling."
+
+@ 2ND:060A338C lines=060A338C,060A3378,060A3368,060A3344
+JP 「動乱の時代の良きアメリカが生んだ
+JP プロレスリングだな
+JP さてと・・・
+JP 技がさびついてないといいが・・・」
+EN "Pro wrestling, born in good
+EN old America's stormy days.
+EN Well, now...
+EN I hope I'm not rusty..."
+
+@ 2ND:060A38C4 lines=060A38C4,060A38A8,060A3880,060A3868,060A3844,060A3824,060A3814,060A37EC,060A37D0,060A37BC,060A3794,060A3778,060A3754,060A3730,060A3720
+JP 「パンサー、キッドの
+JP 黄金時代から十数年・・・
+JP 我々の努力は、確実に実を結びつつある
+JP 他団体にも見所のある
+JP ジュニア・レスラーが現れはじめた
+JP ユーは私の大切な親友であり、
+JP 最高のライバル
+JP だが、大刈や鎌本等といった若い連中は、
+JP チャンピオンとは何たるかを
+JP まだ理解していない
+JP 本当のチャンピオンとは何たるかを・・・
+JP 我々のハードなファイトで、
+JP 全てのレスラーに示してやるんだ！
+JP 言うまでもないが、手加減は無しだ！
+JP カイザー！」
+EN "Over 10 years since
+EN <Mask de Panther> and <Kid>
+EN ruled. And our efforts
+EN are finally paying off.
+EN Other feds now have
+EN juniors worth watching too.
+EN You're my dear friend
+EN and my greatest rival.
+EN But kids like <Ogari>
+EN and <Kamamoto> still don't
+EN get what a champion is.
+EN What a TRUE champion is...
+EN Our hard fight will show
+EN every wrestler out there!
+EN No holding back, <Kaiser>!"
+
+@ 2ND:060A3A98 lines=060A3A98,060A3A70,060A3A58,060A3A40,060A3A24,060A3A08,060A39E4,060A39CC,060A39A8,060A3984,060A3970,060A3958,060A3938,060A3914,060A38F0,060A38DC
+JP 「我々の努力は無駄ではなかった・・・
+JP ジュニアは確実にファン、マスコミの間で
+JP 認知されはじめている
+JP 日々精進、日進月歩の
+JP プロレス界に身を投じて、
+JP 初めて味わう充実感・・・
+JP 俺は忘れない・・・この感動を・・・
+JP 他団体の仲間と共に、
+JP ジュニアを盛りあげようじゃないか！
+JP そして、今日、俺達にしかできない
+JP 素晴らしい試合で
+JP 真のジュニア黄金時代の
+JP 幕開けとなる布石を投じるんだ！
+JP ナイス・ファイトを期待しているよ
+JP だが、しょっぱい試合をしたら・・・
+JP 潰すからな！！」
+EN "Our work wasn't in vain...
+EN Fans and press are finally
+EN taking notice of juniors.
+EN In this ever-advancing
+EN business, for the first time,
+EN I feel truly fulfilled...
+EN I'll never forget this!
+EN With friends from other
+EN feds, let's fire up juniors!
+EN And today, with a great
+EN match only we can put on,
+EN we'll lay the cornerstone
+EN of a real junior golden age!
+EN I expect a great fight.
+EN But give me a salty match...
+EN and I'll crush you!!"
+
+@ 2ND:060A3CC4 lines=060A3CC4,060A3C9C,060A3C80,060A3C60,060A3C44,060A3C24,060A3C08,060A3BE4,060A3BC4,060A3BA8,060A3B88,060A3B6C,060A3B58,060A3B38,060A3B10,060A3AF4,060A3AE0,060A3AC0
+JP 「私は、この日の為に
+JP ハードなトレーニングを積んで戻ってきた
+JP そう、君のような熱き魂を
+JP 持ったレスラーと闘う為に・・・
+JP 信じられん、熱き魂が・・・
+JP 無尽蔵に力が沸き上がってくる！
+JP ・・・私は完全に甦った！！
+JP 羽山たちと熱く生きた時代の荒々しい
+JP ダイナミック・キッドにな！！
+JP 俺はもう爆発しそうなんだ！
+JP あぁ、力がみなぎってくる！！
+JP もう誰にも止められん！！
+JP いいか覚悟しろ！！
+JP 俺のダイナミック・ファイトで
+JP お前をマットに這いつくばらせてやる！！
+JP 早くゴングを鳴らせ！！！
+JP ウスノロがぁ！！！
+JP うぉぉぉぉぉぉぉぉぉ！！！！」
+EN "For this day,
+EN I've trained hard to return.
+EN Yes, to fight a wrestler
+EN with a fiery soul like you!
+EN I can't believe it...
+EN Power is welling up!
+EN I'm completely reborn!!
+EN The savage <Kid> of my
+EN wild days with Hayama!!
+EN I'm about to explode!
+EN The power's surging in me!!
+EN No one can stop me now!!
+EN Brace yourself!!
+EN With my Dynamic Fight,
+EN you'll crawl on the mat!!
+EN Ring the bell already!!!
+EN Move it, slowpoke!!!
+EN Raaaaaaaaaagh!!!!"
+
+@ 2ND:060A3E3C lines=060A3E3C,060A3E20,060A3DF8,060A3DE0,060A3DC8,060A3DA0,060A3D88,060A3D6C,060A3D48,060A3D34,060A3D14,060A3CFC,060A3CDC
+JP 「私は嬉しい・・・伝説は今だに
+JP ファンの心に根付いている
+JP まさか、再びこのリングに上がろうとは、
+JP 今でも信じ難いですよ
+JP あと三ヶ月もあれば、
+JP 昔のベストな体調に戻るんですが・・・
+JP 仕方がないですね・・・
+JP 申し訳ないですが、君には
+JP パンサー伝説・第二章への踏み台に
+JP なってもらいますよ
+JP ・・・そうカタくならないで、
+JP リラックスしてください
+JP さぁ、遠慮は要りませんよ！」
+EN "I'm delighted... The legend
+EN lives on with the fans.
+EN To think I'd be back in
+EN this ring... It's unreal.
+EN 3 more months and I'd be
+EN back in peak shape, but...
+EN It can't be helped.
+EN I'm sorry, but you'll be
+EN the stepping stone to the
+EN <Mask de Panther> Legend 2.
+EN ...Now, don't be so tense.
+EN Please, relax.
+EN Come on, don't hold back!"
+
+@ 2ND:060A3FA8 lines=060A3FA8,060A3F80,060A3F60,060A3F38,060A3F20,060A3F00,060A3EE4,060A3ECC,060A3EA4,060A3E80,060A3E5C
+JP 「俺はもうシニアって言ったのになぁ・・・
+JP でもリングに上がったら関係ないからな
+JP 摂生したし、体も鍛えてたし、
+JP 自分じゃまだまだ実力は落ちていないと
+JP 思ってるからさ・・・
+JP そのベルトには愛着があるし、
+JP 他団体の奴にも興味あってさ
+JP 時間がないんだよ・・・
+JP 嫁さん探す時間もなぁ・・・・・・・・・
+JP ・・・野河、悪いが明智の時以上に、
+JP ねちっこく行くから、覚悟しろよ」
+EN "I said I'm a senior now...
+EN In the ring, that's moot.
+EN I've lived clean, trained,
+EN and I figure I haven't
+EN lost a step yet...
+EN I love that belt, and I'm
+EN curious about other feds.
+EN I'm running out of time...
+EN No time to find a wife...
+EN ...Sorry, <Nogawa>, I'll grind
+EN you worse than <Akechi>!"
+
+@ 2ND:060A40B8 lines=060A40B8,060A409C,060A4088,060A406C,060A4050,060A403C,060A4020,060A4000,060A3FD4
+JP 「・・・・・・・・
+JP 自分で言うのもアレだけど、
+JP 苦節十一年目にして
+JP やっと掴んだ栄光だからね
+JP あくまで勝つつもりで行く！
+JP どんな手使ってでも
+JP 貪欲にベルトを守りぬく！
+JP それが、チャンピオンだからね！
+JP 客が何と言おうが、俺のやり方でね・・・」
+EN "........
+EN Not to brag, but
+EN it took me 11 hard years
+EN to grab this glory.
+EN I'm going in to win!
+EN Whatever it takes,
+EN I'll hang on to this belt!
+EN That's what champs do!
+EN Fans or no fans, my way..."
+
+@ 2ND:060A41B8 lines=060A41B8,060A4194,060A4180,060A415C,060A4144,060A4120,060A4104,060A40E8,060A40CC
+JP 「俺ももうジュニアとしての体を
+JP 維持していくのは限界に来ているんだ
+JP この試合を最後に
+JP ヘビー級に転向しようと思っている
+JP 踏ん切りをつける為にも
+JP ここで生涯最高の試合をしたいんだ
+JP そして君にジュニアとしての
+JP パンサーの介錯を頼みたい
+JP 引き受けてくれるかい？」
+EN "I can't keep a junior's
+EN body any longer.
+EN After this match, I plan
+EN to move up to heavyweight.
+EN To make a clean break,
+EN I want my best match ever.
+EN And I want you to finish
+EN off my junior career.
+EN Will you do it for me?"
+
+@ 2ND:060A439C lines=060A439C,060A437C,060A4360,060A434C,060A4324,060A4300,060A42E4,060A42D4,060A42B8,060A429C,060A4278,060A4264,060A423C,060A4224,060A41F8,060A41D8
+JP 「おいドラゴン！
+JP 今日はそのベルトを頂くからよ！
+JP 俺はどんな奴が相手だろうが
+JP 関係ねぇからなぁ！
+JP どんな手使ってでも勝ちゃぁいいんだよ！
+JP マッチョだろうがテクニコだろうが、
+JP プロレスはここだよ、ここ！
+JP 頭使うんだよ！
+JP わかってんのかよ、オイ！
+JP どんな大技出したってな、
+JP パーフェクトに受け身をとった奴が
+JP 最後に笑うんだよ！
+JP これからはな、俺が他団体のジュニアも
+JP 統一してやっからよぉ！
+JP あ！おい！とっととベルトよこせよ、オイ！
+JP オラ！とっととゴング鳴らせ！」
+EN "Hey, <Azteca>!
+EN I'm takin' that belt today!
+EN I don't care who
+EN I'm up against!
+EN Win any way you can!
+EN Macho, tecnico, whatever -
+EN wrestling's up here, here!
+EN You gotta use your head!
+EN Got it or what, huh?!
+EN Hit any big move you like,
+EN whoever takes it perfect
+EN laughs last!
+EN From now on, I'll unify
+EN every fed's juniors, too!
+EN Hey! Gimme the belt, now!
+EN Ora! Ring the bell!"
+
+@ 2ND:060A454C lines=060A454C,060A452C,060A4510,060A44FC,060A44D8,060A44C4,060A44AC,060A4490,060A447C,060A4460,060A4438,060A440C,060A43E8,060A43D0,060A43B0
+JP 「今、ジュニアのタイトルが、
+JP こんなにあるのはおかしい・・・
+JP ファンは誰が一番強いのか、
+JP わからないだろ？
+JP 俺は、裏付けのない夢は好まんが、
+JP これは現実になる！
+JP それを俺が示してやる！
+JP だから、ここで負ける訳には
+JP いかないんだよ！
+JP 俺は、だてにメヒコと日本を
+JP 何往復も飛び回ってるわけじゃないんだ！
+JP ジュニア発展の為にも、Ｒ・Ｙ・Ｕジュニアを
+JP 活性化させなければならないんだ！
+JP 体が動くうちにな・・・
+JP 下手な試合するんじゃないぞ！」
+EN "Something's wrong with
+EN so many junior titles...
+EN Fans can't tell who's
+EN the strongest, right?
+EN I hate empty dreams,
+EN but this one comes true!
+EN I'll prove it myself!
+EN So I can't afford
+EN to lose here!
+EN I don't fly between Mexico
+EN and Japan just for fun!
+EN For juniors to grow, I must
+EN fire up the <R.Y.U> juniors!
+EN While my body still works...
+EN No sloppy match, hear me!"
+
+@ 2ND:060A4860 lines=060A4860,060A483C,060A4820,060A47F8,060A47D0,060A47A8,060A4788,060A4768,060A4748,060A471C,060A46FC,060A46E4,060A46CC,060A46AC,060A468C,060A467C,060A465C,060A463C,060A4624,060A45FC,060A45E0,060A45C4,060A45AC,060A4584,060A456C
+JP 「おい、ハヤテ！
+JP 楽しいルチャはな、ちょっと休業や、
+JP あの、なんやったっけか？
+JP ・・・あぁそうや、平成雪猿隊やったな、
+JP あいつら好き勝手やらかしおってからに
+JP お客はあんな試合にはうんざりしとる、
+JP 誰かてそうや、なぁ、そうやろ？
+JP 汚い奴等やわ、ほんまに・・・
+JP ＷＡＫＡの奴も何考えとんねや！
+JP まぁＷＡＫＡなんてどうでもえぇねん・・・
+JP まさか、音羽の奴までなぁ・・・
+JP ほんまにセンチやわぁ
+JP ・・・え？あぁそうや、
+JP 今日はタイトルマッチやったな、
+JP 最近ゴタゴタ続きで頭が痛いんや
+JP でもな、今日、
+JP お前を倒すことによってやな、
+JP ワイが間違うとらんかった事と、
+JP 強さと格好良さをな、
+JP 今日この会場におる沢山のお客さんとな、
+JP 音羽君に再認識させたる！
+JP これで音羽問題は解決や！
+JP ハッハッハッハッ・・・
+JP せやさかい、今日は負けられへんのや、
+JP 覚悟しときやハヤテ！」
+EN "Hey, <Hayate>!
+EN Fun lucha's on a break.
+EN What's it called again?
+EN ...Heisei <Snow Monkeys>.
+EN Them punks run wild,
+EN and the fans are sick of it.
+EN Anybody would be, right?
+EN Dirty bunch, I tell ya.
+EN What's <WAKA> thinkin'?!
+EN Eh, forget <WAKA>...
+EN But <Otowa>, too...
+EN Makes me all misty.
+EN ...Huh? Oh, right,
+EN today's a title match.
+EN This mess is a headache.
+EN But see, today,
+EN by beatin' you,
+EN I'll show I was right,
+EN how tough and cool I am,
+EN to all these fans here,
+EN and to young <Otowa>!
+EN There, <Otowa> mess solved!
+EN Hahahaha...
+EN So I ain't losin' today.
+EN Get ready, <Hayate>!"
+
+@ 2ND:060A49A8 lines=060A49A8,060A4984,060A4970,060A4950,060A4938,060A4918,060A4900,060A48D8,060A48B8,060A488C,060A4874
+JP 「こんなケガくらいで、
+JP 易々とベルトを渡す訳にはいかない！
+JP こんなところで、
+JP つまづく訳にはいかないんだ！
+JP 東北のファンの為にも、
+JP 逃げる訳にはいかないんだよ！
+JP 死ぬ気で行くからな！
+JP お前とは、背負ってるモノが違うんだ！
+JP ゆきプロは絶対に潰さんぞ！！
+JP このベルトも、ゆきプロも俺が守るんだ！！
+JP 絶対に勝つからな！！」
+EN "No injury's gonna make
+EN me hand over this belt!
+EN I can't afford to
+EN stumble here!
+EN For my fans in Tohoku,
+EN I can't run away!
+EN I'll fight to the death!
+EN I carry more than you do!
+EN <YukiPro> won't go under!!
+EN I'll protect belt AND fed!!
+EN I'm winning, period!!"
+
+@ 2ND:060A4BF0 lines=060A4BF0,060A4BC4,060A4BA4,060A4B88,060A4B6C,060A4B50,060A4B38,060A4B1C,060A4AF8,060A4AE4,060A4AC8,060A4AA8,060A4A84,060A4A60,060A4A3C,060A4A20,060A4A00,060A49E0,060A49C0
+# (also here, translated in an earlier block: 自分で言うのもアレだけど、)
+JP 「・・・え、コンディション？
+JP まぁ、適当にやってるよ、大きなお世話だ！
+JP この四十代後半の年寄りでもな、
+JP なにくそって意地と気迫は
+JP いつまでも持っているからよ
+JP そう易々と、勝ちはやらんぞ
+JP 俺はジュニアひと筋で
+JP 生きてきた人間だからよ、
+JP 今後も率先してジュニアの輪の中に
+JP 入って行くつもりだ
+JP 俺は歴史の証人っていうかさ
+JP いろんな団体を飛び回ってよ、
+JP 色々な経験をさせてもらったからさ
+JP ジュニアに生きる後世の息子たちに、
+JP 色々と伝えて行きたいからな・・・
+JP ・・・なんかしめっぽいな
+JP とにかく、絶対負けねぇからな！
+JP ジジィだと思って手加減したら、
+JP おもいっきりぶん殴るからな！」
+EN "Huh? My condition?
+EN Fine. Not your business!
+EN Even in my late 40s, this
+EN old man's still got grit
+EN and won't ever give in.
+EN I won't hand you a win.
+EN I've lived my whole
+EN life as a junior, and
+EN I'll keep jumping into
+EN the junior scene.
+EN I'm a witness to history.
+EN I've worked lots of feds
+EN and seen a lot of things,
+EN so I want to pass it on
+EN to the young juniors...
+EN ...Getting gloomy, huh?
+EN Anyway, I won't lose!
+EN Go easy on an old man,
+EN and I'll knock you flat!"
+
+@ 2ND:060A4E10 lines=060A4E10,060A4DF8,060A4DD8,060A4DBC,060A4D98,060A4D84,060A4D5C,060A4D3C,060A4D24,060A4D04,060A4CF0,060A4CDC,060A4CC0,060A4CA0,060A4C84,060A4C68,060A4C48,060A4C2C,060A4C10
+JP 「日本のレスリングは、すばらしい
+JP とてもアグレッシブで、
+JP 熱く、激しく、とても勉強になる
+JP 俺は飛び技は苦手だけど、
+JP パワーならＶＩＥＷのファントムにも
+JP 負けない自信がある
+JP と、言っても、あなたも知っての通り、
+JP 俺はパワーオンリーじゃないんだ
+JP パワー＆テクニック、
+JP 二つのファクターを兼ね備えた
+JP ルチャ・ドールだ！
+JP あんたのルチャは、
+JP 伝統に縛られているだけだ！
+JP このままでは、いつまでたっても
+JP ルチャは世界に通用しない！
+JP これからは、世界のあらゆる
+JP レスリング・スタイルを吸収した
+JP ルチャが求められる時代だ！
+JP 俺がその第一人者となる！」
+EN "Japanese wrestling is
+EN great. So aggressive,
+EN hot, wild. I learn a lot.
+EN I can't fly much, but in
+EN power, I'm as good as
+EN <VJP>'s <Phantom>.
+EN But as you know,
+EN I'm not just power.
+EN Power and technique -
+EN I'm a luchador with both
+EN of those factors!
+EN Your lucha is just
+EN chained to tradition!
+EN Like this, lucha will
+EN never make it worldwide!
+EN Now the times demand
+EN a lucha that absorbs
+EN every style in the world!
+EN And I will lead the way!"
+
+@ 2ND:060A4FB8 lines=060A4FB8,060A4F90,060A4F74,060A4F54,060A4F3C,060A4F18,060A4F00,060A4EE8,060A4ECC,060A4EA8,060A4E84,060A4E68,060A4E4C,060A4E34
+JP 「私の父は偉大なメヒコの英雄だ、
+JP その名を汚す闘いだけはする事はできない
+JP つまり、それは敗北さ・・・
+JP 君に負ける訳にはいかないんだよ
+JP 愛するメヒコの民と、
+JP 由緒あるサントス家の後継者としてね
+JP それより、今日は多くの
+JP アミーゴたちと会えて、
+JP すごく幸せな気持ちでいるよ
+JP そのアミーゴたちにルチャ・リブレの
+JP 素晴らしさを体験してもらいたいね
+JP とにかく、私は君に勝つよ！
+JP 正当なルチャを引き継いだ
+JP このＥ・サントスがね」
+EN "My father is Mexico's hero.
+EN I can't shame his name -
+EN that is, by losing...
+EN I can't lose to you.
+EN For my beloved people,
+EN as the <Santos> heir!
+EN Besides, today I meet
+EN so many amigos,
+EN and it makes me happy.
+EN I want them to feel the
+EN wonder of lucha libre.
+EN Anyway, I will beat you!
+EN I, <E. Santos>,
+EN heir to true lucha!"
+
+@ 2ND:060A50EC lines=060A50EC,060A50D8,060A50B8,060A50A0,060A5078,060A5050,060A5038,060A5024,060A5004,060A4FF0,060A4FDC
+JP 「再びみなさんに会えて私はとても嬉しい
+JP コンドル兄さんは
+JP とても手強いレスラーであり、
+JP 最も尊敬するレスラーだ
+JP だが、私はそれ以上に手強いレスラーだ
+JP 私は常に、いつ、いかなる状況においても
+JP 闘う準備はできている
+JP 今日は生涯最高の
+JP ベスト・コンディションなので、
+JP 負ける理由がない
+JP 絶対に勝つぞ！」
+EN "I'm glad to see you again.
+EN My brother <Condor>
+EN is a very tough wrestler,
+EN the one I respect most.
+EN But I am even tougher.
+EN Anytime, in any situation,
+EN I am ready to fight.
+EN Today I am in the best
+EN shape of my life.
+EN I have no reason to lose.
+EN I will win, for sure!"
+
+@ 2ND:060A52BC lines=060A52BC,060A52A0,060A5280,060A5260,060A5248,060A5220,060A51FC,060A51E4,060A51D0,060A51B8,060A519C,060A5184,060A516C,060A5154,060A5134,060A5114
+# (also here, translated in an earlier block: 「私は、この日の為に)
+JP 厳しいトレーニングを積んできた
+JP 体調もベストな状態なので、
+JP 素晴らしい試合ができると思う
+JP 私はどんなファイトスタイルにも
+JP 順応できる自信がある
+JP それは、現在までに培ったレスリングの
+JP 奥深さ、知識、経験からなる自信が
+JP 私を支えているからだ
+JP そして、見たまえ、
+JP 若々しく鍛え上げられた
+JP 私のナチュラル・バディを
+JP 今日は、世界に通用する
+JP ルチャ・リブレの神髄を
+JP みなさんにお見せする
+JP その相手が、君という訳だ・・・
+JP その幸せを神に感謝したまえ！」
+EN I have trained hard.
+EN My condition is the best,
+EN so it will be a fine match.
+EN I can adapt to any
+EN fighting style.
+EN My confidence comes from
+EN the depth, knowledge and
+EN experience I have built.
+EN And behold!
+EN My youthful, well-honed
+EN natural body!
+EN Today I will show you
+EN the essence of world-class
+EN lucha libre.
+EN And my opponent is you...
+EN Thank God for this honor!"
+
+@ 2ND:060A54A4 lines=060A54A4
+JP 「鎌本さん、しばらく休戦ですね」
+EN "<Kamamoto>, truce for now?"
+
+@ 2ND:060A5480 lines=060A5480,060A5460,060A5440,060A5428
+JP 「あぁ、そうやな！ まずは目の上の
+JP たんこぶをもぎ取らなあかんな
+JP このままじゃ、いつまでたっても
+JP 俺等は結果が出せへん」
+EN "Yeah, right! First we gotta
+EN take out the guys on top.
+EN Or else we'll never
+EN get anywhere."
+
+@ 2ND:060A5408 lines=060A5408,060A53E4,060A53BC
+JP 「オイ、カイザー！ファントム！
+JP お前等、絶対喰ってやるからな！！
+JP お前等の時代は、今日で終わりだ！！」
+EN "Hey, <Kaiser>! <Phantom>!
+EN We'll eat you alive!!
+EN Your era ends today!!"
+
+@ 2ND:060A53A4 lines=060A53A4,060A5380,060A5368,060A5354,060A5328
+JP 「そうじゃ、ボケェ！
+JP オンドレ等の寝首刈いたるかんな！！
+JP 世代交代させんじゃと？
+JP 何ぬかしてんじゃ！
+JP ドタマカチ割ったるどボケェ！！カスゥ！！」
+EN "Damn right, ya morons!
+EN We'll get ya in yer sleep!!
+EN No new generation, huh?
+EN Who ya kiddin'!
+EN I'll bust yer skull!! Scum!!"
+
+@ 2ND:060A5304 lines=060A5304
+JP 「まぁまぁ鎌本さん、落ちついて」
+EN "Now, now, <Kamamoto>, easy."
+
+@ 2ND:060A52DC lines=060A52DC
+JP 「・・・お前も、もっと言ったれや！」
+EN "...You say somethin' too!"
+
+@ 2ND:060A5760 lines=060A5760,060A5748,060A5730
+JP 「我々Ｊ・フォースに敵はない
+JP ハンパな勇気は命取りだ
+JP どうなっても知らんぞ」
+EN "Nobody beats J. Force.
+EN Half-baked guts get you
+EN killed. You were warned."
+
+@ 2ND:060A5714 lines=060A5714,060A56EC,060A56E0,060A56BC
+JP 「お前達の勇気は認めよう
+JP だが、すぐに後悔することになるだろう
+JP なぜって？
+JP 試合の結果が全てを語ってくれるさ」
+EN "You've got guts, I admit.
+EN But you'll soon regret it.
+EN Why, you ask?
+EN The result will tell all."
+
+@ 2ND:060A56A4 lines=060A56A4,060A5694,060A5670,060A5660
+JP 「そう、俺達の強さと
+JP 君らの弱さをね
+JP お客さんの納得するフィニッシュで、
+JP 魅せて勝つ！」
+EN "Yes, how strong we are,
+EN and how weak you are.
+EN With a finish fans love,
+EN we'll win in style!"
+
+@ 2ND:060A5638 lines=060A5638,060A5620,060A55F8,060A55D0,060A55AC,060A5598,060A557C
+JP 「タッグにおいて、個々の技術、経験、
+JP タフさはもちろんだが
+JP それ以上に重要なファクターとは何だ？
+JP 教えてやろう、それはフュージョンだ！
+JP 俺達は互いを認め合い、信頼している
+JP 共に苦しい道のりを
+JP 歩んで来た同士としてな」
+EN "In tags, skill, experience
+EN and toughness matter.
+EN But what matters more?
+EN I'll tell you: fusion!
+EN We respect and trust
+EN each other, as comrades
+EN on the same hard road."
+
+@ 2ND:060A5564 lines=060A5564,060A553C,060A5520,060A54F4,060A54D8
+JP 「その通りだファントム
+JP タッグは二人で一人、一心同体でなければ
+JP チームワークもクソもない
+JP 即席タッグに負けるほど、我々は甘くないぞ
+JP 潰す気でかかって来い！！」
+EN "That's right, <Phantom>.
+EN In tags, two must be one,
+EN or teamwork is crap.
+EN No pickup team beats us!
+EN Come at us all-out!!"
+
+@ 2ND:060A54C8 lines=060A54C8
+JP 「カモン！！」
+EN "Come on!!"
+
+@ 2ND:060A5B60 lines=060A5B60,060A5B3C
+JP 「スミスよ、こうしてお前とタッグを
+JP 組めるとは、万感の思いだよ・・・」
+EN "<Smith>, teaming with you
+EN again... My heart is full."
+
+@ 2ND:060A5B14 lines=060A5B14,060A5AF4,060A5AD4,060A5AB0,060A5A98,060A5A74,060A5A4C,060A5A2C,060A5A14
+JP 「キッドよ、それは俺もおなじだ・・・
+JP アメリカ・マット時代の俺は、
+JP うかばれない亡霊のようなモノさ
+JP ホームシックにかかったガキの様に、
+JP ただ脅えていた・・・
+JP けど、こうしてあんたと同じリングに
+JP 立っただけで、勇気と力が沸いてくる！
+JP それだけ、俺にとってあんたは、
+JP 偉大なレスラーなんだ」
+EN "<Kid>, I feel the same...
+EN In America, I was
+EN like a restless ghost.
+EN Like a homesick kid,
+EN I was just scared...
+EN But just standing in the
+EN ring with you fires me up!
+EN That's how great a
+EN wrestler you are to me."
+
+@ 2ND:060A59F0 lines=060A59F0,060A59D4,060A59BC
+JP 「永い間、すまなかったな相棒・・・
+JP ダイナミック・キッドは、
+JP 完全に復活したんだよ」
+EN "Sorry it's been so long,
+EN partner... <Kid>
+EN is completely back."
+
+@ 2ND:060A598C lines=060A598C,060A596C,060A5954,060A592C,060A5910,060A58EC,060A58D0,060A58B0
+JP 「・・・その鍛え上げられたアイアン・バディ、
+JP 燃え盛る炎の様に燃える瞳・・・
+JP 間違いない、あんたは、
+JP ”猛爆野郎”ダイナミック・キッドだ！
+JP ・・・もう大丈夫だ、相棒！
+JP 何に脅える必要があるだろうか・・・
+JP 俺達は、世界最強のコンビ！
+JP ブリリアン・ブルズなんだ！！」
+EN "...That iron body,
+EN those eyes like wildfire...
+EN No doubt, you're the
+EN Mad Bomber, <Kid>!
+EN It's all right, partner!
+EN What's there to fear...
+EN We're the world's best!
+EN The <Brilliant Bulls>!!"
+
+@ 2ND:060A5898 lines=060A5898,060A5874,060A5860,060A5838,060A5820,060A57F8,060A57D0,060A57BC
+JP 「その通りだスミス！
+JP このユニオン・ジャックにかけて、
+JP もう迷いはないな！
+JP いいか、目の前に立ちはだかるゴミ共は
+JP 叩き潰せ！蹴散らせ！
+JP チリ一つ残すんじゃないぞ！目ざわりだ！
+JP あいつらの様な、臆病者のチキン野郎に
+JP 情けは無用だ！」
+EN "That's right, <Smith>!
+EN By the Union Jack,
+EN no more doubts!
+EN The trash in our way -
+EN crush 'em! Scatter 'em!
+EN Leave no trace! Eyesores!
+EN Gutless chickens like
+EN them get no mercy!"
+
+@ 2ND:060A57A8 lines=060A57A8,060A5780
+JP 「ウォォォ！！！
+JP クラッシュ！クラッシュ！クラッシュ！」
+EN "Wooooh!!!
+EN Crush! Crush! Crush!"
+
+@ 2ND:060A5E04 lines=060A5E04,060A5DE0,060A5DC4,060A5DA4,060A5D8C,060A5D70,060A5D54
+JP 「最近、他団体の頑張りもあって、
+JP うちのジュニアも注目されはじめて
+JP 俺もヘビィにもまれながら、
+JP 頑張ってきたかいがあったッス
+JP こういう形で野河さんと
+JP 組ましてもらったからには、
+JP 絶対負けられないッス！」
+EN "Thanks to other feds,
+EN our juniors get noticed.
+EN Getting mauled by the
+EN heavies paid off, sir!
+EN Now that I'm teaming
+EN with Mr. <Nogawa>,
+EN I can't lose, sir!"
+
+@ 2ND:060A5D2C lines=060A5D2C,060A5D0C,060A5CF4,060A5CE0,060A5CBC
+JP 「・・・明智と組むのは変な気分だけど、
+JP チャンピオンだし、負けないよ
+JP よそを意識してないって
+JP 言ったら嘘だけど、
+JP まずは小淵沢さんを越えないとな」
+EN "...Teaming with <Akechi>
+EN is weird, but I'm the champ.
+EN I'd be lying if I said
+EN I ignore other feds,
+EN first I top <Kobuchizawa>."
+
+@ 2ND:060A5C94 lines=060A5C94,060A5C88,060A5C70
+JP 「ええ、俺も、もう後がないっす・・・
+JP 玉砕っす！
+JP バ・ク・ハ・ツ！！！」
+EN "Yeah, I'm out of chances...
+EN All or nothing, sir!
+EN Ex-plo-sion!!!"
+
+@ 2ND:060A5C5C lines=060A5C5C,060A5C38,060A5C20
+JP 「・・・・・・・
+JP 明智、曲者の小淵沢さんを分断して、
+JP ランダム狙いで行くぞ」
+EN "......
+EN <Akechi>, cut off sly
+EN <Kobuchizawa>, hit <Random>."
+
+@ 2ND:060A5C14 lines=060A5C14,060A5BF4,060A5BD8
+JP 「ッス！
+JP 俺がランダムを火の玉ボムで、
+JP ピン・フォール取るッス！」
+EN "Yessir!
+EN I'll Fireball Bomb <Random>
+EN for the pinfall, sir!"
+
+@ 2ND:060A5BB0 lines=060A5BB0
+JP 「馬鹿！小淵沢さんに聞こえるだろ！！」
+EN "Fool! <Kobuchizawa>'ll hear!!"
+
+@ 2ND:060A5BA4 lines=060A5BA4,060A5B84
+JP 「あっ！
+JP バ・ク・ハ・ツ・・・・・・」
+EN "Oops!
+EN Ex-plo-sion......"
+
+@ 2ND:060A5F90 lines=060A5F90,060A5F6C,060A5F48,060A5F28,060A5F08,060A5EE8,060A5EC0,060A5EA4,060A5E90,060A5E78
+JP 「・・・今日はタッグか、
+JP この歳になると、やっぱりきついな
+JP まぁ、タッグは俺の専売特許だしな
+JP だてにトミーさんらの化け物を
+JP 相手にしてた訳じゃないからよ
+JP お前と組んでも勝つ自信はあるよ
+JP 要所要所で、俺がサポートしてやるから
+JP 後はお前のヤング・パワーに
+JP 任せるからな・・・
+JP おい、聞いてるのか？」
+EN "...A tag match, huh.
+EN At my age, it's rough.
+EN Still, tags are my thing.
+EN Not for nothing did I face
+EN monsters like <Tommy>.
+EN Even with you, we'll win.
+EN I'll back you up when
+EN it counts, and leave
+EN the rest to your youth...
+EN Hey, are you listening?"
+
+@ 2ND:060A5E50 lines=060A5E50,060A5E44
+JP 「・・・ハイッハイッハイ～～～～～！
+JP ハッ！！」
+EN "...Hey! Hey! Heyyyy!
+EN Hah!!"
+
+@ 2ND:060A5E28 lines=060A5E28
+JP 「・・・・・・やれやれ」
+EN "......Good grief."
+
+@ 2ND:060A61AC lines=060A61AC,060A618C
+JP 「カオス、俺は君というパートナーを
+JP 迎えられて、とても心強いよ！」
+EN "<Chaos>, having you as my
+EN partner is so reassuring!"
+
+@ 2ND:060A6178 lines=060A6178,060A6150,060A6140,060A6130,060A6118
+JP 「俺もだ、ドラゴン
+JP かつてのライバルが共に手を取り合う、
+JP 素晴らしいよ！
+JP 俺達は勝てる！
+JP 絶対に勝てるさ！！」
+EN "Me too, <Azteca>.
+EN Old rivals as partners -
+EN it's wonderful!
+EN We can win!
+EN We'll win for sure!!"
+
+@ 2ND:060A610C lines=060A610C,060A60E0,060A60B8,060A6094
+JP 「そうだ！
+JP 俺達は、ジュニア・タッグの頂点に立つんだ！
+JP その前にコイツ等を倒さなければならない
+JP 手段を選ばないひきょうな奴等だ」
+EN "That's right!
+EN We'll be junior tag kings!
+EN But first, we beat them.
+EN Cowards with no shame."
+
+@ 2ND:060A6078 lines=060A6078,060A6058,060A6030,060A6018,060A6000
+JP 「とんでもない曲者だが、
+JP もっと強い奴等が世界に存在する
+JP 恐れてはいけない、恐れることはない！
+JP 我々は彼らより熱く、
+JP そして強いのだから！」
+EN "They're sly, but there
+EN are tougher teams around.
+EN Fear them? Never!
+EN We're hotter than them,
+EN and stronger!"
+
+@ 2ND:060A5FE4 lines=060A5FE4,060A5FC0
+JP 「ＯＫ、カオス！ 二人で、
+JP 栄光へのチケットを手にいれよう！」
+EN "OK, <Chaos>! Let's grab
+EN our ticket to glory!"
+
+@ 2ND:060A5FAC lines=060A5FAC
+JP 「グワッパッ！！」
+EN "Gwapahh!!"
+
+@ 2ND:060A63AC lines=060A63AC,060A6390,060A6374,060A635C,060A6334
+JP 「何だよオイ！
+JP コイツが俺のパートナーかよ
+JP まぁ、相手があいつらじゃ
+JP 兄弟と組むまでもねぇ
+JP お前、使えなかったらクビだからな！」
+EN "What the hell?!
+EN This is my partner?
+EN Well, against them,
+EN I don't need my bro.
+EN Screw up and you're fired!"
+
+@ 2ND:060A631C lines=060A631C
+JP 「オーイェ～～～！！」
+EN "Oh yeahhhh!!"
+
+@ 2ND:060A62F4 lines=060A62F4,060A62C8,060A62A8,060A6288,060A6270,060A6254,060A623C,060A621C,060A61F4,060A61D0
+JP 「たしか、この試合に賞金出るんだよな
+JP 春樹さんと兄弟がヘビーのベルト取ってよぉ
+JP 俺様がジュニアのベルト取って、
+JP 春樹軍がＲ・Ｙ・Ｕのタイトルを
+JP 独占すんだよ、オイ！
+JP そんでもって、奪った賞金を
+JP 三人で山分けだ、オラ！
+JP ・・・オライオン童の取り分？
+JP コイツは日本語が理解できねぇからよぉ
+JP 何言ったってわかんねぇよ、なぁ？」
+EN "There's prize money, right?
+EN <Haruki> and my bro take
+EN the heavy belts, I take the
+EN junior one, and <Haruki> Army
+EN owns <R.Y.U>, see!
+EN Then we split the money
+EN three ways, ora!
+EN ...The <Orion> kid's cut?
+EN He don't get Japanese,
+EN so he won't know, right?"
+
+@ 2ND:060A65C0 lines=060A65C0,060A65A8
+JP 「なんだよ、こんなしょっぱい奴等が
+JP チャンピオンかね？」
+EN "What, these salty guys
+EN are the champs?"
+
+@ 2ND:060A658C lines=060A658C,060A656C,060A6554,060A6528
+JP 「なんか、そうみたいですね
+JP タッグは１＋１が２にも３にも
+JP ならなきゃいけないのに
+JP 彼らは１×１がマイナスになってますからね」
+EN "Looks that way.
+EN In tags, 1+1 should make
+EN 2 or 3, but for them,
+EN 1×1 comes out negative."
+
+@ 2ND:060A6510 lines=060A6510,060A64F0
+JP 「まぁ、今日勝って、
+JP 俺等がゆきプロの中心になる！」
+EN "We win today, and
+EN we lead <YukiPro>!"
+
+@ 2ND:060A64C4 lines=060A64C4,060A64A4,060A6490
+JP 「その通り、もうドルフィン、ハヤテじゃない
+JP これからは、ＮＡＴＯさん中心で
+JP 外に出ていく！」
+EN "Right! <Dolphin>, <Hayate>,
+EN you're done. Now <NATO>
+EN leads us out there!"
+
+@ 2ND:060A6468 lines=060A6468,060A6440
+JP 「今までは他団体との試合を避けてたけど
+JP もっと、うちらの名前を広めたいからな」
+EN "We dodged other feds,
+EN but now we want fame."
+
+@ 2ND:060A6424 lines=060A6424,060A640C
+JP 「しかし、相手が彼らじゃ
+JP 張り合いがないですね」
+EN "Still, against them,
+EN it's hardly worth it."
+
+@ 2ND:060A63E8 lines=060A63E8,060A63D4
+JP 「うーん、わしらに勝てるかのぉ～～
+JP どうかね、君は？」
+EN "Hmm, can they beat us...?
+EN What d'you think, sonny?"
+
+@ 2ND:060A63BC lines=060A63BC
+JP 「勝てるかのぉ～～」
+EN "Can they beat us...?"
+
+@ 2ND:060A6800 lines=060A6800,060A67E4
+JP 「音羽、実はな、お前の御両親がな、
+JP 今日この会場におんのや」
+EN "<Otowa>, truth is, your
+EN folks are here today."
+
+@ 2ND:060A67C8 lines=060A67C8
+JP 「ほ、本当ですか、師匠！」
+EN "R-really, Master?!"
+
+@ 2ND:060A679C lines=060A679C,060A6774,060A675C,060A6734
+JP 「せや、ワイが密かにチケットを送ったんや
+JP なんせ、音羽一世一代の晴れ姿やからな
+JP お前の成長した姿をな、
+JP おとんと、おかんにな、見せたるんや」
+EN "Yup, I sent 'em tickets.
+EN It's <Otowa>'s big day!
+EN I'll show your ma and pa
+EN how much you've grown."
+
+@ 2ND:060A6720 lines=060A6720,060A6700,060A66EC,060A66C8
+JP 「し、師匠～～～
+JP ありがとうございますぅ～～～
+JP ボクの為に・・・
+JP これで親孝行できますわぁ～～～」
+EN "M-Masterrrr...
+EN Thank you so muuuch...
+EN All for me...
+EN I can make 'em proooud!"
+
+@ 2ND:060A66A8 lines=060A66A8,060A6680,060A6658,060A6630,060A6608,060A65F0
+JP 「・・・あぁ、実はな音羽君、
+JP 今日な、カイザーの嫁さんと子供がやな
+JP ワイの格好えぇ姿をな、見に来とんねや
+JP そいでな、前半はお前をたてたるから、
+JP フィニッシュはワイが決めるさかいにな！
+JP しっかり、頼むでぇ！」
+EN "...Ah, truth is, <Otowa>,
+EN <Kaiser>'s wife and kids
+EN came to see me look cool.
+EN So you shine early on,
+EN but I take the finish!
+EN Don't let me down, now!"
+
+@ 2ND:060A65E4 lines=060A65E4
+JP 「・・・」
+EN "..."
+
+@ 2ND:060A6A18 lines=060A6A18,060A69F0
+JP 「先生、僕はこうして、憧れの先生と
+JP タッグを組めるなんて夢のようです！」
+EN "Sensei, teaming with my
+EN idol... It's like a dream!"
+
+@ 2ND:060A69D0 lines=060A69D0,060A69A8,060A698C,060A6970,060A695C
+JP 「大丈夫、そうカタくならずに
+JP 君はね、私以降の歴代パンサーの中で、
+JP 最も素質があるんだからね
+JP 私を信じていれば大丈夫、
+JP 君は成功するよ」
+EN "Easy, don't be so tense.
+EN Of all my successors,
+EN you have the most talent.
+EN Trust me and you'll be
+EN fine. You will succeed."
+
+@ 2ND:060A693C lines=060A693C,060A691C
+JP 「は、はい先生！ パンサーの名を
+JP 汚さないようにがんばります！」
+EN "Y-yes, Sensei! I won't
+EN shame the mask!"
+
+@ 2ND:060A6900 lines=060A6900,060A68E8
+JP 「はははは、心配ないよ、
+JP 私が初代なんだから」
+EN "Hahaha, no need to worry.
+EN I'm the original, after all."
+
+@ 2ND:060A68C0 lines=060A68C0
+JP 「・・・先生、指示をお願いします！」
+EN "...Sensei, orders, please!"
+
+@ 2ND:060A68A0 lines=060A68A0,060A688C,060A6860,060A683C
+JP 「私の体調はベストな状態とは
+JP 言いがたいからね
+JP クイック・タッチでスタミナを温存していこう
+JP フィニッシュは、私が決めるから」
+EN "My condition isn't
+EN at its best, so let's
+EN save stamina, tag fast.
+EN I'll take the finish."
+
+@ 2ND:060A6824 lines=060A6824
+JP 「・・・はい、先生！」
+EN "...Yes, Sensei!"
+
+@ 2ND:060A6D20 lines=060A6D20,060A6D00
+JP 「シスコス、俺の考えに
+JP 賛同してくれた事を感謝する」
+EN "<Siscos>, thank you for
+EN backing my ideas."
+
+@ 2ND:060A6CE4 lines=060A6CE4,060A6CD0,060A6CA8,060A6C88,060A6C6C,060A6C44
+JP 「いや、僕も君の考えには
+JP 興味があったんだ
+JP このままでは、僕はミステリアスＪｒ．の
+JP 引き立て役のピエロでしかないし
+JP ルチャを変えていく為に、
+JP 老兵には消えてもらわなければ・・・」
+EN "No, your ideas
+EN interest me too.
+EN As it is, I'm just a clown
+EN who makes <Rey> look good.
+EN To change lucha,
+EN the old guard must go..."
+
+@ 2ND:060A6C18 lines=060A6C18,060A6C04,060A6BE4
+JP 「その通りだ、俺達でルチャを変えるんだ！
+JP 迷うことはない、
+JP 確実に時代は動きはじめている」
+EN "Exactly. We'll change lucha!
+EN No need to hesitate.
+EN The times are changing."
+
+@ 2ND:060A6BC8 lines=060A6BC8,060A6BA8,060A6B88
+JP 「そうだな、迷うことはない
+JP 我々が伝統を打ち消すことで、
+JP ルチャ新時代の幕開けとなる」
+EN "Right, no hesitation.
+EN Wipe out tradition, and
+EN a new lucha era begins."
+
+@ 2ND:060A6B60 lines=060A6B60
+JP 「世界に通用するルチャを示すんだ！」
+EN "Show world-class lucha!"
+
+@ 2ND:060A6B3C lines=060A6B3C,060A6B28,060A6B04
+JP 「しかし、相手はメヒコの英雄と、
+JP 和製ルチャの英雄だ
+JP ・・・大きい、とてつもなく大きい」
+EN "But it's Mexico's hero and
+EN Japan's lucha hero...
+EN They're big. Huge."
+
+@ 2ND:060A6AF4 lines=060A6AF4,060A6AD4,060A6AB0,060A6A94,060A6A74,060A6A54
+JP 「確かに・・・
+JP 俺の想像以上だ・・・スキがない
+JP しかし、惑わされるな、俺達の相手は
+JP メヒコの観衆だということを
+JP ルチャを愛し続けてきた観衆に
+JP 勝たなければならないことを！」
+EN "True...
+EN Bigger than I thought.
+EN No openings. But stay calm.
+EN The Mexican crowd is our
+EN real foe. We have to win
+EN over fans who love lucha!"
+
+@ 2ND:060A6A3C lines=060A6A3C
+JP 「ヒェァ～～！！！」
+EN "Hyaaahh!!!"
+
+@ 2ND:060A7000 lines=060A7000,060A6FDC,060A6FC4,060A6FB0,060A6F98
+JP 「マリポーサよ、私は先代から受け継いだ
+JP ルチャの伝統を守らなければならない
+JP ルチャをこよなく愛する
+JP 多くの民の為にも、
+JP メヒコの代表としてね」
+EN "<Mariposa>, I must guard
+EN the lucha tradition of
+EN my father, for the many
+EN who love lucha dearly,
+EN as Mexico's champion."
+
+@ 2ND:060A6F78 lines=060A6F78,060A6F58,060A6F34,060A6F1C,060A6F00,060A6EEC,060A6EC8
+JP 「サントス、俺は日本人だが、
+JP 半分はメキシコ人だと思っている
+JP だから、あんたの気持ちもわかるし、
+JP 伝統の重みも理解できる
+JP だが、新しい時代のうねりは
+JP 確実に訪れて来る
+JP それが、この日なのかもしれないな」
+EN "<Santos>, I'm Japanese, but
+EN I feel half Mexican.
+EN I know how you feel,
+EN and the weight of tradition.
+EN But a new era's wave
+EN is surely coming.
+EN Maybe today's the day."
+
+@ 2ND:060A6EA8 lines=060A6EA8,060A6E94,060A6E74,060A6E60
+JP 「・・・そう、だからこそ私は
+JP 負けられないのだ！
+JP 負けるわけにはいかないのだよ！
+JP 伝統は私が守る！」
+EN "...Yes, and that is why
+EN I cannot lose!
+EN I simply must not lose!
+EN I will guard tradition!"
+
+@ 2ND:060A6E48 lines=060A6E48,060A6E2C
+JP 「心配することはない、
+JP あんたには俺がついてる」
+EN "Don't worry.
+EN You've got me."
+
+@ 2ND:060A6E10 lines=060A6E10,060A6DF0,060A6DD0,060A6DB4,060A6D90,060A6D80,060A6D70,060A6D58
+JP 「そうだったな、私には、
+JP 君という心強いパートナーがいる
+JP それに、私に声援を送ってくれる
+JP 多くのアミーゴたちが・・・
+JP 彼らの声援が、私に無限の勇気と力を
+JP 与えてくれる！
+JP 負けないぞ！
+JP 私たちは絶対に勝つ！」
+EN "Yes. I have you, my
+EN trusted partner. And
+EN so many amigos
+EN cheering me on...
+EN Their cheers give me
+EN endless courage!
+EN I will not lose!
+EN We will surely win!"
+
+@ 2ND:060A6D38 lines=060A6D38
+JP 「そうさ、勝つのは俺達だ！」
+EN "Right, the win is ours!"
+
+@ 2ND:060A76C8 lines=060A76C8,060A76B0,060A7684,060A7660,060A764C
+JP 「我々がタッグを組めば、
+JP 恐れるモノは何もない
+JP スカイ・ハイブームを巻き起こした頃の様に
+JP 改めて世界にマスカラ・ブラザーズの
+JP 名を知らしめる」
+EN "When we team up,
+EN we fear nothing.
+EN Like in the Sky High days,
+EN we'll show the world the
+EN <Mascara Brothers> again."
+
+@ 2ND:060A762C lines=060A762C,060A7604
+JP 「コンドル兄さんの言う通りだ
+JP とはいえ、我々の肉体にも限界がある」
+EN "Brother <Condor> is right.
+EN But our bodies have limits."
+
+@ 2ND:060A75E8 lines=060A75E8,060A75C8,060A75A0
+JP 「我々がジュニア・ヘビーに
+JP 甘んじているのは、調整の為だ
+JP おかげで順調な仕上がり具合になった」
+EN "We fight as juniors
+EN only to tune up.
+EN And we are in fine shape."
+
+@ 2ND:060A757C lines=060A757C,060A7568,060A7550,060A7538
+JP 「そう、我々マスカラ・ブラザーズの
+JP テスト・フライトさ
+JP その最終段階の相手が
+JP 君たちというわけさ」
+EN "Yes, we <Mascara Brothers>
+EN are on a test flight.
+EN And the final stage
+EN is against you two."
+
+@ 2ND:060A7518 lines=060A7518,060A7500,060A74E4,060A74C4,060A749C,060A7478,060A7460,060A7440,060A7418,060A73EC,060A73D0,060A73B0,060A7388
+JP 「・・・おや、怒ったのかい？
+JP 勘違いしないでくれ、
+JP 決してジュニア・クラスを
+JP 馬鹿にしているわけではないんだ
+JP ジュニア・レスラーのハングリー精神は、
+JP ヘビー・クラスをしのぐモノがある、
+JP と言っても過言ではない
+JP 小さな体を大きく見せる為には、
+JP 危険なトペにもトライしなければならない
+JP 常に死と背中合わせのファイトを提供する、
+JP その代償としての負傷・・・
+JP 私は、かつて何度もその惨劇を
+JP 目の当たりにしてきたのだからな・・・」
+EN "...Oh, are you angry?
+EN Do not misunderstand me.
+EN I am by no means looking
+EN down on the junior class.
+EN It's no exaggeration to say
+EN a junior's hunger is greater
+EN than any heavyweight's.
+EN To look big when small,
+EN you must risk deadly topes.
+EN Fights always near death,
+EN and the price is injury...
+EN I have seen such tragedy
+EN up close, many times..."
+
+@ 2ND:060A7368 lines=060A7368,060A7340,060A7328,060A7308,060A72E8,060A72D0,060A72A8
+JP 「現代ジュニアの技術レベルは、
+JP 恐ろしいまでのスピードで向上している
+JP 日本のアミーゴたちが、
+JP 今の我々のファイトを見たら、
+JP クラシカルな印象を受けるだろう
+JP だが、それで良いのだ
+JP これが我々のスタンダードなのだからな」
+EN "Junior technique today is
+EN improving at a scary pace.
+EN If our amigos in Japan
+EN saw the way we fight now,
+EN it would look old-fashioned.
+EN But that is fine.
+EN For this is our standard."
+
+@ 2ND:060A7294 lines=060A7294,060A7270,060A7250,060A7234,060A720C,060A71EC,060A71D4,060A71AC,060A7184,060A715C,060A7148,060A7128,060A7108,060A70DC,060A70C4,060A70A0,060A7088,060A7064
+JP 「本音を言えば、
+JP 私も君らのファイトには驚かされるよ
+JP ただ、個人の技術レベル以上の
+JP 技を求めるのはナンセンスだ
+JP もっと、自分のフェバリット・ホールドを
+JP 大事にして欲しい、愛して欲しい
+JP 私は、そう願っている
+JP ・・・君らには知っておいてもらいたい、
+JP レスリングの優劣は肉体の大きさではない
+JP 不屈の精神と、研ぎ澄まされた集中力、
+JP この二つを磨くんだ
+JP トペなどは、カモフラージュさ、
+JP しょせんギミックでしかないのだ
+JP 真のルチャの神髄は、レスリングの基礎にある
+JP 相手の動きを見切り、
+JP 己の体の一部とする受け返しの極意
+JP 変幻自在の動きこそ、
+JP ルチャ・リブレ最大の武器なのだよ」
+EN "To be honest,
+EN your fights amaze even me.
+EN Yet to seek moves beyond
+EN your skill level is nonsense.
+EN Cherish your favorite holds.
+EN Love them more.
+EN That is my wish.
+EN ...I want you to understand.
+EN Wrestling is not about size.
+EN Unbreakable spirit and
+EN razor focus: hone them.
+EN The tope is camouflage,
+EN a gimmick, nothing more.
+EN True lucha is in the basics:
+EN read your foe's moves,
+EN absorb them, return them.
+EN Fluid, shifting motion is
+EN lucha libre's top weapon."
+
+@ 2ND:060A703C lines=060A703C,060A7028
+JP 「さぁ、そろそろ行こうかコンドル兄さん
+JP テイク・オフだ！」
+EN "Now, Brother <Condor>,
+EN let's go. Time for take-off!"
+
+@ 2ND:060B7118 lines=060B7118,060B7108,060B70F8,060B70E0,060B70C8,060B7164,060B7154,060B713C,060B7154,060B71AC,060B7194,060B7188,060B71C8,060B71BC,060B720C,060B71EC
+# table 060C83F8
+JP 長い通路の向こうから
+JP 血の臭いが漂い
+JP マットの軋む音
+JP 多くのオーディエンスが
+JP 俺を呼ぶ声が聞こえる
+JP 闘いはまだ終わっていない
+JP 王者である限り
+JP 逃げることは許されない
+JP 王者である限り
+JP いや
+JP プロレスラーである限り
+JP そして、今
+JP 真のヴィクトリーロードの扉が
+JP 開かれる！
+JP ＬＥＴ’Ｓ  ＴＲＹ
+JP ＥＮＤＬＥＳＳ  ＢＡＴＴＬＥ
+EN From the long corridor
+EN drifts the smell of blood.
+EN The creak of the mat...
+EN The roar of the crowd...
+EN I hear them calling me.
+EN The fight is not over yet.
+EN As long as I am champion,
+EN there is no running away.
+EN As long as I am champion,
+EN no...
+EN as long as I am a wrestler.
+EN And now, the door
+EN to the true Victory Road
+EN opens!
+EN LET'S TRY
+EN ENDLESS BATTLE
+
+@ 2ND:060B8408 lines=060B8408,060B8430,060B8424,060B8464,060B8450,060B8490,060B8478
+# table 060C86CC
+JP 一つの闘いは終わった
+JP だが、歩みを止めるわけには
+JP いかない
+JP 新しい闘いが
+JP 始まったのだから
+JP 闘いは続く
+JP 最強の称号をめざして
+EN One battle is over.
+EN But there can be
+EN no standing still,
+EN for a new battle
+EN has begun.
+EN The battle goes on,
+EN for the title of strongest.

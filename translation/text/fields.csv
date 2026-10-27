@@ -1,0 +1,7 @@
+# Fixed-size text fields that aren't pointed strings or roster records (tools/textins.py fields).
+# size: the field's bytes including the NUL. full = yes: written in full-width letters (2 bytes
+# each) - needed where the game copies the text into a name-entry buffer.
+id,file,size,full,japanese,english,notes
+060C3C5A,2ND.BIN,14,yes,ヒューマン,Human,new Edit wrestler: name1 (template record; Human = the developer)
+060C3C68,2ND.BIN,20,yes,次郎,Jiro,new Edit wrestler: name2
+060C3C7C,2ND.BIN,24,yes,こんどは,Newcomer,new Edit wrestler: nickname (こんどは "this time")
