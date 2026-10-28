@@ -46,32 +46,40 @@ def encoded_length(text):
         return 999
 
 
-_SLOTS = None
 MAX_GLYPHS = 46       # glyphs one text slot record holds (0x06070BB0, 0xDE bytes): the 47th stops the game (seen 2026-10-27)
+_ROOMS = None
 
 
-def slot_room():
-    """{id: (glyphs, screen)} from translation/text/slots.csv (measured with tools/slots.py)."""
-    global _SLOTS
-    if _SLOTS is None:
-        p = paths.TEXT / 'slots.csv'
-        _SLOTS = {}
+def rooms():
+    """{id: (count, px, screen)} from translation/text/rooms.csv (the kit's format; count = glyphs,
+    measured with tools/slots.py or the kit's testing/drive.py and tools/probe.py)."""
+    global _ROOMS
+    if _ROOMS is None:
+        _ROOMS = {}
+        p = paths.TEXT / 'rooms.csv'
         if p.exists():
             with open(p, encoding='utf-8', newline='') as f:
                 for r in csv.DictReader(ln for ln in f if not ln.startswith('#')):
-                    _SLOTS[r['id']] = (int(r['glyphs']), r['screen'], int(r['px']) if r.get('px') else None)
-    return _SLOTS
+                    _ROOMS[r['id']] = (int(r['count']) if r.get('count') else None,
+                                       int(r['px']) if r.get('px') else None, r.get('screen', ''))
+    return _ROOMS
 
 
-def slot_range(file, key):
-    """The slots.csv row whose address range (file|2ND:A-B) holds this block, if any."""
-    m = re.match(r'(\w+):([0-9A-F]{8})$', key)
-    if not m:
-        return None
-    for k, v in slot_room().items():
-        r = re.match(rf'{re.escape(file)}\|(\w+):([0-9A-F]{{8}})-([0-9A-F]{{8}})$', k)
-        if r and r.group(1) == m.group(1) and int(r.group(2), 16) <= int(m.group(2), 16) <= int(r.group(3), 16):
-            return v
+def room_for(e):
+    """The rooms.csv row for an entry: its block id, a range holding it, or its table column."""
+    rel = f'{e.file.parent.name}/{e.file.name}'
+    if f'{rel}|{e.key}' in rooms():
+        return rooms()[f'{rel}|{e.key}']
+    if e.file.suffix == '.csv':
+        col = e.key.partition(':')[2] or textdb.SOURCE_COLUMN
+        if f'{e.file.name}:{col}' in rooms():
+            return rooms()[f'{e.file.name}:{col}']
+    m = re.match(r'(\w+):([0-9A-Fa-f]+)$', e.key)
+    if m:
+        for k, v in rooms().items():
+            r = re.match(rf'{re.escape(rel)}\|(\w+):([0-9A-Fa-f]+)-([0-9A-Fa-f]+)$', k)
+            if r and r.group(1) == m.group(1) and int(r.group(2), 16) <= int(m.group(2), 16) <= int(r.group(3), 16):
+                return v
     return None
 
 
@@ -109,9 +117,7 @@ def game_checks(e):
                         '(0x06021C54 error 3)'))
             break
     col = e.key.partition(':')[2]
-    slot = slot_room().get(f'{e.file.parent.name}/{e.file.name}|{e.key}') or \
-        (slot_room().get(f'{e.file.name}:{col or "japanese"}') if e.file.suffix == '.csv' else None) or \
-        slot_range(f'{e.file.parent.name}/{e.file.name}', e.key)
+    slot = room_for(e)                     # (glyphs, px, screen)
     if slot:
         if e.file.name == 'wrestlers.csv':            # both builds' short names: real and parody columns
             with open(e.file, encoding='utf-8') as f:
@@ -119,11 +125,11 @@ def game_checks(e):
             row = next(csv.DictReader([ln for ln in lines if ln.startswith('idx,')] + [lines[e.line - 1]]))
             variants = [row['en_' + col], row['parody_' + col]]
         n = max(map(fpstext.glyph_count, variants))
-        if n > slot[0]:
-            out.append(('error', 'glyphs', f'{n} glyphs, its text slot holds {slot[0]} ({slot[1]})'))
+        if slot[0] is not None and n > slot[0]:
+            out.append(('error', 'glyphs', f'{n} glyphs, its text slot holds {slot[0]} ({slot[2]})'))
         w = max(fpstext.line_widths(v)[0] for v in variants)
-        if slot[2] and w > slot[2]:
-            out.append(('error', 'px', f'{w} px, room for {slot[2]} ({slot[1]})'))
+        if slot[1] and w > slot[1]:
+            out.append(('error', 'px', f'{w} px, room for {slot[1]} ({slot[2]})'))
     room = ROOM.get(e.file.name, {}).get(col)
     if room and max(map(encoded_length, variants)) > room:
         out.append(('error', 'bytes', f'{max(map(encoded_length, variants))} bytes, room for {room} ({col})'))

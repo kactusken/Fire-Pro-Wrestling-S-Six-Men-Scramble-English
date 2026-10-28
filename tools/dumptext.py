@@ -9,10 +9,12 @@
                                       pointer table or the code that uses them
   translation/text/messages.txt       the pointed strings of 1ST.BIN (save and backup messages)
 
+Re-running keeps the English and hand-added `#` comments (tools/blocks.py merge).
 Block ids are the string addresses (`2ND:0609A6E4`); in interviews.txt the `@` line lists every
 line's address. Strings the build handles itself (KEYBOARD) are left out. Run tools/lint.py after.
 """
 import argparse
+import re
 import struct
 import sys
 from pathlib import Path
@@ -29,7 +31,8 @@ KEYBOARD = [0x060C3EA0, 0x060C3F00]   # name-entry character grids: the build wr
 HEAD_STORY = '''# Victory Road: the interviews before each match and the narration.
 # One block per speech; each EN line is one line on screen (one string in the game).
 # limit lines: as many EN lines as JP lines (fewer is fine - the rest stay empty), never more.
-# limit px=236: each line at most 236 pixels wide (a-z ~8 px, A-Z ~10, space 8;
+# limit px=204: each line at most 204 pixels wide - the in-ring interview box shows lines from
+#   x=89 to its edge at x=293, the speaker's name in the margin (seen in the emulator 2026-10-27;
 #   python3 tools/fpstext.py width "text" measures). lint.py checks both.
 # Speakers are wrestlers: keep each one's voice. Names in the text: see translation/glossary.csv.
 # Control codes: none here. Quotes 「」 become "" (open on the first line, close on the last).
@@ -47,24 +50,18 @@ HEAD_MESSAGES = '''# Messages of 1ST.BIN (the resident program): backup memory /
 '''
 
 
-def existing(path):
-    if not path.exists():
-        return {}
-    return {b.id: b.english for b in blocks.BlockFile(path).blocks}
+# Comment lines this dump writes and may write differently next time: re-dumps replace them; every
+# other `#` line in the files is a hand note and is kept (blocks.merge).
+GENERATED = re.compile(r'# (table [0-9A-F]{8}|code near [0-9A-F]{8}|px=\d+ \(original width\)|\(also here, )')
 
 
-def write_blocks(path, header, items, old):
-    """items: [(id, meta, [source lines], [comments])]."""
-    out = [header.rstrip('\n'), '']
-    for ident, meta, src, notes in items:
-        out.append(f'@ {ident} {meta}'.rstrip())
-        out += [f'# {n}' for n in notes]
-        out += [f'JP {s}' for s in src]
-        out += [f'EN {s}' for s in old.get(ident, [])]
-        out.append('')
+def write_blocks(path, header, items):
+    """items: [(id, meta, [source lines], [comments])] - merged into the file: English and hand
+    comments stay (tools/blocks.py merge)."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text('\n'.join(out), encoding='utf-8', newline='\n')
-    print(f'{paths.show(path)}: {len(items)} blocks')
+    st = blocks.merge(path, header.rstrip('\n').split('\n'),
+                      [(i, m, src, [f'# {n}' for n in notes]) for i, m, src, notes in items], GENERATED)
+    print(f'{paths.show(path)}: {len(items)} blocks ({st["new"]} new, {len(st["orphans"])} no longer dumped)')
 
 
 def story_items(pt):
@@ -133,11 +130,11 @@ def main(argv=None):
             kb.add(struct.unpack_from('>I', p2.data, o)[0])
             o += 4
     f = paths.SCRIPT / 'interviews.txt'
-    write_blocks(f, HEAD_STORY, story, existing(f))
+    write_blocks(f, HEAD_STORY, story)
     f = paths.TEXT / 'menus.txt'
-    write_blocks(f, HEAD_MENUS, menu_items(p2, done | kb), existing(f))
+    write_blocks(f, HEAD_MENUS, menu_items(p2, done | kb))
     f = paths.TEXT / 'messages.txt'
-    write_blocks(f, HEAD_MESSAGES, menu_items(ft.Pointed('1ST.BIN'), set()), existing(f))
+    write_blocks(f, HEAD_MESSAGES, menu_items(ft.Pointed('1ST.BIN'), set()))
 
 
 if __name__ == '__main__':

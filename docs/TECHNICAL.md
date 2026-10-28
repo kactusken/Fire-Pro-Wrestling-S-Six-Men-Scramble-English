@@ -170,7 +170,7 @@ profile's 32 value slots get their room from the byte table 0x060BFCFC (glyphs p
 the VRAM pointer at 0x060957xx); the build raises the value rows to 8 (textins LAYOUT_PATCHES).
 Measured rooms: Mode Select title 15 glyphs, description 30; the Wrestler Select name grid 7
 (setup 0x06085304, `add #112` per slot, columns 56 px apart). Measured limits are in
-`translation/text/slots.csv` and checked by lint. Edit appearance: the size code (Ｍ/－) is drawn
+`translation/text/rooms.csv` and checked by lint. Edit appearance: the size code (Ｍ/－) is drawn
 where the label string's pen ends; the original labels end with `：{x12,}，{x-20,}` to place it
 between the colon and the comma.
 

@@ -16,6 +16,9 @@ original length, ...) that isn't for editing. Source lines are reference only. E
 translation; a block with no EN lines keeps the original. One tag + one space, then the text
 exactly (leading spaces count). `#` lines inside a block are kept as comments.
 
+A dump tool that (re)writes a block file goes through merge(): it keeps the English and every
+`#` line someone added by hand (layout notes, spacing, decisions) - a plain rewrite loses them.
+
   blocks.py show <file> [id...]      print blocks (all, or the given ids)
   blocks.py stats <file>...          blocks / translated per file
 """
@@ -96,6 +99,62 @@ class BlockFile:
 
     def save(self, path=None):
         Path(path or self.path).write_text(self.text(), encoding='utf-8', newline='\n')
+
+
+def merge(path, header, items, generated=None, quiet=False):
+    """Write a dumped block file, keeping what people added to the existing one.
+
+    header: the dump's header lines; items: [(id, meta, source lines, dump comment lines)] in the
+    dump's order (comment lines include their '#'). From the existing file, if any, each block
+    keeps its EN lines and the '#' lines the dump didn't write (before or after the dump's
+    comments, as they were), and the header keeps lines the dump's header doesn't have.
+    generated: a regex matching the dump's own comment lines whose content can change between
+    dumps (re.compile(r'# (px|addr)=')) - old versions of those are dropped, not kept as hand
+    notes. A
+    block the dump no longer produces is kept at the end if it has English or hand comments,
+    marked '# not in the latest dump'. Returns {'new': n, 'kept': n, 'orphans': [ids]}."""
+    path = Path(path)
+    old = BlockFile(path) if path.exists() else None
+    bf = BlockFile.__new__(BlockFile)
+    bf.path, bf.tag, bf.limits, bf.blocks = path, old.tag if old else DEFAULT_TAG, {}, []
+    bf.header = list(header) + ([ln for ln in old.header if ln.strip() and ln not in header
+                                 and not (generated and generated.match(ln))] if old else [])
+    previous = {b.id: b for b in old.blocks} if old else {}
+    seen, stats = set(), {'new': 0, 'kept': 0, 'orphans': []}
+    for ident, meta, source, comments in items:
+        b = Block(ident, meta, 0)
+        b.lines = [('#', c) for c in comments] + [(bf.tag, t) for t in source]
+        was = previous.get(ident)
+        if was:
+            before, after, dumped = [], [], False      # hand notes stay on their side of the dump's
+            for k, t in was.lines:
+                if k != '#' or t == ORPHAN:
+                    continue
+                if t in comments or (generated and generated.match(t)):
+                    dumped = True
+                else:
+                    (after if dumped else before).append(t)
+            b.lines = [('#', c) for c in before + list(comments) + after] + [(bf.tag, t) for t in source]
+            b.english = was.english
+            stats['kept'] += bool(was.english)
+        else:
+            stats['new'] += 1
+        bf.blocks.append(b)
+        seen.add(ident)
+    for b in (old.blocks if old else []):
+        if b.id not in seen and (b.english or any(k == '#' for k, _ in b.lines)):
+            if ('#', ORPHAN) not in b.lines:
+                b.lines.insert(0, ('#', ORPHAN))
+            bf.blocks.append(b)
+            stats['orphans'].append(b.id)
+    bf.save()
+    if not quiet and stats['orphans']:
+        print(f'{path}: {len(stats["orphans"])} blocks no longer in the dump kept at the end '
+              f'(marked "{ORPHAN}"): {", ".join(stats["orphans"][:8])}')
+    return stats
+
+
+ORPHAN = '# not in the latest dump'
 
 
 def main(argv=None):
